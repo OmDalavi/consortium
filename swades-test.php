@@ -12,7 +12,7 @@
 
 <!DOCTYPE html>
 <html>
-  <?php $pagetitle = 'Brainathon | Consortium'; ?>
+  <?php $pagetitle = 'Swades Test | Consortium'; ?>
   <?php include('includes/head.php'); ?>
   <body class="back">
     <?php include('includes/header.php'); ?>

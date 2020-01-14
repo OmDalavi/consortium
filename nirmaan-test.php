@@ -12,7 +12,7 @@
 
 <!DOCTYPE html>
 <html>
-  <?php $pagetitle = 'Brainathon | Consortium'; ?>
+  <?php $pagetitle = 'Nirmaan Test| Consortium'; ?>
   <?php include('includes/head.php'); ?>
   <body class="back">
     <?php include('includes/header.php'); ?>
@@ -29,7 +29,7 @@
                     </div>
                 </div>
             </div>
-  
+
     <?php include("includes/footer_landing.php");?>
     <?php include("includes/script.php");?>
   </body>
