@@ -682,7 +682,7 @@
                 <div class="col-xs-4 col-sm-offset-2 g-full-width--xs g-margin-b-50--xs g-margin-b-0--sm">
                     <div class="g-text-center--xs">
                         <h4 class="g-font-size-18--xs g-color--white g-margin-b-5--xs">Lakshya Shukla</h4>
-                         <p class="g-color--white">+91 77384 46941<br>akshyashukla32@gmail.com</p>
+                         <p class="g-color--white">+91 77384 46941<br>lakshyashukla32@gmail.com</p>
                     </div>
                 </div>
                 <!--<div class="col-xs-4 g-full-width--xs g-margin-b-50--xs g-margin-b-0--sm">-->
