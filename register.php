@@ -34,6 +34,8 @@
 
     mysqli_query($con,$regquery);
 
+
+
     $eve = array('Swadesh','AdVenture','trec','renderico','CEO','war_of_worlds','BizMantra','BizQuiz');
     for($var = 0; $var < 8; $var++){
       $evequery = "CREATE TABLE IF NOT EXISTS $eve[$var](
@@ -216,6 +218,7 @@
                       <option value='Swadesh'>Swades</option>
                       <option value='trec'>TREC (Technology Research Entrepreneurship Conclave)</option>
                       <option value='CEO'>CEO</option>
+                      <option value='nirmaan'>Nirmaan</option>
                       <!--<option value='AdVenture'>AdVenture</option>
                       <option value='Pitch_Perfect'>Pitch Perfect</option>
                       <option value='renderico'>render.ico</option>

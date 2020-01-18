@@ -681,8 +681,8 @@
             <div id="managers" class="row g-row-col--5 g-padding-x-40--xs g-padding-y-40--xs g-padding-x-20--md g-padding-x-100--lg">
                 <div class="col-xs-4 col-sm-offset-2 g-full-width--xs g-margin-b-50--xs g-margin-b-0--sm">
                     <div class="g-text-center--xs">
-                        <h4 class="g-font-size-18--xs g-color--white g-margin-b-5--xs">Nachiket Dhande</h4>
-                         <p class="g-color--white">+91 95453 02811<br>nachiket.dhande@gmail.com</p>
+                        <h4 class="g-font-size-18--xs g-color--white g-margin-b-5--xs">Lakshya Shukla</h4>
+                         <p class="g-color--white">+91 77384 46941<br>lakshyashukla32@gmail.com</p>
                     </div>
                 </div>
                 <!--<div class="col-xs-4 g-full-width--xs g-margin-b-50--xs g-margin-b-0--sm">-->
@@ -694,8 +694,8 @@
 
                 <div class="col-xs-4 g-full-width--xs g-margin-b-50--xs g-margin-b-0--sm">
                     <div class="g-text-center--xs">
-                        <h4 class="g-font-size-18--xs g-color--white g-margin-b-5--xs">Anushree Rungta</h4>
-                         <p class="g-color--white">+91 98224 44112<br>anushree.rungta@gmail.com</p>
+                        <h4 class="g-font-size-18--xs g-color--white g-margin-b-5--xs">Aryan Shah</h4>
+                         <p class="g-color--white">+91 80871 138112<br>aryan199841@gmail.com</p>
                     </div>
                 </div>
 

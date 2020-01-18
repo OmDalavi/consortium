@@ -68,6 +68,18 @@
                 )";
     mysqli_query($con,$brainquery);
 
+    $nirmaanquery = "ALTER TABLE Registrations ADD COLUMN nirmaan TINYINT(1) DEFAULT '0' AFTER BizQuiz";
+    mysqli_query($con,$regquery);
+
+    $nirmaan = "CREATE TABLE IF NOT EXISTS nirmaan(
+      ID INT(11) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+      Name VARCHAR(255) NOT NULL,
+      Email VARCHAR(255) NOT NULL,
+      Contact VARCHAR(255) NOT NULL,
+    )";
+
+    mysqli_query($con,$nirmaan);
+
     if(isset($_POST['regnew'])) {
     $name = $con->real_escape_string($_POST['name']);
     $email = $con->real_escape_string($_POST['email']);

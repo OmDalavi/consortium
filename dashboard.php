@@ -190,6 +190,50 @@
     }
 
 
+        if(isset($_POST['swanewmem-nirmaan'])){
+
+
+          // Adding Team First
+          $teamname = $con->real_escape_string($_POST['teamname']);
+          $teamemail = $_SESSION['email'];
+          $contact = $_SESSION['contact'];
+          $query = "INSERT INTO nirmaan_team(Name,Email,Contact) VALUES('$teamname','$teamemail','$contact')";
+          if(mysqli_query($con,$query)){
+            $s = 'Welcome Aboard Team '.$teamname.' | Nirmaan';
+
+            htmlMail($teamemail,$s,$_SESSION['name'],$teamname, 'nirmaan');
+            #Adding Menbers
+            $number = $con->real_escape_string($_POST['number']);
+
+
+            for($i=2; $i<=$number; $i++){
+
+              $membername = $con->real_escape_string($_POST['membername'.$i]);
+              $memberemail = $con->real_escape_string($_POST['memberemail'.$i]);
+              $memberphone = $con->real_escape_string($_POST['memberphone'.$i]);
+              $memberteam = $teamemail;
+
+              $query = "INSERT INTO nirmaan(Name,Main_Email,Email,Contact) VALUES('$membername','$memberteam','$memberemail','$memberphone')";
+              if(mysqli_query($con,$query)){
+                $s = 'Welcome Aboard Team '.$teamname.' | Nirmaan';
+                htmlMail($memberemail,$s,$membername,$teamname, 'Nirmaan');
+
+              }
+              else{
+                $msg = "Error member: " . mysqli_error($con);
+              }
+
+            }
+
+          }else{
+            $msg = "Error Team: " . mysqli_error($con);
+          }
+          $_SESSION['msg'] = "You've registered successfully. Check your email, to begin with the first round of Nirmaan.";
+          header('location:dashboard.php');
+
+        }
+
+
     if(isset($_POST['swanewmem-bizquiz'])){
 
 
@@ -278,7 +322,7 @@
                 <div class="row product-grid">
 
                   <?php
-                    $events = array('Swadesh','AdVenture','trec','renderico','CEO','war_of_worlds','BizMantra','BizQuiz');
+                    $events = array('Swadesh','AdVenture','trec','renderico','CEO','war_of_worlds','BizMantra','BizQuiz', 'nirmaan');
                     $query = "SELECT * FROM Registrations WHERE Email='$email'";
                     $result = mysqli_query($con,$query);
                     $num = mysqli_num_rows($result);
@@ -338,8 +382,13 @@
                                                                     elseif($events[$var] == "CEO"){
                                                                       echo'/team.php';
                                                                     }
-                                                                    elseif ($events[$var] == 'Swadesh')
-                                                                      {echo 'swadesh-questionnaire.php';}
+                                                                    elseif($events[$var] == "nirmaan"){
+                                                                      echo '/nirmaan-test.php';
+                                                                    }
+                                                                    elseif($events[$var] == "Swadesh"){
+                                                                      echo '/swades-test.php';
+
+                                                                    }
                                                                     else{echo '#'.$events[$var].'click';}
                                                                      ?>" >
                                       <span class="text-uppercase s-btn s-btn--xs s-btn--white-brd g-radius--50"><?php if($events[$var] == 'Brainathon')
@@ -347,12 +396,26 @@
                                                                                                                         elseif($events[$var] == "CEO"){
                                                                                                                           echo'Contact Team';
                                                                                                                         }
-                                                                                                                        elseif($events[$var] == "Swadesh"){
+                                                                                                                        elseif($events[$var] == "nirmaan" ){
+                                                                                                                          echo'Start Test';
+                                                                                                                        }
+                                                                                                                        elseif($events[$var] == "Swadesh" ){
                                                                                                                           echo'Start Test';
                                                                                                                         }
                                                                                                                         else
                                                                                                                         {echo 'Your Team';} ?></span>
                                   </a>
+
+                                  <?php
+
+                                  if($events[$var] == 'nirmaan')
+                                  { echo '<a id="reg_button" href="#nirmaanclick"
+
+                                      <span class="text-uppercase s-btn s-btn--xs s-btn--white-brd g-radius--50 g-margin-r-10--xs">Your Team</span>
+                                  </a>';}
+
+                                  ?>
+
                               </div>
 
 
@@ -645,9 +708,57 @@
       </div>
 
 
-        <div class="" id="Pitch_Perfect">
+      <div class="swades container g-padding-x-40--sm g-padding-x-20--xs g-padding-y-20--xs g-padding-y-50--sm" id="nirmaan" style="display:none;background: #000">
 
-        </div>
+        <a class="g-color--white g-font-size-20--xs" onclick="closemodel('trec');" style="position:absolute; left:90%" >X</a>
+        <h2 class="g-font-size-30--xs g-text-center--xs g-margin-t-70--xs g-color--white g-letter-spacing--1">Nirmaan</h2>
+
+        <?php
+          $query = "SELECT * FROM nirmaan_team WHERE Email='$email'";
+          $result = mysqli_query($con,$query);
+          $num = mysqli_num_rows($result);
+          $data = $result->fetch_array(MYSQLI_ASSOC);
+          if($num!=0){
+            echo '<h2 class="g-font-size-30--xs g-text-center--xs g-margin-t-70--xs g-color--white g-letter-spacing--1">Hello, '.$data['Name'].'</h2>';
+            $query = "SELECT * FROM trec WHERE Main_Email='$email'";
+            $result = mysqli_query($con,$query);
+            $num = mysqli_num_rows($result);
+            echo "<p class='g-color--white g-font-size-20--xs'>Team Members</p><ol>";
+            while($row = mysqli_fetch_array($result)){
+              echo "<li class='g-color--white' style='text-decoration:none;'>".$row['Name'].", ".$row['Email'].", ".$row['Contact']."</li>";
+            }
+            echo "</ol>";
+          }
+          else{
+          ?>
+
+          <form class="center-block g-width-600--sm" method="post" action="">
+              <div class="permanent permanent-nirmaan row">
+                <p class="g-color--white g-text-center--xs g-font-size-14--xs">You're a Team Leader by default</p>
+                  <div class="col-sm-6 g-margin-b-30--xs">
+                        <input type="text" class="form-control s-form-v3__input" placeholder="* Team Name" name="teamname" style="text-transform: none" id="teamname">
+                  </div>
+
+                  <div class="col-sm-6 g-margin-b-30--xs">
+                      <select type="number" pattern="[0-9]{11}" class="form-control s-form-v3__input" name="number" placeholder="* Add more members" id="members-nirmaan">
+                          <option value="" selected=""  hidden="">Add more members</option>
+                          <option value="2" style="color:black">1</option>
+                          <option value="3" style="color:black">2</option>
+                          <option value="4" style="color:black">3</option>
+
+                      </select>
+                  </div>
+
+              </div>
+              <div class="g-text-center--xs">
+                  <button type="submit" name="swanewmem-nirmaan" class="text-uppercase s-btn s-btn--md s-btn--white-brd g-radius--50 g-padding-x-70--xs g-margin-b-20--xs">Create Team</button>
+              </div>
+          </form>
+        <?php
+          }
+        ?>
+
+      </div>
 
         <div class="" id="BizMantra">
 
@@ -704,6 +815,13 @@
         function closemodel(event){
             $("#"+event).css({"display": "none"},100);
         }
+
+        $("#nirmaanclick").click(function(){
+          $("#nirmaan").css({"display":"block"});
+          $("#nirmaan").animate({opacity: 1}, 1000);
+          var y = $("#nirmaan").offset().top;
+            $("html ,body").animate({ scrollTop: y},200);
+        });
 
 
 

@@ -12,14 +12,14 @@
   if($_SERVER['REQUEST_METHOD'] === 'POST'){
 
     $email = $con->real_escape_string($_POST['email']);
-    $txnid = $con->real_escape_string($_POST['txnid']);
 
-    if($email=="" || $txnid==""){
-        $msg = "Something went wrong. <a href='expo.php' style='color:#eee;'>Try Again</a>";
+
+    if($email==""){
+        $msg = "Something went wrong. <a href='dashboard.php' style='color:#eee;'>Try Again</a>";
     }
     else{
 
-      $query = "UPDATE Brainathon SET isPaid = 1 WHERE email='$email'";
+      $query = "UPDATE trec SET isPaid = 1 WHERE email='$email'";
       $result = mysqli_query($con,$query);
       $num = mysqli_affected_rows($con);
 
@@ -72,7 +72,7 @@
                   <body>
 
                       <div style="background: #0b0b0b; padding:10px 30px;"><img src="https://www.ecellvnit.org/img/logo-ecell.png"></div>
-                      <h2 style="font-size:22px;">Welcome to Brainathon</h2><br>
+                      <h2 style="font-size:22px;">Welcome to TREC - Technological Research Entrepreneurship Competition</h2><br>
 
                       <div class="context">
                           <h3><b>Hello,</b></h3>
@@ -81,7 +81,7 @@
                           <p>Congratulations! You are now a part of Central India’s Biggest Entrepreneurship Summit.</p>
                           <div>
                               <p>We hope this mail finds you in the best of your health and cheerful spirits. We are well pleased to have you on board for this event.</p>
-                              <p> Your Transaction ID: <b>'.$txnid.'</b><br>
+
                                   Registration Fee: 100 INR
                               </p>
                               <p>
@@ -102,7 +102,7 @@
             ';
 
           $url = 'https://startupconclave.ecellvnit.org/send';
-          $data = array('subject' => $subject, 'email' => $to, 'html' => $html, 'pass' => 'intheend');
+          $data = array('subject' => $subject, 'email' => $to, 'html' => $html, 'pass' => 'Entrepreneurs1999');
 
           // use key 'http' even if you send the request to https://...
           $options = array(
@@ -118,7 +118,7 @@
       }
 
       else{
-        $msg = "You're not registered with us. Kindly first register <a href='expo.php'> here</a>. Or your have entered wrong email address while payment. Kindly Contact Us";
+        $msg = "You're not registered with us. Kindly first register <a href='dashboard.php'> here</a>. Or your have entered wrong email address while payment. Kindly Contact Us";
       }
 
     }
@@ -127,7 +127,7 @@
 
 <!DOCTYPE html>
 <html>
-  <?php $pagetitle = 'Brainathon | Consortium'; ?>
+  <?php $pagetitle = 'TREC | Consortium'; ?>
   <?php include('includes/head.php'); ?>
   <body class="back">
     <?php include('includes/header.php'); ?>
@@ -146,18 +146,30 @@
                           <?php
                             if($_SERVER['REQUEST_METHOD'] != 'POST'){
 
-                                $query = "SELECT * FROM Brainathon WHERE Email = '$_SESSION[email]' ";
+                                $query = "SELECT * FROM trec WHERE Email = '$_SESSION[email]' ";
                                 $result = mysqli_query($con,$query);
                                 $data = mysqli_fetch_assoc($result);
                                 $flag = 0;
 
-                                if($data['isPaid'] == 1){
+                                if($data['ispaid'] == 1){
                                   $flag = 1;
 
-                                  echo 'Your are already registered.';
+                                  echo 'Your are already registered.<br>
+                                  <p class="g-color--white-opacity g-font-size-12--sm">
+
+                                    *Note: Kindly only use your consoID i.e. your registered email address while payment.
+                                  </p>
+                                  <div class="wow fadeInLeft" data-wow-duration=".3" data-wow-delay=".5s">
+                                      <a id="reg_button" href="trec-questionnaire.php" title="Register">
+                                          <!--<i class="s-icon s-icon--lg s-icon--white-bg g-radius--circle ti-arrow-down"></i>-->
+                                          <span class="text-uppercase s-btn s-btn--xs s-btn--white-brd g-radius--50">Fill Questionaire</span>
+                                      </a>
+                                  </div>';
+
+
                                 }
                                 else{
-                                    echo 'Get ready to Brainathon your way to a one-hour aptitude test and to put your brain cells to work.';
+                                    echo 'Get ready to experience a journey to build a business by turning your research into a product';
                                 }
                             }
                           ?>
@@ -173,7 +185,7 @@
                           *Note: Kindly only use your consoID i.e. your registered email address while payment.
                         </p>
                         <div class="wow fadeInLeft" data-wow-duration=".3" data-wow-delay=".5s">
-                            <a id="reg_button" href="https://www.payumoney.com/paybypayumoney/#/181F3A6D16B573419FAFEF4AC191211E" title="Register">
+                            <a id="reg_button" href="https://pmny.in/CICRjJkJOrDP" title="Register">
                                 <!--<i class="s-icon s-icon--lg s-icon--white-bg g-radius--circle ti-arrow-down"></i>-->
                                 <span class="text-uppercase s-btn s-btn--xs s-btn--white-brd g-radius--50">Pay Now!</span>
                             </a>
