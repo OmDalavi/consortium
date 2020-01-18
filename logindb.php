@@ -96,7 +96,8 @@ else if(isset($_POST['login'])){
                                         <option disabled selected>Select Event</option>
                                         <option value="Swadesh_team">Swades</option>
                                         <option value="trec">TREC</option>
-                                        <option value="nirmaan_team">Nirmaan</option>
+                                        <option value="nirmaan_team">Nirmaan Team</option>
+                                        <option value="nirmaan">Nirmaan</option>
                                         <!-- <option value="Pitch_Perfect">Pitch Perfect</option>
                                         <option value="renderico_team">Render Ico</option>
                                         <option value="BizQuiz_team">Bizquiz</option>

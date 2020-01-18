@@ -21,8 +21,8 @@
 
                     <h1 class="g-font-size-60--xs g-font-size-80--sm g-font-size-80--lg g-color--white" style="font-weight:900; text-shadow: 2px 0 #333;letter-spacing:2px;"><b>Associate with us</b></h1>
 
-                    <h3 class="g-color--white">Something</h3>
-                    <p class="g-color--white">Something</p><br/>
+                    <h3 class="g-color--white">A contribution to grow the startup culture in VNIT</h3>
+
 
 
                     <br>
@@ -30,7 +30,7 @@
                     <div class="wow fadeInLeft" data-wow-duration=".3" data-wow-delay=".5s">
                                 <a href="https://pmny.in/CICRjJkJOrDP" title="contibute">
                                     <!--<i class="s-icon s-icon--lg s-icon--white-bg g-radius--circle ti-arrow-down"></i>-->
-                                    <span class="text-uppercase s-btn--primary-bg g-radius--50 g-padding-x-30--xs g-padding-y-15--xs g-font-size-13--xs g-color--white g-padding-x-15--xs">Contribute Us </span>
+                                    <span class="text-uppercase s-btn--primary-bg g-radius--50 g-padding-x-30--xs g-padding-y-15--xs g-font-size-13--xs g-color--white g-padding-x-15--xs">Contribute </span>
                                 </a>
                             </div>
 
