@@ -197,7 +197,7 @@ if (isset($_SESSION['auth']) && $_SESSION['auth'] == true) {
             <td><?php echo $row['ID'];?></td>
             <td><?php echo $row['Name'];?></td>
             <td><?php echo $row['Email'];?></td>
-            <td><?php echo $row['contact'];?></td>
+            <td><?php echo $row['Contact'];?></td>
 
 
         </tr>
