@@ -104,6 +104,17 @@ if (isset($_SESSION['auth']) && $_SESSION['auth'] == true) {
     </thead>
         <tbody>';
         }
+        else if($_SESSION['event'] == 'trec'){
+            echo '<thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Contact</th>
+        </tr>
+    </thead>
+        <tbody>';
+        }
         else{
             echo '<thead>
         <tr>
@@ -175,6 +186,19 @@ if (isset($_SESSION['auth']) && $_SESSION['auth'] == true) {
             <td><?php echo $row['college'];?></td>
             <td><?php echo $row['year'];?></td>
             <td><?php echo $row['question'];?></td>
+
+        </tr>
+        <?php
+        }
+        else if($_SESSION['event'] == 'trec'){
+        ?>
+
+        <tr>
+            <td><?php echo $row['ID'];?></td>
+            <td><?php echo $row['name'];?></td>
+            <td><?php echo $row['Email'];?></td>
+            <td><?php echo $row['contact'];?></td>
+        
 
         </tr>
         <?php

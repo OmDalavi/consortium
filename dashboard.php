@@ -389,6 +389,8 @@
                                                                       echo '/swades-test.php';
 
                                                                     }
+                                                                    elseif ($events[$var] == 'trec')
+                                                                    {echo '/pay-trec.php';}
                                                                     else{echo '#'.$events[$var].'click';}
                                                                      ?>" >
                                       <span class="text-uppercase s-btn s-btn--xs s-btn--white-brd g-radius--50"><?php if($events[$var] == 'Brainathon')
@@ -401,6 +403,9 @@
                                                                                                                         }
                                                                                                                         elseif($events[$var] == "Swadesh" ){
                                                                                                                           echo'Start Test';
+                                                                                                                        }
+                                                                                                                        elseif($events[$var] == "trec" ){
+                                                                                                                          echo'Fill questionnaire';
                                                                                                                         }
                                                                                                                         else
                                                                                                                         {echo 'Your Team';} ?></span>
@@ -710,7 +715,7 @@
 
       <div class="swades container g-padding-x-40--sm g-padding-x-20--xs g-padding-y-20--xs g-padding-y-50--sm" id="nirmaan" style="display:none;background: #000">
 
-        <a class="g-color--white g-font-size-20--xs" onclick="closemodel('trec');" style="position:absolute; left:90%" >X</a>
+        <a class="g-color--white g-font-size-20--xs" onclick="closemodel('nirmaan');" style="position:absolute; left:90%" >X</a>
         <h2 class="g-font-size-30--xs g-text-center--xs g-margin-t-70--xs g-color--white g-letter-spacing--1">Nirmaan</h2>
 
         <?php
@@ -720,7 +725,7 @@
           $data = $result->fetch_array(MYSQLI_ASSOC);
           if($num!=0){
             echo '<h2 class="g-font-size-30--xs g-text-center--xs g-margin-t-70--xs g-color--white g-letter-spacing--1">Hello, '.$data['Name'].'</h2>';
-            $query = "SELECT * FROM trec WHERE Main_Email='$email'";
+            $query = "SELECT * FROM nirmaan WHERE Main_Email='$email'";
             $result = mysqli_query($con,$query);
             $num = mysqli_num_rows($result);
             echo "<p class='g-color--white g-font-size-20--xs'>Team Members</p><ol>";
