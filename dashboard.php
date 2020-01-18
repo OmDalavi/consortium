@@ -338,12 +338,17 @@
                                                                     elseif($events[$var] == "CEO"){
                                                                       echo'/team.php';
                                                                     }
+                                                                    elseif ($events[$var] == 'Swadesh')
+                                                                      {echo 'swadesh-questionnaire.php';}
                                                                     else{echo '#'.$events[$var].'click';}
                                                                      ?>" >
                                       <span class="text-uppercase s-btn s-btn--xs s-btn--white-brd g-radius--50"><?php if($events[$var] == 'Brainathon')
                                                                                                                         {echo'Pay Here';}
                                                                                                                         elseif($events[$var] == "CEO"){
                                                                                                                           echo'Contact Team';
+                                                                                                                        }
+                                                                                                                        elseif($events[$var] == "Swadesh"){
+                                                                                                                          echo'Start Test';
                                                                                                                         }
                                                                                                                         else
                                                                                                                         {echo 'Your Team';} ?></span>

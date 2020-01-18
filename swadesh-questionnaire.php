@@ -1,3 +1,23 @@
+<?php
+  @session_start();
+  // error_reporting(E_ALL);
+  //   ini_set('display_errors', '1');
+  $db_host = "localhost:3306";
+  $db_username = "conso20";
+  $db_pass = "Conso@123";
+  $db_name = "conso20";
+  $con = mysqli_connect("$db_host","$db_username","$db_pass") or die ("could not connect to mysql");
+  mysqli_select_db($con,$db_name) or die ("no database");
+
+   if(isset($_SESSION['email'])){
+    $email = $_SESSION['email'];
+              }
+            else{
+               $_SESSION['login_error'] = "Kindly Login First";
+    header('location:/login.php');
+            }
+  
+  ?>
 <!DOCTYPE html>
   <html>
     <head>
@@ -26,19 +46,26 @@
 
             <form class="form-inline my-2 my-lg-0">
 
-              <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Welcome : <i><?php echo $login_session; ?></button>
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><a href="user-logout.php">Log Out</a></button>
+              <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Welcome : <i><?php  $query = "SELECT * FROM Swadesh_team WHERE Email='$email'";
+            $result = mysqli_query($con,$query);
+            $num = mysqli_num_rows($result);
+            $data = $result->fetch_array(MYSQLI_ASSOC);
+            if($num!=0){
+              echo $data['Name'];
+            }
+            ?></button>
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><a href="logout.php">Log Out</a></button>
 
             </form>
 
           </div>
         </nav>
-        <div class="start-test">
+        <div  class="start-test">
           <button class="start-test" type="start-test" onclick="myFunction()">start test</button>
         </div>
         <div class="start-test instructions">
-          <h5>Instructions</h5>
-          <ol>
+          <h5 style="color: white;">Instructions</h5>
+          <ol style="color: white;">
             <li>Before starting the test, make sure you are connected with high speed internet connection.</li>
             <li>Once you start the test, do not refresh.</li>
             <li>All the Questions are compulsory.</li>
@@ -51,7 +78,7 @@
             <li>Submit the paper before the time overs otherwise your responses will be submitted automatically.</li>
           </ol>
           <br>
-          <h5 class="maximummarks">M.M.:- 52</h5>
+          <h5 style="color: white;" class="maximummarks">M.M.:- 52</h5>
           <br>
         </div>
 
@@ -63,7 +90,7 @@
 
         <div id="test" style="display: none;">
 
-          <form id="myForm1" name="myForm1" action="answer-submit.php" method='post' >
+          <form id="myForm1" name="myForm1" action="Swadesh_answer.php" method='post' >
             <div id="questions">
               <p class="allthebest">----ALL THE BEST----</p>
               <h3>PART 1: MULTIPLE CHOICE QUESTIONS:</h3>

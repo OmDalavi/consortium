@@ -11,7 +11,7 @@
 
       gtag('config', 'UA-125403862-1');
     </script>
-
+<link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
     <!-- Basic -->
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, maximum-scale=1">
