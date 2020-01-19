@@ -27,12 +27,15 @@
 
                     <br>
 
-                    <div class="wow fadeInLeft" data-wow-duration=".3" data-wow-delay=".5s">
-                                <a href="https://pmny.in/CICRjJkJOrDP" title="contibute">
-                                    <!--<i class="s-icon s-icon--lg s-icon--white-bg g-radius--circle ti-arrow-down"></i>-->
-                                    <span class="text-uppercase s-btn--primary-bg g-radius--50 g-padding-x-30--xs g-padding-y-15--xs g-font-size-13--xs g-color--white g-padding-x-15--xs">Contribute </span>
-                                </a>
-                            </div>
+
+                        <div class="wow fadeInLeft" data-wow-duration=".3" data-wow-delay=".5s">
+                                    <a href="#about" title="contibute">
+                                        <!--<i class="s-icon s-icon--lg s-icon--white-bg g-radius--circle ti-arrow-down"></i>-->
+                                        <span class="text-uppercase s-btn--primary-bg g-radius--50 g-padding-x-30--xs g-padding-y-15--xs g-font-size-13--xs g-color--white g-padding-x-15--xs">Contribute</span>
+                                    </a>
+                                </div>
+
+
 
                 </div>
 
@@ -49,16 +52,19 @@
 
                             <div class="col-md-4 col-xs-12 g-full-width--xs  g-margin-b-0--lg">
                                 <div class="g-text-center--xs">
+
                                     <div class=" g-margin-b-0--xs">
                                         <h3>Perks for Alumni Outreach</h3>
                                     </div>
                                     <div class="center-block g-hor-divider__solid--white g-width-40--xs g-margin-b-25--xs"></div>
                                     <p>Initial blast to the alumni network, primarily focusing on alumni working or heading start-ups / angel investors and upcoming start-ups.</p>
+
                                 </div>
                             </div>
 
                             <div class="col-md-4 col-xs-12 g-full-width--xs  g-margin-b-0--lg">
                                 <div class="g-text-center--xs">
+
                                     <div class=" g-margin-b-0--xs">
                                         <h3>Perks for Start-Ups / Non-Alumni Corporates</h3>
                                     </div>
@@ -72,6 +78,7 @@
                             </div>
                             <div class="col-md-4 col-xs-12 g-full-width--xs  g-margin-b-0--sm">
                                 <div class="g-text-center--xs">
+
                                     <div class=" g-margin-b-0--xs">
                                         <h3>Perks for Alumni spearheaded sponsorship</h3>
                                     </div>
@@ -83,9 +90,41 @@
 
 
 
+
+
                                 </div>
                             </div>
 
+                        </div>
+                        <div class="row g-margin-t-20--xs">
+                          <div class="col-md-6 col-xs-12 g-full-width--xs  g-margin-b-20--lg g-margin-t-20--lg">
+                            <div class="g-text-center--xs">
+                              <div class=" g-margin-b-0--xs">
+                                  <h3>GOLD Contribution</h3>
+                              </div>
+
+
+                            <a href="https://pmny.in/8Iinj9DqS1jk" title="contribute">
+                                <!--<i class="s-icon s-icon--lg s-icon--white-bg g-radius--circle ti-arrow-down"></i>-->
+                                <span class="s-btn--primary-bg g-radius--50 g-padding-x-30--xs g-padding-y-15--xs g-font-size-13--xs g-color--white g-padding-x-15--xs">Rs 10,000</span>
+                            </a>
+                              <div class="center-block g-hor-divider__solid--white g-width-40--xs g-margin-b-25--xs"></div>
+                          </div>
+                          </div>
+                          <div class="col-md-6 col-xs-12 g-full-width--xs  g-margin-b-20--lg g-margin-t-20--lg">
+                            <div class="g-text-center--xs">
+
+                            <a href="https://pmny.in/qIeReazD8RqW" title="contibute">
+                              <div class=" g-margin-b-0--xs">
+                                  <h3>SILVER Contribution</h3>
+                              </div>
+
+                                <!--<i class="s-icon s-icon--lg s-icon--white-bg g-radius--circle ti-arrow-down"></i>-->
+                                <span class="s-btn--primary-bg g-radius--50 g-padding-x-30--xs g-padding-y-15--xs g-font-size-13--xs g-color--white g-padding-x-15--xs">Rs 5,000</span>
+                            </a>
+
+                          </div>
+                          </div>
                         </div>
                     </div>
                 </div>
