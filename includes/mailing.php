@@ -431,7 +431,7 @@ function htmlMail($t, $sub, $name, $teamname, $event){
               </html>';
 
 
-    $htmlAzure = '<!DOCTYPE html>
+    $htmlsimplecrm = '<!DOCTYPE html>
               <html>
                   <head>
                       <style>
@@ -480,21 +480,19 @@ function htmlMail($t, $sub, $name, $teamname, $event){
                           <h3><b>Hello</b></h3>
 
 
-                          <p>Thank You for showing interest in the Azure Space!</p>
+                          <p>Thank You for showing interest in the AI/ML Workshop!</p>
                           <div>
-                              <p>We are well pleased to have you on board for this event.
+                              <p>We are well pleased to have you on board for this workshop.
                               </p>
                               <p>
-                                  To complete your registration for Azure Space follow the button below and become a part of Central India’s Biggest Entrepreneurship Summit Consortium 20 <br>
+                                  This Workshop on Applications of AI/ML in Banking and Insuarance sector<br>
                                   <br>
-                              </p>
-
-                              <a style="display:block; text-align: center;width:100px; padding:12px 10px; background: #111; color:#FFF; text-decoration: none; border-radius:30px; position: relative;" href="https://consortium.ecellvnit.org/payazure.php">Pay Now!</a>
-
-
-                              <p>
-                                  To keep you updated, all the relevant details will be emailed to you very shortly.<br>
-                                  <br>
+                                  By Mr Indraneel Fuke , the founder of Simple CRM. This workshop will impart you the knowledge on how AI/ML meet the needs of today’s rapidly changing small business environment and show AI and ML is impacting, transforming and even eliminating many shortcomings in organizations with evolutionary impact and transformation in how we think, plan and execute.<br>
+                                  Understanding AI technology is absolutely crucial for organization leaders to stay ahead. Want to become that leader who knows the latest technology inside-out, Consortium’20 bring you that opportunity on a plate.<br>
+                                  Venue: CRC 1-1 <br>
+                                  Time: 10 AM, 25th January 2020 <br>
+                                  Keep innovating and embrace the unexpected<br>
+                                    <br>
                               </p>
                               <p>For queries and in case of any difficulty, feel free to contact us.</p>
                               <p>
@@ -1064,8 +1062,8 @@ function htmlMail($t, $sub, $name, $teamname, $event){
     else if($event == 'Brainathon'){
       $html = $htmlBrainathon;
     }
-    else if($event == 'Azure'){
-      $html = $htmlAzure;
+    else if($event == 'simplecrm'){
+      $html = $htmlsimplecrm;
     }
     else if($event == 'Azurevnit'){
       $html = $htmlAzureSuccess;

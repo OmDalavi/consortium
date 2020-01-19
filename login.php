@@ -52,11 +52,8 @@
             $_SESSION['contact'] = $data['Contact'];
             $_SESSION['fullname'] = $data['Name'];
 
-            if($_GET['v'] == 'azure'){
-              header('location:azure.php');
-            }
-            if($_GET['v'] == 'townhall'){
-              header('location:townhall.php');
+            if($_GET['v'] == 'ai/ml'){
+              header('location:ai-ml-workshop.php');
             }
             else{
               header('location:register.php');
@@ -115,7 +112,7 @@
             <div class="row g-hor-centered-row--md g-margin-t-20--sm">
                 <div class="col-lg-4 col-sm-4 g-hor-centered-row__col">
                     <div class="wow fadeInUp" data-wow-duration=".3" data-wow-delay=".1s">
-                        <form submit="" action="login.php " method="post" class="center-block g-width-300--xs g-width-350--md g-bg-color--white-opacity-lightest g-box-shadow__dark-lightest-v3 g-padding-x-40--xs g-padding-y-40--xs g-radius--4">
+                        <form submit="" action="login.php <?php if($_GET['v'] == 'ai/ml'){echo '?v=ai/ml';}?>" method="post" class="center-block g-width-300--xs g-width-350--md g-bg-color--white-opacity-lightest g-box-shadow__dark-lightest-v3 g-padding-x-40--xs g-padding-y-40--xs g-radius--4">
                             <div class="g-text-center--xs g-margin-b-40--xs">
                                 <h2 class="g-font-size-30--xs g-color--white">Login</h2>
                                 <p class="text-uppercase g-font-size-14--xs g-text-center--xs g-font-weight--700 g-color--red g-letter-spacing--2 g-margin-b-25--xs"><?php echo $msg; ?></p>

@@ -30,33 +30,20 @@
         <div class="core-container">
             <div class="container g-padding-y-80--xs g-padding-y-125--sm  g-padding-x-0--xs g-padding-x-40--sm g-padding-x-100--md" style="background:rgba(0, 0, 0, 0.4)">
                 <div class="row product-grid">
-            
-            <a class="product-card col-xs-12 col-md-4 col-lg-3" href="https://goo.gl/forms/s2KqjAuZL9Fkb99J3" target="_blank" >
-                <div class="product-card__item-grid" style="background:url(img/events/ryan.png)">
+
+            <a href="/ai-ml-workshop.php" class="product-card col-xs-12 col-md-4 col-lg-3" >
+                <div class="product-card__item-grid" style="background:url(img/events/simplecrm.png)">
 
                     <div class="product-card__item-text-v2">
-                        <h5 class="g-color--primary"><b>The power of Digital Marketing - Ryan Patel | Webinar</b></h5>
-                        <p class="g-color--white">A lively and interactive webinar on "The Power of Digital Marketing" to power your digital dreams and take your business ahead. <br>Date: 9<sup>th</sup> March 19</p>
-                        <p class="g-color--white"><b>Register Now</b></p>
-                        <p class="g-color--white"><i>#Webinar</i></p>
-                    </div>
-
-                </div>
-            </a>
-             
-            <a href="/azure.php" class="product-card col-xs-12 col-md-4 col-lg-3" >
-                <div class="product-card__item-grid" style="background:url(img/events/azure.png)">
-
-                    <div class="product-card__item-text-v2">
-                        <h5 class="g-color--primary" style="color:#bd2026"><b>Azure Zone | Workshop</b></h5>
-                        <p class="g-color--white">Consortium'20  and Microsoft Azure present a certified Cloud Computing workshop to hone your knowledge and technical skills. <br>Date: 9 FEB 19</p>
+                        <h5 class="g-color--primary" style="color:#bd2026"><b>Applications of AI/ML in Banking and Insurance Sector | Workshop</b></h5>
+                        <p class="g-color--white">Consortium'20  and Simple CRM present a workshop by Mr. Indrannel Fuke - Founder of SimpleCRM. <br>Date: 25th January 20</p>
                         <p class="g-color--white"><b>Register Now</b></p>
                         <p class="g-color--white"><i>#Workshop</i></p>
                     </div>
 
                 </div>
             </a>
-            <!-- <a href="https://goo.gl/forms/e9w6g83HFuOXAzAz2" class="product-card col-xs-12 col-md-4 col-lg-3" >
+            <!--<a href="https://goo.gl/forms/e9w6g83HFuOXAzAz2" class="product-card col-xs-12 col-md-4 col-lg-3" >
                 <div class="product-card__item-grid" style="background:url(img/events/chatur.png)">
 
                     <div class="product-card__item-text-v2">
@@ -68,45 +55,8 @@
 
                 </div>
             </a> -->
-            <a class="product-card col-xs-12 col-md-4 col-lg-3" >
-                <div class="product-card__item-grid" style="background:url(img/events/zerodha.png)">
-
-                    <div class="product-card__item-text-v2">
-                        <h5 class="g-color--white"><b>Stock Investing | Workshop</b></h5>
-                        <p class="g-color--white">Want to learn how to invest in a stock market and let your money work for you?<br>
-                        A stock investing workshop in association with Zerodha to get the lay of the land. <br>Date: 17 FEB 19</p>
-                        <p class="g-color--white"><b>Registerations are closed!</b></p>
-                        <p class="g-color--white"><i>#Workshop</i></p>
-                    </div>
-
-                </div>
-            </a>
-            <a class="product-card col-xs-12 col-md-4 col-lg-3" >
-                <div class="product-card__item-grid" style="background:url(img/events/patrick.png)">
-
-                    <div class="product-card__item-text-v2">
-                        <h5 class="g-color--white"><b>Patrick Bet-David | Webinar</b></h5>
-                        <p class="g-color--white">Consortium'20 presents a live webinar on "How to break the curse of your limiting beliefs" by Patrick Bet-David. <br>Date: 27 Feb 19</p>
-                        <p class="g-color--white"><b>Register Now</b></p>
-                        <p class="g-color--white"><i>#Webinar</i></p>
-                    </div>
-
-                </div>
-            </a>
-            <a class="product-card col-xs-12 col-md-4 col-lg-3">
-                <div class="product-card__item-grid" style="background:url(img/events/ibhubs.png)">
-                    <div class="product-card__item-text-v2">
-                        <h5 class="g-color--white"><b>How To Make B-Plan | Webinar</b></h5>
-                        <p class="g-color--white">A goal without a plan is just a wish.<br>
-                        A live and interactive session on "How to Create a B-Plan" exclusively for all VNITians and shortlisted teams of StartUp Conclave'19.<br>Date: 21 JAN 19</p>
-                        <p class="g-color--white"><b>Registerations are closed!</b></p>
-                        <p class="g-color--white"><i>#Webinar</i></p>
-
-
-                    </div>
-                </div>
-            </a>
             
+
         </div>
             </div>
         </div>
