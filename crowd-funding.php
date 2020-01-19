@@ -29,7 +29,7 @@
 
 
                         <div class="wow fadeInLeft" data-wow-duration=".3" data-wow-delay=".5s">
-                                    <a href="#about" title="contibute">
+                                    <a href="#contribute" title="contibute">
                                         <!--<i class="s-icon s-icon--lg s-icon--white-bg g-radius--circle ti-arrow-down"></i>-->
                                         <span class="text-uppercase s-btn--primary-bg g-radius--50 g-padding-x-30--xs g-padding-y-15--xs g-font-size-13--xs g-color--white g-padding-x-15--xs">Contribute</span>
                                     </a>
@@ -96,36 +96,9 @@
                             </div>
 
                         </div>
-                        <div class="row g-margin-t-20--xs">
-                          <div class="col-md-6 col-xs-12 g-full-width--xs  g-margin-b-20--lg g-margin-t-20--lg">
-                            <div class="g-text-center--xs">
-                              <div class=" g-margin-b-0--xs">
-                                  <h3>GOLD Contribution</h3>
-                              </div>
 
 
-                            <a href="https://pmny.in/8Iinj9DqS1jk" title="contribute">
-                                <!--<i class="s-icon s-icon--lg s-icon--white-bg g-radius--circle ti-arrow-down"></i>-->
-                                <span class="s-btn--primary-bg g-radius--50 g-padding-x-30--xs g-padding-y-15--xs g-font-size-13--xs g-color--white g-padding-x-15--xs">Rs 10,000</span>
-                            </a>
-                              <div class="center-block g-hor-divider__solid--white g-width-40--xs g-margin-b-25--xs"></div>
-                          </div>
-                          </div>
-                          <div class="col-md-6 col-xs-12 g-full-width--xs  g-margin-b-20--lg g-margin-t-20--lg">
-                            <div class="g-text-center--xs">
 
-                            <a href="https://pmny.in/qIeReazD8RqW" title="contibute">
-                              <div class=" g-margin-b-0--xs">
-                                  <h3>SILVER Contribution</h3>
-                              </div>
-
-                                <!--<i class="s-icon s-icon--lg s-icon--white-bg g-radius--circle ti-arrow-down"></i>-->
-                                <span class="s-btn--primary-bg g-radius--50 g-padding-x-30--xs g-padding-y-15--xs g-font-size-13--xs g-color--white g-padding-x-15--xs">Rs 5,000</span>
-                            </a>
-
-                          </div>
-                          </div>
-                        </div>
                     </div>
                 </div>
 
@@ -134,6 +107,40 @@
             </div>
 
 
+        </div>
+        <div class="g-promo-section" style="background:#fff00;" id="contribute">
+            <div class="container g-padding-y-5--xs g-padding-y-30--sm g-padding-x-80--md g-padding-x-60--sm g-padding-x-10--xs"  style="padding-bottom: 100px;">
+              <div class="row g-margin-t-5--xs">
+                <div class="col-md-6 col-xs-12 g-full-width--xs  g-margin-b-20--lg g-margin-t-20--lg">
+                  <div class="g-text-center--xs">
+                    <div class=" g-margin-b-0--xs">
+                        <h3>GOLD Contribution</h3>
+                    </div>
+
+
+                  <a href="https://pmny.in/8Iinj9DqS1jk" title="contribute">
+                      <!--<i class="s-icon s-icon--lg s-icon--white-bg g-radius--circle ti-arrow-down"></i>-->
+                      <span class="s-btn--primary-bg g-radius--50 g-padding-x-30--xs g-padding-y-15--xs g-font-size-13--xs g-color--white g-padding-x-15--xs">Rs 10,000</span>
+                  </a>
+                    <div class="center-block g-hor-divider__solid--white g-width-40--xs g-margin-b-25--xs"></div>
+                </div>
+                </div>
+                <div class="col-md-6 col-xs-12 g-full-width--xs  g-margin-b-20--lg g-margin-t-20--lg">
+                  <div class="g-text-center--xs">
+
+                  <a href="https://pmny.in/qIeReazD8RqW" title="contibute">
+                    <div class=" g-margin-b-0--xs">
+                        <h3>SILVER Contribution</h3>
+                    </div>
+
+                      <!--<i class="s-icon s-icon--lg s-icon--white-bg g-radius--circle ti-arrow-down"></i>-->
+                      <span class="s-btn--primary-bg g-radius--50 g-padding-x-30--xs g-padding-y-15--xs g-font-size-13--xs g-color--white g-padding-x-15--xs">Rs 5,000</span>
+                  </a>
+
+                </div>
+                </div>
+              </div>
+            </div>
         </div>
         <!--========== END PAGE CONTENT ==========-->
 
