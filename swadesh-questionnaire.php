@@ -16,7 +16,7 @@
                $_SESSION['login_error'] = "Kindly Login First";
     header('location:/login.php');
             }
-  
+
   ?>
 <!DOCTYPE html>
   <html>
@@ -28,6 +28,8 @@
         <title>SWADES'20 | LOGIN</title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link rel="stylesheet" href="css/swades.css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+
 
 
     </head>
@@ -46,7 +48,7 @@
 
             <form class="form-inline my-2 my-lg-0">
 
-              <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Welcome : <i><?php  $query = "SELECT * FROM Swadesh_team WHERE Email='$email'";
+              <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Welcome : <?php  $query = "SELECT * FROM Swadesh_team WHERE Email='$email'";
             $result = mysqli_query($con,$query);
             $num = mysqli_num_rows($result);
             $data = $result->fetch_array(MYSQLI_ASSOC);
@@ -90,7 +92,7 @@
 
         <div id="test" style="display: none;">
 
-          <form id="myForm1" name="myForm1" action="Swadesh_answer.php" method='post' >
+          <form id="myForm1" name="myForm1" action="swadesh_answer.php" method='post' >
             <div id="questions">
               <p class="allthebest">----ALL THE BEST----</p>
               <h3>PART 1: MULTIPLE CHOICE QUESTIONS:</h3>
@@ -106,57 +108,57 @@
 
       Q1. Why did china government fail in reforestation in past attempts?</br>
       </br>
-      <input type="checkbox" name="answer1" value="a">a)  They were not using different variety of plants.</br>
-      <input type="checkbox" name="answer1" value="b">b)  They were not planting medicinal plants.</br>
-      <input type="checkbox" name="answer1" value="c">c)  They banned locals from entering the forest.</br>
-      <input type="checkbox" name="answer1" value="d">c)  The soil was not fertile.
+      <input type="checkbox" name="answer1" value="a">  a)  They were not using different variety of plants.</br>
+      <input type="checkbox" name="answer1" value="b">  b)  They were not planting medicinal plants.</br>
+      <input type="checkbox" name="answer1" value="c">  c)  They banned locals from entering the forest.</br>
+      <input type="checkbox" name="answer1" value="d">  d)  The soil was not fertile.
       </br>
 
       </br>
       </br></br>
       Q.2  Which of the following is the main reason of successful reforestation?</br></br>
-      <input type="checkbox" name="answer2" value="a">a)  Banning people from entering in the forest.</br>
-<input type="checkbox" name="answer2" value="b">b)  Giving knowledge of reforestation to the local people of Qiang.</br>
-<input type="checkbox" name="answer2" value="c">c)  They had a major source of water Yangtze river.</br>
-<input type="checkbox" name="answer2" value="d">d)  The system of alternating bands.
-  </br>
+      <input type="checkbox" name="answer2" value="a">  a)  Banning people from entering in the forest.</br>
+      <input type="checkbox" name="answer2" value="b">  b)  Giving knowledge of reforestation to the local people of Qiang.</br>
+      <input type="checkbox" name="answer2" value="c">  c)  They had a major source of water Yangtze river.</br>
+      <input type="checkbox" name="answer2" value="d">  d)  The system of alternating bands.
+      </br>
 
       </br>
       </br></br>
       Q3. How did the system of alternating bands help in reforestation?</br></br>
-<input type="checkbox" name="answer3" value="a">a)  It increased the biodiversity.</br>
-<input type="checkbox" name="answer3" value="b">b)  It protected the soil from erosion and water runoff.</br>
-<input type="checkbox" name="answer3" value="c">c)  It brought the villagers to plant medicinal plants.</br>
-<input type="checkbox" name="answer3" value="d">d)  They used the system of alternating bands to cover the maximum area of forest.</br>
+      <input type="checkbox" name="answer3" value="a">  a)  It increased the biodiversity.</br>
+      <input type="checkbox" name="answer3" value="b">  b)  It protected the soil from erosion and water runoff.</br>
+      <input type="checkbox" name="answer3" value="c">  c)  It brought the villagers to plant medicinal plants.</br>
+      <input type="checkbox" name="answer3" value="d">  d)  They used the system of alternating bands to cover the maximum area of forest.</br>
 
       </br></br>
       </br>
       Q4. UNFCC has developed many protocols for CDM projects as well as carbon credits but most of them fall in the energy sectors. Very few are given in reforestation and afforestation projects. Why this parity?</br></br>
-<input type="checkbox" name="answer4" value="a">a)  CDM methodologies are complex and time consuming.</br>
-<input type="checkbox" name="answer4" value="b">b)  Low upfront-financing in reforestation and afforestation.</br>
-<input type="checkbox" name="answer4" value="c">c)  Because energy cannot be produced from reforestation.</br>
-<input type="checkbox" name="answer4" value="d">d)  UNFCC wants to focus on energy projects only.</br>
+      <input type="checkbox" name="answer4" value="a">  a)  CDM methodologies are complex and time consuming.</br>
+      <input type="checkbox" name="answer4" value="b">  b)  Low upfront-financing in reforestation and afforestation.</br>
+      <input type="checkbox" name="answer4" value="c">  c)  Because energy cannot be produced from reforestation.</br>
+      <input type="checkbox" name="answer4" value="d">  d)  UNFCC wants to focus on energy projects only.</br>
 
 
 </br>
 </br>
 </br>
-<h4>A Netflix Study</h4></br>
-<h5>### Case study for Q5 to Q8.</h5>
-Reed Hastings often told the story of his inspiration for Netflix: a $40 late fee from Blockbuster. He said, “It was all my fault. I didn’t want to tell my wife about it. And I said to myself, ‘I’m going to compromise the integrity of my marriage over a late fee?’” Still chagrined over the late fee, Hastings, a dot-com multimillionaire, formed Netflix, a company that would rent DVDs through the mail for a monthly subscription price, with no postage charges or late fees. Hastings’s model for Netflix seemed simple enough. Netflix subscribers would create a wish list of DVDs on the company’s website, and Netflix would send a new title from the list when the previous rental was returned.</br>
-Behind the simple model however, Netflix’s success had been built on attending to every detail of its operations and adapting to the company’s various constituencies. For subscribers, Netflix designed a recommendations engine that customers liked and that allowed Netflix to shift subscriber interest from new releases. By attending to United States Postal Service (USPS) processes, Netflix had located its 41 warehouses, created processing procedures, and even designed its envelope in such a way as to minimize both operating costs and turnaround times. By working with the film studios, Netflix had reached agreements through which it reduced its risk in holding large numbers of DVDs from new releases.</br>
-The attention to detail paid off. Nine years after its April 1998 launch in the San Francisco Bay Area, Netflix generated net income of $49 million on revenues of $996.7 million. The firm boasted 6.3 million subscribers and carried an inventory of 70,000 titles on 42 million discs. Netflix’s website, in 2006, was rated the best website for retail satisfaction for the third year in a row.</br>
-In spite of the company’s operational success, Netflix faced two big challenges in 2007. First, in 2006 Blockbuster had made a major move into online rental. In Blockbuster’s new service, subscribers could bring mailers directly to a Blockbuster store and immediately rent a DVD, getting the instant gratification denied to Netflix subscribers. By January 2007, Blockbuster had grown its online business to two million customers.</br>
-Second, a number of firms were beginning to offer video on demand (VoD). Netflix announced its own internet service in January 2007. The service complemented the existing subscriber service, generating no new fees. Netflix had budgeted $40 million to develop the system, but some analysts questioned whether that was sufficient to cover server data centres and licensing fees. Others argued that VoD would kill off the DVD rental business in general and that, for all its operational savvy, Netflix’s time had passed.</br>
-<h5>***Answer the following question after going through the above case study.</h5>
-</br>
-Q 5 Which of the following is the customer retention strategy used by Netflix?</br></br>
-   <input type="checkbox" name="answer5" value="a">a) Netflix gives discount to the users.</br>
-      <input type="checkbox" name="answer5" value="b">b)  Customer can create the wish list on Netflix and according to the wish list Netflix will recommend the further movies/web series.</br>
-     <input type="checkbox" name="answer5" value="c">c) Building and enhancing the customers brand loyalty in Netflix.</br>
-     <input type="checkbox" name="answer5" value="d">d) Netflix satisfies its customer by offering video on demand (VoD).</br>
-     </br></br></br>
-Q6. What was the value proposition of Netflix?</br></br>
+      <h4>A Netflix Study</h4></br>
+      <h5>### Case study for Q5 to Q8.</h5>
+      Reed Hastings often told the story of his inspiration for Netflix: a $40 late fee from Blockbuster. He said, “It was all my fault. I didn’t want to tell my wife about it. And I said to myself, ‘I’m going to compromise the integrity of my marriage over a late fee?’” Still chagrined over the late fee, Hastings, a dot-com multimillionaire, formed Netflix, a company that would rent DVDs through the mail for a monthly subscription price, with no postage charges or late fees. Hastings’s model for Netflix seemed simple enough. Netflix subscribers would create a wish list of DVDs on the company’s website, and Netflix would send a new title from the list when the previous rental was returned.</br>
+      Behind the simple model however, Netflix’s success had been built on attending to every detail of its operations and adapting to the company’s various constituencies. For subscribers, Netflix designed a recommendations engine that customers liked and that allowed Netflix to shift subscriber interest from new releases. By attending to United States Postal Service (USPS) processes, Netflix had located its 41 warehouses, created processing procedures, and even designed its envelope in such a way as to minimize both operating costs and turnaround times. By working with the film studios, Netflix had reached agreements through which it reduced its risk in holding large numbers of DVDs from new releases.</br>
+      The attention to detail paid off. Nine years after its April 1998 launch in the San Francisco Bay Area, Netflix generated net income of $49 million on revenues of $996.7 million. The firm boasted 6.3 million subscribers and carried an inventory of 70,000 titles on 42 million discs. Netflix’s website, in 2006, was rated the best website for retail satisfaction for the third year in a row.</br>
+      In spite of the company’s operational success, Netflix faced two big challenges in 2007. First, in 2006 Blockbuster had made a major move into online rental. In Blockbuster’s new service, subscribers could bring mailers directly to a Blockbuster store and immediately rent a DVD, getting the instant gratification denied to Netflix subscribers. By January 2007, Blockbuster had grown its online business to two million customers.</br>
+      Second, a number of firms were beginning to offer video on demand (VoD). Netflix announced its own internet service in January 2007. The service complemented the existing subscriber service, generating no new fees. Netflix had budgeted $40 million to develop the system, but some analysts questioned whether that was sufficient to cover server data centres and licensing fees. Others argued that VoD would kill off the DVD rental business in general and that, for all its operational savvy, Netflix’s time had passed.</br>
+      <h5>***Answer the following question after going through the above case study.</h5>
+    </br>
+    Q 5 Which of the following is the customer retention strategy used by Netflix?</br></br>
+        <input type="checkbox" name="answer5" value="a">a) Netflix gives discount to the users.</br>
+        <input type="checkbox" name="answer5" value="b">b)  Customer can create the wish list on Netflix and according to the wish list Netflix will recommend the further movies/web series.</br>
+        <input type="checkbox" name="answer5" value="c">c) Building and enhancing the customers brand loyalty in Netflix.</br>
+        <input type="checkbox" name="answer5" value="d">d) Netflix satisfies its customer by offering video on demand (VoD).</br>
+        </br></br></br>
+        Q6. What was the value proposition of Netflix?</br></br>
 
 <input type="checkbox" name="answer6" value="a">a)  Subscribers could rent unlimited titles with no late fees, no postage or handling fees.</br>
 <input type="checkbox" name="answer6" value="b">b)  DVDs on rent on monthly subscription with no late fees, no postage.</br>
@@ -183,14 +185,15 @@ Q8. As you know the business model canvas of Netflix, Suppose you are the owner 
 <h5>***Answer each question in at least 200 words and maximum 400 words.</h5></br></br>
 Q1 “Business entrepreneurs tend to focus on new needs, while social entrepreneurs tend to focus on existing environmental and social problems more effectively on long-term goals through new approaches. ”<br>
 Explain the above statement, supporting your idea of social entrepreneurship. As a social entrepreneur, what is success for you? </br></br>
-<textarea name="des1">Enter Your Answer ...</textarea>
+
+<textarea name="des1" rows="10" cols="55">Enter Your Answer ...</textarea>
 </br>
 </br>
 
 Q2  “Good intentions are certainly enough for a philanthropist, however not for a social entrepreneur.”<br>
 With reference to the above statement, what key factors can motivate the youth to take a step towards social entrepreneurship?</br>
 </br>
-<textarea name="des2">Enter Your Answer ...</textarea>
+<textarea name="des2"rows="10" cols="55" >Enter Your Answer ...</textarea>
 </br></br>
 </div>
 

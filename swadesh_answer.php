@@ -19,10 +19,10 @@
                 answer6 VARCHAR(255),
                 answer7 VARCHAR(255),
                 answer8 VARCHAR(255),
-                des1 VARCHAR(255),
-                des2 VARCHAR(255)
+                des1 VARCHAR(2000),
+                des2 VARCHAR(2000)
                 )";
-                
+
     mysqli_query($con,$brainquery);
 
     if(isset($_SESSION['email'])){
@@ -50,7 +50,7 @@
           VALUES ('$team_name' , '$answer1','$answer2','$answer3','$answer4','$answer5','$answer6','$answer7','$answer8','$des1','$des2')";
           if(mysqli_query($con,$sql)) {
         header("location: success.php");
-      } 
+      }
       else {
         header("location: failure.php");
           }
@@ -63,4 +63,3 @@
 
 
 ?>
-

@@ -102,12 +102,16 @@
     		    	    <p>Competition is divided into three rounds as follows:</p><br/>
     		    	    <ol>
 
-    					    <li><h6>Round 1: Questionnaire (Pre-Elimination)</h6><p><b>9<sup>th</sup> January, 2020 – 28<sup>th</sup> January, 2020 | Result - 1<sup>st</sup> February, 2020</b><br>Case studies related to effective water management, organic farming, crop rotation techniques, new age technologies will be given based on which multiple choice and brief theory questions will be asked.</p></li><br/>
+    					    <li><h6>Round 1: Questionnaire (Pre-Elimination)</h6><p><b>20<sup>th</sup> January, 2020 – 29<sup>th</sup> January, 2020 | Result - 1<sup>st</sup> February, 2020</b><br>Case study related to effective water management, organic farming, crop rotation techniques and new age technologies will be given based on which and brief theory questions will be asked.</p></li><br/>
 
-    					    <li><h6>Round 2: Pitch Deck Preparation
-                  </h6><p><b>2<sup>nd</sup> February, 2020 – 8<sup>th</sup> February, 2020 | Result - 11<sup>th</sup> February, 2020 </b><br>In this round the selected teams from round 1 will be given a problem statement. This round will be a problem solving round and preparation of a pitch deck(a predifined template will be provided).</p></li><br/>
-    					    <li><h6>Round 3: Village Visit & Prototype</h6><p><b> 18<sup>th</sup> February, 2020 – 23<sup>th</sup> February, 2020 | Result - 23<sup>th</sup> February, 2020
-                            </b><br>Top 20 Teams selected on the basis of pitch deck submitted by the teams will go on a village tour where the teams are required to do a detailed study of the village conditions and problems faced by the people residing in the village and come up with innovative startups solving those problems.</p></li><br/>
+    					    <li><h6>Round 2: Village Visit
+                  </h6><p><b>1<sup>st</sup> February, 2020 – 8<sup>th</sup> February, 2020 | Result - 11<sup>th</sup> February, 2020 </b><br>A village visit will be conducted by the NIT. The details about the village will be decided by the concerned NIT. The participants will have to recognize a problem faced by the residents of the village and hence find a solution for the same. Each team will submit a pitch deck based upon their solution to the identified problem. The results for the next round will be based on the evaluation of the pitch deck submitted. There are mainly five verticals on which your problem study should be based on. These are as follow.<br>1. Education <br>
+                        2. Women sanitary.<br>
+                        3. Improvisation in agricultural techniques.<br>
+                        4. Water management and use of solar energy.<br>
+                        5. Employment.</p></li><br/>
+    					    <li><h6>Round 3: Pitch Deck Preparation</h6><p><b> 21<sup>st</sup> February, 2020 – 23<sup>rd</sup> February, 2020 | Result - 23<sup>th</sup> February, 2020
+                  </b><br>The selected participants will come to VNIT, Nagpur for the final round.  Each team is required to make a prototype based on the solution they have provided of the problem mentioned in the pitch deck within an amount of <b>INR 1000/-</b>.</p></li><br/>
 
     					</ol>
                         <br/>

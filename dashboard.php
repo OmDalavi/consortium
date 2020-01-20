@@ -386,7 +386,7 @@
                                                                       echo '/nirmaan-test.php';
                                                                     }
                                                                     elseif($events[$var] == "Swadesh"){
-                                                                      echo '/swades-test.php';
+                                                                      echo '/swadesh-questionnaire.php';
 
                                                                     }
                                                                     elseif ($events[$var] == 'trec')
@@ -442,6 +442,46 @@
             </div>
             <div id="structure" style="display:none;">
               <h5><b>Counter will be open soon</b></h5>
+              <div class="row product-grid">
+
+                <?php
+                  $attractions = array('ai-ml-workshop', 'Pitch_Perfe');
+                  $query = "SELECT * FROM Registrations WHERE Email='$email'";
+                  $result = mysqli_query($con,$query);
+                  $num = mysqli_num_rows($result);
+                  if($num>0){
+                    echo "<p class='g-color--dark g-font-size-16--xs'>Your registered events will be shown here.</p><br/>";
+                    $row = mysqli_fetch_array($result);
+                    for($var = 0;$var < 2; $var++ ){
+                      if($row[$attractions[$var]] == 1){
+                  ?>
+                  <div id="<?php echo $events[$var] ?>click" class="product-card col-xs-12 col-md-3" style="cursor:pointer;">
+                      <div class="product-card__item-grid" style="background:url(img/events/<?php echo $attractions[$var] ?>.jpg)">
+                          <div class="product-card__item-text-v2">
+                            <h2 class="g-color--white g-text-center--xs g-font-size-16--xs" style="text-decoration: underline;"><b><?php echo $attractions[$var] ?></b></h2>
+
+
+
+                            <div class="wow fadeInLeft g-text-center--xs" data-wow-duration=".3" data-wow-delay=".5s" style="display: flex;justify-content: center;">
+                                <a id="reg_button" href="/<?php if($attractions[$var] == 'ai-ml-workshop')
+                                                            {echo 'ai-ml-workshop.php';}
+                                                            else {echo $attractions[$var].'.php';} ?>" target="_blank" title="Register">
+                                    <span class="text-uppercase s-btn s-btn--xs s-btn--white-brd g-radius--50 g-margin-r-10--xs">Register</span>
+                                </a>
+
+
+                            </div>
+
+
+                          </div>
+                      </div>
+                  </div>
+                <?php }
+                    }
+                  }
+
+                 ?>
+               </div>
               <br/>
               </div>
             </div>

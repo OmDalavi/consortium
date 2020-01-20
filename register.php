@@ -69,6 +69,8 @@
     mysqli_query($con,$brainquery);
 
 
+
+
   if(!isset($_SESSION['email'])){
       $_SESSION['login_error'] = "Kindly Login First";
       header('location:/login.php');
@@ -218,6 +220,8 @@
                       <option value='trec'>TREC (Technology Research Entrepreneurship Conclave)</option>
                       <option value='CEO'>CEO</option>
                       <option value='nirmaan'>Nirmaan</option>
+                      <option value='ai-ml-workshop'>AI/ML Workshop<option>
+                      <option value='Pitch_Perfect'>Pitch Perfect</option>
                       <!--<option value='AdVenture'>AdVenture</option>
                       <option value='Pitch_Perfect'>Pitch Perfect</option>
                       <option value='renderico'>render.ico</option>
