@@ -52,10 +52,10 @@
             $_SESSION['contact'] = $data['Contact'];
             $_SESSION['fullname'] = $data['Name'];
 
-            if($_GET['v'] == 'ai/ml'){
+            if($_GET['v'] == 'ai-ml'){
               header('location:ai-ml-workshop.php');
             }
-    
+
             else{
               header('location:register.php');
             }
