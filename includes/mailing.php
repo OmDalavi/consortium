@@ -1062,7 +1062,7 @@ function htmlMail($t, $sub, $name, $teamname, $event){
     else if($event == 'Brainathon'){
       $html = $htmlBrainathon;
     }
-    else if($event == 'simplecrm'){
+    else if($event == 'aimlworkshop'){
       $html = $htmlsimplecrm;
     }
     else if($event == 'Azurevnit'){

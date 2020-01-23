@@ -50,7 +50,15 @@
 
                                         </ul>
                                     </li>
+                                    <li class="s-header-v2__nav-item">
+                                        <!--<a href="#events" class="s-header-v2__nav-link">Events</a>-->
+                                        <a href="index.html" class="dropdown-toggle s-header-v2__nav-link -is-active" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Attractions <span class="g-font-size-10--xs g-margin-l-5--xs ti-angle-down"></span></a>
+                                        <ul class="dropdown-menu s-header-v2__dropdown-menu">
+                                            <li><a href="aimlworkshop.php" class="s-header-v2__dropdown-menu-link">AI/ML workshop</a></li>
 
+
+                                        </ul>
+                                    </li>
 
                                     <!-- <li class="s-header-v2__nav-item">
                                         <a href="#events" class="s-header-v2__nav-link">Events</a>
