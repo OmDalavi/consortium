@@ -51,6 +51,7 @@
           }
 
         }
+      }
         else{
             $_SESSION['login_error'] = "Kindly Login First.</a>";
             header('location:login.php?v=ai/ml');
