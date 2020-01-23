@@ -68,8 +68,11 @@
                 )";
     mysqli_query($con,$brainquery);
 
-    $nirmaanquery = "ALTER TABLE Registrations ADD COLUMN nirmaan TINYINT(1) DEFAULT '0' AFTER BizQuiz";
-    mysqli_query($con,$regquery);
+    $nirmaanquery = "ALTER TABLE Registrations ADD COLUMN nirmaan TINYINT(1) DEFAULT '0' AFTER BizQuiz;";
+    mysqli_query($con,$nirmaanquery);
+
+    $aimlquery = "ALTER TABLE Registrations ADD COLUMN aimlworkshop TINYINT(1) DEFAULT '0' AFTER nirmaan;";
+    mysqli_query($con,$aimlquery);
 
     $nirmaan = "CREATE TABLE IF NOT EXISTS nirmaan(
       ID INT(11) UNSIGNED AUTO_INCREMENT PRIMARY KEY,

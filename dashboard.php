@@ -445,7 +445,7 @@
               <div class="row product-grid">
 
                 <?php
-                  $attractions = array('ai-ml-workshop', 'Pitch_Perfe');
+                  $attractions = array('aimlworkshop', 'Pitch_Perfe');
                   $query = "SELECT * FROM Registrations WHERE Email='$email'";
                   $result = mysqli_query($con,$query);
                   $num = mysqli_num_rows($result);
@@ -463,8 +463,8 @@
 
 
                             <div class="wow fadeInLeft g-text-center--xs" data-wow-duration=".3" data-wow-delay=".5s" style="display: flex;justify-content: center;">
-                                <a id="reg_button" href="/<?php if($attractions[$var] == 'ai-ml-workshop')
-                                                            {echo 'ai-ml-workshop.php';}
+                                <a id="reg_button" href="/<?php if($attractions[$var] == 'aimlworkshop')
+                                                            {echo 'aimlworkshop.php';}
                                                             else {echo $attractions[$var].'.php';} ?>" target="_blank" title="Register">
                                     <span class="text-uppercase s-btn s-btn--xs s-btn--white-brd g-radius--50 g-margin-r-10--xs">Register</span>
                                 </a>

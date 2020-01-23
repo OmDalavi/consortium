@@ -11,7 +11,7 @@
   $con = mysqli_connect("$db_host","$db_username","$db_pass") or die ("could not connect to mysql");
   mysqli_select_db($con,$db_name) or die ("no database");
 
-  $regquery ="CREATE TABLE IF NOT EXISTS simplecrm(
+  $regquery ="CREATE TABLE IF NOT EXISTS aimlworkshop(
     ID INT(11) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
     Email VARCHAR(255) NOT NULL,
     college VARCHAR(255) NOT NULL,
@@ -33,12 +33,12 @@
       if($college=="" || $year=="" || $branch==""){
           $msg = "Please fill all the details.Try Again";
       }else{
-        $query = "SELECT * from simplecrm where Email='$email'";
+        $query = "SELECT * from aimlworkshop where Email='$email'";
         $result = mysqli_query($con,$query);
         $num = mysqli_num_rows($result);
         $data = $result->fetch_array(MYSQLI_ASSOC);
 
-          $q = "INSERT INTO simplecrm(Email,college,year,branch) VALUES('$email','$college','$year','$branch')";
+          $q = "INSERT INTO aimlworkshop(Email,college,year,branch) VALUES('$email','$college','$year','$branch')";
           if(mysqli_query($con,$q)){
 
               htmlMail($email,'Welcome to SimpleCRM Workshop | Consortium20','','','AI and ML');
@@ -64,7 +64,7 @@
 
 <!DOCTYPE html>
 <html lang="en" class="no-js">
-  <?php $pagetitle = 'Azure Space | Consortium'; ?>
+  <?php $pagetitle = 'AI ML Workshop | Consortium'; ?>
 
   <!-- Begin Head -->
   <?php include("includes/head.php")?>

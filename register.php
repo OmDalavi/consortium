@@ -220,7 +220,7 @@
                       <option value='trec'>TREC (Technology Research Entrepreneurship Conclave)</option>
                       <option value='CEO'>CEO</option>
                       <option value='nirmaan'>Nirmaan</option>
-                      <option value='ai-ml-workshop'>AI/ML Workshop<option>
+                      <option value='aimlworkshop'>AI/ML Workshop<option>
                       <option value='Pitch_Perfect'>Pitch Perfect</option>
                       <option value='renderico'>Render.ico</option>
                       <!--<option value='AdVenture'>AdVenture</option>
