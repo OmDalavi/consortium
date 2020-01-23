@@ -431,7 +431,7 @@ function htmlMail($t, $sub, $name, $teamname, $event){
               </html>';
 
 
-    $htmlsimplecrm = '<!DOCTYPE html>
+    $htmlaimlworkshop= '<!DOCTYPE html>
               <html>
                   <head>
                       <style>
@@ -1063,7 +1063,7 @@ function htmlMail($t, $sub, $name, $teamname, $event){
       $html = $htmlBrainathon;
     }
     else if($event == 'aimlworkshop'){
-      $html = $htmlsimplecrm;
+      $html = $htmlaimlworkshop;
     }
     else if($event == 'Azurevnit'){
       $html = $htmlAzureSuccess;
