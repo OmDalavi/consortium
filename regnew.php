@@ -38,7 +38,7 @@
 
     $eve = array('Swadesh','AdVenture','trec','renderico','CEO','war_of_worlds','BizMantra','BizQuiz');
     for($var = 0; $var < 8; $var++){
-      $evequery = "CREATE TABLE IF NOT EXISTS $eve[$var](
+      $evequery = "CREATE TABLE IF NOT EXISTS '$eve[$var]'(
                 ID INT(11) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
                 Name VARCHAR(255) NOT NULL,
                 Main_Email VARCHAR(255) NOT NULL,

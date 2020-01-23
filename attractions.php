@@ -31,7 +31,7 @@
             <div class="container g-padding-y-80--xs g-padding-y-125--sm  g-padding-x-0--xs g-padding-x-40--sm g-padding-x-100--md" style="background:rgba(0, 0, 0, 0.4)">
                 <div class="row product-grid">
 
-            <a href="/ai-ml-workshop.php" class="product-card col-xs-12 col-md-4 col-lg-3" >
+            <a href="/aimlworkshop.php" class="product-card col-xs-12 col-md-4 col-lg-3" >
                 <div class="product-card__item-grid" style="background:url(img/events/simplecrm.png)">
 
                     <div class="product-card__item-text-v2">
@@ -55,7 +55,7 @@
 
                 </div>
             </a> -->
-            
+
 
         </div>
             </div>

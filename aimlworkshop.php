@@ -1,5 +1,7 @@
 <?php
   session_start();
+  // error_reporting(E_ALL);
+  //   ini_set('display_errors', '1');
 
   require_once('includes/mailing.php');
 
@@ -22,7 +24,9 @@
   mysqli_query($con,$regquery);
 
 
-      if(isset($_SESSION['email'])){
+  if(isset($_SESSION['email'])){
+
+    if(isset($_POST['register'])){
       $email = $_SESSION['email'];
       $college = $con->real_escape_string($_POST['college']);
       $year = $con->real_escape_string($_POST['year']);
