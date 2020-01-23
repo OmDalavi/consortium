@@ -431,7 +431,7 @@ function htmlMail($t, $sub, $name, $teamname, $event){
               </html>';
 
 
-    $htmlaimlworkshop= '<!DOCTYPE html>
+    $htmlaimlworkshop = '<!DOCTYPE html>
               <html>
                   <head>
                       <style>
@@ -474,7 +474,7 @@ function htmlMail($t, $sub, $name, $teamname, $event){
                   <body>
 
                       <div style="background: #0b0b0b; padding:10px 30px;"><img src="https://www.ecellvnit.org/img/logo-ecell.png"></div>
-                      <h2 style="font-size:22px;">Welcome to Azure Space</h2><br>
+                      <h2 style="font-size:22px;">Welcome to AI/ML Workshop</h2><br>
 
                       <div class="context">
                           <h3><b>Hello</b></h3>
@@ -503,6 +503,7 @@ function htmlMail($t, $sub, $name, $teamname, $event){
                       </div>
                   </body>
               </html>';
+              
     $htmlAzureSuccess = '<!DOCTYPE html>
               <html>
                   <head>

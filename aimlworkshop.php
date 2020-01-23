@@ -99,7 +99,7 @@
                      <img src="https://startupconclave.ecellvnit.org/static/img/E-Cell_white.png" alt="Ecell Logo" height="50" style="float:right; z-index:2"/>
                      <!--<p class="g-color--white-opacity" style="z-index:2; margin:20px;">&</p>-->
                      <p class="g-color--white-opacity" style="position: relative;margin-left:10px;margin-right:10px;z-index:2; margin-top:22px">&</p>
-                     <img src="img/simplecrm.png" alt="Azure" style="z-index:2; position:relative; margin-bottom: 10px" height="40"/>
+                     <img src="img/simplecrm.jpg" alt="Azure" style="z-index:2; position:relative; margin-bottom: 10px" height="40"/>
 
                     <!--<img src="img/tielogo.jpg" alt="TIE Nagpur" style="z-index:2" height="50"/>-->
                     </div>
