@@ -1,5 +1,7 @@
 <?php
   session_start();
+  // error_reporting(E_ALL);
+  //   ini_set('display_errors', '1');
 
   require_once('includes/mailing.php');
 
@@ -22,9 +24,9 @@
   mysqli_query($con,$regquery);
 
 
-  if(isset($_POST['register'])){
+  if(isset($_SESSION['email'])){
 
-    if(isset($_SESSION['email'])){
+    if(isset($_POST['register'])){
       $email = $_SESSION['email'];
       $college = $con->real_escape_string($_POST['college']);
       $year = $con->real_escape_string($_POST['year']);
@@ -33,7 +35,7 @@
       if($college=="" || $year=="" || $branch==""){
           $msg = "Please fill all the details.Try Again";
       }else{
-        $query = "SELECT * from aimlworkshop where Email='$email'";
+        $query = "SELECT * from Registrations where Email='$email'";
         $result = mysqli_query($con,$query);
         $num = mysqli_num_rows($result);
         $data = $result->fetch_array(MYSQLI_ASSOC);
@@ -48,11 +50,10 @@
 
           }
 
-        }
       }
-    else{
-        $_SESSION['login_error'] = "Kindly Login First.</a>";
-        header('location:login.php?v=ai/ml');
+    }else{
+      $_SESSION['login_error'] = "Kindly Login First.</a>";
+      header('location:login.php?v=ai/ml');
     }
 
 
