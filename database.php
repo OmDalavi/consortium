@@ -115,6 +115,18 @@ if (isset($_SESSION['auth']) && $_SESSION['auth'] == true) {
     </thead>
         <tbody>';
         }
+        else if($_SESSION['event'] == 'aimlworkshop'){
+            echo '<thead>
+        <tr>
+            <th>ID</th>
+            <th>Email</th>
+            <th>College</th>
+            <th>branch</th>
+            <th>year</th>
+        </tr>
+    </thead>
+        <tbody>';
+        }
         else{
             echo '<thead>
         <tr>
@@ -198,6 +210,21 @@ if (isset($_SESSION['auth']) && $_SESSION['auth'] == true) {
             <td><?php echo $row['Name'];?></td>
             <td><?php echo $row['Email'];?></td>
             <td><?php echo $row['Contact'];?></td>
+
+
+        </tr>
+        <?php
+        }
+        else if($_SESSION['event'] == 'aimlworkshop'){
+        ?>
+
+        <tr>
+            <td><?php echo $row['ID'];?></td>
+            <td><?php echo $row['Email'];?></td>
+            <td><?php echo $row['college'];?></td>
+            <td><?php echo $row['branch'];?></td>
+            <td><?php echo $row['year'];?></td>
+
 
 
         </tr>

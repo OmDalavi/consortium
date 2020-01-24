@@ -20,7 +20,7 @@ if(isset($_POST['select']) && isset($_SESSION['auth']) && $_SESSION['auth'] ){
         // Authentication successful - Set session
 
 
-        if($event == 'Townhall' || $event == 'Expo' || $event == 'Azure' || $event == 'Brainathon'){
+        if($event == 'Townhall' || $event == 'Expo' || $event == 'aimlworkshop' || $event == 'Brainathon'){
             $msg = "ERROR: Access Denied!";
 
         }
@@ -98,6 +98,7 @@ else if(isset($_POST['login'])){
                                         <option value="trec">TREC</option>
                                         <option value="nirmaan_team">Nirmaan Team</option>
                                         <option value="CEO">CEO</option>
+                                        <option value="aimlworkshop">AI/ML Workshop</option>
                                         <!-- <option value="Pitch_Perfect">Pitch Perfect</option>
                                         <option value="renderico_team">Render Ico</option>
                                         <option value="BizQuiz_team">Bizquiz</option>
