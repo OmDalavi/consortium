@@ -327,7 +327,7 @@
                     $result = mysqli_query($con,$query);
                     $num = mysqli_num_rows($result);
                     if($num>0){
-                      echo "<p class='g-color--dark g-font-size-16--xs'>Your registered attractions will be shown here.</p><br/>";
+                      echo "<p class='g-color--dark g-font-size-16--xs'>Your registered events will be shown here.</p><br/>";
                       $row = mysqli_fetch_array($result);
                       for($var = 0;$var < 9; $var++ ){
                         if($row[$events[$var]] == 1){
