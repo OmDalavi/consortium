@@ -43,7 +43,7 @@
           $q = "INSERT INTO aimlworkshop(Email,college,year,branch) VALUES('$email','$college','$year','$branch')";
           if(mysqli_query($con,$q)){
 
-              htmlMail($email,'Welcome to SimpleCRM Workshop | Consortium20','','','AI and ML');
+              htmlMail($email,'Welcome to SimpleCRM Workshop | Consortium20','','','aimlworkshop');
               header('location:attractions.php');
 
             }
@@ -96,15 +96,15 @@
                     <!--<img src="img/logo/ceoblack.png" alt="" width="200" style="margin-top:-100px; margin-left:-20px">-->
 
                     <div style="display:flex; align-items:center">
-                     <img src="https://startupconclave.ecellvnit.org/static/img/E-Cell_white.png" alt="Ecell Logo" height="50" style="float:right; z-index:2"/>
-                     <!--<p class="g-color--white-opacity" style="z-index:2; margin:20px;">&</p>-->
-                     <p class="g-color--white-opacity" style="position: relative;margin-left:10px;margin-right:10px;z-index:2; margin-top:22px">&</p>
                      <img src="img/simplecrm.jpg" alt="Azure" style="z-index:2; position:relative; margin-bottom: 10px" height="40"/>
+                     <!--<p class="g-color--white-opacity" style="z-index:2; margin:20px;">&</p>-->
+
+
 
                     <!--<img src="img/tielogo.jpg" alt="TIE Nagpur" style="z-index:2" height="50"/>-->
                     </div>
 
-                    <h3 class="g-color--white ">Applications of AI/ML in Banking and Insurance Sector</h3>
+                    <h4 class="g-color--white ">Applications of AI/ML in Banking and Insurance Sector</h4>
                     <p class="g-color--white g-font-size-18--xs"><b>25<sup>th</sup> January, 2020</b><br>Venue: CRC 1-1</p>
 
                     <br>
