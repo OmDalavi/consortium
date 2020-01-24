@@ -215,7 +215,7 @@
             <form class="center-block g-width-500--sm g-width-550--md" method="post" action="register.php">
                 <div class="permanent">
                   <select pattern="[0-9]{11}" class="form-control s-form-v3__input g-margin-b-30--xs" name="event" placeholder="* No. of members" id="members" >
-                      <option value='' selected disabled hidden>Choose an Event</option>
+                      <option value='' selected disabled hidden>Choose an Event or Workshop</option>
                       <option value='Swadesh'>Swades</option>
                       <option value='trec'>TREC (Technology Research Entrepreneurship Conclave)</option>
                       <option value='CEO'>CEO</option>
