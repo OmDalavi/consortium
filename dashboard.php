@@ -459,7 +459,7 @@
                       <div class="product-card__item-grid" style="background:url(img/events/<?php echo $attractions[$var] ?>.jpg)">
                           <div class="product-card__item-text-v2">
                             <h2 class="g-color--white g-text-center--xs g-font-size-16--xs" style="text-decoration: underline;"><b><?php echo $attractions[$var] ?></b></h2>
-                            <h2 class="g-color--white g-text-center--xs g-font-size-14--xs">Click on Register button below</2>
+                            <h2 class="g-color--white g-text-center--xs g-font-size-14--xs">Click on Register button below to </2>
 
 
 

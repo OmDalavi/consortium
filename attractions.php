@@ -31,8 +31,20 @@
             <div class="container g-padding-y-80--xs g-padding-y-125--sm  g-padding-x-0--xs g-padding-x-40--sm g-padding-x-100--md" style="background:rgba(0, 0, 0, 0.4)">
                 <div class="row product-grid">
 
+            <a href="https://meeting.zoho.com/meeting/register?sessionId=1085280643" class="product-card col-xs-12 col-md-4 col-lg-3" >
+                <div class="product-card__item-grid" style="background:url(img/events/ibhubs.png)">
+
+                    <div class="product-card__item-text-v2">
+                        <h5 class="g-color--primary" style="color:#bd2026"><b>Elements of a Strong Business Model | Webinar</b></h5>
+                        <p class="g-color--white">Consortium'20  and iB Hubs present a workshop by Mr. Abhinav Pandey - Vice President iB Hubs. <br>Date: 27th January 20 | Time : 7pm</p>
+                        <p class="g-color--white"><b>Register Now</b></p>
+                        <p class="g-color--white"><i>#Webinar</i></p>
+                    </div>
+
+                </div>
+            </a>
             <a href="/aimlworkshop.php" class="product-card col-xs-12 col-md-4 col-lg-3" >
-                <div class="product-card__item-grid" style="background:url(img/events/simplecrm.png)">
+                <div class="product-card__item-grid" style="background:url(img/events/aimlworkshop.jpg)">
 
                     <div class="product-card__item-text-v2">
                         <h5 class="g-color--primary" style="color:#bd2026"><b>Applications of AI/ML in Banking and Insurance Sector | Workshop</b></h5>
