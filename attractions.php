@@ -36,7 +36,7 @@
 
                     <div class="product-card__item-text-v2">
                         <h5 class="g-color--primary" style="color:#bd2026"><b>Elements of a Strong Business Model | Webinar</b></h5>
-                        <p class="g-color--white">Consortium'20  and iB Hubs present a workshop by Mr. Abhinav Pandey - Vice President iB Hubs. <br>Date: 27th January 20 | Time : 7pm</p>
+                        <p class="g-color--white">Consortium'20  and iB Hubs present a workshop by <br>Mr. Abhinav Pandey - Vice President iB Hubs. <br>Date: 27th January 20<br> Time : 7pm <br> Venue: CRC 1-2</p>
                         <p class="g-color--white"><b>Register Now</b></p>
                         <p class="g-color--white"><i>#Webinar</i></p>
                     </div>
