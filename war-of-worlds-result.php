@@ -21,7 +21,7 @@
                 <div class="g-text-center--xs g-margin-b-60--xs">
                     <p class="text-uppercase g-font-size-14--xs g-font-weight--700 g-color--white-opacity g-letter-spacing--2 g-margin-b-25--xs">WAR OF WORLDS</p>
                     <h2 class="g-font-size-32--xs g-font-size-36--md g-color--white">
-                      Results will be released soon
+                      The First Round will go live on 31st January
                     </h2>
 
 
