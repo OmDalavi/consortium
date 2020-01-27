@@ -96,14 +96,14 @@
     				<div id="structure" style="display:none;">
               <h5><b>How to participate</b></h5>
               <br/>
-              <p>The key step in order to participate is to attempt the CEO Quiz which will be conducted soon in Colleges across Nagpur, Pune & Sangamner. If you would like the test to be conducted in your College, kindly contact us by phone with the necessary details.</p>
+              <p>The key step in order to participate is to attempt War of Worlds which will be conducted online. If you would like the test to be conducted in your College, kindly contact us by phone with the necessary details.</p>
               <br/>
               <h5><b>Structure</b></h5>
               <br/>
     		    	    <p>Competition is divided into three rounds as follows:</p><br/>
     		    	    <ol>
 
-    					    <li><h6>Round 1: Questionnaire </h6><p><b>15th January 2020 -30th January 2020</b><br>A multiple-choice questionnaire that will be conducted offline in various institutes in Nagpur.
+    					    <li><h6>Round 1: Questionnaire </h6><p><b>31st January 2020 -22nd February 2020</b><br>A multiple-choice questionnaire that will be conducted offline in various institutes in Nagpur.
                           Questions will be based on basic economics, currency conversions, international trades and affairs etc.</p></li><br/>
     					    <li><h6>Round 2: Group Discussion (Eliminations)</h6><p><b>22nd February 2020 | Journey from VNIT, Nagpur </b><br>On the spot group discussion based on case studies and a problem statement. Participants will be judged individually based on the following criteria:<br>1.Creativity<br>2. Critical analysis<br>3. Spontaneity<br>4. Degree of acceptance of the solution proposed</p></li><br/>
     					    <li><h6>Round 3: War of Worlds</h6><p><b>23rd February 2020</b><br>

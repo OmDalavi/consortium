@@ -503,8 +503,8 @@ function htmlMail($t, $sub, $name, $teamname, $event){
                       </div>
                   </body>
               </html>';
-              
-    $htmlAzureSuccess = '<!DOCTYPE html>
+
+    $htmlwar_of_worlds = '<!DOCTYPE html>
               <html>
                   <head>
                       <style>
@@ -547,7 +547,7 @@ function htmlMail($t, $sub, $name, $teamname, $event){
                   <body>
 
                       <div style="background: #0b0b0b; padding:10px 30px;"><img src="https://www.ecellvnit.org/img/logo-ecell.png"></div>
-                      <h2 style="font-size:22px;">Welcome to Azure Space</h2><br>
+                      <h2 style="font-size:22px;">Welcome to War of Worlds</h2><br>
 
                       <div class="context">
                           <h3><b>Hello</b></h3>
@@ -556,8 +556,8 @@ function htmlMail($t, $sub, $name, $teamname, $event){
                           <p>Congratulations! You are now a part of Central India’s Biggest Entrepreneurship Summit.</p>
                           <div>
                               <p>
-                                  We are well pleased to have you on board for this event.You are successfully registered for Azure Space.
-                                  <br><b>Note: Kindly bring your college Id at time of workshop for verification.</b><br>
+                                  We are well pleased to have you on board for this event.You are successfully registered for War of Worlds.
+                                  <br>
 
                               </p>
 
@@ -1066,8 +1066,8 @@ function htmlMail($t, $sub, $name, $teamname, $event){
     else if($event == 'aimlworkshop'){
       $html = $htmlaimlworkshop;
     }
-    else if($event == 'Azurevnit'){
-      $html = $htmlAzureSuccess;
+    else if($event == 'war_of_worlds'){
+      $html = $htmlwar_of_worlds;
     }
     else if($event == 'AdVenture'){
       $html = $htmlAdVenture;
