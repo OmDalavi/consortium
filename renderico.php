@@ -23,7 +23,7 @@
 
                     <h3 class="g-color--white">The Logo Design Competition</h3>
                     <p class="g-color--white">Creative Professionals</p><br/>
-                    <p class="g-color--white-opacity g-font-size-18--xs">19th Feb - 6th Mar 19</p>
+
                     <h3 class="g-color--white"> PRIZES WORTH <span class="g-color--red">&#8377; 10K </span></h3>
 
                     <br>
@@ -50,7 +50,7 @@
                         <div class="wow fadeInLeft" data-wow-duration=".3" data-wow-delay=".1s">
                             <h2 class="g-font-size-40--xs g-font-size-50--sm g-font-size-60--md g-color--white" style="font-weight:900">About</h2>
                         </div>
-                        <p class="g-font-size-14--xs g-font-size-16--sm g-color--white-opacity">Logos are a critical aspect of business marketing. As the company's major graphical representation, a logo anchors a company's brand.<br>For this reason, a well designed logo is an essential part of any company's overall marketing strategy. Render.ico, an event to test your creative skills as a logo designer. Design classic logos related the themes provided.</p>
+                        <p class="g-font-size-14--xs g-font-size-16--sm g-color--white-opacity">A logo is a combination of text and visual imagery. It gives a company a recognized symbol and have powerful symbolic association connected to people’s memory. It enhances brand exposure, builds corporate identity and trust, helps in relating with the customers, makes the advertising plan much easier. <b>Render.Ico </b>is an event to test your creative skills as a logo designer.</p>
 
                     </div>
                     <div class="col-md-7 col-md-offset-1">
@@ -86,7 +86,7 @@
     			     	    <li><p>Meet new graphic designer and make your presence felt by being a part of this wonderful journey.</p></li>
     			     	    <li><p>A chance to network with like minded people and gain invaluable experience.</p></li>
     			     	    <li><p>Participation increases your confidence level and the hardships faced can help recognize your strengths and weaknesses.</p></li>
-    			     	    
+
     			     	</ol>
 
     			     	<br/>
@@ -116,10 +116,10 @@
     					</ol>
 
 
-              <h5><b>Deadline: </b> 6th March’19</h5>
+              <h5><b>Deadline: </b> 18th February’20</h5>
 
     		    	</div>
-    		    	
+
 
     		    </div>
 		  </div>
@@ -134,14 +134,14 @@
             <div id="managers" class="row g-row-col--5 g-padding-x-40--xs g-padding-y-40--xs g-padding-x-20--md g-padding-x-100--lg">
                 <div class="col-xs-4 col-md-offset-2 g-full-width--xs g-margin-b-50--xs g-margin-b-0--sm">
                     <div class="g-text-center--xs">
-                        <h4 class="g-font-size-18--xs g-color--white g-margin-b-5--xs">D.V.S.Bhargav</h4>
-                         <p class="g-color--white">+91 9921141954<br>dasarisanath99@gmail.com</p>
+                        <h4 class="g-font-size-18--xs g-color--white g-margin-b-5--xs">Tanmay Ganvir</h4>
+                         <p class="g-color--white">+91 9359205282</p>
                     </div>
                 </div>
                 <div class="col-xs-4 g-full-width--xs g-margin-b-50--xs g-margin-b-0--sm">
                     <div class="g-text-center--xs">
-                        <h4 class="g-font-size-18--xs g-color--white g-margin-b-5--xs">Piyush Kumar</h4>
-                         <p class="g-color--white">+91 7999636477<br>piyushkumar8085@gmail.com</p>
+                        <h4 class="g-font-size-18--xs g-color--white g-margin-b-5--xs">Drashya Shrivastava</h4>
+                         <p class="g-color--white">+91 9179364886</p>
                     </div>
                 </div>
             </div>
