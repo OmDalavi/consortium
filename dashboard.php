@@ -347,6 +347,9 @@
                                 elseif($events[$var] != "CEO"){
                                   echo 'Further details will be mailed to you';
                                 }
+                                elseif($events[$var] != "BizMantra"){
+                                  echo 'Paper will be conducted on your respective sections';
+                                }
                                 else{
 
                                   $query = "SELECT * FROM Brainathon WHERE Email = '$email'";
