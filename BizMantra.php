@@ -44,7 +44,7 @@
                         <br>
                         <br>
 
-                        
+
                         <br>
                         <br>
 
@@ -154,27 +154,21 @@
         <!--<img class="s-mockup-v2" src="img/mockups/pencil-01.png" alt="Mockup Image">-->
             <!--<div class="g-container--md g-padding-y-40--xs">-->
             <div id="managers" class="row g-row-col--5 g-padding-x-40--xs g-padding-y-40--xs g-padding-x-20--md g-padding-x-100--lg">
-                <div class="col-xs-4 g-full-width--xs g-margin-b-50--xs g-margin-b-0--sm">
+                <div class="col-xs-6 g-full-width--xs g-margin-b-50--xs g-margin-b-0--sm">
                     <div class="g-text-center--xs">
-                        <h4 class="g-font-size-18--xs g-color--white g-margin-b-5--xs">Aaditya Holani</h4>
-                         <p class="g-color--white">+91 9767605899</p>
+                        <h4 class="g-font-size-18--xs g-color--white g-margin-b-5--xs">Shailesh Thombe</h4>
+                         <p class="g-color--white">+91 9834428517</p>
                     </div>
                 </div>
-                <div class="col-xs-4 g-full-width--xs g-margin-b-50--xs g-margin-b-0--sm">
+                <div class="col-xs-6 g-full-width--xs g-margin-b-50--xs g-margin-b-0--sm">
                     <div class="g-text-center--xs">
-                        <h4 class="g-font-size-18--xs g-color--white g-margin-b-5--xs">Nikhil Gupta</h4>
-                         <p class="g-color--white">+91 9616620550</p>
-                    </div>
-                </div>
-                <div class="col-xs-4 g-full-width--xs g-margin-b-50--xs g-margin-b-0--sm">
-                    <div class="g-text-center--xs">
-                        <h4 class="g-font-size-18--xs g-color--white g-margin-b-5--xs">Abhishek Gupta</h4>
-                         <p class="g-color--white">+91 9782601503</p>
+                        <h4 class="g-font-size-18--xs g-color--white g-margin-b-5--xs">Archis Bodkhe</h4>
+                         <p class="g-color--white">+91 9767607235</p>
                     </div>
                 </div>
 
             </div>
-            <p class="col-xs-12 g-full-width--xs g-margin-b-50--xs g-margin-b-0--sm g-color--white g-color--white"><b>Mail us at </b>bizmantra19@gmail.com </p>
+          
             </div>
         </div>
 

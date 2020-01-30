@@ -854,6 +854,7 @@ function htmlMail($t, $sub, $name, $teamname, $event){
                               </p>
 
                               <p>For queries and in case of any difficulty, feel free to contact us.</p>
+                              <p>Test will be conducted on your respective classes</p>
                               <p>
                                   With warm regards,<br>
                                   Team E-Cell VNIT
