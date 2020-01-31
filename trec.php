@@ -95,7 +95,7 @@
     		    	    <p>Competition is divided into three rounds as follows:</p><br/>
     		    	    <ol>
 
-    					    <li><h6>Round 1: EXECUTIVE SUMMARY ROUND </h6><p><b>10th January 2020 to 31st Jan 2020</b><br>This round includes feeling the questionnaire. Analysis of the round will be done by experts only and teams will be shortlisted for second round.</p></li><br/>
+    					    <li><h6>Round 1: EXECUTIVE SUMMARY ROUND </h6><p><b>10th January 2020 to 7th Feb 2020</b><br>This round includes feeling the questionnaire. Analysis of the round will be done by experts only and teams will be shortlisted for second round.</p></li><br/>
     					    <li><h6>Round 2: PITCHING ROUND</h6><p><b>22nd Feb 2020 </b><br>Top 10 teams will be represent their venture in the Consortium at VNIT from 21-23 Feb. On 22nd Feb teams will pitch their start-up in front of investors panel</p></li><br/>
 
     					</ol>
