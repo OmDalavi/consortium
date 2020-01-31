@@ -710,7 +710,7 @@ function htmlMail($t, $sub, $name, $teamname, $event){
                               <p>
 
                                   <br>
-                                  Your time is now! This Conso\'19, battle your wits and challenge the wise !
+                                  Your time is now! This Conso\'20, battle your wits and challenge the wise !
 
                               </p>
 
@@ -719,11 +719,11 @@ function htmlMail($t, $sub, $name, $teamname, $event){
                                   <br><br>
                                   <b>To Pay:<br></b>
                                   <ol>
-                                  <li>Google Pay or Paytm on +91 98224 44112</li>
-                                  <li>Registration Desk, near Auditorium VNIT Nagpur</li>
+                                  <li>Google Pay or Paytm on +91 77384 46941</li>
+                                  <li>Registration Desk, near canteen, VNIT</li>
                                   </ol>
                               </p>
-                              <p>For queries and in case of any difficulty, feel free to contact us. bizquizz19@gmail.com</p>
+                              <p>For queries and in case of any difficulty, feel free to Contact 9370923419</p>
                               <p>
                                   With warm regards,<br>
                                   Team E-Cell VNIT
