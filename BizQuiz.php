@@ -33,7 +33,8 @@
                     <h1 class="g-font-size-60--xs g-font-size-80--sm g-font-size-80--lg g-color--white" style="font-weight:900; text-shadow: 2px 0 #333;letter-spacing:2px;"><b>BizQuiz</b></h1>
 
                     <h3 class="g-color--white" style="    text-shadow: 2px 0 #333;">Love facts & Trivia about the business?</h3>
-                    <p class="g-color--white g-font-size-18--xs" style="    text-shadow: 2px 0 #333;"><b>Then this is a right quiz for you</b></p><br/>
+                    <p class="g-color--white g-font-size-18--xs" style="    text-shadow: 2px 0 #333;"><b>HAVE YOU got the insatiable hunger to IMBIBE the trivia and knowledge
+about Business?</b></p><br/>
                     <h4 class="g-color--white"> PRIZES WORTH <span class="g-color--red">&#8377; 15K </span></h4>
                     <br>
                     <div class="wow fadeInLeft" data-wow-duration=".3" data-wow-delay=".5s">
@@ -104,7 +105,7 @@
     				<div id="structure" style="display:none;">
               <h5><b>How to participate</b></h5>
               <br/>
-              <p>To participate in Bizquizz, visit our <a href="https://consortium.ecellvnit.org/register.php">website</a> and register with the name of your team . As soon your registration process gets complete you will get confirmation</p>
+              <p>To participate in Bizquiz, visit our <a href="https://consortium.ecellvnit.org/register.php">website</a> and register with the name of your team . As soon your registration process gets complete you will get confirmation</p>
               <br/>
               <h5><b>Structure</b></h5>
               <br/>
@@ -150,19 +151,25 @@
         <!--<img class="s-mockup-v2" src="img/mockups/pencil-01.png" alt="Mockup Image">-->
             <!--<div class="g-container--md g-padding-y-40--xs">-->
             <div id="managers" class="row g-row-col--5 g-padding-x-40--xs g-padding-y-40--xs g-padding-x-20--md g-padding-x-100--lg">
-                <div class="col-xs-6 g-full-width--xs g-margin-b-50--xs g-margin-b-0--sm">
+                <div class="col-xs-4 g-full-width--xs g-margin-b-50--xs g-margin-b-0--sm">
                     <div class="g-text-center--xs">
                         <h4 class="g-font-size-18--xs g-color--white g-margin-b-5--xs">Anshu Beherae</h4>
                          <p class="g-color--white">+91 98198 40087</p>
                     </div>
                 </div>
-                <div class="col-xs-6 g-full-width--xs g-margin-b-50--xs g-margin-b-0--sm">
+                <div class="col-xs-4 g-full-width--xs g-margin-b-50--xs g-margin-b-0--sm">
                     <div class="g-text-center--xs">
                         <h4 class="g-font-size-18--xs g-color--white g-margin-b-5--xs">Anurag Baral</h4>
                          <p class="g-color--white">+91 84519 88444</p>
                     </div>
                 </div>
-                
+                <div class="col-xs-4 g-full-width--xs g-margin-b-50--xs g-margin-b-0--sm">
+                    <div class="g-text-center--xs">
+                        <h4 class="g-font-size-18--xs g-color--white g-margin-b-5--xs">Gokul Bisen</h4>
+                         <p class="g-color--white">+91 95451 43345</p>
+                    </div>
+                </div>
+
 
 
 
