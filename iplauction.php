@@ -18,7 +18,7 @@
 
                 <div class="g-margin-t-20--xs g-margin-t-0--sm g-margin-b-20--xs g-margin-b-50--md g-margin-l-20--xs g-margin-l-60--sm">
                     <span class="g-font-size-20--xs g-font-size-30--sm g-font-size-30--lg g-color--white" style="font-weight:600; text-shadow: 2px 0 #333;letter-spacing:2px;"></span>
-             
+
 
                     <h1 class="g-font-size-60--xs g-font-size-80--sm g-font-size-80--lg g-color--white" style="font-weight:900; text-shadow: 2px 0 #333;letter-spacing:2px;"><b>IPL Auction 2.0</b></h1>
                     <h1 class="g-font-size-20--xs g-font-size-30--sm g-font-size-30--lg g-color--white" style="font-weight:900; text-shadow: 2px 0 #333;letter-spacing:2px;"><b>Be Bold Get Sold.</b></h1>
@@ -118,8 +118,7 @@ for you.</p>
 					Each team will be given a fixed budget which will be used for the
 					auction. The aim will be to build a squad that maximizes the total
 					attribute score of the team.</p></li><br/>
-    					    <li><h6>Round 3: Village Visit & Prototype</h6><p><b> 18<sup>th</sup> February, 2020 – 23<sup>th</sup> February, 2020 | Result - 23<sup>th</sup> February, 2020
-                            </b><br>Top 20 Teams selected on the basis of pitch deck submitted by the teams will go on a village tour where the teams are required to do a detailed study of the village conditions and problems faced by the people residing in the village and come up with innovative startups solving those problems.</p></li><br/>
+    					  <br/>
 
     					</ol>
                         <br/>
@@ -165,7 +164,7 @@ for you.</p>
                          <p class="g-color--white">+91 9431747194</p>
                     </div>
                 </div>
-         
+
 
             </div>
             </div>
