@@ -625,22 +625,20 @@ function htmlMail($t, $sub, $name, $teamname, $event){
                           <h3><b>Hello</b></h3>
 
 
-                          <p> You are successfully registered for AdVenture! You are now a part of Central India’s Biggest Entrepreneurship Summit. We are well pleased to have you on board for this event.</p>
+                          <p> You are successfully registered for AdVenture! You are now a part of on of the India’s Biggest Entrepreneurship Summit. We are well pleased to have you on board for this event.</p>
                           <div>
                               <p>
 
                                   <br>
-                                  Your time is now! This Conso\'19 grab your camera and bring your ideas to life!
+                                  Your time is now! This Consortium\'20, grab your camera and bring your ideas to life!
 
                               </p>
                               <br>
 
-                                <a style="display:block; text-align: center;width:150px; padding:12px 10px; background: #111; color:#FFF; text-decoration: none; border-radius:30px; position: relative;" href="https://drive.google.com/open?id=1fpCjz-j6ZrK3aRwusBhg95PoJx-aiuyw">Problem Statement 1
+                                <a style="display:block; text-align: center;width:150px; padding:12px 10px; background: #111; color:#FFF; text-decoration: none; border-radius:30px; position: relative;" href="https://drive.google.com/file/d/1DMwEP2RAsp0PK008c9fk2_lqq77FeJe1/view?usp=sharing">Problem Statement
                                 </a><br/>
-                                <a style="display:block; text-align: center;width:150px; padding:12px 10px; background: #111; color:#FFF; text-decoration: none; border-radius:30px; position: relative;" href="https://drive.google.com/open?id=1ciIxb855Rf3ff7WgXdFDGwvVrQmNbmDQ">Problem Statement 2
-                                </a>
                                 <br>
-                                <p><b>All the submission will be done to adventure2k19@gmail.com on the google drive</b></p>
+                                <p><b>All the submission will be done to adventure2k20@gmail.com on the google drive</b></p>
 
 
                               <p>
@@ -650,6 +648,8 @@ function htmlMail($t, $sub, $name, $teamname, $event){
                               <p>For queries and in case of any difficulty, feel free to contact us.</p>
                               <p>
                                   With warm regards,<br>
+                                  Ritika Meena
+                                  +91 96991 73231
                                   Team E-Cell VNIT
                               </p>
                           </div>

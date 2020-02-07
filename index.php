@@ -212,6 +212,21 @@
 
                     </div>
             </a>
+            <!-- <a href="/BizQuiz.php" class="product-card col-xs-12 col-md-4 " >
+                <div class="product-card__item-grid g-padding-y-40--xs" style="background:url(img/events/war_of_worlds.png)">
+
+                    </div>
+            </a>
+            <a href="/BizQuiz.php" class="product-card col-xs-12 col-md-4 " >
+                <div class="product-card__item-grid g-padding-y-40--xs" style="background:url(img/events/BizQuiz.jpg)">
+
+                    </div>
+            </a>
+            <a href="/BizQuiz.php" class="product-card col-xs-12 col-md-4 " >
+                <div class="product-card__item-grid g-padding-y-40--xs" style="background:url(img/events/BizQuiz.jpg)">
+
+                    </div>
+            </a> -->
 
         </div>
 

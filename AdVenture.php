@@ -35,8 +35,8 @@
                     <!--<img src="img/logo/ceoblack.png" alt="" width="200" style="margin-top:-100px; margin-left:-20px">-->
 
                     <h1 class="g-font-size-48--xs g-font-size-80--sm g-font-size-80--lg g-color--white" style="font-weight:900; text-shadow: 2px 0 #333;letter-spacing:2px;"><b>AdVenture</b></h1>
-                    <p class="g-color--white-opacity" style="position: relative;">in association with</p>
-                    <img src="https://5.imimg.com/data5/RT/MD/MY-69409/jds-transformer-ind-pvt-ltd-120x120.jpg" alt="JDS" style="z-index:2; position:relative; margin-top: -20px;" height="60"/>
+                    <!-- <p class="g-color--white-opacity" style="position: relative;">in association with</p>
+                    <img src="https://5.imimg.com/data5/RT/MD/MY-69409/jds-transformer-ind-pvt-ltd-120x120.jpg" alt="JDS" style="z-index:2; position:relative; margin-top: -20px;" height="60"/> -->
 
                     <h3 class="g-color--white g-margin-t-10--xs" style=" text-shadow: 2px 0 #333;">Make Ads, Mint Money</h3>
                     <p class="g-color--white g-font-size-18--xs" style="    text-shadow: 2px 0 #333;"><b>The judge for your creativity, brevity, and orignality</b></p><br/>
@@ -140,7 +140,7 @@
                          <p class="g-color--white">+91 9699173231</p>
                     </div>
                 </div>
-              
+
 
             </div>
             </div>
