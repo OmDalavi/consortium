@@ -30,14 +30,36 @@
         <div class="core-container">
             <div class="container g-padding-y-80--xs g-padding-y-125--sm  g-padding-x-0--xs g-padding-x-40--sm g-padding-x-100--md" style="background:rgba(0, 0, 0, 0.4)">
                 <div class="row product-grid">
+            <a href="https://forms.gle/MjqNdTsCQERacmMe6" class="product-card col-xs-12 col-md-4 col-lg-3" >
+                <div class="product-card__item-grid" style="background:url(img/021/consoimg/sconclave.JPG)">
 
-            <a href="https://meeting.zoho.com/meeting/register?sessionId=1085280643" class="product-card col-xs-12 col-md-4 col-lg-3" >
+                  <div class="product-card__item-text-v2">
+                      <h4 class="g-color--primary" style="color:#bd2026"><b>StartUp Conclave</b></h4>
+                      <p class="g-color--white">Watch India's Top 10 startups out-pitch each other for the chance to win the investment that will give them wings.</p>
+                      <p class="g-color--white">22nd February.<br> VNIT Nagpur.<br>
+                         Save the date!</p>
+                      </div>
+
+                  </div>
+            </a>
+            <a href="#" class="product-card col-xs-12 col-md-4 col-lg-3" >
+                <div class="product-card__item-grid" style="background:url(img/events/ryan.png)">
+
+                    <div class="product-card__item-text-v2">
+                          <h5 class="g-color--primary" style="color:#bd2026"><b>Live Webinar and Interactive session with Mr. Ryan Patel</b></h5>
+                          <p class="g-color--white">Webinar on Business, Startups, Strategies and Marketing <br>Date: 7th February 20</p>
+                          <p class="g-color--white"><i>#Webinar</i></p>
+                          </div>
+
+                    </div>
+            </a>
+            <a href="#" class="product-card col-xs-12 col-md-4 col-lg-3" >
                 <div class="product-card__item-grid" style="background:url(img/events/ibhubs.png)">
 
                     <div class="product-card__item-text-v2">
                         <h5 class="g-color--primary" style="color:#bd2026"><b>Elements of a Strong Business Model | Webinar</b></h5>
                         <p class="g-color--white">Consortium'20  and iB Hubs present a workshop by <br>Mr. Abhinav Pandey - Vice President iB Hubs. <br>Date: 27th January 20<br> Time : 7pm <br> Venue: CRC 1-2</p>
-                        <p class="g-color--white"><b>Register Now</b></p>
+                        <p class="g-color--white"><b>Registerations closed</b></p>
                         <p class="g-color--white"><i>#Webinar</i></p>
                     </div>
 
@@ -55,6 +77,7 @@
 
                 </div>
             </a>
+
             <!--<a href="https://goo.gl/forms/e9w6g83HFuOXAzAz2" class="product-card col-xs-12 col-md-4 col-lg-3" >
                 <div class="product-card__item-grid" style="background:url(img/events/chatur.png)">
 
