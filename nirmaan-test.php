@@ -244,7 +244,7 @@
 
 function myFunction() {
    document.querySelector("#test").style.display = "block";
-   x= setTimeout(Func, 3000);
+   x= setTimeout(Func, 2700000;
 
 }
  function Func(){
