@@ -49,7 +49,7 @@
                             </div>
 
                             <div class="col-sm-12 col-md-3 col-lg-4" style="display:flex;position:relative; align-items:center">
-                                <p class="g-font-size-14--xs g-margin-b-0--xs g-color--white-opacity g-padding-y-20--md">Copyright © 2018–2019  <a class="g-color--primary" href="https://www.ecellvnit.org/" target="_blank">E-cell Vnit</a></p>
+                                <p class="g-font-size-14--xs g-margin-b-0--xs g-color--white-opacity g-padding-y-20--md">Copyright © 2020–2021  <a class="g-color--primary" href="https://www.ecellvnit.org/" target="_blank">E-cell Vnit</a></p>
                             </div>
 
                         </div>
