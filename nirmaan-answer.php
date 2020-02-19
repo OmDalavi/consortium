@@ -34,7 +34,7 @@
 
     if(isset($_SESSION['email'])){
          $email = $_SESSION['email'];
-          $query = "SELECT * FROM Registrations WHERE Email='$email'";
+          $query = "SELECT * FROM nirmaan_team WHERE Email='$email'";
             $result = mysqli_query($con,$query);
             $num = mysqli_num_rows($result);
             $data = $result->fetch_array(MYSQLI_ASSOC);
