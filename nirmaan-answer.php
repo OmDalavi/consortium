@@ -39,7 +39,7 @@
             $num = mysqli_num_rows($result);
             $data = $result->fetch_array(MYSQLI_ASSOC);
             if($num!=0){
-              $_name=$data['Name'];
+              $name=$data['Name'];
               }
               $answer1=$_POST['answer1'];
               $answer2=$_POST['answer2'];
