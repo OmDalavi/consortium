@@ -91,7 +91,7 @@
 
         <div id="test" style="display: none;">
 
-          <form id="myForm1" name="myForm1" action="swadesh_answer.php" method='post' >
+          <form id="myForm1" name="myForm1" action="nirmaan-answer.php" method='post' >
             <div id="questions">
               <p class="allthebest">----ALL THE BEST----</p>
               <br><br>

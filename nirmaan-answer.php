@@ -59,18 +59,18 @@
 
 
 
-          $sql = "INSERT INTO nirmaan_answer (name,answer1,answer2,answer3,answer4,answer5,
-                                                  answer6,answer7,answer8,answer9,answer10,answer11,answer12,
-                                                  answer13,answer14,answer15)
-          VALUES ('$name','$answer1','$answer2','$answer3','$answer4','$answer5','$answer6','$answer7','$answer8','$answer9','$answer10',
-                    '$answer11','$answer12','$answer13','$answer14','$answer15')";
-          if(mysqli_query($con,$sql)) {
-        header("location: success.php");
-      }
-      else {
-        header("location: failure.php");
-          }
-            }
+              $sql = "INSERT INTO nirmaan_answer (name,answer1,answer2,answer3,answer4,answer5,
+                                              answer6,answer7,answer8,answer9,answer10,answer11,answer12,
+                                              answer13,answer14,answer15)
+                      VALUES ('$name','$answer1','$answer2','$answer3','$answer4','$answer5','$answer6','$answer7','$answer8','$answer9','$answer10',
+                              '$answer11','$answer12','$answer13','$answer14','$answer15')";
+              if(mysqli_query($con,$sql)) {
+                header("location: success.php");
+                  }
+              else {
+                header("location: failure.php");
+                  }
+                }
 
 
 
