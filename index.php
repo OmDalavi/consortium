@@ -30,12 +30,12 @@
                         <img class="resize" src="img/newconsologo-white.png" alt="Conso">
 
                     </div>
-                    <!--<div class="col-md-6 col-md-offset-3">
-                        <p class="g-font-size-20--xs g-font-size-26--md g-color--white g-margin-b-0--xs"><b>21<sup>st</sup> - 23<sup>rd</sup> February 2020</b></p>
+                    <div class="col-md-6 col-md-offset-3">
+                        <p class="g-font-size-20--xs g-font-size-26--md g-color--white g-margin-b-0--xs"><b>27<sup>th</sup> - 29<sup>th</sup> March 2020</b></p>
 
 
 
-                    </div>-->
+                    </div>
 
                   </div>
             </div>
@@ -249,7 +249,7 @@
                     <div class="row">
                         <div class="col-sm-6 col-md-4">
                             <p class="g-color--white-opacity g-font-size-16--sm">Startup Expo is a chance for tech startups to get out of their shell and interact with mentors and investors from all over the country.<br><b>Ready, Set, Network!</b></p>
-                          
+
 
                         </div>
                     </div>
