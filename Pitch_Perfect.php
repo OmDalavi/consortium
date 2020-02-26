@@ -35,7 +35,7 @@
                     <h4 class="g-color--white" style="    text-shadow: 2px 0 #333;">Driving the communication revolution!</h4>
                     <!-- <p class="g-color--white g-font-size-18--xs" style="text-shadow: 2px 0 #333;"><b>Make your marketing so useful that people would pay for it.</b></p><br/> -->
                     <h4 class="g-color--white"> PRIZES WORTH <span class="g-color--red">&#8377; 10K </span></h4>
-                    
+
                     <div class="wow fadeInLeft" data-wow-duration=".3" data-wow-delay=".5s">
                         <a href="/register.php" title="Register">
                             <!--<i class="s-icon s-icon--lg s-icon--white-bg g-radius--circle ti-arrow-down"></i>-->
@@ -43,7 +43,7 @@
                         </a>
                         <br>
                         <br>
-                        
+
 
                     </div>
                 </div>
@@ -102,19 +102,19 @@
 
     				</div>
     				<div id="structure" style="display:none;">
-              
-              
+
+
               <br/>
               <h5><b>Structure</b></h5>
-              
+
                   <p>Competition is divided into two rounds as follows:</p><br/>
                   <ol>
 
                   <li><h6>Round 1: (9<sup>th</sup> March|AUDI LAWNS|3:30 PM - 6:30 PM)</h6><p><b>In this round, participants will be asked to pitch for 2 minutes on the topics they are given as soon as they register on the registration portal.For this round, on spot registrations will also be considered where topics will be given randomly(those who register on-spot will be given chance only after all the online participants finish).Top 10 participants from this round will be selected for the next round</p></li><br/>
 
                   <li><h6>Round 2: (10<sup>th</sup> March|10 AM - 12:30 AM)</h6><p><b>In this round, the topics for pitching will be short case-studies on existing/hypothetical startups.A one page sheet about the details of their respective topics will be mailed to them on the night of 9th March.On 10th of March,participants will be required to pitch their startup ideas(value proposition,competitor analysis,etc.)for 7 minutes which will be followed by rapid fire round for each participant(nearly 1.5 minutes).</b><br></p></li><br/>
-                  
-                  
+
+
               </ol>
                         <br/>
               <h5><b>General Rules</b></h5>
@@ -124,7 +124,7 @@
                   <li><p>The language for pitching can only be either English or Hindi. Excited? For now, just dive deep within and prepare yourself to seize this extraordinary battle of words and claim exciting prizes.</p></li>
               </ol>
     		    	</div>
-    		    	
+
 
     		    </div>
 		  </div>
@@ -145,7 +145,7 @@
                 </div>
                 <div class="col-xs-4 g-full-width--xs g-margin-b-50--xs g-margin-b-0--sm">
                     <div class="g-text-center--xs">
-                        <h4 class="g-font-size-18--xs g-color--white g-margin-b-5--xs">Suyash Shukla</h4>
+                        <h4 class="g-font-size-18--xs g-color--white g-margin-b-5--xs">jeetu</h4>
                          <p class="g-color--white">+91 7225957110</p>
                     </div>
                 </div>
@@ -155,9 +155,9 @@
                          <p class="g-color--white">+91 9421718538</p>
                     </div>
                 </div>
-                
+
             </div>
-            
+
             </div>
         </div>
 
