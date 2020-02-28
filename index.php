@@ -31,7 +31,7 @@
 
                     </div>
                     <div class="col-md-6 col-md-offset-3">
-                        <p class="g-font-size-20--xs g-font-size-26--md g-color--white g-margin-b-0--xs"><b>21<sup>st</sup> - 23<sup>rd</sup> February 2020</b></p>
+                        <p class="g-font-size-20--xs g-font-size-26--md g-color--white g-margin-b-0--xs"><b>27<sup>th</sup> - 29<sup>th</sup> March 2020</b></p>
 
 
 
@@ -249,7 +249,7 @@
                     <div class="row">
                         <div class="col-sm-6 col-md-4">
                             <p class="g-color--white-opacity g-font-size-16--sm">Startup Expo is a chance for tech startups to get out of their shell and interact with mentors and investors from all over the country.<br><b>Ready, Set, Network!</b></p>
-                            <p class="g-color--white-opacity g-font-size-16--sm">22<sup>nd</sup> February 2020</p>
+
 
                         </div>
                     </div>
@@ -371,33 +371,33 @@
                         <div class="col-xs-12 col-sm-5 col-md-3 col-lg-2 g-full-width--xs g-margin-b-50--xs g-margin-b-0--sm">
 
                             <div class="g-text-center--xs manager-card">
-                                <img src="img/021/nitin.jpg" alt="" style="width:100%" class=" manager-card-img">
-                                <p class="g-font-size-18--xs g-color--white g-margin-b-5--xs"><b>Nitin Bawankule</b></p>
-                                <p class="g-color--white">Director E-commerce<br>Google India</p>
+                                <img src="img/021/ravi-batulla.jpg" alt="" style="width:100%" class=" manager-card-img">
+                                <p class="g-font-size-18--xs g-color--white g-margin-b-5--xs"><b>Ravi Batulla</b></p>
+                                <p class="g-color--white">Director Payments Platform<br>Visa</p>
                             </div>
                         </div>
                         <div class="col-xs-12 col-sm-5 col-md-3 col-lg-2 g-full-width--xs g-margin-b-50--xs g-margin-b-0--sm">
 
                             <div class="g-text-center--xs manager-card">
-                                <img src="img/021/amit.jpg" alt="" style="width:100%" class=" manager-card-img">
-                                <p class="g-font-size-18--xs g-color--white g-margin-b-5--xs"><b>Amit Chatterjee</b></p>
-                                <p class="g-color--white">Former Director<br>HP India.</p>
+                                <img src="img/021/divya-ganesh.jpg" alt="" style="width:100%" class=" manager-card-img">
+                                <p class="g-font-size-18--xs g-color--white g-margin-b-5--xs"><b>Divya Ganesh</b></p>
+                                <p class="g-color--white">Director- Digital Delivery<br>McKinsey & Company</p>
                             </div>
                         </div>
                         <div class="col-xs-12 col-sm-5 col-md-3 col-lg-2 g-full-width--xs g-margin-b-50--xs g-margin-b-0--sm">
 
                             <div class="g-text-center--xs manager-card">
-                                <img src="img/021/natrajan.jpg" alt="" style="width:100%" class=" manager-card-img">
-                                <p class="g-font-size-18--xs g-color--white g-margin-b-5--xs"><b>Natrajan S.</b></p>
-                                <p class="g-color--white">Director strategy and planning<br>Intel India </p>
+                                <img src="img/021/sohrab-sitaram.jpg" alt="" style="width:100%" class=" manager-card-img">
+                                <p class="g-font-size-18--xs g-color--white g-margin-b-5--xs"><b>Sohrab Sitaram</b></p>
+                                <p class="g-color--white">Co founder<br>Keventers</p>
                             </div>
                         </div>
                         <div class="col-xs-12 col-sm-5 col-md-3 col-lg-2 g-full-width--xs g-margin-b-50--xs g-margin-b-0--sm">
 
                             <div class="g-text-center--xs manager-card">
-                                <img src="img/021/dipankar.jpg" alt="" style="width:100%" class=" manager-card-img">
-                                <p class="g-font-size-18--xs g-color--white g-margin-b-5--xs"><b>Dipankar Bose</b></p>
-                                <p class="g-color--white">Creative Director<br>Discovery communications</p>
+                                <img src="img/021/shirish-andhare.jpg" alt="" style="width:100%" class=" manager-card-img">
+                                <p class="g-font-size-18--xs g-color--white g-margin-b-5--xs"><b>Shirish Andhare</b></p>
+                                <p class="g-color--white">Head of India<br>Uber</p>
                             </div>
                         </div>
 

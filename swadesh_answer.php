@@ -35,25 +35,25 @@
               $team_name=$data['Name'];
               }
               $answer1=$_POST['answer1'];
-          $answer2=$_POST['answer2'];
-          $answer3=$_POST['answer3'];
-         $answer4=$_POST['answer4'];
-          $answer5=$_POST['answer5'];
-           $answer6=$_POST['answer6'];
-          $answer7=$_POST['answer7'];
-          $answer8=$_POST['answer8'];
-          $des1=$_POST['des1'];
-          $des2=$_POST['des2'];
+              $answer2=$_POST['answer2'];
+              $answer3=$_POST['answer3'];
+              $answer4=$_POST['answer4'];
+              $answer5=$_POST['answer5'];
+              $answer6=$_POST['answer6'];
+              $answer7=$_POST['answer7'];
+              $answer8=$_POST['answer8'];
+              $des1=$_POST['des1'];
+              $des2=$_POST['des2'];
 
 
-          $sql = "INSERT INTO Swadesh_answer (team_name,answer1,answer2,answer3,answer4,answer5,answer6,answer7,answer8,des1,des2)
-          VALUES ('$team_name' , '$answer1','$answer2','$answer3','$answer4','$answer5','$answer6','$answer7','$answer8','$des1','$des2')";
-          if(mysqli_query($con,$sql)) {
-        header("location: success.php");
-      }
-      else {
-        header("location: failure.php");
-          }
+              $sql = "INSERT INTO Swadesh_answer (team_name,answer1,answer2,answer3,answer4,answer5,answer6,answer7,answer8,des1,des2)
+                      VALUES ('$team_name' , '$answer1','$answer2','$answer3','$answer4','$answer5','$answer6','$answer7','$answer8','$des1','$des2')";
+              if(mysqli_query($con,$sql)) {
+                header("location: success.php");
+                }
+              else {
+                header("location: failure.php");
+                    }
             }
 
 

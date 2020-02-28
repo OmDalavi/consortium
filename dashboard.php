@@ -426,6 +426,11 @@
 
                                       <span class="text-uppercase s-btn s-btn--xs s-btn--white-brd g-radius--50 g-margin-r-10--xs">Your Team</span>
                                   </a>';}
+                                  elseif($events[$var] == 'renderico')
+                                  { echo '<a id="reg_button" href="https://www.dropbox.com/request/opVcxvwLFtHctuLdleoo"
+
+                                      <span class="text-uppercase s-btn s-btn--xs s-btn--white-brd g-radius--50 g-margin-r-10--xs">Upload here</span>
+                                  </a>';}
 
                                   ?>
 

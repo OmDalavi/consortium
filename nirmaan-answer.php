@@ -34,12 +34,12 @@
 
     if(isset($_SESSION['email'])){
          $email = $_SESSION['email'];
-          $query = "SELECT * FROM Registrations WHERE Email='$email'";
+          $query = "SELECT * FROM nirmaan_team WHERE Email='$email'";
             $result = mysqli_query($con,$query);
             $num = mysqli_num_rows($result);
             $data = $result->fetch_array(MYSQLI_ASSOC);
             if($num!=0){
-              $_name=$data['name'];
+              $name=$data['Name'];
               }
               $answer1=$_POST['answer1'];
               $answer2=$_POST['answer2'];
@@ -59,17 +59,18 @@
 
 
 
-          $sql = "INSERT INTO nirmaan_answer (name,answer1,answer2,answer3,answer4,answer5,
-                                                  answer6,answer7,answer8,answer9,answer10,answer11,answer12,
-                                                  answer13,answer14,answer15)
-          VALUES ('$name' , '$answer1','$answer2','$answer3','$answer4','$answer5','$answer6','$answer7','$answer8','$des1','$des2')";
-          if(mysqli_query($con,$sql)) {
-        header("location: success.php");
-      }
-      else {
-        header("location: failure.php");
-          }
-            }
+              $sql = "INSERT INTO nirmaan_answer (name,answer1,answer2,answer3,answer4,answer5,
+                                              answer6,answer7,answer8,answer9,answer10,answer11,answer12,
+                                              answer13,answer14,answer15)
+                      VALUES ('$name','$answer1','$answer2','$answer3','$answer4','$answer5','$answer6','$answer7','$answer8','$answer9','$answer10',
+                              '$answer11','$answer12','$answer13','$answer14','$answer15')";
+              if(mysqli_query($con,$sql)) {
+                header("location: success.php");
+                  }
+              else {
+                header("location: failure.php");
+                  }
+                }
 
 
 

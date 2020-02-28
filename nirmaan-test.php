@@ -8,7 +8,13 @@
   $db_name = "conso20";
   $con = mysqli_connect("$db_host","$db_username","$db_pass") or die ("could not connect to mysql");
   mysqli_select_db($con,$db_name) or die ("no database");
-
+  if(isset($_SESSION['email'])){
+   $email = $_SESSION['email'];
+             }
+           else{
+              $_SESSION['login_error'] = "Kindly Login First";
+   header('location:/login.php');
+           }
 
 
   ?>
@@ -19,7 +25,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" type="text/css" href="user-css/login-style.css">
         <link rel="shortcut icon" type="image/png" href="images/conso-icon.png">
-        <title>SWADES'20 | LOGIN</title>
+        <title>Online Test | Round 1 | Nirmaan</title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link rel="stylesheet" href="css/swades.css">
         <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
@@ -42,7 +48,7 @@
 
             <form class="form-inline my-2 my-lg-0">
 
-              <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Welcome : <?php  $query = "SELECT * FROM Swadesh_team WHERE Email='$email'";
+              <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Welcome : <?php  $query = "SELECT * FROM nirmaan_team WHERE Email='$email'";
             $result = mysqli_query($con,$query);
             $num = mysqli_num_rows($result);
             $data = $result->fetch_array(MYSQLI_ASSOC);
@@ -85,7 +91,7 @@
 
         <div id="test" style="display: none;">
 
-          <form id="myForm1" name="myForm1" action="swadesh_answer.php" method='post' >
+          <form id="myForm1" name="myForm1" action="nirmaan-answer.php" method='post' >
             <div id="questions">
               <p class="allthebest">----ALL THE BEST----</p>
               <br><br>
@@ -140,7 +146,8 @@
         <input type="checkbox" name="answer5" value="b">b) Mercury and Argon</br>
         <input type="checkbox" name="answer5" value="c">c) Nitrogen and Argon</br>
         <input type="checkbox" name="answer5" value="d">d) Oxygen and Argon</br>
-
+      </br>
+      </br>
     *7) Ohm’s Law is not applicable for:</br></br>
           <input type="checkbox" name="answer5" value="a">a) Vacuum Tubes </br>
           <input type="checkbox" name="answer5" value="b">b) Carbon Resistors </br>
@@ -237,7 +244,7 @@
 
 function myFunction() {
    document.querySelector("#test").style.display = "block";
-   x= setTimeout(Func, 600);
+   x= setTimeout(Func, 2700000);
 
 }
  function Func(){
@@ -248,10 +255,10 @@ function myFunction() {
 
 
  }
-
-
-
 </script>
+
+
+
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
