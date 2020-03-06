@@ -82,7 +82,7 @@ for you.</p>
     		    <div class="card-content code">
 
     		    	<div id="why">
-    			     	<h5><b>Prizes Worth &#8377; 25,000 </b></h5><br/>
+    			     	<h5><b>Prizes Worth &#8377; 10,000 </b></h5><br/>
     			     	<ol>
     			     	    <li><p>Opportunity to interact with some of the renowned personalities in the field of Social Entrepreneurship. </p></li>
     			     	    <li><p>Opportunity of a first-hand experience to interact with the village environment face to face. </p></li>
