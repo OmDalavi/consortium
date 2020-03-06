@@ -25,7 +25,7 @@
 
                     <!-- <h3 class="g-color--red" style="    text-shadow: 2px 0 #333;">Grass Root Innovation</h3>
                     <p class="g-color--red g-font-size-18--xs" style="    text-shadow: 2px 0 #333;"><b>Beyond Imagination</b></p><br/> -->
-                    <h3 class="g-color--white"> PRIZES WORTH <br><span class="g-color--red" style="font-weight:600; ">&#8377; 25,000</span></h3>
+                    <h3 class="g-color--white"> PRIZES WORTH <br><span class="g-color--red" style="font-weight:600; ">&#8377; 10,000</span></h3>
                     <br>
                     <div class="wow fadeInLeft" data-wow-duration=".3" data-wow-delay=".5s">
                         <a href="/register.php" title="Register">
@@ -75,27 +75,24 @@ for you.</p>
             <div class="card" id="event-card-bg">
     		    <div class="card-tabs">
     		      <ul class="tabs tabs-fixed-width">
-    		        <li class="tab"><a class="active" href="#why" id="but_why">WHY PARTICIPATE?</a></li>
+    		        <li class="tab"><a class="active" href="#why" id="but_why">RULES</a></li>
     		        <li class="tab"><a  href="#structure" id="but_structure">STRUCTURE</a></li>
     		      </ul>
     		    </div>
     		    <div class="card-content code">
 
     		    	<div id="why">
-    			     	<h5><b>Prizes Worth &#8377; 10,000 </b></h5><br/>
-    			     	<ol>
-    			     	    <li><p>Opportunity to interact with some of the renowned personalities in the field of Social Entrepreneurship. </p></li>
-    			     	    <li><p>Opportunity of a first-hand experience to interact with the village environment face to face. </p></li>
-    			     	    <li><p>Opportunity to interact with a diverse group of participants, each of whom is uniquely capable in their own aspiration and thought process, but having the same end objective as yours; to do something for the betterment of the village society.</p></li>
-    			     	    <li><p>Witness some of the best innovations in the final seminar which might actually have an impact in the coming days. </p></li>
-    			     	    <li><p>Meet new people, socialize and make your presence felt by being a part of this wonderful journey.</p></li>
-    			     	    <li><p>Shape your direction, thought process and general know-how about the Indian society in general and villages in particular.</p></li>
-    			     	    <li><p>Opportunity to be at the fulcrum of some of the most positive and impactful changes in the society for the betterment of the people, maybe even at the forefront of it all! </p></li>
-    			     	    <li><p>Availability of highest level of support system for execution and implementation of your solution statement, if it is found to be sustainable and effective.</p></li>
-    			     	    <li><p>Opportunity for you to develop contacts with some of the most high profile NGOs, Social Clubs, Company CSRs, and Renowned Individuals in this sector, with years of experience and expertise. </p> </li>
-                            <li><p> Prizes for the Top 3 performing teams as stated below and goodies for other performing teams.</p></li>
-                            <li><p>Opportunity for Social Internships and many other such incentives at renowned companies and NGOs. </p></li>
-    			     	</ol>
+    			     <ol>
+
+                 <h5><b>Rules: </b></h5>
+                 <ol>
+                     <li><h6>A team must comprise of 3-5 members.</h6></li>
+                     <li><h6>Team members must be of same college.</h6></li>
+                     <li><h6>A team member cannot register in more than one team.</h6></li>
+                     <li><h6>Multiple teams from institutes are allowed and encouraged.</h6></li>
+                     <li><h6>In case of any discrepancies, decision taken by the judges/event organizers will befinal.</h6></li>
+                 </ol>
+                 <br/>
 
     			     	<br/>
 
@@ -110,26 +107,47 @@ for you.</p>
     		    	    <p>Competition is divided into three rounds as follows:</p><br/>
     		    	    <ol>
 
-    					    <li><h6>Round 1: Online Quiz : 20 minutes Duration</h6><p><b>9<sup>th</sup> January, 2020 – 28<sup>th</sup> January, 2020 | Result - 1<sup>st</sup> February, 2020</b><br>The quiz will contain questions only from Cricket. It will be an
-							elimination round.</p></li><br/>
+                    <li><h6>Round 1: Draft Round (Talent hunting round)</h6>
+                    <p>The Candidates need to submit a list of 10
+    players. The players in this list must
+    entirelydomestic(Not played in international)
+    players or international ones with 10 or
+    lessmatches under their belt. The list must be
+    submitted on the basis of preference. (Ex.
+    Thefirst player on the list will be the most
+    preferred player in domestic category.)
+    </li><br/>
 
-    					    <li><h6>On-Campus Round: 3-4 hours duration.
-                  </h6><p><b>2<sup>nd</sup> February, 2020 – 8<sup>th</sup> February, 2020 | Result - 11<sup>th</sup> February, 2020 </b><br>The final teams will compete in a live auction of players in VNIT .
-					Each team will be given a fixed budget which will be used for the
-					auction. The aim will be to build a squad that maximizes the total
-					attribute score of the team.</p></li><br/>
-    					  <br/>
+                    <li><h6>Round 2: Quiz : 10 min duration.</h6>
+    <p>The quiz will contain questions from cricket
+    and analytical thinking based questions
+    related to ipl auction.
+    Aggregate of the above two rounds will be
+    used to rank the qualified teams.
+    The First 8 ranked team will be given a
+    chance to retain the first available player in
+    thedraft list and a R.T.M.* or to get 2
+    R.T.M. instead. The teams must provide us
+    with thenames that they will be using R.T.M.
+    on.
+    </li><br/>
+                  <li><h6>Round 3: On Campus round : 3-4
+                  Hours duration.</h6>
+    <p>The top 10 teams of the above two round
+    aggregate will compete with each other in
+    alive auction battle. Each team will be given a
+    fixed budget which will be used for auction.
+    </li><br/>
+                  <li><h6>Round 4: On Campus round : 3-4
+    Hours duration.</h6>
+    <p>A Transfer window will open for about 10-15
+    min. in which by the mutual
+    understandingbetween the two teams transfer
+    can take place.
+    </li><br/>
 
     					</ol>
                         <br/>
-              <h5><b>Rules: </b></h5>
-              <ol>
-                  <li><h6>A team must comprise of 2-3 members.</h6></li>
-                  <li><h6>Team members must be of same college.</h6></li>
-                  <li><h6>A team member cannot register in more than one team.</h6></li>
-                  <li><h6>Multiple teams from institutes are allowed and encouraged</h6></li>
-              </ol>
-              <br/>
 
     		    	</div>
 

@@ -47,6 +47,7 @@
                                             <li><a href="/Pitch_Perfect.php" class="s-header-v2__dropdown-menu-link">Pitch Perfect</a></li>
                                             <li><a href="/trec.php" class="s-header-v2__dropdown-menu-link">TREC</a></li>
                                             <li><a href="/war_of_worlds.php" class="s-header-v2__dropdown-menu-link">War Of Worlds</a></li>
+                                            <li><a href="/iplauction.php" class="s-header-v2__dropdown-menu-link">IPL Auction</a></li>
                                             <li><a href="/expo.php" class="s-header-v2__dropdown-menu-link">Startup Expo</a></li>
 
                                         </ul>
