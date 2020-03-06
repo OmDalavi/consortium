@@ -432,11 +432,6 @@
 
                                       <span class="text-uppercase s-btn s-btn--xs s-btn--white-brd g-radius--50 g-margin-r-10--xs">Upload here</span>
                                   </a>';}
-                                  elseif($events[$var] == 'iplauction')
-                                  { echo '<a id="reg_button" href="/iplauction.php"
-
-                                      <span class="text-uppercase s-btn s-btn--xs s-btn--white-brd g-radius--50 g-margin-r-10--xs">Upload here</span>
-                                  </a>';}
 
                                   ?>
 
@@ -929,6 +924,12 @@
             $("html ,body").animate({ scrollTop: y},200);
         });
 
+        $("#iplauctionclick").click(function(){
+          $("#iplauction").css({"display":"block"});
+          $("#iplauction").animate({opacity: 1}, 1000);
+          var y = $("#iplauction").offset().top;
+            $("html ,body").animate({ scrollTop: y},200);
+        });
         function closemodel(event){
             $("#"+event).css({"display": "none"},100);
         }
