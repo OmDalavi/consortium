@@ -100,7 +100,7 @@ $(document).ready(function(){
 		e.preventDefault();
 		$(".temp").remove();
 		// permanent.append("<div class='temp'></div>");
-		for(var i=2; i<= membersiplauction.val(); i++){
+		for(var i=3; i<= membersiplauction.val(); i++){
 			permanentiplauction.append(stringvalue(i));
 		}
 
