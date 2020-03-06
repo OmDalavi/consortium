@@ -182,42 +182,7 @@
         }
 
       }
-      if(isset($_POST['swanewmem-ipauction'])){
-
-
-        // Adding Team First
-        $teamname = $con->real_escape_string($_POST['teamname']);
-        $teamemail = $_SESSION['email'];
-        $contact = $_SESSION['contact'];
-        $query = "INSERT INTO iplauction_team(Name,Email,Contact) VALUES('$teamname','$teamemail','$contact')";
-        if(mysqli_query($con,$query)){
-          $s = 'Welcome Aboard Team '.$teamname.' | IPL Auction';
-
-          htmlMail($teamemail,$s,$_SESSION['name'],$teamname, 'iplauction');
-          #Adding Menbers
-          $number = $con->real_escape_string($_POST['number']);
-
-
-          for($i=2; $i<=$number; $i++){
-
-            $membername = $con->real_escape_string($_POST['membername'.$i]);
-            $memberemail = $con->real_escape_string($_POST['memberemail'.$i]);
-            $memberphone = $con->real_escape_string($_POST['memberphone'.$i]);
-            $memberteam = $teamemail;
-
-            $query = "INSERT INTO AdVenture(Name,Main_Email,Email,Contact) VALUES('$membername','$memberteam','$memberemail','$memberphone')";
-            if(mysqli_query($con,$query)){
-              $s = 'Welcome Aboard Team '.$teamname.' | IPL Auction';
-              htmlMail($memberemail,$s,$membername,$teamname, 'IPL Auction');
-
-            }
-            else{
-              $msg = "Error member: " . mysqli_error($con);
-            }
-
-          }
-
-        }else{
+      else{
         $msg = "Error Team: " . mysqli_error($con);
       }
       $_SESSION['msg'] = "You've registered successfully. Check your email, to begin with the first round of AdVenture.";
