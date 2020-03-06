@@ -110,7 +110,7 @@
               <br/>
               <h5><b>Structure</b></h5>
               <br/>
-    		  <p>The competition will run online as per the dates mentioned in this document. Participants have to submit their advertisements which will be focused on the given theme. <br>Registrations Start: <b>1st February, 2019</b><br>Registrations Ends: <b>22nd February, 2020</b><br>Results Declaration: <b>23rd February, 2020</b></p>
+    		  <p>The competition will run online as per the dates mentioned in this document. Participants have to submit their advertisements which will be focused on the given theme. <br>Registrations Start: <b>1st February, 2019</b><br>Registrations Ends: <b>27th March, 2020</b><br>Results Declaration: <b>29th March, 2020</b></p>
                         <br/>
               <h5><b>Eligibility Criteria </b></h5>
               <ol>
@@ -136,7 +136,7 @@
             <div id="managers" class="row g-row-col--5 g-padding-x-40--xs g-padding-y-40--xs g-padding-x-20--md g-padding-x-100--lg">
                 <div class="col-xs-4 col-md-offset-2 g-full-width--xs g-margin-b-50--xs g-margin-b-0--sm">
                     <div class="g-text-center--xs">
-                        <h4 class="g-font-size-18--xs g-color--white g-margin-b-5--xs">Reetika Meena</h4>
+                        <h4 class="g-font-size-18--xs g-color--white g-margin-b-5--xs">Ritika Meena</h4>
                          <p class="g-color--white">+91 9699173231</p>
                     </div>
                 </div>
