@@ -854,9 +854,9 @@
                   <div class="col-sm-6 g-margin-b-30--xs">
                       <select type="number" pattern="[0-9]{11}" class="form-control s-form-v3__input" name="number" placeholder="* Add more members" id="members-iplauction">
                           <option value="" selected=""  hidden="">Add more members</option>
-                          <option value="3" style="color:black">3</option>
-                          <option value="4" style="color:black">4</option>
-                          <option value="5" style="color:black">5</option>
+                          <option value="2" style="color:black">1</option>
+                          <option value="3" style="color:black">2</option>
+                          <option value="4" style="color:black">3</option>
 
                       </select>
                   </div>
