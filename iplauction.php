@@ -90,7 +90,7 @@ for you.</p>
                      <li><h6>Team members must be of same college.</h6></li>
                      <li><h6>A team member cannot register in more than one team.</h6></li>
                      <li><h6>Multiple teams from institutes are allowed and encouraged.</h6></li>
-                     <li><h6>In case of any discrepancies, decision taken by the judges/event organizers will befinal.</h6></li>
+                     <li><h6>In case of any discrepancies, decision taken by the judges/event organizers will be final.</h6></li>
                  </ol>
                  <br/>
 
@@ -106,9 +106,9 @@ for you.</p>
                     <li><h6>Round 1: Draft Round (Talent hunting round)</h6>
                     <p>The Candidates need to submit a list of 10
     players. The players in this list must
-    entirelydomestic(Not played in international)
+    entirely domestic (Not played in international)
     players or international ones with 10 or
-    lessmatches under their belt. The list must be
+    less matches under their belt. The list must be
     submitted on the basis of preference. (Ex.
     Thefirst player on the list will be the most
     preferred player in domestic category.)
@@ -124,7 +124,7 @@ for you.</p>
     chance to retain the first available player in
     thedraft list and a R.T.M.* or to get 2
     R.T.M. instead. The teams must provide us
-    with thenames that they will be using R.T.M.
+    with the names that they will be using R.T.M.
     on.
     </li><br/>
                   <li><h6>Round 3: On Campus round : 3-4
@@ -138,7 +138,7 @@ for you.</p>
     Hours duration.</h6>
     <p>A Transfer window will open for about 10-15
     min. in which by the mutual
-    understandingbetween the two teams transfer
+    understanding between the two teams transfer
     can take place.
     </li><br/>
 
