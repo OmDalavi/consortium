@@ -119,8 +119,14 @@
                         <br>
                         <div class="col-sm-6 col-sm-5 col-lg-5" style="padding-left:0px !important;">
                             <p class="g-color--white-opacity g-font-size-20--xs"><b>Ready, Set, Network!</p>
-                            <p class="g-color--white-opacity g-font-size-18--xs"> 22<sup>nd</sup> February 2020</p>
+                            <p class="g-color--white-opacity g-font-size-18--xs"> 28-29 March 2020</p>
                         </div>
+                    </div>
+                    <div class="wow fadeInLeft" data-wow-duration=".3" data-wow-delay=".5s">
+                        <a id="reg_button" href="#newform" title="Register">
+                            <!--<i class="s-icon s-icon--lg s-icon--white-bg g-radius--circle ti-arrow-down"></i>-->
+                            <span class="text-uppercase s-btn s-btn--xs s-btn--white-brd g-radius--50">Register Now!</span>
+                        </a>
                     </div>
 
                 </div>
@@ -603,7 +609,7 @@
 
 
                     <div class="col-md-6 col-md-offset-3" style="text-align: center;">
-                        <p class="g-color--white-opacity g-font-size-16--sm">Here is your chance to showcase your startup to a pool of intellectual minds and network with eminent personalities!<br><br>Registration Fee: <b>1500 INR</b></p>
+                        <p class="g-color--white-opacity g-font-size-16--sm">Here is your chance to showcase your start-up to a pool of intellectual minds and network with eminent personalities!<br></p>
                         <div class="wow fadeInLeft" data-wow-duration=".3" data-wow-delay=".5s">
                             <a id="reg_button" href="#newform" title="Register">
                                 <!--<i class="s-icon s-icon--lg s-icon--white-bg g-radius--circle ti-arrow-down"></i>-->
@@ -694,8 +700,8 @@
 
                 <div class="col-xs-4 g-full-width--xs g-margin-b-50--xs g-margin-b-0--sm">
                     <div class="g-text-center--xs">
-                        <h4 class="g-font-size-18--xs g-color--white g-margin-b-5--xs">Aryan Shah</h4>
-                         <p class="g-color--white">+91 80871 138112<br>aryan199841@gmail.com</p>
+                        <h4 class="g-font-size-18--xs g-color--white g-margin-b-5--xs">Jitendra Rahangdale</h4>
+                         <p class="g-color--white">+91 89560 79892<br>jitendra98rahangdale@gmail.com</p>
                     </div>
                 </div>
 
