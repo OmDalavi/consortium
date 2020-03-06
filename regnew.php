@@ -36,7 +36,7 @@
 
     mysqli_query($con,$regquery);
 
-    $eve = array('Swadesh','AdVenture','trec','renderico','CEO','war_of_worlds','BizMantra','BizQuiz');
+    $eve = array('Swadesh','AdVenture','trec','renderico','CEO','war_of_worlds','BizMantra','BizQuiz','iplauction');
     for($var = 0; $var < 8; $var++){
       $evequery = "CREATE TABLE IF NOT EXISTS '$eve[$var]'(
                 ID INT(11) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
@@ -48,7 +48,7 @@
     mysqli_query($con,$evequery);
     }
 
-    $eve = array('Swadesh_team','AdVenture_team','trec_team','renderico_team','BizMantra_team','BizQuiz_team','war_of_worlds_team');
+    $eve = array('Swadesh_team','AdVenture_team','trec_team','renderico_team','BizMantra_team','BizQuiz_team','war_of_worlds_team','iplauction_team');
     for($var = 0; $var < 9; $var++){
       $evequery = "CREATE TABLE IF NOT EXISTS $eve[$var](
                 ID INT(11) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
@@ -75,6 +75,13 @@
     mysqli_query($con,$aimlquery);
 
     $nirmaan = "CREATE TABLE IF NOT EXISTS nirmaan(
+      ID INT(11) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+      Name VARCHAR(255) NOT NULL,
+      Email VARCHAR(255) NOT NULL,
+      Contact VARCHAR(255) NOT NULL,
+    )";
+
+    $iplauction = "CREATE TABLE IF NOT EXISTS iplauction(
       ID INT(11) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
       Name VARCHAR(255) NOT NULL,
       Email VARCHAR(255) NOT NULL,

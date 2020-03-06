@@ -322,14 +322,14 @@
                 <div class="row product-grid">
 
                   <?php
-                    $events = array('Swadesh','AdVenture','trec','renderico','CEO','war_of_worlds','BizMantra','BizQuiz', 'nirmaan');
+                    $events = array('Swadesh','AdVenture','trec','renderico','CEO','war_of_worlds','BizMantra','BizQuiz', 'nirmaan','iplauction');
                     $query = "SELECT * FROM Registrations WHERE Email='$email'";
                     $result = mysqli_query($con,$query);
                     $num = mysqli_num_rows($result);
                     if($num>0){
                       echo "<p class='g-color--dark g-font-size-16--xs'>Your registered events will be shown here.</p><br/>";
                       $row = mysqli_fetch_array($result);
-                      for($var = 0;$var < 9; $var++ ){
+                      for($var = 0;$var < 10; $var++ ){
                         if($row[$events[$var]] == 1){
                     ?>
                     <div id="<?php echo $events[$var] ?>click" class="product-card col-xs-12 col-md-3" style="cursor:pointer;">
@@ -428,6 +428,11 @@
                                   </a>';}
                                   elseif($events[$var] == 'renderico')
                                   { echo '<a id="reg_button" href="https://www.dropbox.com/request/opVcxvwLFtHctuLdleoo"
+
+                                      <span class="text-uppercase s-btn s-btn--xs s-btn--white-brd g-radius--50 g-margin-r-10--xs">Upload here</span>
+                                  </a>';}
+                                  elseif($events[$var] == 'iplauction')
+                                  { echo '<a id="reg_button" href="/iplauction.php"
 
                                       <span class="text-uppercase s-btn s-btn--xs s-btn--white-brd g-radius--50 g-margin-r-10--xs">Upload here</span>
                                   </a>';}
