@@ -102,6 +102,7 @@ else if(isset($_POST['login'])){
                                         <option value="CEO">CEO</option>
                                         <option value="war_of_worlds">War of Worlds</option>
                                         <option value="BizQuiz">Bizquiz</option>
+                                        <option value="iplauction">IPL Auction</option>
                                         <!-- <option value="Pitch_Perfect">Pitch Perfect</option>
                                         <option value="renderico_team">Render Ico</option>
                                         <option value="BizQuiz_team">Bizquiz</option>
