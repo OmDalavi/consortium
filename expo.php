@@ -209,7 +209,7 @@
                     <div class="col-sm-12 col-md-4">
                         <h4 class="g-color--dark">Publicity</h4>
                         <a  class="g-color--dark-light footer-para g-font-size-14--xs">
-                             Presence in consortium in the form of standees, banners & pamphlets put in registration kits. Also, presence in social media posts and official website of Consortium ‘19.
+                             Presence in the e-summit in the form of standees, banners & pamphlets put in registration kits. Also, presence in social media posts and official website of Consortium'20.
                         </a>
                     </div>
                     <div class="col-sm-12 col-md-4">
