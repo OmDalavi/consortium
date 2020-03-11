@@ -114,7 +114,7 @@
                             <span class="text-uppercase s-btn--primary-bg g-radius--50 g-padding-x-30--xs g-padding-y-15--xs g-font-size-13--xs g-color--white g-padding-x-15--xs">Download Case Study</span>
                         </a>
                     </div><br>
-    					    <li><h6>Round 2: Prototype and Pitching</h6><p><b> 27<sup>th</sup> March, 2020 – 29<sup>th</sup> March, 2020 | Result - 29<sup>th</sup> February, 2020
+    					    <li><h6>Round 2: Prototype and Pitching</h6><p><b> 27<sup>th</sup> March, 2020 – 29<sup>th</sup> March, 2020 | Result - 29<sup>th</sup> March, 2020
                   </b><br>The selected participants will come to VNIT, Nagpur for the final round.  Each team is required to make a prototype based on the solution they have provided of the problem mentioned in the pitch deck within an amount of <b>INR 1000/-</b>.</p></li><br/>
 
     					</ol>
