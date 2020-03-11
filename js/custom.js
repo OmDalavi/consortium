@@ -4,12 +4,14 @@ var membersTREC = $("#members-TREC");
 var membersrenderico = $("#members-renderico");
 var membersAdVenture = $("#members-AdVenture");
 var membersnirmaan = $("#members-nirmaan");
+var membersiplauction = $("#members-iplauction");
 // var members = $("#members");
 var permanentSwadesh = $(".permanent-Swadesh");
 var permanentTREC = $(".permanent-TREC");
 var permanentrenderico = $(".permanent-renderico");
 var permanentAdVenture = $(".permanent-AdVenture");
 var permanentnirmaan = $(".permanent-nirmaan");
+var permanentiplauction = $(".permanent-iplauction");
 var lock = $("#lock:checked");
 var temp = $(".temp");
 const my = '<div class="temp row g-margin-b-50--xs">'
@@ -89,6 +91,17 @@ $(document).ready(function(){
 		// permanent.append("<div class='temp'></div>");
 		for(var i=2; i<= membersnirmaan.val(); i++){
 			permanentnirmaan.append(stringvalue(i));
+		}
+
+	});
+
+  membersiplauction.on("change", function(e){
+
+		e.preventDefault();
+		$(".temp").remove();
+		// permanent.append("<div class='temp'></div>");
+		for(var i=3; i<= membersiplauction.val(); i++){
+			permanentiplauction.append(stringvalue(i));
 		}
 
 	});

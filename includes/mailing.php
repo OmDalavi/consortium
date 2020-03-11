@@ -1051,6 +1051,72 @@ function htmlMail($t, $sub, $name, $teamname, $event){
                             </body>
                         </html>';
 
+                        $htmliplauction = '<!DOCTYPE html>
+                                  <html>
+                                      <head>
+                                          <style>
+                                              li{
+                                                  padding:10px;
+                                              }
+                                              p{
+                                                  font-size:16px;
+                                              }
+
+                                              *{
+                                                  font-family:Helvetica,Arial,sans-serif;
+                                              }
+
+                                              h2{
+                                                  text-align: center;
+                                                  margin-top: 150px;
+
+                                              }
+                                              html, body{
+                                                  background-color:#f7f9fb;
+                                                  margin: 0;
+                                              }
+                                              .context {
+                                                  font-size: 12px;
+                                                  padding: 40px 60px;
+                                                  margin-left:10%;
+                                                  margin-right: 10%;
+                                              }
+
+                                              .context p{
+                                                  font-size: 12px;
+                                              }
+                                              p{
+                                                  margin: 15px 0px;
+                                              }
+
+                                          </style>
+                                      </head>
+                                      <body>
+
+                                          <div style="background: #0b0b0b; padding:10px 30px;"><img src="https://www.ecellvnit.org/img/logo-ecell.png"></div>
+                                          <h2 style="font-size:22px;">Welcome to Nirmaan</h2><br>
+
+                                          <div class="context">
+                                              <h3><b>Hey!</b></h3>
+                                              <p>Congratulations! You are successfully registered for IPL Auction</p>
+                                              <div>
+                                                  <p>
+                                                      An event for everyone who not only just loves the game of cricket, but also analyses it to the limit.<br>
+                                                       This event makes you the don of the hat of a bidder. You need to manage your budget and you can strategize to make the best possible team competing against other opponents who will give you a run for your money, quite literally.<br>
+                                                        If you love cricket, if you have followed IPL and if you can mix common sense with passion into your bidding strategy, this event is a must for you.
+                                                  </p>
+                                                  <p> See you at Consortium20</p>
+
+                                                  <p>For queries and in case of any difficulty, feel free to contact us.</p>
+                                                  <p>
+                                                      With warm regards,<br>
+                                                      Team E-Cell VNIT
+                                                  </p>
+                                              </div>
+                                          </div>
+                                      </body>
+                                  </html>';
+
     $html = "";
     if($event == 'Swadesh'){
       $html = $htmlSwadesh;
@@ -1094,6 +1160,9 @@ function htmlMail($t, $sub, $name, $teamname, $event){
     }
     else if($event == 'nirmaan'){
       $html = $htmlnirmaan;
+    }
+    else if($event == 'iplauction'){
+      $html = $htmliplauction;
     }
 
     $url = 'https://startupconclave.ecellvnit.org/send';

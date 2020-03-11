@@ -31,6 +31,7 @@
                 CEO TINYINT(1) DEFAULT '0',
                 war_of_worlds TINYINT(1) DEFAULT '0',
                 BizQuiz TINYINT(1) DEFAULT '0',
+                iplauction TINYINT(1) DEFAULT '0',
                 otp VARCHAR(255) NOT NULL
                 )";
 
