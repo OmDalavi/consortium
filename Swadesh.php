@@ -105,9 +105,16 @@
 
 
     					    <li><h6>Round 1: Pitch Deck Preparation
-                  </h6><p><b>1<sup>st</sup> March, 2020 – 10<sup>th</sup> March, 2020 | Result - 11<sup>th</sup> February, 2020 </b><br>A Report will be mailed to you once  you register with us. To register:  Registration open from  <b>1st March, 2020</b> to <b>8th March 2020</b>. The participants will have to recognize a problem from the mentioned report and hence find a solution for the same. Each team will submit a pitch deck based upon their solution to the identified problem. The results for the next round will be based on the evaluation of the pitch deck submitted.<br>
+                  </h6><p><b>11<sup>th</sup> March, 2020 – 17<sup>th</sup> March, 2020 | Result - 19<sup>th</sup> March, 2020 </b><br>People from NITs other than VNIT can participate. Registration and submission are open from 1st March 2020 to 17th March 2020. The participants can download the case study from the link given below. The participants will have to recognize a problem from the case study and hence find a solution for the same. Each team will submit a pitch deck based upon their solution to the identified problem on <b>108pbsuraj@gmail.com</b>. The results for the further round will be based on the evaluation of the pitch deck submitted.<br>
                     </p></li><br/>
-    					    <li><h6>Round 2: Pitching Round</h6><p><b> 27<sup>th</sup> March, 2020 – 29<sup>th</sup> March, 2020 | Result - 23<sup>th</sup> February, 2020
+
+                    <div class="wow fadeInLeft" data-wow-duration=".3" data-wow-delay=".5s">
+                        <a href="https://drive.google.com/file/d/1uniUs-7wFuvEbd4gvrb41s6eYmASJ94K/view?usp=sharing" title="Download">
+                            <!--<i class="s-icon s-icon--lg s-icon--white-bg g-radius--circle ti-arrow-down"></i>-->
+                            <span class="text-uppercase s-btn--primary-bg g-radius--50 g-padding-x-30--xs g-padding-y-15--xs g-font-size-13--xs g-color--white g-padding-x-15--xs">Download Case Study</span>
+                        </a>
+                    </div><br>
+    					    <li><h6>Round 2: Prototype and Pitching</h6><p><b> 27<sup>th</sup> March, 2020 – 29<sup>th</sup> March, 2020 | Result - 29<sup>th</sup> February, 2020
                   </b><br>The selected participants will come to VNIT, Nagpur for the final round.  Each team is required to make a prototype based on the solution they have provided of the problem mentioned in the pitch deck within an amount of <b>INR 1000/-</b>.</p></li><br/>
 
     					</ol>
