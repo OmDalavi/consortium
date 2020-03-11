@@ -163,7 +163,7 @@
 
 
           $url = 'https://startupconclave.ecellvnit.org/send';
-          $data = array('subject' => $subject, 'email' => $to, 'html' => $html, 'pass' => 'intheend');
+          $data = array('subject' => $subject, 'email' => $to, 'html' => $html, 'pass' => 'Entrepreneurs2020');
 
           // use key 'http' even if you send the request to https://...
           $options = array(
