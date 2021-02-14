@@ -27,11 +27,11 @@
 
                     <h4 class="g-color--white-opacity g-font-size-18--xs g-font-size-22--md" style="position: relative;">E-CELL VNIT presents</h4>
                     <div class="g-margin-b-20--xs g-margin-b-80--sm" style="display:flex; justify-content:center">
-                        <img class="resize" src="img/newconsologo-white.png" alt="Conso">
+                        <img class="resize" src="img/consologo21.png" alt="Conso">
 
                     </div>
                     <div class="col-md-6 col-md-offset-3">
-                        <p class="g-font-size-20--xs g-font-size-26--md g-color--white g-margin-b-0--xs"><b>27<sup>th</sup> - 29<sup>th</sup> March 2020</b></p>
+                        <p class="g-font-size-20--xs g-font-size-26--md g-color--white g-margin-b-0--xs"><b>26<sup>th</sup> - 28<sup>th</sup> March 2021</b></p>
 
 
 
@@ -99,7 +99,7 @@
                             <h2 class="g-font-size-40--xs g-font-size-50--sm g-font-size-60--md g-color--dark" style="font-weight:900">About</h2>
                         </div>
                         <p class="g-font-size-14--xs g-font-size-16--sm g-color--dark-opacity">Consortium, the Annual Entrepreneurship Summit of <a href="http://vnit.ac.in">VNIT Nagpur</a> comprises of invigorating events like Startup Conclave, Swades and many more. The summit aims at fueling entrepreneurial attitude amongst students through healthy competition and exciting challenges.<br>
-                            Get ready to <i>Embrace the Unexpected</i> at <b>Consortium'20</b>.
+                            Get ready to <i>Defy all Odds</i> at <b>Consortium'21</b>.
                         </p>
 
                     </div>
@@ -212,11 +212,6 @@
 
                     </div>
             </a>
-            <!-- <a href="/BizQuiz.php" class="product-card col-xs-12 col-md-4 " >
-                <div class="product-card__item-grid g-padding-y-40--xs" style="background:url(img/events/war_of_worlds.png)">
-
-                    </div>
-            </a>
             <a href="/BizQuiz.php" class="product-card col-xs-12 col-md-4 " >
                 <div class="product-card__item-grid g-padding-y-40--xs" style="background:url(img/events/BizQuiz.jpg)">
 
@@ -226,7 +221,12 @@
                 <div class="product-card__item-grid g-padding-y-40--xs" style="background:url(img/events/BizQuiz.jpg)">
 
                     </div>
-            </a> -->
+            </a>
+            <a href="/BizQuiz.php" class="product-card col-xs-12 col-md-4 " >
+                <div class="product-card__item-grid g-padding-y-40--xs" style="background:url(img/events/BizQuiz.jpg)">
+
+                    </div>
+            </a>
 
         </div>
 
