@@ -1,54 +1,15 @@
 <!DOCTYPE html>
 <html lang="en" class="no-js">
+  <?php $pagetitle = 'Team | Consortium 21'; ?>
     <!-- Begin Head -->
-    <head>
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-125403862-1"></script>
-        <script>
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-
-          gtag('config', 'UA-125403862-1');
-        </script>
-
-        <!-- Basic -->
-        <meta charset="utf-8"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>E-CELL | VNIT</title>
-        <meta name="keywords" content="" />
-        <meta name="description" content="E-Cell VNIT aims to promote and develop entrepreneurship culture amongst the students. Throughout the year, we
-                        conduct various events, workshops and speaker
-                        sessions sessions for inspiring and assisting young
-                        entrepreneurs in their journey in the world of
-                        business">
-        <meta name="author" content="Sagar Bansal">
-
-        <!-- Web Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i|Montserrat:400,700" rel="stylesheet">
-
-        <!-- Vendor Styles -->
-        <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
-        <link href="css/animate.css" rel="stylesheet" type="text/css"/>
-        <link href="vendor/themify/themify.css" rel="stylesheet" type="text/css"/>
-        <link href="vendor/scrollbar/scrollbar.min.css" rel="stylesheet" type="text/css"/>
-
-        <!-- Theme Styles -->
-        <link href="css/style.css" rel="stylesheet" type="text/css"/>
-        <link href="css/global/global.css" rel="stylesheet" type="text/css"/>
-
-        <!-- Favicon -->
-        <link rel="shortcut icon" href="img/icon.png" type="image/x-icon">
-        <link rel="apple-touch-icon" href="img/icon.png">
-    </head>
+      <?php include('includes/head.php'); ?>
     <!-- End Head -->
 
     <!-- Body -->
     <body>
 
         <!--========== HEADER ==========-->
-        <?php include("header.php")?>
+        <?php include("includes/header.php")?>
         <!--========== END HEADER ==========-->
 
         <!--========== PROMO BLOCK ==========-->
@@ -344,7 +305,8 @@
                 <!--========== END PAGE CONTENT ==========-->
 
         <!--========== FOOTER ==========-->
-        <?php include("footer.php");?>
+        <?php include("includes/footer_landing.php");?>
+        <?php include("includes/script.php");?>
         <!--========== END FOOTER ==========-->
 
         <!-- Back To Top -->

@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" class="no-js">
-    <?php $pagetitle = 'Consortium'; ?>
+    <?php $pagetitle = 'Consortium 21'; ?>
     <!-- Begin Head -->
     <?php include('includes/head.php'); ?>
     <!-- End Head -->
@@ -169,8 +169,8 @@
 
                     </div>
             </a>
-            <a href="/trec.php" class="product-card col-xs-12 col-md-4 " >
-                <div class="product-card__item-grid g-padding-y-40--xs" style="background:url(img/events/trec.jpg)">
+            <a href="https://neo.ecellvnit.org/" class="product-card col-xs-12 col-md-4 " >
+                <div class="product-card__item-grid g-padding-y-40--xs" style="background:url(img/events/neo.jpg)">
 
                     </div>
             </a>
@@ -190,20 +190,14 @@
                 <div class="product-card__item-grid g-padding-y-40--xs"  style="background:url(img/events/renderico.jpg)">
                     </div>
             </a>
-            <a href="/nirmaan.php" class="product-card col-xs-12 col-md-4" >
-                <div class="product-card__item-grid g-padding-y-40--xs"style="background:url(img/events/new-nirmaan.jpeg)">
+            <a href="/operation-research.php" class="product-card col-xs-12 col-md-4" >
+                <div class="product-card__item-grid g-padding-y-40--xs"style="background:url(img/events/operation-research.jpg)">
 
 
                     </div>
             </a>
-            <!-- <a href="/Pitch_Perfect.php" class="product-card col-xs-12 col-md-4" >
-                <div class="product-card__item-grid g-padding-y-40--xs"style="background:url(img/events/Pitch_Perfect.png)">
-
-
-                    </div>
-            </a> -->
-            <a href="BizMantra.php" class="product-card col-xs-12 col-md-4 " >
-                <div class="product-card__item-grid g-padding-y-40--xs" style="background:url(img/events/BizMantra.jpg)">
+            <a href="pitch-mantra.php" class="product-card col-xs-12 col-md-4 " >
+                <div class="product-card__item-grid g-padding-y-40--xs" style="background:url(img/events/pitch-mantra.jpg)">
 
                     </div>
             </a>
@@ -212,17 +206,17 @@
 
                     </div>
             </a>
-            <a href="/BizQuiz.php" class="product-card col-xs-12 col-md-4 " >
-                <div class="product-card__item-grid g-padding-y-40--xs" style="background:url(img/events/BizQuiz.jpg)">
+            <a href="/wallstreet.php" class="product-card col-xs-12 col-md-4 " >
+                <div class="product-card__item-grid g-padding-y-40--xs" style="background:url(img/events/Wallstreet.jpg)">
 
                     </div>
             </a>
-            <a href="/BizQuiz.php" class="product-card col-xs-12 col-md-4 " >
-                <div class="product-card__item-grid g-padding-y-40--xs" style="background:url(img/events/BizQuiz.jpg)">
+            <a href="/war-of-worlds.php" class="product-card col-xs-12 col-md-4 " >
+                <div class="product-card__item-grid g-padding-y-40--xs" style="background:url(img/events/war_of_worlds.jpg)">
 
                     </div>
             </a>
-            <a href="/BizQuiz.php" class="product-card col-xs-12 col-md-4 " >
+            <a href="/epl.php" class="product-card col-xs-12 col-md-4 " >
                 <div class="product-card__item-grid g-padding-y-40--xs" style="background:url(img/events/BizQuiz.jpg)">
 
                     </div>
@@ -232,7 +226,7 @@
 
         <!--Startup EXPO-->
 
-        <div class="s-promo-block-v3 g-bg-position--center expo" style="background: #161616" id="expo">
+        <!-- <div class="s-promo-block-v3 g-bg-position--center expo" style="background: #161616" id="expo">
 
             <div style="" class="expo-back-out"> </div>
             <div style="" class="expo-front-out"> </div>
@@ -240,9 +234,9 @@
 
             <div class="container g-padding-y-40--xs g-padding-y-0--md g-padding-y-0--lg" style=" height: 100%;
     display: flex;
-    align-items: center;">
+    align-items: center;"> -->
                 <!--<img src="img/logo/logo-teentitans.png" alt="" width="280" style="margin-top:-180px">-->
-                <div class="g-margin-t-30--xs g-margin-t-60--sm g-margin-t-100--md g-margin-b-30--xs g-margin-b-70--md g-margin-l-20--xs g-margin-l-80--sm">
+                <!-- <div class="g-margin-t-30--xs g-margin-t-60--sm g-margin-t-100--md g-margin-b-30--xs g-margin-b-70--md g-margin-l-20--xs g-margin-l-80--sm">
 
                     <h1 class="g-font-size-50--xs g-font-size-80--sm g-font-size-80--lg g-color--white" style="font-weight:900; text-shadow: 2px 0 #333;letter-spacing:2px;position: relative;"><b>STARTUP<br>EXPO</b></h1>
 
@@ -267,7 +261,7 @@
                 </div>
 
             </div>
-        </div>
+        </div> -->
 
 
         <!-- Azure Space -->
@@ -458,7 +452,7 @@
             <div class="container g-padding-y-125--md g-padding-y-40--xs g-padding-y-40--md tee-inner" style=" position: relative;">
                 <div class="g-margin-t-30--xs g-margin-t-0--sm  g-padding-x-20--xs g-margin-t-125--lg g-margin-l-20--xs g-margin-l-80--sm">
                     <h1 class="g-font-size-30--xs g-font-size-40--sm g-font-size-60--lg g-color--white g-font-weight--600">Consortium'20<br><span style="color:#aaa;">OFFICIAL</span><br><span style="color:#555;"><b>MERCHANDISE</b></span></h1>
-                <p style="color:#aaa">*Available Sizes: S, M, L, XL, XXL</p>
+                <p style="color:#aaa">*Available Sizes: XS,S, M, L, XL, XXL, XXXL (Size Chart Available)</p>
                 <div class="pm-button text-uppercase btn-block s-btn s-btn--md s-btn--white-brd g-radius--50 g-padding-x-20--xs g-margin-b-20--xs tee-button" style=""><a href="https://pmny.in/DIacQifXnI1d">Buy Now</a></div>
 
                 </div>
