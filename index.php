@@ -164,13 +164,13 @@
 
                     </div>
             </a>
+            <a href="https://neo.ecellvnit.org/" class="product-card col-xs-12 col-md-4 " >
+              <div class="product-card__item-grid g-padding-y-40--xs" style="background:url(img/events/neo.jpg)">
+
+              </div>
+            </a>
             <a href="/Swadesh.php" class="product-card col-xs-12 col-md-4 " >
                 <div class="product-card__item-grid g-padding-y-40--xs" style="background:url(img/events/Swadesh.jpg)">
-
-                    </div>
-            </a>
-            <a href="https://neo.ecellvnit.org/" class="product-card col-xs-12 col-md-4 " >
-                <div class="product-card__item-grid g-padding-y-40--xs" style="background:url(img/events/neo.jpg)">
 
                     </div>
             </a>
@@ -191,33 +191,33 @@
                     </div>
             </a>
             <a href="/operation-research.php" class="product-card col-xs-12 col-md-4" >
-                <div class="product-card__item-grid g-padding-y-40--xs"style="background:url(img/events/operation-research.jpg)">
+              <div class="product-card__item-grid g-padding-y-40--xs"style="background:url(img/events/operation-research.jpg)">
 
 
-                    </div>
+              </div>
             </a>
             <a href="pitch-mantra.php" class="product-card col-xs-12 col-md-4 " >
-                <div class="product-card__item-grid g-padding-y-40--xs" style="background:url(img/events/pitch-mantra.jpg)">
+              <div class="product-card__item-grid g-padding-y-40--xs" style="background:url(img/events/pitch-mantra.jpg)">
 
-                    </div>
+              </div>
             </a>
             <a href="/BizQuiz.php" class="product-card col-xs-12 col-md-4 " >
-                <div class="product-card__item-grid g-padding-y-40--xs" style="background:url(img/events/BizQuiz.jpg)">
+              <div class="product-card__item-grid g-padding-y-40--xs" style="background:url(img/events/BizQuiz.jpg)">
 
-                    </div>
+              </div>
+            </a>
+            <a href="/war-of-worlds.php" class="product-card col-xs-12 col-md-4 " >
+              <div class="product-card__item-grid g-padding-y-40--xs" style="background:url(img/events/war_of_worlds.jpg)">
+
+              </div>
             </a>
             <a href="/wallstreet.php" class="product-card col-xs-12 col-md-4 " >
                 <div class="product-card__item-grid g-padding-y-40--xs" style="background:url(img/events/Wallstreet.jpg)">
 
                     </div>
             </a>
-            <a href="/war-of-worlds.php" class="product-card col-xs-12 col-md-4 " >
-                <div class="product-card__item-grid g-padding-y-40--xs" style="background:url(img/events/war_of_worlds.jpg)">
-
-                    </div>
-            </a>
             <a href="/epl.php" class="product-card col-xs-12 col-md-4 " >
-                <div class="product-card__item-grid g-padding-y-40--xs" style="background:url(img/events/BizQuiz.jpg)">
+                <div class="product-card__item-grid g-padding-y-40--xs" style="background:url(img/events/epl.jpg)">
 
                     </div>
             </a>
@@ -315,7 +315,7 @@
 
                     <div class="row">
                         <div class="col-sm-6 col-md-4">
-                            <p class="g-color--white-opacity g-font-size-16--sm">Townhall was one of the star attractions of Consortium’19. Get a chance to get your question answered by our celebrity guest, live.<br><b>And the speaker? Expect the Unexpected!</b></p>
+                            <p class="g-color--white-opacity g-font-size-16--sm">Townhall was one of the star attractions of Consortium’19 where attendees got a chance to get their question answered by our celebrity guest, live.<br>What's in store for Consortium'21, you ask? <b>Expect the Unexpected!</b></p>
 
 
                         </div>
@@ -354,7 +354,7 @@
 
                     <div class="row">
                         <div class="col-sm-6 col-md-5">
-                            <p class="g-color--white-opacity g-font-size-16--sm">Zero to One was a panel discussion event of Consortium’19. It aims to inculcate knowledge about corporate sector and spread awareness via discussion between our esteemed guests from various sectors having different experiences who guide the attendees in the field of entrepreneurship and innovation. </b></p>
+                            <p class="g-color--white-opacity g-font-size-16--sm">Zero to One is a panel discussion event of Consortium where founders and directors exchange ideas on stage, highlighting the key points of their own journey and experience in the industry. It aims to inculcate knowledge about corporate sector and spread awareness via discussion between our esteemed guests from various sectors having different experiences who guide the attendees in the field of entrepreneurship and innovation. </b></p>
                         </div>
                     </div>
 

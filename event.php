@@ -23,14 +23,18 @@
 
                   <h3 class="g-color--white">The Event will be open soon.</h3>
                   <p class="g-color--white">Stay Tuned!</p><br/>
-                  <h3 class="g-color--white">Meanwhile, register for other<span class="g-color--red"> events</span>.</h3>
+                  <h3 class="g-color--white">Meanwhile, check out our running<span class="g-color--red"> events</span>.</h3>
 
                   <br>
 
                   <div class="wow fadeInLeft" data-wow-duration=".3" data-wow-delay=".5s">
-                              <a href="regnew.php" title="Register">
+                              <a href="https://startupconclave.ecellvnit.org" target="_blank">
                                   <!--<i class="s-icon s-icon--lg s-icon--white-bg g-radius--circle ti-arrow-down"></i>-->
-                                  <span class="text-uppercase s-btn--primary-bg g-radius--50 g-padding-x-30--xs g-padding-y-15--xs g-font-size-13--xs g-color--white g-padding-x-15--xs">Register <span class="ti-angle-down"></span></span>
+                                  <span class="text-uppercase s-btn--primary-bg g-radius--50 g-padding-x-30--xs g-padding-y-15--xs g-font-size-13--xs g-color--white g-padding-x-15--xs">StartUp Conclave</span>
+                              </a>
+                              <a href="https://neo.ecellvnit.org/" target="_blank">
+                                <!--<i class="s-icon s-icon--lg s-icon--white-bg g-radius--circle ti-arrow-down"></i>-->
+                                <span class="text-uppercase s-btn--primary-bg g-radius--50 g-padding-x-30--xs g-padding-y-15--xs g-font-size-13--xs g-color--white g-padding-x-15--xs">NEO</span>
                               </a>
                   </div>
 
@@ -141,7 +145,7 @@
         <!--========== END PAGE CONTENT ==========-->
 
         <!--========== FOOTER ==========-->
-        <?php include("includes/footer.php");?>
+        <?php include("includes/footer_landing.php");?>
         <?php include("includes/script.php");?>
         <!--========== END FOOTER ==========-->
 

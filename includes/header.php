@@ -35,18 +35,18 @@
                                         <!--<a href="#events" class="s-header-v2__nav-link">Events</a>-->
                                         <a href="index.html" class="dropdown-toggle s-header-v2__nav-link -is-active" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Events <span class="g-font-size-10--xs g-margin-l-5--xs ti-angle-down"></span></a>
                                         <ul class="dropdown-menu s-header-v2__dropdown-menu">
-                                            <li><a href="Swadesh.php" class="s-header-v2__dropdown-menu-link">Swades</a></li>
                                             <li><a href="https://startupconclave.ecellvnit.org" class="s-header-v2__dropdown-menu-link">Startup Conclave</a></li>
                                             <li><a href="https://neo.ecellvnit.org" class="s-header-v2__dropdown-menu-link">NEO</a></li>
-                                            <li><a href="AdVenture.php" class="s-header-v2__dropdown-menu-link">AdVenture</a></li>
+                                            <li><a href="Swadesh.php" class="s-header-v2__dropdown-menu-link">Swades</a></li>
                                             <li><a href="CEO.php" class="s-header-v2__dropdown-menu-link">CEO</a></li>
-                                            <!-- <li><a href="/nirmaan.php" class="s-header-v2__dropdown-menu-link">Nirmaan</a></li> -->
+                                            <li><a href="AdVenture.php" class="s-header-v2__dropdown-menu-link">AdVenture</a></li>
                                             <li><a href="renderico.php" class="s-header-v2__dropdown-menu-link">Render.ico</a></li>
-                                            <li><a href="BizQuiz.php" class="s-header-v2__dropdown-menu-link">Bizquiz</a></li>
-                                            <li><a href="pitch-mantra.php" class="s-header-v2__dropdown-menu-link">Pitch Mantra</a></li>
-                                            <!-- <li><a href="Pitch_Perfect.php" class="s-header-v2__dropdown-menu-link">Pitch Perfect</a></li> -->
                                             <li><a href="operation-research.php" class="s-header-v2__dropdown-menu-link">Operation Research</a></li>
+                                            <li><a href="pitch-mantra.php" class="s-header-v2__dropdown-menu-link">Pitch Mantra</a></li>
+                                            <li><a href="BizQuiz.php" class="s-header-v2__dropdown-menu-link">Bizquiz</a></li>
                                             <li><a href="war_of_worlds.php" class="s-header-v2__dropdown-menu-link">War Of Worlds</a></li>
+                                            <li><a href="wallstreet.php" class="s-header-v2__dropdown-menu-link">Wallstreet</a></li>
+                                            <li><a href="epl.php" class="s-header-v2__dropdown-menu-link">EPL Manager</a></li>
                                             <!-- <li><a href="iplauction.php" class="s-header-v2__dropdown-menu-link">IPL Auction</a></li> -->
                                             <!-- <li><a href="expo.php" class="s-header-v2__dropdown-menu-link">Startup Expo</a></li> -->
 
