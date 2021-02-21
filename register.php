@@ -103,7 +103,7 @@
             header('location:/paybrain.php');
           }else{
             $_SESSION['msg'] = "You have already registered for this event!";
-            header('location:/dashboard.php');
+            header('location:dashboard.php');
           }
       }else{
         echo("Error description: " . mysqli_error($con));
@@ -128,11 +128,11 @@
           $s = 'Welcome Aboard '.$name.' | BizMantra';
 
           htmlMail($email,$s,$name,$name, 'BizMantra');
-          header('location:/dashboard.php');
+          header('location:dashboard.php');
         }
         else{
           $_SESSION['msg'] = "You have already registered for this event! To manage or create your team please go below.";
-          header('location:/dashboard.php');
+          header('location:dashboard.php');
         }
       }else{
         echo("Error description: " . mysqli_error($con));
@@ -156,11 +156,11 @@
           $s = 'Welcome Aboard '.$name.' | Pitch Perfect';
 
           htmlMail($email,$s,$name,$name, 'Pitch_Perfect');
-          header('location:/dashboard.php');
+          header('location:dashboard.php');
         }
         else{
           $_SESSION['msg'] = "You have already registered for this event! To manage or create your team please go below.";
-          header('location:/dashboard.php');
+          header('location:dashboard.php');
         }
       }else{
         echo("Error description: " . mysqli_error($con));
@@ -181,10 +181,10 @@
           mysqli_query($con,$q2);
 
           $_SESSION['msg'] = "Thank You for showing interest in $event. Click on the registered events below to complete your registration.";
-          header('location:/dashboard.php');
+          header('location:dashboard.php');
         }else{
           $_SESSION['msg'] = "You have already registered for this event! To manage or create your team please go below.";
-          header('location:/dashboard.php');
+          header('location:dashboard.php');
         }
       }else{
         echo("Error description: " . mysqli_error($con));
@@ -209,17 +209,17 @@
             <form class="center-block g-width-500--sm g-width-550--md" method="post" action="register.php">
                 <div class="permanent">
                   <select pattern="[0-9]{11}" class="form-control s-form-v3__input g-margin-b-30--xs" name="event" placeholder="* No. of members" id="members" >
-                      <option value='' selected disabled hidden>Choose an Event or Workshop</option>
-                      <option value='Swadesh'>Swades</option>
-                      <option value='trec'>TREC (Technology Research Entrepreneurship Conclave)</option>
+                      <option value='' selected disabled hidden>Choose an Event you wish to participate in.</option>
+                      <!-- <option value='Swadesh'>Swades</option> -->
+                      <!-- <option value='trec'>TREC (Technology Research Entrepreneurship Conclave)</option> -->
                       <option value='CEO'>CEO</option>
-                      <option value='nirmaan'>Nirmaan</option>
+                      <!-- <option value='nirmaan'>Nirmaan</option>
                       <option value='war_of_worlds'>War of Worlds</option>
                       <option value='renderico'>Render.ico</option>
                       <option value='BizMantra'>BizMantra</option>
                       <option value='BizQuiz'>BizQuiz</option>
                       <option value='AdVenture'>AdVenture</option>
-                      <option value='iplauction'>IPL Auction</option>
+                      <option value='iplauction'>IPL Auction</option> -->
 
 
                       <!--<option value='AdVenture'>AdVenture</option>
@@ -237,7 +237,7 @@
                 <div class="g-text-center--xs">
                     <button type="submit" name="sub_event" class="text-uppercase s-btn s-btn--md s-btn--white-brd g-radius--50 g-padding-x-70--xs g-margin-b-20--xs">Next</button>
                     <br>
-                    <a href="/dashboard.php">See Dashboard Here</a>
+                    <a href="dashboard.php">See Dashboard Here</a>
                 </div>
 
             </form>

@@ -7,7 +7,7 @@ function htmlMail($t, $sub, $name, $teamname, $event){
 
     $subject = $sub;
 
-    $htmlOTP = "<!DOCTYPE html>
+    $html_conso_id = "<!DOCTYPE html>
               <html>
                   <head>
                       <style>
@@ -50,7 +50,7 @@ function htmlMail($t, $sub, $name, $teamname, $event){
                   <body>
 
                       <div style='background: #0b0b0b; padding:10px 30px;'><img src='https://www.ecellvnit.org/img/logo-ecell.png'></div>
-                      <h2 style='font-size:22px;'>Welcome to Consortium'20</h2><br>
+                      <h2 style='font-size:22px;'>Welcome to Consortium'21</h2><br>
 
                       <div class='context'>
 
@@ -61,7 +61,11 @@ function htmlMail($t, $sub, $name, $teamname, $event){
                           <p>Thank You for registering! You are now a part of one of the India's Biggest Entrepreneurship Summit.</p>
                           <div>
                               <p>We are well pleased to have you on board.<br/><br/>
-                              To verify your email: $email use this OTP <br/> <span style='font-size:24px'>".$teamname."</span></p>
+                              We are assigning you a ConsoID: ".$teamname."<br/>
+                              You need to remember this ConsoID to login into your dashboard on our website, https://consortium.ecellvnit.org/<br/>
+                              <b>Kindly do not share your ConsoID with anyone. It's your key to your dashboard of Consortium'21.</b><br/>
+                              Your ConsoID is<br/> <span style='font-size:24px'>".$teamname."</span></p>
+                              Use it to verify your email id.<br/>
                               For queries and in case of any difficulty, feel free to contact us.<br>
                                   <p>
                                   With warm regards,<br>
@@ -1142,8 +1146,8 @@ function htmlMail($t, $sub, $name, $teamname, $event){
     else if($event == 'townhall'){
       $html = $htmlTownhall;
     }
-    else if($event == 'otp'){
-      $html = $htmlOTP;
+    else if($event == 'conso_id'){
+      $html = $html_conso_id;
     }
     else if($event == 'BizQuiz'){
       $html = $htmlBizQuiz;

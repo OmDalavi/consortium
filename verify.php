@@ -14,15 +14,15 @@ if(isset($_SESSION['email'])){
     header('location:dashboard.php');
 }
 
-else if(isset($_POST['otp_sub'])) {
+else if(isset($_POST['conso_id_sub'])) {
 
-  $otpver = $con->real_escape_string($_POST['otp']);
+  $otpver = $con->real_escape_string($_POST['conso_id']);
 
   if($email == ""){
     header('location:regnew.php');
   }
   if($otpver == ""){
-    $msg = "Please enter a valid otp";
+    $msg = "That's not your ConsoID. Please check again.";
   }
   else{
     $query = "SELECT * from Registrations where Email='$email'";
@@ -41,7 +41,7 @@ else if(isset($_POST['otp_sub'])) {
         // $_SESSION['login_error'] = "Your email has been verified! You can Login now";
         header('location:login.php');
       }else{
-        $msg = "Your OTP is incorrect. Please try again.";
+        $msg = "Your ConsoID is incorrect. Please try again.";
       }
     }else{
       echo("Error description: " . mysqli_error($con));
@@ -51,19 +51,31 @@ else if(isset($_POST['otp_sub'])) {
 
 elseif(isset($_POST['resend'])) {
 
-
   $otp = '1234567890';
   $otp = str_shuffle($otp);
-  $otp = substr($otp, 0, 6);
 
-  $q = "UPDATE Registrations SET otp='$otp' WHERE Email = '$email'";
+  $conso_id = substr($name, 0, 3);
+  $conso_id .= substr($otp, 0, 4);
+
+
+  $query = "SELECT * FROM Registrations WHERE Email='$email'";
+  $result = mysqli_query($con,$query);
+  $num = mysqli_num_rows($result);
+  if($num != 0){
+    $conso_id = "";
+    $pass = str_shuffle($otp);
+    $conso_id = substr($name, 0, 3);
+    $conso_id .= substr($pass, 0, 4);
+  }
+
+  $q = "UPDATE Registrations SET otp='$conso_id' WHERE Email = '$email'";
 
   if(mysqli_query($con,$q)){
 
-    $msg = "An OTP is sent to your registered email id. Please enter the OTP below to confirm your email address.";
+    $msg = "Your ConsoID has been sent to your registered email id. Please enter your ConsoID below to confirm your email address.";
     $s = "Verify your Email | E-Cell VNIT Nagpur";
-    $_SESSION['verify'] = "Welcome. An OTP is sent to your registered email id. Please enter the OTP below to confirm your email address.";
-    htmlMail($email,$s,$name,$otp, 'otp');
+    $_SESSION['verify'] = "Your ConsoID has been sent to your registered email id. Please enter your ConsoID below to confirm your email address.";
+    htmlMail($email,$s,$name,$conso_id, 'conso_id');
     header('location:verify.php?email='.$email.'');
   }
   else{
@@ -92,23 +104,23 @@ elseif(isset($_POST['resend'])) {
               <form class="center-block g-width-500--sm g-width-550--md" method="post" action="verify.php?email=<?php echo $email ?>">
                   <div class='permanent'>
                     <div class='g-margin-b-30--xs'>
-                      <input type='text' class='form-control s-form-v3__input' placeholder='* Your OTP' name='otp' style='text-transform: none' id='otp'>
+                      <input type='password' class='form-control s-form-v3__input' placeholder='* Your ConsoID' name='conso_id' style='text-transform: none' id='otp'>
                     </div>
                   </div>
 
                   <div class='g-text-center--xs'>
-                    <button type='submit' name='otp_sub' class='text-uppercase s-btn s-btn--md s-btn--white-brd g-radius--50 g-padding-x-70--xs g-margin-b-20--xs'>Submit</button>
+                    <button type='submit' name='conso_id_sub' class='text-uppercase s-btn s-btn--md s-btn--white-brd g-radius--50 g-padding-x-70--xs g-margin-b-20--xs'>Submit</button>
                   </div>
               </form>
 
               <form class='center-block g-width-500--sm g-width-550--md' method='post' action='verify.php?email=<?php echo $email ?>'>
-                <button type='submit' name='resend' class='text-uppercase s-btn g-radius--50 g-padding-x-20--xs g-margin-b-20--xs'>Resend OTP</button>
+                <button type='submit' name='resend' class='text-uppercase s-btn g-radius--50 g-padding-x-20--xs g-margin-b-20--xs'>Resend ConsoID</button>
               </form>
             </div>
 
         </div>
     </div>
-    <?php include("includes/footer.php");?>
+    <?php include("includes/footer_landing.php");?>
     <?php include("includes/script.php");?>
   </body>
 </html>

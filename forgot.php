@@ -1,6 +1,6 @@
 <?php
   session_start();
-  $pagetitle = 'Forgot Password | Consortium';
+  $pagetitle = 'Forgot ConsoID | Consortium';
 
   require_once('includes/dbconnect.php');
 
@@ -14,13 +14,27 @@
     if($num > 0){
       $otp = '1234567890';
       $otp = str_shuffle($otp);
-      $otp = substr($otp, 0, 6);
+      // $otp = substr($otp, 0, 6);
+
+      $conso_id = substr($name, 0, 3);
+      $conso_id .= substr($otp, 0, 4);
+
+
+      $query = "SELECT * FROM Registrations WHERE Email='$email'";
+      $result = mysqli_query($con,$query);
+      $num = mysqli_num_rows($result);
+      if($num != 0){
+        $conso_id = "";
+        $pass = str_shuffle($otp);
+        $conso_id = substr($name, 0, 3);
+        $conso_id .= substr($pass, 0, 4);
+      }
 
       $_SESSION['OTP'] = $otp;
 
       $to = $email;
 
-      $subject = "Reset Your Password | E-Cell VNIT Nagpur";
+      $subject = "Reset Your ConsoID | E-Cell VNIT Nagpur";
       $html = "
       <!DOCTYPE html>
           <html>
@@ -283,7 +297,7 @@
     </div>
 
   </body>
-  <?php include("includes/footer.php"); ?>
+  <?php include("includes/footer_landing.php"); ?>
   <?php include("includes/script.php"); ?>
 </html>
 <?php } ?>
