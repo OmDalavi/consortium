@@ -1121,6 +1121,76 @@ function htmlMail($t, $sub, $name, $teamname, $event){
                                       </body>
                                   </html>';
 
+                                  $htmlForgot = "<!DOCTYPE html>
+                                            <html>
+                                                <head>
+                                                    <style>
+                                                        li{
+                                                            padding:10px;
+                                                        }
+                                                        p{
+                                                            font-size:16px;
+                                                        }
+
+                                                        *{
+                                                            font-family:Helvetica,Arial,sans-serif;
+                                                        }
+
+                                                        h2{
+                                                            text-align: center;
+                                                            margin-top: 150px;
+
+                                                        }
+                                                        html, body{
+                                                            background-color:#f7f9fb;
+                                                            margin: 0;
+                                                        }
+                                                        .context {
+                                                            font-size: 12px;
+                                                            padding: 40px 60px;
+                                                            margin-left:10%;
+                                                            margin-right: 10%;
+                                                        }
+
+                                                        .context p{
+                                                            font-size: 12px;
+                                                        }
+                                                        p{
+                                                            margin: 15px 0px;
+                                                        }
+
+                                                    </style>
+                                                </head>
+                                                <body>
+
+                                                    <div style='background: #0b0b0b; padding:10px 30px;'><img src='https://www.ecellvnit.org/img/logo-ecell.png'></div>
+                                                    <h2 style='font-size:22px;'>Your new ConsoID for Consortium'21</h2><br>
+
+                                                    <div class='context'>
+
+
+                                                    <h3><b>Hello".$name."!</b></h3>
+                                                    <div>
+                                                        <p>We hope this mail finds you in the best of your health and cheerful spirits. We are well pleased to have you on board.<br/><br/>
+                                                        Your updated ConsoID is: <br/> <span style='font-size:24px'>".$teamname."</span><br/>
+                                                        Use this ConsoID to login to your dashboard: https://consortium.ecellvnit.org/login.php
+                                                        </p>
+                                                        For queries and in case of any difficulty, feel free to contact us.<br>
+                                                            <p>
+                                                            With warm regards,<br>
+                                                            E-Cell VNIT
+                                                        </p>
+
+
+                                                    </div>
+
+
+                                                        </div>
+                                                    </div>
+                                                </body>
+                                            </html>";
+
+
     $html = "";
     if($event == 'Swadesh'){
       $html = $htmlSwadesh;
@@ -1167,6 +1237,9 @@ function htmlMail($t, $sub, $name, $teamname, $event){
     }
     else if($event == 'iplauction'){
       $html = $htmliplauction;
+    }
+    else if($event == 'forgot'){
+      $html = $htmlForgot;
     }
 
     $url = 'https://startupconclave.ecellvnit.org/send';

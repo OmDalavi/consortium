@@ -97,7 +97,7 @@
     // if( $name == "" || $email == "" || $contact == "" || $password == "" || $cpassword == "" || $college == ""){
     if( $name == "" || $email == "" || $contact == "" || $college == ""){
       $msg = "Please enter all the details";
-      header('location:/regnew.php');
+      header('location:regnew.php');
     }
     // elseif($password == $cpassword){
     else{
@@ -117,7 +117,7 @@
       }
 
       elseif($num != 0 && $row['otp'] != 'Confirmed'){
-        $_SESSION['verify'] = "Please verify your email id in order to login";
+        $_SESSION['verify'] = "Please verify your email id in order to login. Enter your ConsoID";
         header('location:verify.php?email='.$email.'');
       }
 
