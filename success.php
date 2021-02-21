@@ -1,47 +1,34 @@
-<!DOCTYPE html>
+<?php
+
+require_once 'includes/dbconnect.php';
+if(isset($_POST['login'])){
+    header('Location: dashboard.php');
+}
+?>
+<!Doctype html>
 <html>
-  <?php $pagetitle = 'Pay TREC | Consortium'; ?>
-  <?php include('includes/head.php'); ?>
-  <body class="back">
-    <?php include('includes/header.php'); ?>
-    <div id="register">
-        <div class="g-container--sm g-padding-y-80--xs g-padding-y-125--sm">
-                <div class="g-text-center--xs g-color--white-opacity g-margin-b-60--xs">
-                      <h2 class="g-color--white-opacity">Round 1 Completed Successfully!
-                    </h2>
+    <head>
+      <meta charset="utf-8" />
 
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;800&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="css/style.css" />
 
-                    <div class="col-md-8 col-md-offset-2" style="text-align: center;">
-                      <p class="g-color--white-opacity g-font-size-16--sm">
+      <Script>
+          localStorage.clear();
+      </Script>
+    </head>
+    <body>
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#">
+          <img src="images/log.png" alt="NEO logo" style="height: 70px;"/>
+        </a>
 
-                          <b>Your answers has been submitted.<b><br>
-
-
-
-                      </p>
-
-                        <p class="g-color--white-opacity g-font-size-16--sm">
-
-
-                             You will receive results via email<br>
-                             <br>
-
-                             <div class="wow fadeInLeft" data-wow-duration=".3" data-wow-delay=".5s">
-                                 <a id="reg_button" href="dashboard.php" title="dashboard">
-                                     <!--<i class="s-icon s-icon--lg s-icon--white-bg g-radius--circle ti-arrow-down"></i>-->
-                                     <span class="text-uppercase s-btn s-btn--xs s-btn--white-brd g-radius--50">Back to Dashboard</span>
-                                 </a>
-                             </div>
-
-
-                        </p>
-
-
-                    </div>
-                </div>
-            </div>
-    </div>
-    <?php include("includes/footer_landing.php");?>
-    <?php include("includes/script.php");?>
-  </body>
+      </nav>
+        <h4 class="text-center">Your payment is succesfull , you can now login.</h4>
+        <form action="success.php" method="POST" class="text-center pt-4">
+            <input type="submit" class="btn btn-primary" name="login" value="Login Again" >
+        </form>
+    </body>
 </html>

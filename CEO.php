@@ -13,7 +13,7 @@
         <!--========== END HEADER ==========-->
 
         <!--========== PROMO BLOCK ==========-->
-        <div class="s-promo-block-v3 g-fullheight--xs event-landing1" style="background: url('img/1920x1080/landing-pitch.jpg');">
+        <div class="s-promo-block-v3 g-fullheight--xs event-landing1" style="background: url('img/idea.jpg');">
             <div class="container g-ver-center--sm g-padding-y-125--xs g-padding-y-0--lg event-landing-inner">
 
                 <div class="g-margin-t-30--xs g-margin-t-0--sm g-margin-b-30--xs g-margin-b-70--md g-margin-l-20--xs g-margin-l-80--sm">
@@ -28,11 +28,11 @@
                     <br>
 
                     <div class="wow fadeInLeft" data-wow-duration=".3" data-wow-delay=".5s">
-                                <a href="/regnew.php" title="Register">
-                                    <!--<i class="s-icon s-icon--lg s-icon--white-bg g-radius--circle ti-arrow-down"></i>-->
-                                    <span class="text-uppercase s-btn--primary-bg g-radius--50 g-padding-x-30--xs g-padding-y-15--xs g-font-size-13--xs g-color--white g-padding-x-15--xs">Register <span class="ti-angle-down"></span></span>
-                                </a>
-                            </div>
+                      <a href="regnew.php" title="Register">
+                          <!--<i class="s-icon s-icon--lg s-icon--white-bg g-radius--circle ti-arrow-down"></i>-->
+                          <span class="text-uppercase s-btn--primary-bg g-radius--50 g-padding-x-30--xs g-padding-y-15--xs g-font-size-13--xs g-color--white g-padding-x-15--xs">Register</span></span>
+                      </a>
+                    </div>
 
                 </div>
 
@@ -69,18 +69,17 @@
             <div class="card" id="event-card-bg">
     		    <div class="card-tabs">
     		      <ul class="tabs tabs-fixed-width">
-    		        <li class="tab"><a class="active" href="#why" id="but_why">WHY PARTICIPATE?</a></li>
-    		        <li class="tab"><a  href="#structure" id="but_structure">STRUCTURE</a></li>
+                <li class="tab"><a class="active" href="#structure" id="but_structure">STRUCTURE</a></li>
+    		        <li class="tab"><a href="#why" id="but_why">WHY PARTICIPATE?</a></li>
     		        <li class="tab"><a href="#timeline" id="but_timeline">TIMELINE</a></li>
     		      </ul>
     		    </div>
     		    <div class="card-content code">
 
-    		    	<div id="why">
-    			     	<h5><b>Prizes Worth &#8377; 30K </b></h5><br/>
+    		    	<div id="why" style="display:none;">
+    			     	<h5><b>Prizes Worth &#8377; 10K </b></h5><br/>
     			     	<ol>
-    			     	    <li><p>Attractive prizes for top 3 positions and goodies for best performers in each round and   e-certificates for all participants.</p></li>
-    			     	    <li><p>All students who qualify to the fourth round (on campus) will receive an official certificate of participation.</p></li>
+    			     	    <li><p>Attractive prizes for the winners, goodies for best performers and e-certificates for all participants.</p></li>
     			     	    <li><p>Opportunity to look at scenarios from macro perspectives and sharpen the crucial skill of <b>looking at the bigger picture</b>.</p></li>
     			     	    <li><p>Learn how the board of the any company could take crucial decision for company.</p></li>
     			     	    <li><p>Meet new people, socialize and make your presence felt by being a part of this wonderful journey.</p></li>
@@ -93,44 +92,86 @@
     			     	<br/>
 
     				</div>
-    				<div id="structure" style="display:none;">
-              <h5><b>How to participate</b></h5>
+    				<div id="structure">
+              <h5><b>Group discussion webinar</b></h5>
+              <p>The event begins with a webinar on group discussions. Here participants will be briefed about details of a GD, its different genres ,related importance and how can one excel at it.</p>
               <br/>
-              <p>The key step in order to participate is to attempt the CEO Quiz which will be conducted soon in Colleges. If you would like the test to be conducted in your College, kindly contact us by phone with the necessary details.</p>
-              <br/>
-              <h5><b>Structure</b></h5>
-              <br/>
-    		    	    <p>Competition is divided into three rounds as follows:</p><br/>
-    		    	    <ol>
 
-    					    <li><h6>Round 1: CEO Quiz </h6><p><b> 21st to 28th January 2020 </b><br>It is preliminary-cum-elimination round to shortlist the participants based on the scores. Duration: 30 minutes  (MCQ Questions: It will have three sections – <b>A) Aptitude, <br>B) General Sciences,<br> C) English Proficiency <br></b>.The test will be conducted offline in the respective colleges.</p></li><br/>
+              <h5><b>Group Discussion</b></h5>
+    		    	<ol>
+    					  <li><p>Participants will be divided into groups and each group will be given a topic (general topic or may be related to entrepreneurial activities).</p></li>
 
-    					    <li><h6>Round 2: PPDT</h6><p><b>21st February 2020 (First Day First Half) | Journey from VNIT, Nagpur </b><br>
-                    PPDT – Picture perception and dissection test <br>
-                    Highlights - Pictures shown in PPDT are very unclear and various different perception takes place for same. Round scheme – In this test, the candidates are shown a blurred picture for a period of 40 second. Based on that, candidates are allotted a time period of 6 minutes to write a story on the picture with details consisting of that handled to the situation, what is happening now and what will be the possible outcome.<br>
-                    After writing the story, candidates will be divided into groups of 10. And they will be told to narrate their story one by one (Each one have to narrate his/her story with in one and half minute). After the completion of stories of all the students, a group discussion conducted in which students discuss the story & try to come up with a common story (Time limit-10minutes).</p></li><br/>
-                  <li><h6>Round 3: Case Interview</h6><p><b>21st Feb 2020 (First Day Second Half) </b><br>Case interview Highlights: Explaining what case interview is and what is expected from them. A problem will be given to each team. Time will be given for each team to think. 5 minutes will be given for each team to explain solution they come up with. This is a team event, where you have to overcome the problem given to you related to Case Interview.
-                    Each one of will be given a sheet containing one problem related to market, publicity and crises.</p></li><br/>
-                  <li><h6>Round 4: Boardroom</h6><p><b>22nd Feb 2020 (Second Day)</b><br>The one-of-its-kind game where you are a part of the board of a corporation which is going through a major decision. Make allies wisely, know your opposition, influence the neutral people and put forward your point of view in front the other stakeholders of the corporation.</p></li>
+    					  <li><p>GD will go on for 20 minutes. In the first minute the topic will be introduced by our judge panel, and then four minutes will be given to think on the topic and prepare the points; 13 min will be given for discussion, and 2 min will be for presenting a conclusion.</p></li><br/>
     					</ol>
 
-    		    	</div>
-    		    	<div id="timeline" style="display:none;">
-                <h5><b>Timeline</b></h5><br/>
-                    <ul>
-                      <li><h5>Offline CEO Quiz</h5>
-                        <p>21st to 28th January 2020</p>
-                      </li><br/>
+              <h5><b>Marketistaan</b></h5>
+              <p>Top performers from the group discussion round will be selected for this round. These will then be divided into random teams to test flexibility of work environment.</p>
+              <h6><b>What is Marketistaan?</b></h6>
+              <p>Get a chance to be mentored by established and renowned Corporate Professionals from all over the globe. Live your career dream of working under the leadership of your corporate idols. Marketistaan is market analysis case study where different teams representing our various Corporate Professionals will lock horns. In presenting the most viable corporate solution to the provided case study.</p><br/>
 
-                      <li><h5>PPDT</h5>
-                        <p>21st February 2020 (First Day First Half)</p>
-                      </li><br/>
-                      <li><h5>Case Interview Round</h5>
-                        <p>21st Feb 2020 (First Day Second Half)</p>
-                      </li>
-                      <li><h5>Boardroom Round</h5>
-                        <p>22nd Feb 2020 (Second Day)<p>
-                    </ul>
+              <h5><b>The Board Room dilemma</b></h5>
+              <p>The one-of-its kind game where you are a part of the board of a corporation which is going through a major decision. Make allies, know your opposition, influence the neutral people and put forward your point of view in front the other stakeholders of the corporation.</p>
+              <h6><b>What is the Board of Directors?</b></h6>
+              <p>A board of directors is a recognized group of people who jointly oversee the activities of an organization.</p>
+              <h6><b>Format of this round:</b></h6>
+              <ol>
+    					  <li><p>This is an individual game and every player represents a board member.</p></li>
+    					  <li><p>Every member will have an agenda and his stance in each decision will be awarded /deducted with points in each stance he takes during a given situation in each round.</p></li>
+                <li><p>Every board member (in rounds) will first present his agenda to the whole board. Afterward a private discussion time will be provided to form allies and finally voting will take place. According to that points will be rewarded as per the outcome obtained by voting; i.e. how it will affect individually each member.</p></li>
+                <li><p>The usual roles in a board meeting are CEO, CFO, investors, industrial experts and major stakeholders.</p></li><br/>
+              </ol>
+
+              <div class="wow fadeInLeft" data-wow-duration=".3" data-wow-delay=".5s">
+                <a href="regnew.php">
+                    <span class="text-uppercase s-btn--primary-bg g-radius--50 g-padding-x-30--xs g-padding-y-15--xs g-font-size-13--xs g-color--white g-padding-x-15--xs">Download Event Brochure<span class="ti-angle-down"></span></span>
+                </a>
+              </div>
+            </div>
+
+              <div id="timeline" style="display:none;">
+                <h5><b>Timeline</b></h5><br/>
+                  <h5><b>Amateur Pool (only 1st year UG)</b></h5>
+                  <ul>
+                    <li>
+                      <p><b>24 February:</b> Webinar with Mr. Saurabh Jain, Vice President of Paytm</p>
+                    </li><br/>
+                    <li>
+                      <p><b>19 March:</b> Group Discussion Workshop</p>
+                    </li><br/>
+                    <li>
+                      <p><b>20 March:</b> Registration Closed!</p>
+                    </li><br/>
+                    <li>
+                      <p><b>22 March:</b> Group Discussion Round</p>
+                    </li><br/>
+                    <li>
+                      <p><b>24-26 March:</b> Marketistaan</p>
+                    </li><br/>
+                    <li>
+                      <p><b>28 March:</b> The Boardroom Dilemma</p>
+                    </li><br/>
+                  </ul>
+                  <h5><b>Challenger Pool</b></h5>
+                  <ul>
+                    <li>
+                      <p><b>24 February:</b> Webinar with Mr. Saurabh Jain, Vice President of Paytm</p>
+                    </li><br/>
+                    <li>
+                      <p><b>19 March:</b> Group Discussion Workshop</p>
+                    </li><br/>
+                    <li>
+                      <p><b>19 March:</b> Registration Closed!</p>
+                    </li><br/>
+                    <li>
+                      <p><b>20-21 March:</b> Group Discussion Round</p>
+                    </li><br/>
+                    <li>
+                      <p><b>24-26 March:</b> Marketistaan</p>
+                    </li><br/>
+                    <li>
+                      <p><b>28 March:</b> The Boardroom Dilemma</p>
+                    </li><br/>
+                  </ul>
     		    	</div>
 
     		    </div>
@@ -144,30 +185,30 @@
         <!--<img class="s-mockup-v2" src="img/mockups/pencil-01.png" alt="Mockup Image">-->
             <!--<div class="g-container--md g-padding-y-40--xs">-->
             <div id="managers" class="row g-row-col--5 g-padding-x-40--xs g-padding-y-40--xs g-padding-x-20--md g-padding-x-100--lg">
-                <div class="col-xs-3 g-full-width--xs g-margin-b-50--xs g-margin-b-0--sm">
+                <div class="col-xs-6 g-full-width--xs g-margin-b-50--xs g-margin-b-0--sm">
                     <div class="g-text-center--xs">
-                        <h4 class="g-font-size-18--xs g-color--white g-margin-b-5--xs">Rushikesh</h4>
-                         <p class="g-color--white">+91 7038060390</p>
+                        <h4 class="g-font-size-18--xs g-color--white g-margin-b-5--xs">Bhargav Choudhury</h4>
+                         <p class="g-color--white">+91 63761 28630<br/>bhrgvcityfc01@gmail.com</p>
                     </div>
                 </div>
-                <div class="col-xs-3 g-full-width--xs g-margin-b-50--xs g-margin-b-0--sm">
+                <div class="col-xs-6 g-full-width--xs g-margin-b-50--xs g-margin-b-0--sm">
                     <div class="g-text-center--xs">
-                        <h4 class="g-font-size-18--xs g-color--white g-margin-b-5--xs">Nisha</h4>
-                         <p class="g-color--white">+91 7420874579</p>
+                        <h4 class="g-font-size-18--xs g-color--white g-margin-b-5--xs">Snehal Patil</h4>
+                         <p class="g-color--white">+91 94231 32631<br/>snehalpatil1801@gmail.com</p>
                     </div>
                 </div>
-                <div class="col-xs-3 g-full-width--xs g-margin-b-50--xs g-margin-b-0--sm">
+                <div class="col-xs-6 g-full-width--xs g-margin-b-50--xs g-margin-b-0--sm">
 
                     <div class="g-text-center--xs">
-                        <h4 class="g-font-size-18--xs g-color--white g-margin-b-5--xs">Abhishek</h4>
-                         <p class="g-color--white">+91 6392806041</p>
+                        <h4 class="g-font-size-18--xs g-color--white g-margin-b-5--xs">Jay Chheda</h4>
+                         <p class="g-color--white">+91 98700 36145<br/>jaychheda2410@gmail.com</p>
                     </div>
                 </div>
-                <div class="col-xs-3 g-full-width--xs g-margin-b-50--xs g-margin-b-0--sm">
+                <div class="col-xs-6 g-full-width--xs g-margin-b-50--xs g-margin-b-0--sm">
                     <div class="g-text-center--xs">
 
-                        <h4 class="g-font-size-18--xs g-color--white g-margin-b-5--xs">Tanmay</h4>
-                         <p class="g-color--white">+91 9373791216</p>
+                        <h4 class="g-font-size-18--xs g-color--white g-margin-b-5--xs">Tanvi Khurana</h4>
+                         <p class="g-color--white">+91 77578 20308<br/>tksagi1212@gmail.com</p>
                     </div>
                 </div>
             </div>
