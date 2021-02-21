@@ -46,7 +46,7 @@
 
 
             <video autoplay loop autobuffer muted playsinline id="vid">
-              <source src="video_landing.mp4" type="video/mp4" style="position:absolute; top:0px; left:0px; bottom:0px; right:0px; width:100%; height:100vh; border:none; margin:0; padding:0; overflow:hidden; z-index:0;">
+              <source src="img/video_landing.mp4" type="video/mp4" style="position:absolute; top:0px; left:0px; bottom:0px; right:0px; width:100%; height:100vh; border:none; margin:0; padding:0; overflow:hidden; z-index:0;">
               <img src="img/alt_landing.png" alt="">
             </video>
 
@@ -169,28 +169,28 @@
 
               </div>
             </a>
-            <a href="/Swadesh.php" class="product-card col-xs-12 col-md-4 " >
+            <a href="swades.php" class="product-card col-xs-12 col-md-4 " >
                 <div class="product-card__item-grid g-padding-y-40--xs" style="background:url(img/events/Swadesh.jpg)">
 
                     </div>
             </a>
-             <a href="/CEO.php" class="product-card col-xs-12 col-md-4" >
+             <a href="CEO.php" class="product-card col-xs-12 col-md-4" >
                 <div class="product-card__item-grid g-padding-y-40--xs" style="background:url(img/events/CEO.jpg)">
 
 
                     </div>
             </a>
-             <a href="/AdVenture.php" class="product-card col-xs-12 col-md-4" >
+             <a href="AdVenture.php" class="product-card col-xs-12 col-md-4" >
                 <div class="product-card__item-grid g-padding-y-40--xs" style="background:url(img/events/AdVenture.jpg)">
 
 
                     </div>
             </a>
-            <a href="/renderico.php" class="product-card col-xs-12 col-md-4">
+            <a href="renderico.php" class="product-card col-xs-12 col-md-4">
                 <div class="product-card__item-grid g-padding-y-40--xs"  style="background:url(img/events/renderico.jpg)">
                     </div>
             </a>
-            <a href="/operation-research.php" class="product-card col-xs-12 col-md-4" >
+            <a href="operation-research.php" class="product-card col-xs-12 col-md-4" >
               <div class="product-card__item-grid g-padding-y-40--xs"style="background:url(img/events/operation-research.jpg)">
 
 
@@ -201,22 +201,22 @@
 
               </div>
             </a>
-            <a href="/BizQuiz.php" class="product-card col-xs-12 col-md-4 " >
+            <a href="BizQuiz.php" class="product-card col-xs-12 col-md-4 " >
               <div class="product-card__item-grid g-padding-y-40--xs" style="background:url(img/events/BizQuiz.jpg)">
 
               </div>
             </a>
-            <a href="/war-of-worlds.php" class="product-card col-xs-12 col-md-4 " >
+            <a href="war-of-worlds.php" class="product-card col-xs-12 col-md-4 " >
               <div class="product-card__item-grid g-padding-y-40--xs" style="background:url(img/events/war_of_worlds.jpg)">
 
               </div>
             </a>
-            <a href="/wallstreet.php" class="product-card col-xs-12 col-md-4 " >
+            <a href="wallstreet.php" class="product-card col-xs-12 col-md-4 " >
                 <div class="product-card__item-grid g-padding-y-40--xs" style="background:url(img/events/Wallstreet.jpg)">
 
                     </div>
             </a>
-            <a href="/epl.php" class="product-card col-xs-12 col-md-4 " >
+            <a href="epl.php" class="product-card col-xs-12 col-md-4 " >
                 <div class="product-card__item-grid g-padding-y-40--xs" style="background:url(img/events/epl.jpg)">
 
                     </div>

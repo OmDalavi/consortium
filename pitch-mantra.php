@@ -1,3 +1,4 @@
+<?php header('location:event.php'); ?>
 <!DOCTYPE html>
 <html lang="en" class="no-js">
   <?php $pagetitle = 'Pitch Perfect | Consortium'; ?>
