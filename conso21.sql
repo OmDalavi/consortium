@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Feb 21, 2021 at 02:23 PM
+-- Generation Time: Feb 21, 2021 at 04:05 PM
 -- Server version: 10.4.17-MariaDB
 -- PHP Version: 8.0.2
 
@@ -106,7 +106,7 @@ CREATE TABLE `registrations` (
   `email` varchar(255) NOT NULL,
   `name` varchar(255) NOT NULL,
   `contact` int(11) NOT NULL,
-  `hashed_ci` varchar(255) NOT NULL,
+  `conso_id` varchar(255) NOT NULL,
   `college` varchar(255) NOT NULL,
   `otp` varchar(255) DEFAULT NULL,
   `BizQuiz` tinyint(1) NOT NULL DEFAULT 0,
@@ -274,7 +274,7 @@ ALTER TABLE `pitch_mantra`
 -- AUTO_INCREMENT for table `registrations`
 --
 ALTER TABLE `registrations`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT for table `render_ico`

@@ -22,13 +22,15 @@
 
     else{
 
-      $events = array('Swadesh','AdVenture','Pitch_Perfect','renderico','CEO','Teen_Titans','BizMantra','BizQuiz');
+      // $events = array('Swadesh','AdVenture','Pitch_Perfect','renderico','CEO','Teen_Titans','BizMantra','BizQuiz');
 
-      $conso_id = password_verify($conso_id,$data['hashed_ci']);
+      // $hashed_ci = $con->real_escape_string(password_hash($conso_id, PASSWORD_DEFAULT));
 
       $query = "SELECT * from registrations WHERE conso_id='$conso_id'";
       $result = mysqli_query($con,$query);
       $num = mysqli_num_rows($result);
+
+      // $conso_id = password_verify($conso_id,$data['hashed_ci']);
 
       if($num > 0){
 
@@ -45,10 +47,10 @@
               return array($first_name, $last_name);
             }
 
-            $_SESSION['email'] = $email;
-            $_SESSION['name'] = split_name($data['Name'])[0];
-            $_SESSION['contact'] = $data['Contact'];
-            $_SESSION['fullname'] = $data['Name'];
+            $_SESSION['email'] = $data['email'];
+            $_SESSION['name'] = split_name($data['name'])[0];
+            $_SESSION['contact'] = $data['contact'];
+            $_SESSION['fullname'] = $data['name'];
 
             // if($_GET['v'] == 'ai-ml'){
             //   header('location:aimlworkshop.php');
@@ -128,7 +130,7 @@
                                 <p class="text-uppercase g-font-size-14--xs g-text-center--xs g-font-weight--700 g-color--red g-letter-spacing--2 g-margin-b-25--xs"><?php  if(isset($_SESSION['login_error'])){ echo $_SESSION['login_error'];session_destroy(); }?></p>
                             </div>
                             <div class="g-margin-b-30--xs">
-                                  <input type="text" class="form-control s-form-v3__input" placeholder="* Your ConsoID" name="conso_id" style="text-transform: none" id="conso_id">
+                                  <input type="password" class="form-control s-form-v3__input" placeholder="* Your ConsoID" name="conso_id" style="text-transform: none" id="conso_id">
                             </div>
                             <!-- <div class="g-margin-b-30--xs">
                                 <input type="email" name="email" style="text-transform: none;" class="form-control s-form-v3__input" placeholder="* Email">

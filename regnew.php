@@ -97,7 +97,7 @@
     // if( $name == "" || $email == "" || $contact == "" || $password == "" || $cpassword == "" || $college == ""){
     if( $name == "" || $email == "" || $contact == "" || $college == ""){
       $msg = "Please enter all the details";
-      header('location:/regnew.php');
+      header('location:regnew.php');
     }
     // elseif($password == $cpassword){
     else{
@@ -117,7 +117,7 @@
       }
 
       elseif($num != 0 && $row['otp'] != 'Confirmed'){
-        $_SESSION['verify'] = "Please verify your email id in order to login";
+        $_SESSION['verify'] = "Please verify your email id in order to login. Enter your ConsoID";
         header('location:verify.php?email='.$email.'');
       }
 
@@ -125,37 +125,34 @@
 
         $otp = '1234567890';
         $otp = str_shuffle($otp);
-        $otp = substr($otp, 0, 6);
+        // $otp = substr($otp, 0, 6);
 
         $conso_id = substr($name, 0, 3);
         $conso_id .= substr($otp, 0, 4);
 
-        while ($num == 0){
-          $result = mysqli_query($con,"SELECT * FROM Registrations WHERE conso_id='$conso_id'");
-          $num = mysqli_num_rows($result);
-          if($num != 0){
-            $conso_id = "";
-            $pass = str_shuffle($otp);
-            $conso_id = substr($name, 0, 3);
-            $conso_id .= substr($pass, 0, 4);
-          }
-          $result = mysqli_query($con,"SELECT * FROM Registrations WHERE conso_id='$conso_id'");
-          $num = mysqli_num_rows($result);
+
+        $query = "SELECT * FROM Registrations WHERE Email='$email'";
+        $result = mysqli_query($con,$query);
+        $num = mysqli_num_rows($result);
+        if($num != 0){
+          $conso_id = "";
+          $pass = str_shuffle($otp);
+          $conso_id = substr($name, 0, 3);
+          $conso_id .= substr($pass, 0, 4);
         }
 
 
+        // $hashed_ci = $con->real_escape_string(password_hash($conso_id, PASSWORD_DEFAULT));
 
-        $hashed_ci = $con->real_escape_string(password_hash($conso_id, PASSWORD_DEFAULT));
 
-
-        $q = "INSERT INTO Registrations(email,name,contact,college,hashed_ci,otp) VALUES('$email','$name','$contact','$college','$hashed_ci','$otp')";
+        $q = "INSERT INTO Registrations(email,name,contact,college,conso_id,otp) VALUES('$email','$name','$contact','$college','$conso_id','$conso_id')";
         // $q = "INSERT INTO Registrations(Name,Email,Contact,College,Password,otp) VALUES('$name','$email','$contact','$college','$hashed_password','$otp')";
         if(mysqli_query($con,$q)){
 
           $msg = "Please verify your email id to login.";
           $s = "Verify Your Emaid ID";
-          $_SESSION['verify'] = "Welcome. An OTP is sent to your registered email id. Please enter the OTP below to confirm your email address.";
-          htmlMail($email,$s,'',$otp, 'otp');
+          $_SESSION['verify'] = "Your ConsoID has been sent to your registered email id. Please enter your ConsoID below to confirm your email address.";
+          htmlMail($email,$s,$name,$conso_id, 'conso_id');
           header('location:verify.php?email='.$email.'');
 
         }else {
@@ -182,7 +179,6 @@
                 <p class="text-uppercase g-font-size-14--xs g-font-weight--700 g-color--white-opacity g-letter-spacing--2 g-margin-b-25--xs">Sign Up</p>
                 <h2 class="g-font-size-32--xs g-font-size-36--md g-color--white">Register Now</h2>
                 <p class="text-uppercase g-font-size-14--xs g-font-weight--700 g-color--red g-letter-spacing--2 g-margin-b-25--xs"><?php echo $msg; ?></p>
-                <p class="text-uppercase g-font-size-14--xs g-font-weight--700 g-color--red g-letter-spacing--2 g-margin-b-25--xs"><?php echo $msg1; ?></p>
                 <p class="text-uppercase g-font-size-14--xs g-font-weight--700 g-color--red g-letter-spacing--2 g-margin-b-25--xs" id="message"></p>
             </div>
             <form class="center-block g-width-500--sm g-text-center--xs g-width-600--md" method="post" action="regnew.php" onsubmit="return validateData();">

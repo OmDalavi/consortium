@@ -29,11 +29,11 @@
                             <div class="collapse navbar-collapse s-header-v2__navbar-collapse" id="nav-collapse">
                                 <ul class="s-header-v2__nav">
                                     <li class="s-header-v2__nav-item"><a href="index.php" class="s-header-v2__nav-link">Home</a></li>
-                                    <li class="s-header-v2__nav-item"><a href="#about" class="s-header-v2__nav-link">About</a></li>
+                                    <!-- <li class="s-header-v2__nav-item"><a href="#about" class="s-header-v2__nav-link">About</a></li> -->
 
                                     <li class="s-header-v2__nav-item">
                                         <!--<a href="#events" class="s-header-v2__nav-link">Events</a>-->
-                                        <a href="index.html" class="dropdown-toggle s-header-v2__nav-link -is-active" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Events <span class="g-font-size-10--xs g-margin-l-5--xs ti-angle-down"></span></a>
+                                        <a href="" class="dropdown-toggle s-header-v2__nav-link -is-active" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Events <span class="g-font-size-10--xs g-margin-l-5--xs ti-angle-down"></span></a>
                                         <ul class="dropdown-menu s-header-v2__dropdown-menu">
                                             <li><a href="https://startupconclave.ecellvnit.org" class="s-header-v2__dropdown-menu-link">Startup Conclave</a></li>
                                             <li><a href="https://neo.ecellvnit.org" class="s-header-v2__dropdown-menu-link">NEO</a></li>
@@ -91,9 +91,8 @@
                                         </ul>
                                       </li>
                                   <?php }else{ ?>
-                                    <!-- <li class="s-header-v2__nav-item"><a href="login.php" class="s-header-v2__nav-link">Login</a></li> -->
-                                    <!-- <li class="s-header-v2__nav-item"><a href="regnew.php" class="s-header-v2__nav-link">Register</a></li> -->
-                                    <!-- <li class="s-header-v2__nav-item"><a href="login.php" class="s-header-v2__nav-link">Login</a></li> -->
+                                    <li class="s-header-v2__nav-item"><a href="regnew.php" class="s-header-v2__nav-link">Register</a></li>
+                                    <li class="s-header-v2__nav-item"><a href="login.php" class="s-header-v2__nav-link">Login</a></li>
                                     <?php } ?>
                                 </ul>
                             </div>

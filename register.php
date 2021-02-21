@@ -67,7 +67,7 @@
 
   if(!isset($_SESSION['email'])){
       $_SESSION['login_error'] = "Kindly Login First";
-      header('location:/login.php');
+      header('location:login.php');
   }
   else if(isset($_POST['sub_event'])) {
 
@@ -79,12 +79,12 @@
     if($event == ""){
       $msg = "Please Select an event!";
     }
-    else if($event == "sc"){
-        $msg = "Registrations are closed. Please proceed <a href='https://startupconclave.ecellvnit.org'>here</a> for for information.";
-    }
-    else if($event == "Brainathon"){
-        $msg = "Registrations are closed. Please proceed <a href='https://startupconclave.ecellvnit.org'>here</a> for for information.";
-        $query = "SELECT * FROM Registrations WHERE Email = '$email'";
+    // else if($event == "sc"){
+    //     $msg = "Registrations are closed. Please proceed <a href='https://startupconclave.ecellvnit.org'>here</a> for for information.";
+    // }
+    else if($event == "CEO"){
+        // $msg = "Registrations are closed. Please proceed <a href='https://startupconclave.ecellvnit.org'>here</a> for for information.";
+        $query = "SELECT * FROM registrations WHERE Email = '$email'";
         $result = mysqli_query($con,$query);
         $num = mysqli_num_rows($result);
 
@@ -92,18 +92,18 @@
 
           $data = mysqli_fetch_array($result);
           if($data[$event] != 1){
-            $q1 = "UPDATE Registrations SET $event = 1 WHERE Email = '$email'";
+            $q1 = "UPDATE registrations SET $event = 1 WHERE Email = '$email'";
             mysqli_query($con,$q1);
             $n = 'Name';
 
-            $q2 = "INSERT INTO $event(Name,Email,Contact) VALUES('$data[$n]','$email','$contact')";
+            $q2 = "INSERT INTO $event(Name,Email,Contact) VALUES('$name','$email','$contact')";
             mysqli_query($con,$q2);
-            $_SESSION['msg'] = "Thank You for showing interest in Brainathon. Kindly pay the required registration fee that is INR 100 to ensure your registration";
-            htmlMail($email, "Complete your registration | Brainathon", $name, "", "Brainathon");
-            header('location:/paybrain.php');
+            $_SESSION['msg'] = "Thank You for showing interest in $event. Kindly pay the required registration fee that is INR 100 to ensure your registration.";
+            htmlMail($email, "Complete your registration | CEO", $name, "", "CEO");
+            // header('location:paybrain.php');
           }else{
             $_SESSION['msg'] = "You have already registered for this event!";
-            header('location:/dashboard.php');
+            header('location:dashboard.php');
           }
       }else{
         echo("Error description: " . mysqli_error($con));
@@ -128,11 +128,11 @@
           $s = 'Welcome Aboard '.$name.' | BizMantra';
 
           htmlMail($email,$s,$name,$name, 'BizMantra');
-          header('location:/dashboard.php');
+          header('location:dashboard.php');
         }
         else{
           $_SESSION['msg'] = "You have already registered for this event! To manage or create your team please go below.";
-          header('location:/dashboard.php');
+          header('location:dashboard.php');
         }
       }else{
         echo("Error description: " . mysqli_error($con));
@@ -156,11 +156,11 @@
           $s = 'Welcome Aboard '.$name.' | Pitch Perfect';
 
           htmlMail($email,$s,$name,$name, 'Pitch_Perfect');
-          header('location:/dashboard.php');
+          header('location:dashboard.php');
         }
         else{
           $_SESSION['msg'] = "You have already registered for this event! To manage or create your team please go below.";
-          header('location:/dashboard.php');
+          header('location:dashboard.php');
         }
       }else{
         echo("Error description: " . mysqli_error($con));
@@ -181,10 +181,10 @@
           mysqli_query($con,$q2);
 
           $_SESSION['msg'] = "Thank You for showing interest in $event. Click on the registered events below to complete your registration.";
-          header('location:/dashboard.php');
+          header('location:dashboard.php');
         }else{
           $_SESSION['msg'] = "You have already registered for this event! To manage or create your team please go below.";
-          header('location:/dashboard.php');
+          header('location:dashboard.php');
         }
       }else{
         echo("Error description: " . mysqli_error($con));
@@ -209,17 +209,17 @@
             <form class="center-block g-width-500--sm g-width-550--md" method="post" action="register.php">
                 <div class="permanent">
                   <select pattern="[0-9]{11}" class="form-control s-form-v3__input g-margin-b-30--xs" name="event" placeholder="* No. of members" id="members" >
-                      <option value='' selected disabled hidden>Choose an Event or Workshop</option>
-                      <option value='Swadesh'>Swades</option>
-                      <option value='trec'>TREC (Technology Research Entrepreneurship Conclave)</option>
+                      <option value='' selected disabled hidden>Choose an Event you wish to participate in.</option>
+                      <!-- <option value='Swadesh'>Swades</option> -->
+                      <!-- <option value='trec'>TREC (Technology Research Entrepreneurship Conclave)</option> -->
                       <option value='CEO'>CEO</option>
-                      <option value='nirmaan'>Nirmaan</option>
+                      <!-- <option value='nirmaan'>Nirmaan</option>
                       <option value='war_of_worlds'>War of Worlds</option>
                       <option value='renderico'>Render.ico</option>
                       <option value='BizMantra'>BizMantra</option>
                       <option value='BizQuiz'>BizQuiz</option>
                       <option value='AdVenture'>AdVenture</option>
-                      <option value='iplauction'>IPL Auction</option>
+                      <option value='iplauction'>IPL Auction</option> -->
 
 
                       <!--<option value='AdVenture'>AdVenture</option>
@@ -237,7 +237,7 @@
                 <div class="g-text-center--xs">
                     <button type="submit" name="sub_event" class="text-uppercase s-btn s-btn--md s-btn--white-brd g-radius--50 g-padding-x-70--xs g-margin-b-20--xs">Next</button>
                     <br>
-                    <a href="/dashboard.php">See Dashboard Here</a>
+                    <a href="dashboard.php">See Dashboard Here</a>
                 </div>
 
             </form>

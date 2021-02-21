@@ -11,7 +11,12 @@
   // Connected
   if(isset($_SESSION['email'])){
     $email = $_SESSION['email'];
+
+    if(isset($_POST['CEO'])){
+    }
+
     if(isset($_POST['swanewmem'])){
+
 
 
       // Adding Team First
