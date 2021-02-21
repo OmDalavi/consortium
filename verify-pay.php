@@ -17,7 +17,7 @@ $success = true;
 
 $error = "Payment Failed";
 
-$actual_cust_email = $_SESSION['mem_email'];
+$actual_cust_email = $_SESSION['email'];
 if (empty($_POST['razorpay_payment_id']) === false)
 {
     $api = new Api($keyId, $keySecret);

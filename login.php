@@ -51,6 +51,7 @@
             $_SESSION['name'] = split_name($data['name'])[0];
             $_SESSION['contact'] = $data['contact'];
             $_SESSION['fullname'] = $data['name'];
+            $_SESSION['consoID'] = $data['conso_id'];
 
             // if($_GET['v'] == 'ai-ml'){
             //   header('location:aimlworkshop.php');

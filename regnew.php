@@ -150,7 +150,7 @@
         if(mysqli_query($con,$q)){
 
           $msg = "Please verify your email id to login.";
-          $s = "Verify Your Emaid ID";
+          $s = "Verify Your Emaid ID | Your ConsoID | Consortium'21";
           $_SESSION['verify'] = "Your ConsoID has been sent to your registered email id. Please enter your ConsoID below to confirm your email address.";
           htmlMail($email,$s,$name,$conso_id, 'conso_id');
           header('location:verify.php?email='.$email.'');
