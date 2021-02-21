@@ -30,7 +30,7 @@
     //
     //
     //
-    // $eve = array('Swadesh','AdVenture','trec','renderico','CEO','war_of_worlds','BizMantra','BizQuiz');
+    $eve = array('Swadesh','AdVenture','trec','renderico','CEO','war_of_worlds','BizMantra','BizQuiz');
     // for($var = 0; $var < 8; $var++){
     //   $evequery = "CREATE TABLE IF NOT EXISTS $eve[$var](
     //             ID INT(11) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
@@ -210,16 +210,16 @@
                 <div class="permanent">
                   <select pattern="[0-9]{11}" class="form-control s-form-v3__input g-margin-b-30--xs" name="event" placeholder="* No. of members" id="members" >
                       <option value='' selected disabled hidden>Choose an Event you wish to participate in.</option>
-                      <!-- <option value='Swadesh'>Swades</option> -->
+                      <option value='Swadesh'>Swades</option>
                       <!-- <option value='trec'>TREC (Technology Research Entrepreneurship Conclave)</option> -->
                       <option value='CEO'>CEO</option>
-                      <!-- <option value='nirmaan'>Nirmaan</option>
+                      <option value='nirmaan'>Nirmaan</option>
                       <option value='war_of_worlds'>War of Worlds</option>
                       <option value='renderico'>Render.ico</option>
                       <option value='BizMantra'>BizMantra</option>
                       <option value='BizQuiz'>BizQuiz</option>
                       <option value='AdVenture'>AdVenture</option>
-                      <option value='iplauction'>IPL Auction</option> -->
+                      <option value='iplauction'>IPL Auction</option>
 
 
                       <!--<option value='AdVenture'>AdVenture</option>

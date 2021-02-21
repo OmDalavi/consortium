@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Feb 21, 2021 at 04:05 PM
+-- Generation Time: Feb 21, 2021 at 09:47 PM
 -- Server version: 10.4.17-MariaDB
 -- PHP Version: 8.0.2
 
@@ -62,8 +62,25 @@ CREATE TABLE `ceo` (
   `name` varchar(255) NOT NULL,
   `contact` int(11) NOT NULL,
   `email` varchar(255) NOT NULL,
-  `college` varchar(255) NOT NULL
+  `college` varchar(255) NOT NULL,
+  `order_id` varchar(255) NOT NULL,
+  `razor_payment_id` varchar(255) NOT NULL,
+  `payment_status` tinyint(1) NOT NULL DEFAULT 0
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `ceo`
+--
+
+INSERT INTO `ceo` (`id`, `name`, `contact`, `email`, `college`, `order_id`, `razor_payment_id`, `payment_status`) VALUES
+(1, '', 2147483647, 'lakshyashukla32@gmail.com', '', '', '', 0),
+(2, '', 2147483647, 'lakshyashukla32@gmail.com', '', '', '', 0),
+(3, '', 2147483647, 'lakshyashukla32@gmail.com', '', '', '', 0),
+(4, 'Lakshya', 2147483647, 'lakshyashukla32@gmail.com', '', '', '', 0),
+(5, 'Lakshya', 2147483647, 'lakshyashukla32@gmail.com', '', '', '', 0),
+(6, 'Lakshya', 2147483647, 'lakshyashukla32@gmail.com', '', '', '', 0),
+(7, 'Lakshya', 2147483647, 'lakshyashukla32@gmail.com', '', '', '', 0),
+(8, 'Lakshya', 2147483647, 'lakshyashukla32@gmail.com', '', '', '', 0);
 
 -- --------------------------------------------------------
 
@@ -256,7 +273,7 @@ ALTER TABLE `bizquiz`
 -- AUTO_INCREMENT for table `ceo`
 --
 ALTER TABLE `ceo`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT for table `operation_research`
@@ -274,7 +291,7 @@ ALTER TABLE `pitch_mantra`
 -- AUTO_INCREMENT for table `registrations`
 --
 ALTER TABLE `registrations`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT for table `render_ico`
