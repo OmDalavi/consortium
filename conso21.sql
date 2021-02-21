@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.0.2
+-- version 5.0.4
 -- https://www.phpmyadmin.net/
 --
--- Host: 127.0.0.1:8111
--- Generation Time: Feb 14, 2021 at 06:22 PM
--- Server version: 10.4.11-MariaDB
--- PHP Version: 7.4.4
+-- Host: 127.0.0.1
+-- Generation Time: Feb 21, 2021 at 02:23 PM
+-- Server version: 10.4.17-MariaDB
+-- PHP Version: 8.0.2
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -98,6 +98,32 @@ CREATE TABLE `pitch_mantra` (
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `registrations`
+--
+
+CREATE TABLE `registrations` (
+  `id` int(11) NOT NULL,
+  `email` varchar(255) NOT NULL,
+  `name` varchar(255) NOT NULL,
+  `contact` int(11) NOT NULL,
+  `hashed_ci` varchar(255) NOT NULL,
+  `college` varchar(255) NOT NULL,
+  `otp` varchar(255) DEFAULT NULL,
+  `BizQuiz` tinyint(1) NOT NULL DEFAULT 0,
+  `swades` tinyint(1) NOT NULL DEFAULT 0,
+  `ad-venture` tinyint(1) NOT NULL DEFAULT 0,
+  `operational_research` tinyint(1) NOT NULL DEFAULT 0,
+  `war_of_worlds` tinyint(1) NOT NULL DEFAULT 0,
+  `render_ico` tinyint(1) NOT NULL DEFAULT 0,
+  `pitchmantra` tinyint(1) NOT NULL DEFAULT 0,
+  `ceo` tinyint(1) NOT NULL DEFAULT 0,
+  `wallstreet` tinyint(1) NOT NULL DEFAULT 0,
+  `epl` tinyint(1) NOT NULL DEFAULT 0
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `render_ico`
 --
 
@@ -125,30 +151,6 @@ CREATE TABLE `swades` (
   `round1` tinyint(1) NOT NULL DEFAULT 0,
   `round2` tinyint(1) NOT NULL DEFAULT 0,
   `round3` tinyint(1) NOT NULL DEFAULT 0
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
--- --------------------------------------------------------
-
---
--- Table structure for table `user_info`
---
-
-CREATE TABLE `user_info` (
-  `id` int(11) NOT NULL,
-  `email` varchar(255) NOT NULL,
-  `name` varchar(255) NOT NULL,
-  `contact` int(11) NOT NULL,
-  `conso_id` varchar(255) NOT NULL,
-  `college` varchar(255) NOT NULL,
-  `BizQuiz` tinyint(1) NOT NULL DEFAULT 0,
-  `swades` tinyint(1) NOT NULL DEFAULT 0,
-  `ad-venture` tinyint(1) NOT NULL DEFAULT 0,
-  `operational_research` tinyint(1) NOT NULL DEFAULT 0,
-  `war_of_worlds` tinyint(1) NOT NULL DEFAULT 0,
-  `render_ico` tinyint(1) NOT NULL DEFAULT 0,
-  `pitchmantra` tinyint(1) NOT NULL DEFAULT 0,
-  `ceo` tinyint(1) NOT NULL DEFAULT 0,
-  `wallstreet` tinyint(1) NOT NULL DEFAULT 0
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
@@ -217,15 +219,15 @@ ALTER TABLE `pitch_mantra`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `render_ico`
+-- Indexes for table `registrations`
 --
-ALTER TABLE `render_ico`
+ALTER TABLE `registrations`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `user_info`
+-- Indexes for table `render_ico`
 --
-ALTER TABLE `user_info`
+ALTER TABLE `render_ico`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -269,15 +271,15 @@ ALTER TABLE `pitch_mantra`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
+-- AUTO_INCREMENT for table `registrations`
+--
+ALTER TABLE `registrations`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
 -- AUTO_INCREMENT for table `render_ico`
 --
 ALTER TABLE `render_ico`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
-
---
--- AUTO_INCREMENT for table `user_info`
---
-ALTER TABLE `user_info`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
