@@ -30,7 +30,7 @@
     //
     //
     //
-    // $eve = array('Swadesh','AdVenture','trec','renderico','CEO','war_of_worlds','BizMantra','BizQuiz');
+    $eve = array('Swadesh','AdVenture','trec','renderico','CEO','war_of_worlds','BizMantra','BizQuiz');
     // for($var = 0; $var < 8; $var++){
     //   $evequery = "CREATE TABLE IF NOT EXISTS $eve[$var](
     //             ID INT(11) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
@@ -74,12 +74,43 @@
     $email = $_SESSION['email'];
     $name = $_SESSION['name'];
     $contact = $_SESSION['contact'];
-    $conso_id = $_SESSION['consoID'];
     $event = $con->real_escape_string($_POST['event']);
 
     if($event == ""){
       $msg = "Please Select an event!";
-    }else{
+    }
+    // else if($event == "sc"){
+    //     $msg = "Registrations are closed. Please proceed <a href='https://startupconclave.ecellvnit.org'>here</a> for for information.";
+    // }
+    else if($event == "CEO"){
+        // $msg = "Registrations are closed. Please proceed <a href='https://startupconclave.ecellvnit.org'>here</a> for for information.";
+        $query = "SELECT * FROM registrations WHERE Email = '$email'";
+        $result = mysqli_query($con,$query);
+        $num = mysqli_num_rows($result);
+
+        if($num > 0){
+
+          $data = mysqli_fetch_array($result);
+          if($data[$event] != 1){
+            $q1 = "UPDATE registrations SET $event = 1 WHERE Email = '$email'";
+            mysqli_query($con,$q1);
+            $n = 'Name';
+
+            $q2 = "INSERT INTO $event(Name,Email,Contact) VALUES('$name','$email','$contact')";
+            mysqli_query($con,$q2);
+            $_SESSION['msg'] = "Thank You for showing interest in $event. Kindly pay the required registration fee that is INR 100 to ensure your registration.";
+            htmlMail($email, "Complete your registration | CEO", $name, "", "CEO");
+            // header('location:paybrain.php');
+          }else{
+            $_SESSION['msg'] = "You have already registered for this event!";
+            header('location:dashboard.php');
+          }
+      }else{
+        echo("Error description: " . mysqli_error($con));
+      }
+
+    }
+    else if ($event == "BizMantra"){
       $query = "SELECT * FROM Registrations WHERE Email = '$email'";
       $result = mysqli_query($con,$query);
       $num = mysqli_num_rows($result);
@@ -87,7 +118,63 @@
       if($num > 0){
         $data = mysqli_fetch_array($result);
         if($data[$event] != 1){
-          $q1 = "UPDATE Registrations SET $event = 1 WHERE email = '$email'";
+          $q1 = "UPDATE Registrations SET $event = 1 WHERE Email = '$email'";
+          mysqli_query($con,$q1);
+
+          $q2 = "INSERT INTO $event(Name,Main_Email,Email,Contact) VALUES('$name','$email','$email','$contact')";
+          mysqli_query($con,$q2);
+
+          $_SESSION['msg'] = "Thank You for showing interest in $event. Confirmation mail has been sent to you.";
+          $s = 'Welcome Aboard '.$name.' | BizMantra';
+
+          htmlMail($email,$s,$name,$name, 'BizMantra');
+          header('location:dashboard.php');
+        }
+        else{
+          $_SESSION['msg'] = "You have already registered for this event! To manage or create your team please go below.";
+          header('location:dashboard.php');
+        }
+      }else{
+        echo("Error description: " . mysqli_error($con));
+      }
+    }
+    else if ($event == "Pitch_Perfect"){
+      $query = "SELECT * FROM Registrations WHERE Email = '$email'";
+      $result = mysqli_query($con,$query);
+      $num = mysqli_num_rows($result);
+
+      if($num > 0){
+        $data = mysqli_fetch_array($result);
+        if($data[$event] != 1){
+          $q1 = "UPDATE Registrations SET $event = 1 WHERE Email = '$email'";
+          mysqli_query($con,$q1);
+
+          $q2 = "INSERT INTO $event(Name,Main_Email,Email,Contact) VALUES('$name','$email','$email','$contact')";
+          mysqli_query($con,$q2);
+
+          $_SESSION['msg'] = "Thank You for showing interest in $event. Confirmation mail has been sent to you.";
+          $s = 'Welcome Aboard '.$name.' | Pitch Perfect';
+
+          htmlMail($email,$s,$name,$name, 'Pitch_Perfect');
+          header('location:dashboard.php');
+        }
+        else{
+          $_SESSION['msg'] = "You have already registered for this event! To manage or create your team please go below.";
+          header('location:dashboard.php');
+        }
+      }else{
+        echo("Error description: " . mysqli_error($con));
+      }
+    }
+    else{
+      $query = "SELECT * FROM Registrations WHERE Email = '$email'";
+      $result = mysqli_query($con,$query);
+      $num = mysqli_num_rows($result);
+
+      if($num > 0){
+        $data = mysqli_fetch_array($result);
+        if($data[$event] != 1){
+          $q1 = "UPDATE Registrations SET $event = 1 WHERE Email = '$email'";
           mysqli_query($con,$q1);
 
           $q2 = "INSERT INTO $event(name,email,contact) VALUES('$name','$email','$contact')";
@@ -123,16 +210,16 @@
                 <div class="permanent">
                   <select pattern="[0-9]{11}" class="form-control s-form-v3__input g-margin-b-30--xs" name="event" placeholder="* No. of members" id="members" >
                       <option value='' selected disabled hidden>Choose an Event you wish to participate in.</option>
-                      <!-- <option value='Swadesh'>Swades</option> -->
+                      <option value='Swadesh'>Swades</option>
                       <!-- <option value='trec'>TREC (Technology Research Entrepreneurship Conclave)</option> -->
                       <option value='CEO'>CEO</option>
-                      <!-- <option value='nirmaan'>Nirmaan</option>
+                      <option value='nirmaan'>Nirmaan</option>
                       <option value='war_of_worlds'>War of Worlds</option>
                       <option value='renderico'>Render.ico</option>
                       <option value='BizMantra'>BizMantra</option>
                       <option value='BizQuiz'>BizQuiz</option>
                       <option value='AdVenture'>AdVenture</option>
-                      <option value='iplauction'>IPL Auction</option> -->
+                      <option value='iplauction'>IPL Auction</option>
 
 
                       <!--<option value='AdVenture'>AdVenture</option>
