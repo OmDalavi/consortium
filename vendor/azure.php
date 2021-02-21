@@ -3,13 +3,7 @@
 
   require_once('includes/mailing.php');
 
-  $db_host = "localhost:3306";
-  $db_username = "conso19";
-  $db_pass = "Conso@123";
-  $db_name = "conso19";
-
-  $con = mysqli_connect("$db_host","$db_username","$db_pass") or die ("could not connect to mysql");
-  mysqli_select_db($con,$db_name) or die ("no database");
+  require_once('includes/dbconnect.php');
 
   $regquery ="CREATE TABLE IF NOT EXISTS Azure(
     ID INT(11) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
@@ -84,9 +78,9 @@
 
 
   }
-  
 
-  
+
+
 ?>
 
 <!DOCTYPE html>
@@ -113,7 +107,7 @@
                 }
               </style>
             <div class="container g-ver-center--sm g-padding-y-125--xs g-padding-y-0--lg event-landing-inner brain">
-              
+
 
                 <div class="g-margin-t-30--xs g-margin-t-0--sm g-margin-b-30--xs g-margin-b-70--md g-margin-l-20--xs g-margin-l-80--sm">
                     <!--<img src="img/logo/ceoblack.png" alt="" width="200" style="margin-top:-100px; margin-left:-20px">-->
@@ -132,7 +126,7 @@
                     <h3 class="g-color--white ">A Cloud Computing Workshop</h3>
                     <p class="g-color--white g-font-size-16--xs">Computing is not about computers any more. It's about living.</p><br/>
                     <h3 class="g-color--white"><b>AZ203 Certified <i class="ti-cloud-down"></i></span></b><br>
-              
+
 
                     </h3>
 
@@ -144,7 +138,7 @@
                                     <span class="text-uppercase s-btn s-btn--xs s-btn--white-brd g-radius--50">Register Now <span class="ti-angle-down"></span></span>
                                 </a>
                             </div>
-                            
+
 
                 </div>
 
@@ -165,8 +159,8 @@
             <form class="center-block g-width-500--sm g-text-center--xs g-width-600--md" method="post" action="" onsubmit="return validateData();">
 
                 <div class="permanent">
-                    
-                    
+
+
                     <select type="number" pattern="[0-9]{11}" class="form-control s-form-v3__input g-margin-b-30--xs" name="college" placeholder="* College" id="members" >
                         <option value='' selected disabled hidden>Choose your College</option>
                         <option value='1'>Visvesvaraya National Institute of Technology Nagpur</option>
@@ -180,9 +174,9 @@
                         <option value='Anjuman College of Engineering and Technology, Nagpur'>Anjuman College of Engineering and Technology, Nagpur</option>
                         <option value='Central India College of Engineering and Technology, Nagpur'>Central India College of Engineering and Technology, Nagpur</option>
                         <option value='Others'>Others</option>
-                        
 
-                        
+
+
                     </select>
                     <div class="row g-margin-b-50--xs">
                         <div class="col-sm-6 g-margin-b-30--xs g-margin-b-0--md">
@@ -190,10 +184,10 @@
                                 <option value='' selected disabled hidden>Choose your Branch</option>
                                 <option value='Circuit'>Circuit(CSE, EEE, ECE)</option>
                                 <option value='Non Circuit'>Non-Circuit</option>
-                                
+
                             </select>
                         </div>
-                        
+
                         <div class="col-sm-6 g-margin-b-30--xs g-margin-b-0--md">
                             <select type="number" pattern="[0-9]{11}" class="form-control s-form-v3__input g-margin-b-30--xs" name="year" placeholder="* Year" id="members" >
                                 <option value='' selected disabled hidden>Year Of Study</option>
@@ -202,7 +196,7 @@
                                 <option value='3'>3rd Year</option>
                                 <option value='4'>4th Year</option>
                                 <option value='5'>5th Year</option>
-                                
+
                             </select>
                         </div>
                     </div>

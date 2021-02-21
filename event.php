@@ -13,57 +13,41 @@
         <!--========== END HEADER ==========-->
 
         <!--========== PROMO BLOCK ==========-->
-        <div class="s-promo-block-v3 g-bg-position--center g-fullheight--sm" style="background: url('img/1920x1080/landing_teentitans.jpg');">
-            <div class="container g-ver-center--sm g-padding-y-125--xs g-padding-y-0--lg">
-                <img src="img/logo/logo-teentitans.png" alt="" width="280" style="margin-top:-180px">
-                <div class="g-margin-t-30--xs g-margin-t-0--sm g-margin-b-30--xs g-margin-b-70--md g-margin-l-20--xs g-margin-l-80--sm">
+        <div class="s-promo-block-v3 g-bg-position--center g-fullheight--sm" style="background: url('img/events.jpg');">
+          <div class="container g-ver-center--sm g-padding-y-125--xs g-padding-y-0--lg event-landing-inner">
 
-                    <h1 class="g-font-size-60--xs g-font-size-80--sm g-font-size-80--lg g-color--dark" style="font-weight:900; text-shadow: 2px 0 #333;letter-spacing:2px;"><b>TEEN<br>TITANS</b></h1>
+              <div class="g-margin-t-30--xs g-margin-t-0--sm g-margin-b-30--xs g-margin-b-70--md g-margin-l-20--xs g-margin-l-80--sm">
+                  <!--<img src="img/logo/ceoblack.png" alt="" width="200" style="margin-top:-100px; margin-left:-20px">-->
 
-                    <h3 class="g-color--dark">Grass root Innovations beyond<br>Imagination</h3>
-                    <br>
-                    <div class="row">
+                  <!-- <h1 class="g-font-size-60--xs g-font-size-80--sm g-font-size-80--lg g-color--white" style="font-weight:900; text-shadow: 2px 0 #333;letter-spacing:2px;"><b>The Event will be open soon</b></h1> -->
 
-                    <div class="col-sm-3">
-                        <div class="wow fadeInLeft" data-wow-duration=".3" data-wow-delay=".5s">
-                            <a href="#newform" title="Register">
+                  <h3 class="g-color--white">The Event will be open soon.</h3>
+                  <p class="g-color--white">Stay Tuned!</p><br/>
+                  <h3 class="g-color--white">Meanwhile, check out our running<span class="g-color--red"> events</span>.</h3>
+
+                  <br>
+
+                  <div class="wow fadeInLeft" data-wow-duration=".3" data-wow-delay=".5s">
+                              <a href="https://startupconclave.ecellvnit.org" target="_blank">
+                                  <!--<i class="s-icon s-icon--lg s-icon--white-bg g-radius--circle ti-arrow-down"></i>-->
+                                  <span class="text-uppercase s-btn--primary-bg g-radius--50 g-padding-x-30--xs g-padding-y-15--xs g-font-size-13--xs g-color--white g-padding-x-15--xs">StartUp Conclave</span>
+                              </a>
+                              <a href="https://neo.ecellvnit.org/" target="_blank">
                                 <!--<i class="s-icon s-icon--lg s-icon--white-bg g-radius--circle ti-arrow-down"></i>-->
-                                <span class="text-uppercase s-btn--primary-bg g-radius--50 g-padding-x-30--xs g-padding-y-15--xs g-font-size-13--xs g-color--white g-padding-x-15--xs">Register Now!</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                </div>
+                                <span class="text-uppercase s-btn--primary-bg g-radius--50 g-padding-x-30--xs g-padding-y-15--xs g-font-size-13--xs g-color--white g-padding-x-15--xs">NEO</span>
+                              </a>
+                  </div>
 
-            </div>
+              </div>
+
+          </div>
         </div>
         <!--========== END PROMO BLOCK ==========-->
 
         <!--========== PAGE CONTENT ==========-->
 
-        <div class="g-promo-section" style="background:#000" id="about">
-            <div class="container g-padding-y-30--xs g-padding-y-30--sm g-padding-x-80--md g-padding-x-60--sm g-padding-x-40--xs">
-                <div class="row">
-                    <div class="col-md-4 g-margin-t-45--xs g-margin-b-60--xs g-margin-b-0--lg">
-                        <div class="wow fadeInLeft" data-wow-duration=".3" data-wow-delay=".1s">
-                            <h2 class="g-font-size-40--xs g-font-size-50--sm g-font-size-60--md g-color--white" style="font-weight:900">About</h2>
-                        </div>
-                        <p class="g-font-size-14--xs g-font-size-16--sm g-color--white-opacity">Startup Expo provides a grand platform for startups to display their product and/ or service at our annual entrepreneurship Summit Consortium 19.<br>This is also an opportunity for the attendees to learn about the new entrepreneurial techniques that these startups have employed to become successful in their journey.</p>
-
-                    </div>
-                    <div class="col-md-7 col-md-offset-1">
-                        <img src="img/expo-about.jpg" alt="" style="max-width:100%; max-height:400px">
-                    </div>
-                </div>
-
-
-            <!--</div>-->
-            </div>
-        </div>
-
-
         <!-- Features -->
-        <div class="container g-padding-x-40--sm g-padding-x-20--xs g-padding-y-20--xs g-padding-y-50--sm">
+        <!-- <div class="container g-padding-x-40--sm g-padding-x-20--xs g-padding-y-20--xs g-padding-y-50--sm">
 
             <div class="card" id="event-card-bg">
     		    <div class="card-tabs">
@@ -117,7 +101,7 @@
 
     		    </div>
 		  </div>
-        </div>
+        </div> -->
 
         <!-- End Features -->
 
@@ -130,21 +114,25 @@
             <div id="managers" class="row g-row-col--5 g-padding-x-40--xs g-padding-y-40--xs g-padding-x-20--md g-padding-x-100--lg">
                 <div class="col-xs-4 g-full-width--xs g-margin-b-50--xs g-margin-b-0--sm">
                     <div class="g-text-center--xs">
-                        <h4 class="g-font-size-18--xs g-color--white g-margin-b-5--xs">Nachiket Dhande</h4>
-                         <p class="g-color--white">+91 95453 02811<br>nachiket.dhande@gmail.com</p>
+                        <h4 class="g-font-size-18--xs g-color--white g-margin-b-5--xs">Gauri Dixit</h4>
+                         <p class="g-color--white">+91 93594 07052<br>gauri057dixit@gmail.com</p>
                     </div>
                 </div>
                 <div class="col-xs-4 g-full-width--xs g-margin-b-50--xs g-margin-b-0--sm">
                     <div class="g-text-center--xs">
-                        <h4 class="g-font-size-18--xs g-color--white g-margin-b-5--xs">Sagar Bansal</h4>
-                         <p class="g-color--white">+91 77580 11192<br>sagarbansal@ecellvnit.org</p>
+                      <div class="wow fadeInLeft" data-wow-duration=".3" data-wow-delay=".5s">
+                                  <a href="team.php">
+                                      <!--<i class="s-icon s-icon--lg s-icon--white-bg g-radius--circle ti-arrow-down"></i>-->
+                                      <span class="text-uppercase s-btn--primary-bg g-radius--50 g-padding-x-30--xs g-padding-y-15--xs g-font-size-13--xs g-color--white g-padding-x-15--xs">Contact Team</span></span>
+                                  </a>
+                      </div>
                     </div>
                 </div>
 
                 <div class="col-xs-4 g-full-width--xs g-margin-b-50--xs g-margin-b-0--sm">
                     <div class="g-text-center--xs">
-                        <h4 class="g-font-size-18--xs g-color--white g-margin-b-5--xs">Anushree Rungta</h4>
-                         <p class="g-color--white">+91 98224 44112<br>anushree.rungta@gmail.com</p>
+                        <h4 class="g-font-size-18--xs g-color--white g-margin-b-5--xs">Ved Kotpalliwar</h4>
+                         <p class="g-color--white">+91 81048 66608<br>vedkotpalliwar@gmail.com</p>
                     </div>
                 </div>
 
@@ -157,7 +145,7 @@
         <!--========== END PAGE CONTENT ==========-->
 
         <!--========== FOOTER ==========-->
-        <?php include("includes/footer.php");?>
+        <?php include("includes/footer_landing.php");?>
         <?php include("includes/script.php");?>
         <!--========== END FOOTER ==========-->
 

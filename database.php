@@ -43,13 +43,7 @@ if (isset($_SESSION['auth']) && $_SESSION['auth'] == true) {
 
         <?php
 
-        $db_host = "localhost:3306";
-        $db_username = "conso20";
-        $db_pass = "Conso@123";
-        $db_name = "conso20";
-
-        $con = mysqli_connect("$db_host","$db_username","$db_pass") or die ("could not connect to mysql");
-        mysqli_select_db($con,$db_name) or die ("no database");
+        require_once('includes/dbconnect.php');
 
 
         if($_SESSION['event'] == 'Azure'){
@@ -134,7 +128,7 @@ if (isset($_SESSION['auth']) && $_SESSION['auth'] == true) {
             <th>Name</th>
             <th>Email</th>
             <th>Contact</th>
-            
+
         </tr>
     </thead>
         <tbody>';

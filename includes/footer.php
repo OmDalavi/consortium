@@ -16,8 +16,8 @@
                             <div class="col-xs-12 col-sm-3 col-md-3 col-lg-2" style="height:180px"></div>
                             <div class="col-xs-12 col-sm-4 col-md-3 col-lg-3">
                                 <h4 class="g-color--white-opacity">Contact Us</h4>
-                                    <p class="g-color--white-opacity-light">For Association Opportunities:<br><b>contact@ecellvnit.org</b></p>
-                                    <p class="g-color--white-opacity-light">For Sponsorship Opportunities:<br><b>aryan199841@gmail.com</b><br><b>agnikrishnaa@gmail.com</b></p>
+                                    <p class="g-color--white-opacity-light">For Association Opportunities:<br><b>associate@ecellvnit.org</b></p>
+                                    <p class="g-color--white-opacity-light">For Sponsorship Opportunities:<br><b>archis1331@gmail.com</b><br><b>bhojnerushi@gmail.com</b></p>
                             </div>
                             <div class="col-sm-12 col-sm-5 col-md-3 col-lg-3">
 
@@ -49,7 +49,7 @@
                             </div>
 
                             <div class="col-sm-12 col-md-3 col-lg-4" style="display:flex;position:relative; align-items:center">
-                                <p class="g-font-size-14--xs g-margin-b-0--xs g-color--white-opacity g-padding-y-20--md">Copyright © 2020–2021  <a class="g-color--primary" href="https://www.ecellvnit.org/" target="_blank">E-cell Vnit</a></p>
+                                <p class="g-font-size-14--xs g-margin-b-0--xs g-color--white-opacity g-padding-y-20--md">Copyright © 2021–2022  <a class="g-color--primary" href="https://www.ecellvnit.org/" target="_blank">E-cell Vnit</a></p>
                             </div>
 
                         </div>

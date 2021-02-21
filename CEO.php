@@ -1,3 +1,4 @@
+<?php header('location:event.php'); ?>
 <!DOCTYPE html>
 <html lang="en" class="no-js">
   <?php $pagetitle = 'CEO | Consortium'; ?>
@@ -23,7 +24,7 @@
 
                     <h3 class="g-color--white">Analytical Thinking Competition</h3>
                     <p class="g-color--white">Leadership, Problem Solving Skills, Marketing Skills. <br/>Do you have what it takes to be a CEO?</p><br/>
-                    <h3 class="g-color--white"> PRIZES WORTH <span class="g-color--red">&#8377; 30K </span></h3>
+                    <h3 class="g-color--white"> PRIZES WORTH <span class="g-color--red">&#8377; 10K </span></h3>
 
                     <br>
 

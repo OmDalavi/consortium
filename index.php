@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" class="no-js">
-    <?php $pagetitle = 'Consortium'; ?>
+    <?php $pagetitle = 'Consortium 21'; ?>
     <!-- Begin Head -->
     <?php include('includes/head.php'); ?>
     <!-- End Head -->
@@ -27,11 +27,11 @@
 
                     <h4 class="g-color--white-opacity g-font-size-18--xs g-font-size-22--md" style="position: relative;">E-CELL VNIT presents</h4>
                     <div class="g-margin-b-20--xs g-margin-b-80--sm" style="display:flex; justify-content:center">
-                        <img class="resize" src="img/newconsologo-white.png" alt="Conso">
+                        <img class="resize" src="img/consologo21.png" alt="Conso">
 
                     </div>
                     <div class="col-md-6 col-md-offset-3">
-                        <p class="g-font-size-20--xs g-font-size-26--md g-color--white g-margin-b-0--xs"><b>27<sup>th</sup> - 29<sup>th</sup> March 2020</b></p>
+                        <p class="g-font-size-20--xs g-font-size-26--md g-color--white g-margin-b-0--xs"><b>26<sup>th</sup> - 28<sup>th</sup> March 2021</b></p>
 
 
 
@@ -46,7 +46,7 @@
 
 
             <video autoplay loop autobuffer muted playsinline id="vid">
-              <source src="video_landing.mp4" type="video/mp4" style="position:absolute; top:0px; left:0px; bottom:0px; right:0px; width:100%; height:100vh; border:none; margin:0; padding:0; overflow:hidden; z-index:0;">
+              <source src="img/video_landing.mp4" type="video/mp4" style="position:absolute; top:0px; left:0px; bottom:0px; right:0px; width:100%; height:100vh; border:none; margin:0; padding:0; overflow:hidden; z-index:0;">
               <img src="img/alt_landing.png" alt="">
             </video>
 
@@ -99,7 +99,7 @@
                             <h2 class="g-font-size-40--xs g-font-size-50--sm g-font-size-60--md g-color--dark" style="font-weight:900">About</h2>
                         </div>
                         <p class="g-font-size-14--xs g-font-size-16--sm g-color--dark-opacity">Consortium, the Annual Entrepreneurship Summit of <a href="http://vnit.ac.in">VNIT Nagpur</a> comprises of invigorating events like Startup Conclave, Swades and many more. The summit aims at fueling entrepreneurial attitude amongst students through healthy competition and exciting challenges.<br>
-                            Get ready to <i>Embrace the Unexpected</i> at <b>Consortium'20</b>.
+                            Get ready to <i>Defy all Odds</i> at <b>Consortium'21</b>.
                         </p>
 
                     </div>
@@ -164,75 +164,69 @@
 
                     </div>
             </a>
-            <a href="/Swadesh.php" class="product-card col-xs-12 col-md-4 " >
+            <a href="https://neo.ecellvnit.org/" class="product-card col-xs-12 col-md-4 " >
+              <div class="product-card__item-grid g-padding-y-40--xs" style="background:url(img/events/neo.jpg)">
+
+              </div>
+            </a>
+            <a href="swades.php" class="product-card col-xs-12 col-md-4 " >
                 <div class="product-card__item-grid g-padding-y-40--xs" style="background:url(img/events/Swadesh.jpg)">
 
                     </div>
             </a>
-            <a href="/trec.php" class="product-card col-xs-12 col-md-4 " >
-                <div class="product-card__item-grid g-padding-y-40--xs" style="background:url(img/events/trec.jpg)">
-
-                    </div>
-            </a>
-             <a href="/CEO.php" class="product-card col-xs-12 col-md-4" >
+             <a href="CEO.php" class="product-card col-xs-12 col-md-4" >
                 <div class="product-card__item-grid g-padding-y-40--xs" style="background:url(img/events/CEO.jpg)">
 
 
                     </div>
             </a>
-             <a href="/AdVenture.php" class="product-card col-xs-12 col-md-4" >
+             <a href="AdVenture.php" class="product-card col-xs-12 col-md-4" >
                 <div class="product-card__item-grid g-padding-y-40--xs" style="background:url(img/events/AdVenture.jpg)">
 
 
                     </div>
             </a>
-            <a href="/renderico.php" class="product-card col-xs-12 col-md-4">
+            <a href="renderico.php" class="product-card col-xs-12 col-md-4">
                 <div class="product-card__item-grid g-padding-y-40--xs"  style="background:url(img/events/renderico.jpg)">
                     </div>
             </a>
-            <a href="/nirmaan.php" class="product-card col-xs-12 col-md-4" >
-                <div class="product-card__item-grid g-padding-y-40--xs"style="background:url(img/events/new-nirmaan.jpeg)">
+            <a href="operation-research.php" class="product-card col-xs-12 col-md-4" >
+              <div class="product-card__item-grid g-padding-y-40--xs"style="background:url(img/events/operation-research.jpg)">
 
+
+              </div>
+            </a>
+            <a href="pitch-mantra.php" class="product-card col-xs-12 col-md-4 " >
+              <div class="product-card__item-grid g-padding-y-40--xs" style="background:url(img/events/pitch-mantra.jpg)">
+
+              </div>
+            </a>
+            <a href="BizQuiz.php" class="product-card col-xs-12 col-md-4 " >
+              <div class="product-card__item-grid g-padding-y-40--xs" style="background:url(img/events/BizQuiz.jpg)">
+
+              </div>
+            </a>
+            <a href="war-of-worlds.php" class="product-card col-xs-12 col-md-4 " >
+              <div class="product-card__item-grid g-padding-y-40--xs" style="background:url(img/events/war_of_worlds.jpg)">
+
+              </div>
+            </a>
+            <a href="wallstreet.php" class="product-card col-xs-12 col-md-4 " >
+                <div class="product-card__item-grid g-padding-y-40--xs" style="background:url(img/events/Wallstreet.jpg)">
 
                     </div>
             </a>
-            <!-- <a href="/Pitch_Perfect.php" class="product-card col-xs-12 col-md-4" >
-                <div class="product-card__item-grid g-padding-y-40--xs"style="background:url(img/events/Pitch_Perfect.png)">
-
-
-                    </div>
-            </a> -->
-            <a href="BizMantra.php" class="product-card col-xs-12 col-md-4 " >
-                <div class="product-card__item-grid g-padding-y-40--xs" style="background:url(img/events/BizMantra.jpg)">
+            <a href="epl.php" class="product-card col-xs-12 col-md-4 " >
+                <div class="product-card__item-grid g-padding-y-40--xs" style="background:url(img/events/epl.jpg)">
 
                     </div>
             </a>
-            <a href="/BizQuiz.php" class="product-card col-xs-12 col-md-4 " >
-                <div class="product-card__item-grid g-padding-y-40--xs" style="background:url(img/events/BizQuiz.jpg)">
-
-                    </div>
-            </a>
-            <!-- <a href="/BizQuiz.php" class="product-card col-xs-12 col-md-4 " >
-                <div class="product-card__item-grid g-padding-y-40--xs" style="background:url(img/events/war_of_worlds.png)">
-
-                    </div>
-            </a>
-            <a href="/BizQuiz.php" class="product-card col-xs-12 col-md-4 " >
-                <div class="product-card__item-grid g-padding-y-40--xs" style="background:url(img/events/BizQuiz.jpg)">
-
-                    </div>
-            </a>
-            <a href="/BizQuiz.php" class="product-card col-xs-12 col-md-4 " >
-                <div class="product-card__item-grid g-padding-y-40--xs" style="background:url(img/events/BizQuiz.jpg)">
-
-                    </div>
-            </a> -->
 
         </div>
 
         <!--Startup EXPO-->
 
-        <div class="s-promo-block-v3 g-bg-position--center expo" style="background: #161616" id="expo">
+        <!-- <div class="s-promo-block-v3 g-bg-position--center expo" style="background: #161616" id="expo">
 
             <div style="" class="expo-back-out"> </div>
             <div style="" class="expo-front-out"> </div>
@@ -240,9 +234,9 @@
 
             <div class="container g-padding-y-40--xs g-padding-y-0--md g-padding-y-0--lg" style=" height: 100%;
     display: flex;
-    align-items: center;">
+    align-items: center;"> -->
                 <!--<img src="img/logo/logo-teentitans.png" alt="" width="280" style="margin-top:-180px">-->
-                <div class="g-margin-t-30--xs g-margin-t-60--sm g-margin-t-100--md g-margin-b-30--xs g-margin-b-70--md g-margin-l-20--xs g-margin-l-80--sm">
+                <!-- <div class="g-margin-t-30--xs g-margin-t-60--sm g-margin-t-100--md g-margin-b-30--xs g-margin-b-70--md g-margin-l-20--xs g-margin-l-80--sm">
 
                     <h1 class="g-font-size-50--xs g-font-size-80--sm g-font-size-80--lg g-color--white" style="font-weight:900; text-shadow: 2px 0 #333;letter-spacing:2px;position: relative;"><b>STARTUP<br>EXPO</b></h1>
 
@@ -267,7 +261,7 @@
                 </div>
 
             </div>
-        </div>
+        </div> -->
 
 
         <!-- Azure Space -->
@@ -321,7 +315,7 @@
 
                     <div class="row">
                         <div class="col-sm-6 col-md-4">
-                            <p class="g-color--white-opacity g-font-size-16--sm">Townhall was one of the star attractions of Consortium’19. Get a chance to get your question answered by our celebrity guest, live.<br><b>And the speaker? Expect the Unexpected!</b></p>
+                            <p class="g-color--white-opacity g-font-size-16--sm">Townhall was one of the star attractions of Consortium’19 where attendees got a chance to get their question answered by our celebrity guest, live.<br>What's in store for Consortium'21, you ask? <b>Expect the Unexpected!</b></p>
 
 
                         </div>
@@ -360,7 +354,7 @@
 
                     <div class="row">
                         <div class="col-sm-6 col-md-5">
-                            <p class="g-color--white-opacity g-font-size-16--sm">Zero to One was a panel discussion event of Consortium’19. It aims to inculcate knowledge about corporate sector and spread awareness via discussion between our esteemed guests from various sectors having different experiences who guide the attendees in the field of entrepreneurship and innovation. </b></p>
+                            <p class="g-color--white-opacity g-font-size-16--sm">Zero to One is a panel discussion event of Consortium where founders and directors exchange ideas on stage, highlighting the key points of their own journey and experience in the industry. It aims to inculcate knowledge about corporate sector and spread awareness via discussion between our esteemed guests from various sectors having different experiences who guide the attendees in the field of entrepreneurship and innovation. </b></p>
                         </div>
                     </div>
 
@@ -458,7 +452,7 @@
             <div class="container g-padding-y-125--md g-padding-y-40--xs g-padding-y-40--md tee-inner" style=" position: relative;">
                 <div class="g-margin-t-30--xs g-margin-t-0--sm  g-padding-x-20--xs g-margin-t-125--lg g-margin-l-20--xs g-margin-l-80--sm">
                     <h1 class="g-font-size-30--xs g-font-size-40--sm g-font-size-60--lg g-color--white g-font-weight--600">Consortium'20<br><span style="color:#aaa;">OFFICIAL</span><br><span style="color:#555;"><b>MERCHANDISE</b></span></h1>
-                <p style="color:#aaa">*Available Sizes: S, M, L, XL, XXL</p>
+                <p style="color:#aaa">*Available Sizes: XS,S, M, L, XL, XXL, XXXL (Size Chart Available)</p>
                 <div class="pm-button text-uppercase btn-block s-btn s-btn--md s-btn--white-brd g-radius--50 g-padding-x-20--xs g-margin-b-20--xs tee-button" style=""><a href="https://pmny.in/DIacQifXnI1d">Buy Now</a></div>
 
                 </div>

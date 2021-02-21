@@ -3,70 +3,64 @@
   $pagetitle = "Register | Consortium'20";
   require_once('includes/mailing.php');
 
-    $db_host = "localhost:3306";
-    $db_username = "conso20";
-    $db_pass = "Conso@123";
-    $db_name = "conso20";
+    require_once('includes/dbconnect.php');
 
-    $con = mysqli_connect("$db_host","$db_username","$db_pass") or die ("could not connect to mysql");
-    mysqli_select_db($con,$db_name) or die ("no database");
-
-    $altquery = "ALTER TABLE `Registrations` CHANGE `ConsoWorld` `Brainathon` TINYINT(1) NULL DEFAULT '0';";
-    mysqli_query($con,$altquery);
+    // $altquery = "ALTER TABLE `Registrations` CHANGE `ConsoWorld` `Brainathon` TINYINT(1) NULL DEFAULT '0';";
+    // mysqli_query($con,$altquery);
 
 
-    $regquery = "CREATE TABLE IF NOT EXISTS Registrations(
-                ID INT(11) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
-                Name VARCHAR(255) NOT NULL,
-                Email VARCHAR(255) NOT NULL,
-                Contact VARCHAR(255) NOT NULL,
-                Password VARCHAR(255) NOT NULL,
-                College VARCHAR(255) NOT NULL,
-                Swadesh TINYINT(1) DEFAULT '0',
-                AdVenture TINYINT(1) DEFAULT '0',
-                trec TINYINT(1) DEFAULT '0',
-                renderico TINYINT(1) DEFAULT '0',
-                CEO TINYINT(1) DEFAULT '0',
-                war_of_worlds TINYINT(1) DEFAULT '0',
-                BizQuiz TINYINT(1) DEFAULT '0',
-                otp VARCHAR(255) NOT NULL
-                )";
-
-    mysqli_query($con,$regquery);
-
-
-
-    $eve = array('Swadesh','AdVenture','trec','renderico','CEO','war_of_worlds','BizMantra','BizQuiz');
-    for($var = 0; $var < 8; $var++){
-      $evequery = "CREATE TABLE IF NOT EXISTS $eve[$var](
-                ID INT(11) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
-                Name VARCHAR(255) NOT NULL,
-                Main_Email VARCHAR(255) NOT NULL,
-                Email VARCHAR(255) NOT NULL,
-                Contact VARCHAR(255) NOT NULL
-                )";
-    mysqli_query($con,$evequery);
-    }
-
-    $eve = array('nirmaan_team','AdVenture_team','trec_team','renderico_team','BizMantra_team','BizQuiz_team','war_of_worlds_team');
-    for($var = 0; $var < 8; $var++){
-      $evequery = "CREATE TABLE IF NOT EXISTS $eve[$var](
-                ID INT(11) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
-                Name VARCHAR(255) NOT NULL,
-                Email VARCHAR(255) NOT NULL,
-                Contact VARCHAR(255) NOT NULL
-                )";
-    mysqli_query($con,$evequery);
-    }
-
-    $brainquery = "CREATE TABLE IF NOT EXISTS Brainathon(
-                ID INT(11) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
-                Name VARCHAR(255) NOT NULL,
-                Email VARCHAR(255) NOT NULL,
-                Contact VARCHAR(255) NOT NULL,
-                isPaid TINYINT(1) DEFAULT '0'
-                )";
-    mysqli_query($con,$brainquery);
+    // $regquery = "CREATE TABLE IF NOT EXISTS Registrations(
+    //             ID INT(11) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    //             Name VARCHAR(255) NOT NULL,
+    //             Email VARCHAR(255) NOT NULL,
+    //             Contact VARCHAR(255) NOT NULL,
+    //             Password VARCHAR(255) NOT NULL,
+    //             College VARCHAR(255) NOT NULL,
+    //             Swadesh TINYINT(1) DEFAULT '0',
+    //             AdVenture TINYINT(1) DEFAULT '0',
+    //             trec TINYINT(1) DEFAULT '0',
+    //             renderico TINYINT(1) DEFAULT '0',
+    //             CEO TINYINT(1) DEFAULT '0',
+    //             war_of_worlds TINYINT(1) DEFAULT '0',
+    //             BizQuiz TINYINT(1) DEFAULT '0',
+    //             otp VARCHAR(255) NOT NULL
+    //             )";
+    //
+    // mysqli_query($con,$regquery);
+    //
+    //
+    //
+    // $eve = array('Swadesh','AdVenture','trec','renderico','CEO','war_of_worlds','BizMantra','BizQuiz');
+    // for($var = 0; $var < 8; $var++){
+    //   $evequery = "CREATE TABLE IF NOT EXISTS $eve[$var](
+    //             ID INT(11) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    //             Name VARCHAR(255) NOT NULL,
+    //             Main_Email VARCHAR(255) NOT NULL,
+    //             Email VARCHAR(255) NOT NULL,
+    //             Contact VARCHAR(255) NOT NULL
+    //             )";
+    // mysqli_query($con,$evequery);
+    // }
+    //
+    // $eve = array('nirmaan_team','AdVenture_team','trec_team','renderico_team','BizMantra_team','BizQuiz_team','war_of_worlds_team');
+    // for($var = 0; $var < 8; $var++){
+    //   $evequery = "CREATE TABLE IF NOT EXISTS $eve[$var](
+    //             ID INT(11) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    //             Name VARCHAR(255) NOT NULL,
+    //             Email VARCHAR(255) NOT NULL,
+    //             Contact VARCHAR(255) NOT NULL
+    //             )";
+    // mysqli_query($con,$evequery);
+    // }
+    //
+    // $brainquery = "CREATE TABLE IF NOT EXISTS Brainathon(
+    //             ID INT(11) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    //             Name VARCHAR(255) NOT NULL,
+    //             Email VARCHAR(255) NOT NULL,
+    //             Contact VARCHAR(255) NOT NULL,
+    //             isPaid TINYINT(1) DEFAULT '0'
+    //             )";
+    // mysqli_query($con,$brainquery);
 
 
 

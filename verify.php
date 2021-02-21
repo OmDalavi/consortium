@@ -6,13 +6,7 @@ require_once('includes/mailing.php');
 $pagetitle = 'Verify | Consortium';
 $verify = $_SESSION['verify'];
 
-$db_host = "localhost:3306";
-$db_username = "conso20";
-$db_pass = "Conso@123";
-$db_name = "conso20";
-
-$con = mysqli_connect("$db_host","$db_username","$db_pass") or die ("could not connect to mysql");
-mysqli_select_db($con,$db_name) or die ("no database");
+require_once('includes/dbconnect.php');
 
 $email = $con->real_escape_string($_GET['email']);
 
