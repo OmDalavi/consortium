@@ -8,7 +8,7 @@
   if(isset($_POST['reset'])){
     $email = $con->real_escape_string($_POST['reset_email']);
 
-    $query = "SELECT * FROM Registrations WHERE Email = '$email'";
+    $query = "SELECT * FROM registrations WHERE Email = '$email'";
     $result = mysqli_query($con,$query);
     $num = mysqli_num_rows($result);
 
@@ -24,7 +24,7 @@
       $conso_id .= substr($otp, 0, 4);
 
 
-      $query = "SELECT * FROM Registrations WHERE Email='$email'";
+      $query = "SELECT * FROM registrations WHERE Email='$email'";
       $result = mysqli_query($con,$query);
       $num = mysqli_num_rows($result);
       if($num != 0){
@@ -34,7 +34,7 @@
         $conso_id .= substr($pass, 0, 4);
       }
 
-      $query = "UPDATE Registrations SET conso_id = '$conso_id' WHERE email='$email'";
+      $query = "UPDATE registrations SET conso_id = '$conso_id' WHERE email='$email'";
       if(mysqli_query($con,$query)){
         $s = "Reset Your ConsoID | E-Cell VNIT Nagpur";
         htmlMail($email,$s,$name,$conso_id, 'forgot');
