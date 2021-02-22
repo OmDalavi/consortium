@@ -39,7 +39,7 @@
                                         <a href="index.html" class="dropdown-toggle s-header-v2__nav-link -is-active" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Events <span class="g-font-size-10--xs g-margin-l-5--xs ti-angle-down"></span></a>
                                         <ul class="dropdown-menu s-header-v2__dropdown-menu">
                                             <li><a href="https://startupconclave.ecellvnit.org" class="s-header-v2__dropdown-menu-link">Startup Conclave</a></li>
-                                            <li><a href="/CEO.php" class="s-header-v2__dropdown-menu-link">CEO</a></li>
+                                            <li><a href="/ceo.php" class="s-header-v2__dropdown-menu-link">CEO</a></li>
 
                                         </ul>
                                     </li>

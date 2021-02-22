@@ -38,7 +38,7 @@
                                             <li><a href="https://startupconclave.ecellvnit.org" class="s-header-v2__dropdown-menu-link">Startup Conclave</a></li>
                                             <li><a href="https://neo.ecellvnit.org" class="s-header-v2__dropdown-menu-link">NEO</a></li>
                                             <li><a href="Swadesh.php" class="s-header-v2__dropdown-menu-link">Swades</a></li>
-                                            <li><a href="CEO.php" class="s-header-v2__dropdown-menu-link">CEO</a></li>
+                                            <li><a href="ceo.php" class="s-header-v2__dropdown-menu-link">CEO</a></li>
                                             <li><a href="AdVenture.php" class="s-header-v2__dropdown-menu-link">AdVenture</a></li>
                                             <li><a href="renderico.php" class="s-header-v2__dropdown-menu-link">Render.ico</a></li>
                                             <li><a href="operation-research.php" class="s-header-v2__dropdown-menu-link">Operation Research</a></li>
