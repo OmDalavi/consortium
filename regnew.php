@@ -6,7 +6,7 @@
   // ini_set('display_errors', '1');
 
   if($_SESSION['email']){
-    header('location:dashboard.php');
+    header('location:register.php');
   }
 
     require_once('includes/dbconnect.php');
