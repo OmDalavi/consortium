@@ -15,7 +15,7 @@
     $contact = $_SESSION['contact'];
   }else{
     $_SESSION['login_error'] = "Kindly Login First";
-    header('location:/login.php');
+    header('location:login.php');
   }
 ?>
 <!DOCTYPE html>
@@ -76,28 +76,7 @@
 
                               <p class="g-color--white g-text-center--xs g-font-size-14--xs">
                                 <?php
-
-                                if($events[$var] != "Brainathon"){
-                                  echo 'Welcome to the event ,', $name, '!';
-                                }
-                                elseif($events[$var] != "BizMantra"){
-                                  echo 'Paper will be conducted on your respective sections';
-                                }
-                                else{
-
-                                  $query = "SELECT * FROM Brainathon WHERE Email = '$email'";
-                                  $result = mysqli_query($con,$query);
-                                  $data = mysqli_fetch_assoc($result);
-
-                                  if($data['isPaid'] == 1){
-                                    echo 'Your Are Successfully Registered.';
-                                  }
-                                  else{
-                                      echo 'You have not paid your registration fee. Click on the registered event below to complete your registrations.';
-                                  }
-
-                                }
-
+                                  echo 'Welcome to the event, ', $name, '!';
                                  ?>
 
                               </p>
@@ -113,31 +92,11 @@
                                       <span class="text-uppercase s-btn s-btn--xs s-btn--white-brd g-radius--50 g-margin-r-10--xs">View Event</span>
                                   </a>
 
-                                  <a id="reg_button" href="<?php if($events[$var] == 'Brainathon')
-                                                                    {echo'/paybrain.php';}
-                                                                    // elseif($events[$var] == "CEO"){
-                                                                    //   echo'team.php';
-                                                                    // }
-                                                                    elseif($events[$var] == "nirmaan"){
-                                                                      echo '/nirmaan-test.php';
-                                                                    }
-                                                                    elseif($events[$var] == "Swadesh"){
-                                                                      echo '/swadesh-questionnaire.php';
-
-                                                                    }
-                                                                    elseif ($events[$var] == 'trec')
-                                                                    {echo '/pay-trec.php';}
-                                                                    elseif ($events[$var] == 'war_of_worlds')
-                                                                    {echo '/war-of-worlds-result.php';}
-                                                                    else{echo '#'.$events[$var].'click';}
-                                                                     ?>" >
-                                      <span class="text-uppercase s-btn s-btn--xs s-btn--white-brd g-radius--50">
+                                  <a href="#paylink"><span class="text-uppercase s-btn s-btn--xs s-btn--white-brd g-radius--50">
                                         <?php if($events[$var] == 'Brainathon'){
                                           echo 'Pay Here';
                                         }elseif($events[$var] == "ceo"){
-                                          echo '<a href="#paylink">
-                                              <span class="text-uppercase s-btn s-btn--xs s-btn--white-brd g-radius--50 g-margin-r-10--xs">Pay Now</span>
-                                          </a>';;
+                                          echo 'Pay Now';;
                                         }elseif($events[$var] == "nirmaan" ){
                                           echo 'Start Test';
                                         }elseif($events[$var] == "Swadesh" ){
@@ -207,19 +166,6 @@
                             <h2 class="g-color--white g-text-center--xs g-font-size-16--xs" style="text-decoration: underline;"><b><?php echo $attractions[$var] ?></b></h2>
                             <h2 class="g-color--white g-text-center--xs g-font-size-14--xs">Click on Register button below to </2>
 
-
-
-                            <div class="wow fadeInLeft g-text-center--xs" data-wow-duration=".3" data-wow-delay=".5s" style="display: flex;justify-content: center;">
-                                <a id="reg_button" href="/<?php if($attractions[$var] == 'aimlworkshop')
-                                                            {echo 'aimlworkshop.php';}
-                                                            else {echo $attractions[$var].'.php';} ?>" target="_blank" title="Register">
-                                    <span class="text-uppercase s-btn s-btn--xs s-btn--white-brd g-radius--50 g-margin-r-10--xs">Register</span>
-                                </a>
-
-
-                            </div>
-
-
                           </div>
                       </div>
                   </div>
@@ -235,7 +181,14 @@
       </div>
         </div>
       </div>
-
+      <?php
+        $query = "SELECT * FROM ceo WHERE email='$email'";
+        $result = mysqli_query($con,$query);
+        $num = mysqli_num_rows($result);
+        if($num>0){
+          $data = mysqli_fetch_array($result);
+          if($data['payment_status']==0){
+       ?>
       <div class="swades container g-padding-x-40--sm g-padding-x-20--xs g-padding-y-20--xs g-padding-y-50--sm" id="paylink" style="display:none; background: #000">
 
         <a class="g-color--white g-font-size-20--xs" onclick="closemodel('paylink');" style="position:absolute; left:90%" >X</a>
@@ -256,10 +209,21 @@
 
           </div>
           <div class="g-text-center--xs">
-              <button type="submit" name="pay" class="text-uppercase s-btn s-btn--md s-btn--white-brd g-radius--50 g-padding-x-70--xs g-margin-b-20--xs">Create Team</button>
+              <button type="submit" name="pay" class="text-uppercase s-btn s-btn--md s-btn--white-brd g-radius--50 g-padding-x-70--xs g-margin-b-20--xs">Proceed to Pay</button>
           </div>
       </form>
     </div>
+    <?php
+  }else {
+    ?>  <div class="swades container g-padding-x-40--sm g-padding-x-20--xs g-padding-y-20--xs g-padding-y-50--sm" id="paylink" style="display:none; background: #000">
+
+        <a class="g-color--white g-font-size-20--xs" onclick="closemodel('paylink');" style="position:absolute; left:90%" >X</a>
+        <h2 class="g-font-size-30--xs g-text-center--xs g-margin-t-70--xs g-color--white g-letter-spacing--1">You have registered Successfully! All further details shall be communicated to you through your registered email id.</h2>
+      </div>
+        <?php
+      }
+    }
+     ?>
         <!-- End Speakers -->
 
 

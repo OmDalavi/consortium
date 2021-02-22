@@ -50,7 +50,7 @@ if ($success === true)
 
 
     $sql3 = "UPDATE `CEO` SET `order_id` = '$razorpay_order_id', `razor_payment_id`= '$razorpay_payment_id',`payment_status` = '1' WHERE `email` = '$actual_cust_email'";
-    $result = mysqli_multi_query($conn,$sql3);
+    $result = mysqli_multi_query($con,$sql3);
     if($result){
         $html = "<p>Your payment was successful</p>
             <p>$razorpay_order_id</p>
@@ -67,8 +67,8 @@ if ($success === true)
         session_destroy();
 
     }else{
-        $html = '<p> <?php echo  "Error: " . $sql3 . "<br>" . mysqli_error($conn);?> </p>';
-        echo  "Error: " . $sql3 . "<br>" . mysqli_error($conn);
+        $html = '<p> <?php echo  "Error: " . $sql3 . "<br>" . mysqli_error($con);?> </p>';
+        echo  "Error: " . $sql3 . "<br>" . mysqli_error($con);
     }
 
 }

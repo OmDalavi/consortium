@@ -74,7 +74,7 @@
     $email = $_SESSION['email'];
     $name = $_SESSION['name'];
     $contact = $_SESSION['contact'];
-    $conso_id = $_SESSION['consoID'];
+    // $conso_id = $_SESSION['consoID'];
     $event = $con->real_escape_string($_POST['event']);
 
     if($event == ""){
@@ -125,7 +125,7 @@
                       <option value='' selected disabled hidden>Choose an Event you wish to participate in.</option>
                       <!-- <option value='Swadesh'>Swades</option> -->
                       <!-- <option value='trec'>TREC (Technology Research Entrepreneurship Conclave)</option> -->
-                      <option value='CEO'>CEO</option>
+                      <option value='ceo'>CEO</option>
                       <!-- <option value='nirmaan'>Nirmaan</option>
                       <option value='war_of_worlds'>War of Worlds</option>
                       <option value='renderico'>Render.ico</option>
