@@ -22,7 +22,7 @@ if(isset($_POST['login'])){
     <body>
       <nav class="navbar navbar-expand-lg navbar-light">
         <a class="navbar-brand" href="#">
-          <img src="images/log.png" alt="NEO logo" style="height: 70px;"/>
+          <img src="img/icon.png" alt="Conso logo" style="height: 70px;"/>
         </a>
 
       </nav>
