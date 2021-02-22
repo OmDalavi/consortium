@@ -80,14 +80,14 @@
     if($event == ""){
       $msg = "Please Select an event!";
     }else{
-      $query = "SELECT * FROM Registrations WHERE Email = '$email'";
+      $query = "SELECT * FROM registrations WHERE Email = '$email'";
       $result = mysqli_query($con,$query);
       $num = mysqli_num_rows($result);
 
       if($num > 0){
         $data = mysqli_fetch_array($result);
         if($data[$event] != 1){
-          $q1 = "UPDATE Registrations SET $event = 1 WHERE email = '$email'";
+          $q1 = "UPDATE registrations SET $event = 1 WHERE email = '$email'";
           mysqli_query($con,$q1);
 
           $q2 = "INSERT INTO $event(name,email,contact) VALUES('$name','$email','$contact')";
