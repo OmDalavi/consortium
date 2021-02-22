@@ -72,7 +72,7 @@
                       </span>
                     </div>
                     <div class="col-sm-12 col-md-3 col-lg-3">
-                      <a href="https://www.payumoney.com/invoicing/invoice/6868269/INV25222820200128#/" target="_blank">
+                      <a href="https://pages.razorpay.com/E-Cell-T-Shirt-21" target="_blank">
                         <h4 class="g-color--white-opacity"><b>Buy Merchandise</b></h4>
                       </a>
                         <p class="g-color--white-opacity-light footer-para g-font-size-16--xs">

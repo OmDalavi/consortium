@@ -77,7 +77,7 @@
 
                                         </ul>
                                     </li> -->
-                                    <li class="s-header-v2__nav-item"><a href="https://www.payumoney.com/invoicing/invoice/6868269/INV25222820200128#/" class="s-header-v2__nav-link">Merchandise</a></li>
+                                    <li class="s-header-v2__nav-item"><a href="https://pages.razorpay.com/E-Cell-T-Shirt-21" class="s-header-v2__nav-link">Merchandise</a></li>
 
                                     <li class="s-header-v2__nav-item"><a href="https://www.ecellvnit.org/spons.php" class="s-header-v2__nav-link">Previous Sponsors</a></li>
                                     <li class="s-header-v2__nav-item"><a href="team.php" class="s-header-v2__nav-link">Team</a></li>
