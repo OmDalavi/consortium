@@ -1,5 +1,5 @@
 <?php
-
+require('config.php');
 require('includes/dbconnect.php');
 require('razorpay-php/Razorpay.php');
 session_start();

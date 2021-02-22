@@ -1,5 +1,5 @@
 <?php
-
+require('config.php');
 require('includes/dbconnect.php');
 // require('config/db_connect.php');
 require_once('includes/mailing.php');
