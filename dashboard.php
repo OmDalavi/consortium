@@ -87,7 +87,7 @@
                                   <a id="reg_button" href="<?php if($events[$var] == 'Brainathon')
                                                               {echo 'brainathon.php';}
                                                               elseif ($events[$var] == 'CEO')
-                                                              {echo 'CEO.php';}
+                                                              {echo 'ceo.php';}
                                                               else {echo $events[$var].'.php';} ?>" target="_blank" title="Register">
                                       <span class="text-uppercase s-btn s-btn--xs s-btn--white-brd g-radius--50 g-margin-r-10--xs">View Event</span>
                                   </a>
