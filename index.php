@@ -98,7 +98,7 @@
                         <div class="wow fadeInLeft" data-wow-duration=".3" data-wow-delay=".1s">
                             <h2 class="g-font-size-40--xs g-font-size-50--sm g-font-size-60--md g-color--dark" style="font-weight:900">About</h2>
                         </div>
-                        <p class="g-font-size-14--xs g-font-size-16--sm g-color--dark-opacity">Consortium, the Annual Entrepreneurship Summit of <a href="http://vnit.ac.in">VNIT Nagpur</a> comprises of invigorating events like Startup Conclave, Swades and many more. The summit aims at fueling entrepreneurial attitude amongst students through healthy competition and exciting challenges.<br>
+                        <p class="g-font-size-14--xs g-font-size-16--sm g-color--dark-opacity">Consortium, the Annual Entrepreneurship Summit of <a href="http://vnit.ac.in" target="_blank">VNIT Nagpur</a> comprises of invigorating events like Startup Conclave, Swades and many more. The summit aims at fueling entrepreneurial attitude amongst students through healthy competition and exciting challenges.<br>
                             Get ready to <i>Defy all Odds</i> at <b>Consortium'21</b>.
                         </p>
 
@@ -159,12 +159,12 @@
         </div>
 
         <div class="row product-grid" id="events">
-            <a href="https://startupconclave.ecellvnit.org" class="product-card col-xs-12 col-md-4">
+            <a href="https://startupconclave.ecellvnit.org" class="product-card col-xs-12 col-md-4" target="_blank">
                 <div class="product-card__item-grid g-padding-y-40--xs" style="background:url(img/events/events-01.jpg)">
 
                     </div>
             </a>
-            <a href="https://neo.ecellvnit.org/" class="product-card col-xs-12 col-md-4 " >
+            <a href="https://neo.ecellvnit.org/" class="product-card col-xs-12 col-md-4 " target="_blank">
               <div class="product-card__item-grid g-padding-y-40--xs" style="background:url(img/events/neo.jpg)">
 
               </div>
@@ -451,9 +451,9 @@
         <div class="s-promo-block-v3  tee g-padding-y-0--xs g-padding-y-40--md" style="min-height:60vh">
             <div class="container g-padding-y-125--md g-padding-y-40--xs g-padding-y-40--md tee-inner" style=" position: relative;">
                 <div class="g-margin-t-30--xs g-margin-t-0--sm  g-padding-x-20--xs g-margin-t-125--lg g-margin-l-20--xs g-margin-l-80--sm">
-                    <h1 class="g-font-size-30--xs g-font-size-40--sm g-font-size-60--lg g-color--white g-font-weight--600">Consortium'20<br><span style="color:#aaa;">OFFICIAL</span><br><span style="color:#555;"><b>MERCHANDISE</b></span></h1>
+                    <h1 class="g-font-size-30--xs g-font-size-40--sm g-font-size-60--lg g-color--white g-font-weight--600">Consortium'21<br><span style="color:#aaa;">OFFICIAL</span><br><span style="color:#555;"><b>MERCHANDISE</b></span></h1>
                 <p style="color:#aaa">*Available Sizes: XS,S, M, L, XL, XXL, XXXL (Size Chart Available)</p>
-                <div class="pm-button text-uppercase btn-block s-btn s-btn--md s-btn--white-brd g-radius--50 g-padding-x-20--xs g-margin-b-20--xs tee-button" style=""><a href="https://pmny.in/DIacQifXnI1d">Buy Now</a></div>
+                <div class="pm-button text-uppercase btn-block s-btn s-btn--md s-btn--white-brd g-radius--50 g-padding-x-20--xs g-margin-b-20--xs tee-button" style=""><a href="https://pages.razorpay.com/E-Cell-T-Shirt-21" target="_blank">Buy Now</a></div>
 
                 </div>
 
