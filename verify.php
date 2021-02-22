@@ -25,14 +25,14 @@ else if(isset($_POST['conso_id_sub'])) {
     $msg = "That's not your ConsoID. Please check again.";
   }
   else{
-    $query = "SELECT * from Registrations where Email='$email'";
+    $query = "SELECT * from registrations where Email='$email'";
     $result = mysqli_query($con,$query);
     $num = mysqli_num_rows($result);
 
     if($num >0){
       $data = mysqli_fetch_array($result);
       if($data['otp'] == $otpver){
-        $q = "UPDATE Registrations SET otp='Confirmed' WHERE Email = '$email'";
+        $q = "UPDATE registrations SET otp='Confirmed' WHERE Email = '$email'";
         if(mysqli_query($con,$q)){
           $_SESSION['login_error'] = "Your email has been verified! You can Login now";
         }else{
@@ -58,7 +58,7 @@ elseif(isset($_POST['resend'])) {
   $conso_id .= substr($otp, 0, 4);
 
 
-  $query = "SELECT * FROM Registrations WHERE Email='$email'";
+  $query = "SELECT * FROM registrations WHERE Email='$email'";
   $result = mysqli_query($con,$query);
   $num = mysqli_num_rows($result);
   if($num != 0){
@@ -68,7 +68,7 @@ elseif(isset($_POST['resend'])) {
     $conso_id .= substr($pass, 0, 4);
   }
 
-  $q = "UPDATE Registrations SET otp='$conso_id' WHERE Email = '$email'";
+  $q = "UPDATE registrations SET otp='$conso_id' WHERE Email = '$email'";
 
   if(mysqli_query($con,$q)){
 

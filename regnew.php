@@ -103,7 +103,7 @@
     else{
       // $hashed_password = $con->real_escape_string(password_hash($cpassword, PASSWORD_DEFAULT));
 
-      $query = "SELECT * FROM Registrations WHERE Email='$email'";
+      $query = "SELECT * FROM registrations WHERE Email='$email'";
       $result = mysqli_query($con,$query);
       $num = mysqli_num_rows($result);
 
@@ -131,7 +131,7 @@
         $conso_id .= substr($otp, 0, 4);
 
 
-        $query = "SELECT * FROM Registrations WHERE Email='$email'";
+        $query = "SELECT * FROM registrations WHERE Email='$email'";
         $result = mysqli_query($con,$query);
         $num = mysqli_num_rows($result);
         if($num != 0){
@@ -145,7 +145,7 @@
         // $hashed_ci = $con->real_escape_string(password_hash($conso_id, PASSWORD_DEFAULT));
 
 
-        $q = "INSERT INTO Registrations(email,name,contact,college,conso_id,otp) VALUES('$email','$name','$contact','$college','$conso_id','$conso_id')";
+        $q = "INSERT INTO registrations(email,name,contact,college,conso_id,otp) VALUES('$email','$name','$contact','$college','$conso_id','$conso_id')";
         // $q = "INSERT INTO Registrations(Name,Email,Contact,College,Password,otp) VALUES('$name','$email','$contact','$college','$hashed_password','$otp')";
         if(mysqli_query($con,$q)){
 

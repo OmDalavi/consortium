@@ -122,7 +122,7 @@
               </ol>
 
               <div class="wow fadeInLeft" data-wow-duration=".3" data-wow-delay=".5s">
-                <a href="https://drive.google.com/file/d/13dhKTEcK3RGiaRcQZCNwbMqojoVaLmeJ/view">
+                <a href="https://drive.google.com/file/d/13dhKTEcK3RGiaRcQZCNwbMqojoVaLmeJ/view" target="_blank">
                     <span class="text-uppercase s-btn--primary-bg g-radius--50 g-padding-x-30--xs g-padding-y-15--xs g-font-size-13--xs g-color--white g-padding-x-15--xs">Download Event Brochure<span class="ti-angle-down"></span></span>
                 </a>
               </div>
