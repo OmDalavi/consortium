@@ -15,6 +15,8 @@ use Razorpay\Api\Errors\SignatureVerificationError;
 
 $success = true;
 
+$v = $_SESSION['v'];
+
 $error = "Payment Failed";
 
 $actual_cust_email = $_SESSION['email'];
@@ -49,7 +51,7 @@ if ($success === true)
     $razorpay_signature = $_POST['razorpay_signature'];
 
 
-    $sql3 = "UPDATE `ceo` SET `order_id` = '$razorpay_order_id', `razor_payment_id`= '$razorpay_payment_id',`payment_status` = '1' WHERE `email` = '$actual_cust_email'";
+    $sql3 = "UPDATE ".$v." SET `order_id` = '$razorpay_order_id', `razor_payment_id`= '$razorpay_payment_id',`payment_status` = '1' WHERE `email` = '$actual_cust_email'";
     $result = mysqli_multi_query($con,$sql3);
     if($result){
         $html = "<p>Your payment was successful</p>
@@ -60,7 +62,7 @@ if ($success === true)
              <p>$actual_cust_email</p>";
         header("Location: success.php");
         $sub = "Payment Successfull";
-        $name = "CEO participant";
+        $name = $v." participant";
         $event = "Your payment is succesfull";
         htmlMail($actual_cust_email,$sub,$name,"",$event);
         session_unset();

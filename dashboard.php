@@ -58,7 +58,7 @@
                 <div class="row product-grid">
 
                   <?php
-                    $events = array('Swadesh','AdVenture','trec','renderico','ceo','war_of_worlds','BizMantra','BizQuiz', 'nirmaan','iplauction');
+                    $events = array('Swadesh','AdVenture','trec','renderico','ceo','war_of_worlds','BizMantra','BizQuiz', 'nirmaan','wallstreet');
                     $query = "SELECT * FROM registrations WHERE email='$email'";
                     $result = mysqli_query($con,$query);
                     $num = mysqli_num_rows($result);
@@ -92,7 +92,7 @@
                                       <span class="text-uppercase s-btn s-btn--xs s-btn--white-brd g-radius--50 g-margin-r-10--xs">View Event</span>
                                   </a>
 
-                                  <a href="#paylink"><span class="text-uppercase s-btn s-btn--xs s-btn--white-brd g-radius--50">
+                                  <a href="#paylink<?php echo $events[$var]; ?>"><span class="text-uppercase s-btn s-btn--xs s-btn--white-brd g-radius--50">
                                         <?php if($events[$var] == 'Brainathon'){
                                           echo 'Pay Here';
                                         }elseif($events[$var] == "ceo"){
@@ -150,7 +150,7 @@
               <div class="row product-grid">
 
                 <?php
-                  $attractions = array('aimlworkshop', 'Pitch_Perfe');
+                  // $attractions = array('aimlworkshop', 'Pitch_Perfe');
                   $query = "SELECT * FROM registrations WHERE Email='$email'";
                   $result = mysqli_query($con,$query);
                   $num = mysqli_num_rows($result);
@@ -181,6 +181,10 @@
       </div>
         </div>
       </div>
+
+      <!-- Payment Sections -->
+      <!-- CEO Payment Section -->
+
       <?php
         $query = "SELECT * FROM ceo WHERE email='$email'";
         $result = mysqli_query($con,$query);
@@ -189,14 +193,14 @@
           $data = mysqli_fetch_array($result);
           if($data['payment_status']==0){
        ?>
-      <div class="swades container g-padding-x-40--sm g-padding-x-20--xs g-padding-y-20--xs g-padding-y-50--sm" id="paylink" style="display:none; background: #000">
+      <div class="container g-padding-x-40--sm g-padding-x-20--xs g-padding-y-20--xs g-padding-y-50--sm" id="paylinkceo" style="display:none; background: #000">
 
-        <a class="g-color--white g-font-size-20--xs" onclick="closemodel('paylink');" style="position:absolute; left:90%" >X</a>
+        <a class="g-color--white g-font-size-20--xs" onclick="closemodel('paylinkceo');" style="position:absolute; left:90%" >X</a>
         <h2 class="g-font-size-30--xs g-text-center--xs g-margin-t-70--xs g-color--white g-letter-spacing--1">Payment for CEO Registration</h2>
 
-      <form class="center-block g-width-600--sm" method="post" action="pay.php">
+      <form class="center-block g-width-600--sm" method="post" action="pay.php?v=ceo">
           <div class="permanent permanent-CEO row">
-            <p class="g-color--white g-text-center--xs g-font-size-14--xs">Fill this form to pay 100 and complete your registration.</p>
+            <p class="g-color--white g-text-center--xs g-font-size-14--xs">Fill this form to pay &#8377;100 and complete your registration.</p>
               <div class="col-sm-6 g-margin-b-30--xs">
                     <input type="text" class="form-control s-form-v3__input" placeholder="* Name" name="CUSTOMER_NAME" style="text-transform: none" value="<?php echo $name ?>">
               </div>
@@ -215,16 +219,61 @@
     </div>
     <?php
   }else {
-    ?>  <div class="swades container g-padding-x-40--sm g-padding-x-20--xs g-padding-y-20--xs g-padding-y-50--sm" id="paylink" style="display:none; background: #000">
+    ?>  <div class="swades container g-padding-x-40--sm g-padding-x-20--xs g-padding-y-20--xs g-padding-y-50--sm" id="paylinkceo" style="display:none; background: #000">
 
         <a class="g-color--white g-font-size-20--xs" onclick="closemodel('paylink');" style="position:absolute; left:90%" >X</a>
-        <h2 class="g-font-size-30--xs g-text-center--xs g-margin-t-70--xs g-color--white g-letter-spacing--1">You have registered Successfully! All further details shall be communicated to you through your registered email id.</h2>
+        <h2 class="g-font-size-30--xs g-text-center--xs g-margin-t-70--xs g-color--white g-letter-spacing--1">You have successfully registed for CEO! All further details shall be communicated to you through your registered email id.</h2>
       </div>
         <?php
       }
     }
      ?>
-        <!-- End Speakers -->
+
+     <!-- Wallstreet Payment Section -->
+
+     <?php
+       $query = "SELECT * FROM wallstreet WHERE email='$email'";
+       $result = mysqli_query($con,$query);
+       $num = mysqli_num_rows($result);
+       if($num>0){
+         $data = mysqli_fetch_array($result);
+         if($data['payment_status']==0){
+      ?>
+     <div class="container g-padding-x-40--sm g-padding-x-20--xs g-padding-y-20--xs g-padding-y-50--sm" id="paylinkwallstreet" style="display:none; background: #000">
+
+       <a class="g-color--white g-font-size-20--xs" onclick="closemodel('paylinkwallstreet');" style="position:absolute; left:90%" >X</a>
+       <h2 class="g-font-size-30--xs g-text-center--xs g-margin-t-70--xs g-color--white g-letter-spacing--1">Payment for Wallstreet Registration</h2>
+
+     <form class="center-block g-width-600--sm" method="post" action="pay.php?v=wallstreet">
+         <div class="permanent permanent-CEO row">
+           <p class="g-color--white g-text-center--xs g-font-size-14--xs">Fill this form to pay &#8377;50 and complete your registration.</p>
+             <div class="col-sm-6 g-margin-b-30--xs">
+                   <input type="text" class="form-control s-form-v3__input" placeholder="* Name" name="CUSTOMER_NAME" style="text-transform: none" value="<?php echo $name ?>">
+             </div>
+             <div class="col-sm-6 g-margin-b-30--xs">
+                   <input type="email" class="form-control s-form-v3__input" placeholder="* Email" name="CUSTOMER_EMAIL" style="text-transform: none" value="<?php echo $email ?>">
+             </div>
+             <div class="col-sm-6 g-margin-b-30--xs">
+                   <input type="contact" class="form-control s-form-v3__input" placeholder="* Contact" name="CUSTOMER_MOBILE" style="text-transform: none" value="<?php echo $contact ?>">
+             </div>
+
+         </div>
+         <div class="g-text-center--xs">
+             <button type="submit" name="pay" class="text-uppercase s-btn s-btn--md s-btn--white-brd g-radius--50 g-padding-x-70--xs g-margin-b-20--xs">Proceed to Pay</button>
+         </div>
+     </form>
+   </div>
+   <?php
+ }else {
+   ?>  <div class="swades container g-padding-x-40--sm g-padding-x-20--xs g-padding-y-20--xs g-padding-y-50--sm" id="paylinkwallstreet" style="display:none; background: #000">
+
+       <a class="g-color--white g-font-size-20--xs" onclick="closemodel('paylink');" style="position:absolute; left:90%" >X</a>
+       <h2 class="g-font-size-30--xs g-text-center--xs g-margin-t-70--xs g-color--white g-letter-spacing--1">You have succesfully registered for <b>Wallstreet</b>! All further details shall be communicated to you through your registered email id.</h2>
+     </div>
+       <?php
+     }
+   }
+    ?>
 
 
         <?php include("includes/script.php");?>
@@ -291,11 +340,17 @@
             $("html ,body").animate({ scrollTop: y},200);
         });
         $("#ceoclick").click(function(){
-         $("#paylink").css({"display":"block"});
-         $("#paylink").animate({opacity: 1}, 1000);
-         var y = $("#paylink").offset().top;
+         $("#paylinkceo").css({"display":"block"});
+         $("#paylinkceo").animate({opacity: 1}, 1000);
+         var y = $("#paylinkceo").offset().top;
            $("html ,body").animate({ scrollTop: y},200);
        });
+       $("#wallstreetclick").click(function(){
+        $("#paylinkwallstreet").css({"display":"block"});
+        $("#paylinkwallstreet").animate({opacity: 1}, 1000);
+        var y = $("#paylinkwallstreet").offset().top;
+          $("html ,body").animate({ scrollTop: y},200);
+      });
 
 
 

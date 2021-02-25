@@ -131,8 +131,8 @@
                       <option value='renderico'>Render.ico</option>
                       <option value='BizMantra'>BizMantra</option>
                       <option value='BizQuiz'>BizQuiz</option>
-                      <option value='AdVenture'>AdVenture</option>
-                      <option value='iplauction'>IPL Auction</option> -->
+                      <option value='AdVenture'>AdVenture</option> -->
+                      <option value='wallstreet'>Wallstreet</option>
 
 
                       <!--<option value='AdVenture'>AdVenture</option>

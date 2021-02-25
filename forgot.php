@@ -59,7 +59,16 @@
       // $_SESSION['OTP'] = $otp;
 
     }else{
-      $msg = "Please enter a valid email id.";
+      $msg = "This email id isn't registered with us.
+      <br>
+
+      <div class='wow fadeInLeft' data-wow-duration='.3' data-wow-delay='.5s'>
+        <a href='regnew.php' title='Register'>
+            <!--<i class='s-icon s-icon--lg s-icon--white-bg g-radius--circle ti-arrow-down'></i>-->
+            <span class='text-uppercase s-btn--primary-bg g-radius--50 g-padding-x-30--xs g-padding-y-15--xs g-font-size-13--xs g-color--white g-padding-x-15--xs'>Register</span>
+        </a>
+      </div>
+      ";
     }
 
     include('includes/head.php');
@@ -73,7 +82,7 @@
         <div id='register'>
             <div class='g-container--sm g-padding-y-80--xs g-padding-y-125--sm'>
                 <div class='g-text-center--xs g-margin-b-60--xs'>
-                    <h2 class='g-font-size-32--xs g-font-size-36--md g-color--white'>Reset Your Password</h2>
+                    <h2 class='g-font-size-32--xs g-font-size-36--md g-color--white'>Reset Your ConsoID</h2>
                     <p class='text-uppercase g-font-size-14--xs g-font-weight--700 g-color--red g-letter-spacing--2 g-margin-b-25--xs'>$msg</p>
                 </div>
             </div>
@@ -94,7 +103,7 @@
     <div id='forgot'>
         <div class='g-container--sm g-padding-y-80--xs g-padding-y-125--sm'>
             <div class='g-text-center--xs g-margin-b-60--xs'>
-                <h2 class='g-font-size-32--xs g-font-size-36--md g-color--white'>Reset your Password</h2>
+                <h2 class='g-font-size-32--xs g-font-size-36--md g-color--white'>Reset your ConsoID</h2>
             </div>
 
             <div class='g-text-center--xs'>

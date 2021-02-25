@@ -30,7 +30,7 @@
                     <div class="wow fadeInLeft" data-wow-duration=".3" data-wow-delay=".5s">
                       <a href="regnew.php" title="Register">
                           <!--<i class="s-icon s-icon--lg s-icon--white-bg g-radius--circle ti-arrow-down"></i>-->
-                          <span class="text-uppercase s-btn--primary-bg g-radius--50 g-padding-x-30--xs g-padding-y-15--xs g-font-size-13--xs g-color--white g-padding-x-15--xs">Register</span></span>
+                          <span class="text-uppercase s-btn--primary-bg g-radius--50 g-padding-x-30--xs g-padding-y-15--xs g-font-size-13--xs g-color--white g-padding-x-15--xs">Register</span>
                       </a>
                     </div>
 
@@ -93,6 +93,7 @@
 
     				</div>
     				<div id="structure">
+              <h5><b>Participation Fees: &#8377; 100 </b></h5><br/>
               <h5><b>Group discussion webinar</b></h5>
               <p>The event begins with a webinar on group discussions. Here participants will be briefed about details of a GD, its different genres ,related importance and how can one excel at it.</p>
               <br/>

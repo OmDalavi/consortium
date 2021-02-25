@@ -22,12 +22,26 @@ $customer_mobile = $_POST['CUSTOMER_MOBILE'];
 
 $actual_cust_email = $_SESSION['email'];
 
-$orderData = [
-    'receipt'         => 3456,
-    'amount'          => 100 * 100, // 2000 rupees in paise
-    'currency'        => 'INR',
-    'payment_capture' => 1 // auto capture
-];
+$v = $_GET['v'];
+
+if($v == 'ceo'){
+  $_SESSION['v'] = 'ceo';
+  $orderData = [
+      'receipt'         => 3456,
+      'amount'          => 100 * 100, // rupees to paise
+      'currency'        => 'INR',
+      'payment_capture' => 1 // auto capture
+  ];
+}else {
+  $_SESSION['v'] = 'wallstreet';
+  $orderData = [
+      'receipt'         => 3456,
+      'amount'          => 50 * 100, // rupees to paise
+      'currency'        => 'INR',
+      'payment_capture' => 1 // auto capture
+  ];
+}
+
 
 $razorpayOrder = $api->order->create($orderData);
 
@@ -50,7 +64,7 @@ $data = [
     "key"               => $keyId,
     "amount"            => $amount,
     "name"              => "E-Cell VNIT, Nagpur",
-    "description"       => "CEO Enrollment Fee",
+    "description"       => $v." Enrollment Fee",
     "image"             => "https://i.imgur.com/byxLZHm.png",
     "prefill"           => [
     "name"              => $customer_name,
@@ -78,7 +92,7 @@ $json = json_encode($data);
 
 <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
 
-<form action="verify-pay.php" method="POST">
+<form action="verify-pay.php?e=<?php echo $v ?> method="POST">
   <script
     src="https://checkout.razorpay.com/v1/checkout.js"
     data-key="<?php echo $data['key']?>"
