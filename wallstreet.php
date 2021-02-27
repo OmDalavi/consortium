@@ -106,12 +106,7 @@
                     <li><p>Participation Certificates will be provided to all.</p></li>
                 </ol>
                 <br/>
-                <ul>
-    			     	    <li><p>This event aims to test managing skills of the students and will help you discover the businessman/stock trader in you.</p></li>
-    			     	    <li><p>And the interesting thing here is you win even if you lose as there are cash prizes for the top 2
-winners as well as for the best loser (last place).</p></li>
-    			     	    <li><p>So don’t get disheartened even if you start losing and be there till the very end.</p></li>
-                </ul>
+    			     	<p>This event aims to test managing skills of the students and will help you discover the businessman/stock trader in you.</p>
     				</div>
     				<div id="structure" style="display:none;">
               <h6><b>Event Dates: 22 - 26 March 2021</b></h6>
@@ -128,7 +123,6 @@ winners as well as for the best loser (last place).</p></li>
 
               <br/>
               <h5><b>Event Structure</b></h5>
-    		    	    <p>The event comprises of a single round taking place on 10th March 2019.</p><br/>
     		    	    <ol>
     					        <li><p>It is an individual event.</p></li>
     					        <li><p>This is a 5 day event where all participants will be given a fixed amount of virtual money and they have to trade during the market hours from 9:00 am to 4:00 pm.</p></li>
@@ -160,7 +154,7 @@ winners as well as for the best loser (last place).</p></li>
                 <div class="col-xs-4 g-full-width--xs g-margin-b-50--xs g-margin-b-0--sm">
                     <div class="g-text-center--xs">
                         <h4 class="g-font-size-18--xs g-color--white g-margin-b-5--xs">Aditya Gupta</h4>
-                         <p class="g-color--white"><br>+91 73545 77186</p>
+                         <p class="g-color--white">aditya.gupta21122001@gmail.com<br>+91 73545 77186</p>
                     </div>
                 </div>
                 <div class="col-xs-4 g-full-width--xs g-margin-b-50--xs g-margin-b-0--sm">
