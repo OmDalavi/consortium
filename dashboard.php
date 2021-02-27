@@ -243,7 +243,7 @@
             <button type="submit" name="paybasic" class="text-uppercase s-btn s-btn--md s-btn--white-brd g-radius--50 g-padding-x-70--xs g-margin-b-20--xs">Proceed to Pay <b>&#8377;75</b></button>
           </div>
           <div class="g-text-center--xs">
-            <button type="submit" name="payadvanced" class="text-uppercase s-btn s-btn--md s-btn--white-brd g-radius--50 g-padding-x-70--xs g-margin-b-20--xs">Proceed to Pay <b>&#8377;200</b></button>
+            <button type="submit" name="payadvanced" class="text-uppercase s-btn s-btn--md s-btn--white-brd g-radius--50 g-padding-x-70--xs g-margin-b-20--xs">Proceed to Pay <b>&#8377;200*</b></button>
           </div>
         </form>
       </div>
