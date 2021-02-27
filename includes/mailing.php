@@ -1255,7 +1255,7 @@ function htmlMail($t, $sub, $name, $teamname, $event){
                                                 </body>
                                             </html>";
 
-                              $htmlForgot = "<!DOCTYPE html>
+                              $htmlconfirmwallstreet = "<!DOCTYPE html>
                                         <html>
                                             <head>
                                                 <style>
