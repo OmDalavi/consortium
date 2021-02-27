@@ -52,9 +52,9 @@ if ($success === true)
     $razorpay_signature = $_POST['razorpay_signature'];
 
     if($v == 'wallstreet'){
-        $sql3 = "UPDATE ".$v." SET 'tier' = $tier, `order_id` = '$razorpay_order_id', `razor_payment_id`= '$razorpay_payment_id',`payment_status` = '1' WHERE `email` = '$actual_cust_email'";
+      $sql3 = "UPDATE $v SET tier = '$tier', order_id = '$razorpay_order_id', razor_payment_id= '$razorpay_payment_id',payment_status = '1' WHERE email = '$actual_cust_email'";
     }else{
-      $sql3 = "UPDATE ".$v." SET `order_id` = '$razorpay_order_id', `razor_payment_id`= '$razorpay_payment_id',`payment_status` = '1' WHERE `email` = '$actual_cust_email'";
+      $sql3 = "UPDATE $v SET order_id = '$razorpay_order_id', razor_payment_id= '$razorpay_payment_id',payment_status = '1' WHERE email = '$actual_cust_email'";
     }
 
     $result = mysqli_multi_query($con,$sql3);
@@ -66,10 +66,15 @@ if ($success === true)
              <p>Payment ID: {$_POST['razorpay_payment_id']}</p>
              <p>$actual_cust_email</p>";
         header("Location: success.php");
-        $sub = "Payment Successfull";
+        $sub = "Payment Successful";
         $name = $v." participant";
-        $event = "Your payment is succesfull";
-        htmlMail($actual_cust_email,$sub,$name,"",'confirm'.$v);
+        $event = "Your payment is successful";
+        if($v == 'wallstreet'){
+          $v = "confirmwallstreet";
+          htmlMail($actual_cust_email,$sub,$name,"",$v);
+        }else {
+          htmlMail($actual_cust_email,$sub,$name,"","Payment Successful");
+        }
         session_unset();
         session_destroy();
 
