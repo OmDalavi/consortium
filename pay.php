@@ -52,7 +52,7 @@ if(in_array($v, array('ceo','swades'), true) ){
     $_SESSION['tier'] = 'advanced';
     $orderData = [
         'receipt'         => 3456,
-        'amount'          => 200 * 100, // rupees to paise
+        'amount'          => 205.64 * 100, // rupees to paise
         'currency'        => 'INR',
         'payment_capture' => 1 // auto capture
     ];

@@ -52,11 +52,7 @@ if ($success === true)
     $razorpay_signature = $_POST['razorpay_signature'];
 
     if($v == 'wallstreet'){
-      if ($tier == 'basic') {
-        $sql3 = "UPDATE ".$v." SET 'tier' = 'basic', `order_id` = '$razorpay_order_id', `razor_payment_id`= '$razorpay_payment_id',`payment_status` = '1' WHERE `email` = '$actual_cust_email'";
-      }elseif ($tier == 'advanced') {
-        $sql3 = "UPDATE ".$v." SET 'tier' = 'advanced', `order_id` = '$razorpay_order_id', `razor_payment_id`= '$razorpay_payment_id',`payment_status` = '1' WHERE `email` = '$actual_cust_email'";
-      }
+        $sql3 = "UPDATE ".$v." SET 'tier' = $tier, `order_id` = '$razorpay_order_id', `razor_payment_id`= '$razorpay_payment_id',`payment_status` = '1' WHERE `email` = '$actual_cust_email'";
     }else{
       $sql3 = "UPDATE ".$v." SET `order_id` = '$razorpay_order_id', `razor_payment_id`= '$razorpay_payment_id',`payment_status` = '1' WHERE `email` = '$actual_cust_email'";
     }
