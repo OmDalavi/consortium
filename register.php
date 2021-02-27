@@ -74,6 +74,7 @@
     $email = $_SESSION['email'];
     $name = $_SESSION['name'];
     $contact = $_SESSION['contact'];
+    $college = $_SESSION['college'];
     // $conso_id = $_SESSION['consoID'];
     $event = $con->real_escape_string($_POST['event']);
 
@@ -90,8 +91,11 @@
           $q1 = "UPDATE registrations SET $event = 1 WHERE email = '$email'";
           mysqli_query($con,$q1);
 
-          $q2 = "INSERT INTO $event(name,email,contact) VALUES('$name','$email','$contact')";
+          $q2 = "INSERT INTO $event(name,email,contact,college) VALUES('$name','$email','$contact','$college')";
           mysqli_query($con,$q2);
+
+          $subject = "Welcome to $event | Consortium'21";
+          htmlMail($email,$subject,$name,'',$event);
 
           $_SESSION['msg'] = "Thank You for showing interest in $event. Click on the registered events below to complete your registration.";
           header('location:dashboard.php');
@@ -123,16 +127,16 @@
                 <div class="permanent">
                   <select pattern="[0-9]{11}" class="form-control s-form-v3__input g-margin-b-30--xs" name="event" placeholder="* No. of members" id="members" >
                       <option value='' selected disabled hidden>Choose an Event you wish to participate in.</option>
-                      <!-- <option value='Swadesh'>Swades</option> -->
-                      <!-- <option value='trec'>TREC (Technology Research Entrepreneurship Conclave)</option> -->
                       <option value='ceo'>CEO</option>
-                      <!-- <option value='nirmaan'>Nirmaan</option>
+                      <option value='wallstreet'>Wallstreet</option>
+                      <!-- <option value='adventure'>AdVenture</option>
+                      <option value='swades'>Swades</option>
+                      <option value='bizquiz'>BizQuiz</option>
                       <option value='war_of_worlds'>War of Worlds</option>
                       <option value='renderico'>Render.ico</option>
-                      <option value='BizMantra'>BizMantra</option>
-                      <option value='BizQuiz'>BizQuiz</option>
-                      <option value='AdVenture'>AdVenture</option> -->
-                      <option value='wallstreet'>Wallstreet</option>
+                      <option value='operation_research'>Operation Research</option>
+                      <option value='pitch_mantra'>Pitchmantra</option> -->
+                      <!-- <option value='BizMantra'>BizMantra</option> -->
 
 
                       <!--<option value='AdVenture'>AdVenture</option>

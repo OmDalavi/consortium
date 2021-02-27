@@ -80,7 +80,7 @@ function htmlMail($t, $sub, $name, $teamname, $event){
 
 
 
-    $htmlSwadesh = '
+    $htmlswades = '
     <!DOCTYPE html>
         <html>
             <head>
@@ -980,6 +980,8 @@ function htmlMail($t, $sub, $name, $teamname, $event){
                           <div>
                               <p>
                                   It\'s time to to bring out the creative mindset of young people where they battle down to pitch an innovative product or service in the best possible way.
+                                  <br>
+                                  You will be notified about the further rounds and events on your registered mail id and your contact number. Wishing you best of luck for this enthralling journey.
                               </p>
 
                               <p>For queries and in case of any difficulty, feel free to contact us.</p>
@@ -1121,6 +1123,69 @@ function htmlMail($t, $sub, $name, $teamname, $event){
                                       </body>
                                   </html>';
 
+                                  $htmlwallstreet = '<!DOCTYPE html>
+                                            <html>
+                                                <head>
+                                                    <style>
+                                                        li{
+                                                            padding:10px;
+                                                        }
+                                                        p{
+                                                            font-size:16px;
+                                                        }
+
+                                                        *{
+                                                            font-family:Helvetica,Arial,sans-serif;
+                                                        }
+
+                                                        h2{
+                                                            text-align: center;
+                                                            margin-top: 150px;
+
+                                                        }
+                                                        html, body{
+                                                            background-color:#f7f9fb;
+                                                            margin: 0;
+                                                        }
+                                                        .context {
+                                                            font-size: 12px;
+                                                            padding: 40px 60px;
+                                                            margin-left:10%;
+                                                            margin-right: 10%;
+                                                        }
+
+                                                        .context p{
+                                                            font-size: 12px;
+                                                        }
+                                                        p{
+                                                            margin: 15px 0px;
+                                                        }
+
+                                                    </style>
+                                                </head>
+                                                <body>
+
+                                                    <div style="background: #0b0b0b; padding:10px 30px;"><img src="https://www.ecellvnit.org/img/logo-ecell.png"></div>
+                                                    <h2 style="font-size:22px;">Welcome to Wallstreet!</h2><br>
+
+                                                    <div class="context">
+                                                        <h3><b>Hey!</b></h3>
+                                                        <p>Congratulations! You are successfully registered for Wallstreet</p>
+                                                        <div>
+                                                            <p>
+                                                              Visit your dashboard for the payment to complete your registration.
+                                                            </p>
+
+                                                            <p>For queries and in case of any difficulty, feel free to contact us.</p>
+                                                            <p>
+                                                                With warm regards,<br>
+                                                                Team E-Cell VNIT
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </body>
+                                            </html>';
+
                                   $htmlForgot = "<!DOCTYPE html>
                                             <html>
                                                 <head>
@@ -1190,10 +1255,84 @@ function htmlMail($t, $sub, $name, $teamname, $event){
                                                 </body>
                                             </html>";
 
+                              $htmlForgot = "<!DOCTYPE html>
+                                        <html>
+                                            <head>
+                                                <style>
+                                                    li{
+                                                        padding:10px;
+                                                    }
+                                                    p{
+                                                        font-size:16px;
+                                                    }
+
+                                                    *{
+                                                        font-family:Helvetica,Arial,sans-serif;
+                                                    }
+
+                                                    h2{
+                                                        text-align: center;
+                                                        margin-top: 150px;
+
+                                                    }
+                                                    html, body{
+                                                        background-color:#f7f9fb;
+                                                        margin: 0;
+                                                    }
+                                                    .context {
+                                                        font-size: 12px;
+                                                        padding: 40px 60px;
+                                                        margin-left:10%;
+                                                        margin-right: 10%;
+                                                    }
+
+                                                    .context p{
+                                                        font-size: 12px;
+                                                    }
+                                                    p{
+                                                        margin: 15px 0px;
+                                                    }
+
+                                                </style>
+                                            </head>
+                                            <body>
+
+                                                <div style='background: #0b0b0b; padding:10px 30px;'><img src='https://www.ecellvnit.org/img/logo-ecell.png'></div>
+                                                <h2 style='font-size:22px;'>Registration Complete | Wallstreet</h2><br>
+
+                                                <div class='context'>
+
+
+                                                <h3><b>Hello".$name."!</b></h3>
+                                                <div>
+                                                    <p>You have successfully registered for the Wallstreet Event by VNIT Nagpur.<br>
+                                                    <b>Wallstreet</b> will be live from 22nd March to 26th March 2021.<br>
+                                                    You will receive the link and procedure to join virtual trading competition before the event on this email ID.<br><br>
+                                                    If you have paid &#8377;200, you have successfully registered for the <b>Workshop by Zerodha</b> too.<br>
+                                                    Having a <b>PAN CARD</b> is must to open a trading account according to guidelines set by Govt. of India. If you don’t have a PAN card with you then please apply for it so that your trading account could be opened.<br><br>
+                                                    For more updates follow our Instagram handle @ecellvnit.<br><br>
+                                                    Stay Tuned !<br>
+
+                                                    </p>
+                                                    For queries and in case of any difficulty, feel free to contact us.<br>
+                                                        <p>
+                                                        With warm regards,<br>
+                                                        E-Cell VNIT
+                                                    </p>
+
+
+                                                </div>
+
+
+                                                    </div>
+                                                </div>
+                                            </body>
+                                        </html>";
+
 
     $html = "";
-    if($event == 'Swadesh'){
-      $html = $htmlSwadesh;
+    if($event == 'swades'){
+      $html = $htmlswades;
     }
     else if($event == 'TREC'){
       $html = $htmlTREC;
@@ -1210,7 +1349,7 @@ function htmlMail($t, $sub, $name, $teamname, $event){
     else if($event == 'war_of_worlds'){
       $html = $htmlwar_of_worlds;
     }
-    else if($event == 'AdVenture'){
+    else if($event == 'adventure'){
       $html = $htmlAdVenture;
     }
     else if($event == 'townhall'){
@@ -1219,7 +1358,7 @@ function htmlMail($t, $sub, $name, $teamname, $event){
     else if($event == 'conso_id'){
       $html = $html_conso_id;
     }
-    else if($event == 'BizQuiz'){
+    else if($event == 'bizquiz'){
       $html = $htmlBizQuiz;
     }
 
@@ -1229,7 +1368,7 @@ function htmlMail($t, $sub, $name, $teamname, $event){
     else if($event == 'Pitch_Perfect'){
       $html = $htmlPitch;
     }
-    else if($event == 'CEO'){
+    else if($event == 'ceo'){
       $html = $htmlCEO;
     }
     else if($event == 'nirmaan'){
@@ -1238,8 +1377,20 @@ function htmlMail($t, $sub, $name, $teamname, $event){
     else if($event == 'iplauction'){
       $html = $htmliplauction;
     }
+    else if($event == 'wallstreet'){
+      $html = $htmlwallstreet;
+    }
+    else if($event == 'pitch_mantra'){
+      $html = $htmlpitch_mantra;
+    }
+    else if($event == 'operation_research'){
+      $html = $htmloperation_research;
+    }
     else if($event == 'forgot'){
       $html = $htmlForgot;
+    }
+    else if($event == 'confirmwallstreet'){
+      $html = $htmlconfirmwallstreet;
     }
 
     $url = 'https://startupconclave.ecellvnit.org/send';

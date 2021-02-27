@@ -16,6 +16,7 @@ use Razorpay\Api\Errors\SignatureVerificationError;
 $success = true;
 
 $v = $_SESSION['v'];
+$tier = $_SESSION['tier'];
 
 $error = "Payment Failed";
 
@@ -50,8 +51,16 @@ if ($success === true)
     $razorpay_payment_id = $_POST['razorpay_payment_id'];
     $razorpay_signature = $_POST['razorpay_signature'];
 
+    if($v == 'wallstreet'){
+      if ($tier == 'basic') {
+        $sql3 = "UPDATE ".$v." SET 'tier' = 'basic', `order_id` = '$razorpay_order_id', `razor_payment_id`= '$razorpay_payment_id',`payment_status` = '1' WHERE `email` = '$actual_cust_email'";
+      }elseif ($tier == 'advanced') {
+        $sql3 = "UPDATE ".$v." SET 'tier' = 'advanced', `order_id` = '$razorpay_order_id', `razor_payment_id`= '$razorpay_payment_id',`payment_status` = '1' WHERE `email` = '$actual_cust_email'";
+      }
+    }else{
+      $sql3 = "UPDATE ".$v." SET `order_id` = '$razorpay_order_id', `razor_payment_id`= '$razorpay_payment_id',`payment_status` = '1' WHERE `email` = '$actual_cust_email'";
+    }
 
-    $sql3 = "UPDATE ".$v." SET `order_id` = '$razorpay_order_id', `razor_payment_id`= '$razorpay_payment_id',`payment_status` = '1' WHERE `email` = '$actual_cust_email'";
     $result = mysqli_multi_query($con,$sql3);
     if($result){
         $html = "<p>Your payment was successful</p>
@@ -64,7 +73,7 @@ if ($success === true)
         $sub = "Payment Successfull";
         $name = $v." participant";
         $event = "Your payment is succesfull";
-        htmlMail($actual_cust_email,$sub,$name,"",$event);
+        htmlMail($actual_cust_email,$sub,$name,"",'confirm'.$v);
         session_unset();
         session_destroy();
 

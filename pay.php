@@ -23,23 +23,40 @@ $customer_mobile = $_POST['CUSTOMER_MOBILE'];
 $actual_cust_email = $_SESSION['email'];
 
 $v = $_GET['v'];
+$_SESSION['v'] = $v;
 
-if($v == 'ceo'){
-  $_SESSION['v'] = 'ceo';
+if(in_array($v, array('ceo','swades'), true) ){
   $orderData = [
       'receipt'         => 3456,
       'amount'          => 100 * 100, // rupees to paise
       'currency'        => 'INR',
       'payment_capture' => 1 // auto capture
   ];
-}else {
-  $_SESSION['v'] = 'wallstreet';
+}elseif(in_array($v, array('war_of_worlds','bizquiz','adventure'), true) ){
   $orderData = [
       'receipt'         => 3456,
       'amount'          => 50 * 100, // rupees to paise
       'currency'        => 'INR',
       'payment_capture' => 1 // auto capture
   ];
+}elseif($v == 'wallstreet'){
+  if(isset($_POST['paybasic'])) {
+    $_SESSION['tier'] = 'basic';
+    $orderData = [
+        'receipt'         => 3456,
+        'amount'          => 75 * 100, // rupees to paise
+        'currency'        => 'INR',
+        'payment_capture' => 1 // auto capture
+    ];
+  }elseif(isset($_POST['payadvanced'])) {
+    $_SESSION['tier'] = 'advanced';
+    $orderData = [
+        'receipt'         => 3456,
+        'amount'          => 200 * 100, // rupees to paise
+        'currency'        => 'INR',
+        'payment_capture' => 1 // auto capture
+    ];
+  }
 }
 
 
