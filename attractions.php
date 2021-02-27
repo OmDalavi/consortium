@@ -17,7 +17,7 @@
         <!--========== PROMO BLOCK ==========-->
         <div class="g-bg-position--center js__parallax-window" style="background:#000;height:100vh; display:flex; align-items:center">
             <div class="g-container--md g-text-center--xs g-padding-y-100--xs">
-                <h1 class="g-font-size-26--xs g-font-size-36--md g-color--primary g-letter-spacing--3">Consortium'20</h1>
+                <h1 class="g-font-size-26--xs g-font-size-36--md g-color--primary g-letter-spacing--3">Consortium'21</h1>
                 <h2 class="g-font-size-36--xs g-font-size-50--sm g-font-size-60--md g-color--white g-letter-spacing--1">Attractions</h2>
                 <div class="indicate"><i class="ti-angle-double-down"></i></div>
 

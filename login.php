@@ -50,6 +50,7 @@
             $_SESSION['email'] = $data['email'];
             $_SESSION['name'] = split_name($data['name'])[0];
             $_SESSION['contact'] = $data['contact'];
+            $_SESSION['college'] = $data['college'];
             $_SESSION['fullname'] = $data['name'];
             $_SESSION['consoID'] = $data['conso_id'];
 

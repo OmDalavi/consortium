@@ -591,3 +591,7 @@ video::-webkit-media-controls-overlay-play-button {
     padding-bottom: 400px !important;
     padding-top: 1px !important;
 }
+
+option{
+  background-color: #000;
+}

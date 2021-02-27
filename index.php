@@ -170,19 +170,18 @@
               </div>
             </a>
             <a href="swades.php" class="product-card col-xs-12 col-md-4 " >
-                <div class="product-card__item-grid g-padding-y-40--xs" style="background:url(img/events/Swadesh.jpg)">
+                <div class="product-card__item-grid g-padding-y-40--xs" style="background:url(img/events/swades.jpg)">
 
                     </div>
             </a>
              <a href="ceo.php" class="product-card col-xs-12 col-md-4" >
-                <div class="product-card__item-grid g-padding-y-40--xs" style="background:url(img/events/CEO.jpg)">
+                <div class="product-card__item-grid g-padding-y-40--xs" style="background:url(img/events/ceo.jpg)">
 
 
                     </div>
             </a>
-             <a href="AdVenture.php" class="product-card col-xs-12 col-md-4" >
-                <div class="product-card__item-grid g-padding-y-40--xs" style="background:url(img/events/AdVenture.jpg)">
-
+            <a href="wallstreet.php" class="product-card col-xs-12 col-md-4 " >
+                <div class="product-card__item-grid g-padding-y-40--xs" style="background:url(img/events/wallstreet.jpg)">
 
                     </div>
             </a>
@@ -190,37 +189,40 @@
                 <div class="product-card__item-grid g-padding-y-40--xs"  style="background:url(img/events/renderico.jpg)">
                     </div>
             </a>
-            <a href="operation-research.php" class="product-card col-xs-12 col-md-4" >
-              <div class="product-card__item-grid g-padding-y-40--xs"style="background:url(img/events/operation-research.jpg)">
+            <a href="operation_research.php" class="product-card col-xs-12 col-md-4" >
+              <div class="product-card__item-grid g-padding-y-40--xs"style="background:url(img/events/operation_research.jpg)">
 
 
               </div>
             </a>
-            <a href="pitch-mantra.php" class="product-card col-xs-12 col-md-4 " >
-              <div class="product-card__item-grid g-padding-y-40--xs" style="background:url(img/events/pitch-mantra.jpg)">
-
-              </div>
-            </a>
-            <a href="BizQuiz.php" class="product-card col-xs-12 col-md-4 " >
-              <div class="product-card__item-grid g-padding-y-40--xs" style="background:url(img/events/BizQuiz.jpg)">
-
-              </div>
-            </a>
-            <a href="war-of-worlds.php" class="product-card col-xs-12 col-md-4 " >
+            <a href="war_of_worlds.php" class="product-card col-xs-12 col-md-4 " >
               <div class="product-card__item-grid g-padding-y-40--xs" style="background:url(img/events/war_of_worlds.jpg)">
 
               </div>
             </a>
-            <a href="wallstreet.php" class="product-card col-xs-12 col-md-4 " >
-                <div class="product-card__item-grid g-padding-y-40--xs" style="background:url(img/events/wallstreet.jpg)">
 
-                    </div>
+            <a href="pitch_mantra.php" class="product-card col-xs-12 col-md-4 " >
+              <div class="product-card__item-grid g-padding-y-40--xs" style="background:url(img/events/pitch_mantra.jpg)">
+
+              </div>
+            </a>
+            <a href="bizquiz.php" class="product-card col-xs-12 col-md-4 " >
+              <div class="product-card__item-grid g-padding-y-40--xs" style="background:url(img/events/bizquiz.jpg)">
+
+              </div>
             </a>
             <a href="epl.php" class="product-card col-xs-12 col-md-4 " >
-                <div class="product-card__item-grid g-padding-y-40--xs" style="background:url(img/events/epl.jpg)">
+                <div class="product-card__item-grid g-padding-y-40--xs" style="background:url(img/events/attractions.jpg)">
 
                     </div>
             </a>
+            <a href="adventure.php" class="product-card col-xs-12 col-md-4" >
+               <div class="product-card__item-grid g-padding-y-40--xs" style="background:url(img/events/adventure.jpg)">
+
+
+                   </div>
+           </a>
+
 
         </div>
 

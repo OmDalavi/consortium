@@ -37,13 +37,13 @@
                                         <ul class="dropdown-menu s-header-v2__dropdown-menu">
                                             <li><a href="https://startupconclave.ecellvnit.org" class="s-header-v2__dropdown-menu-link">Startup Conclave</a></li>
                                             <li><a href="https://neo.ecellvnit.org" class="s-header-v2__dropdown-menu-link">NEO</a></li>
-                                            <li><a href="Swadesh.php" class="s-header-v2__dropdown-menu-link">Swades</a></li>
+                                            <li><a href="swades.php" class="s-header-v2__dropdown-menu-link">Swades</a></li>
                                             <li><a href="ceo.php" class="s-header-v2__dropdown-menu-link">CEO</a></li>
-                                            <li><a href="AdVenture.php" class="s-header-v2__dropdown-menu-link">AdVenture</a></li>
+                                            <li><a href="adventure.php" class="s-header-v2__dropdown-menu-link">AdVenture</a></li>
                                             <li><a href="renderico.php" class="s-header-v2__dropdown-menu-link">Render.ico</a></li>
-                                            <li><a href="operation-research.php" class="s-header-v2__dropdown-menu-link">Operation Research</a></li>
-                                            <li><a href="pitch-mantra.php" class="s-header-v2__dropdown-menu-link">Pitch Mantra</a></li>
-                                            <li><a href="BizQuiz.php" class="s-header-v2__dropdown-menu-link">Bizquiz</a></li>
+                                            <li><a href="operation_research.php" class="s-header-v2__dropdown-menu-link">Operation Research</a></li>
+                                            <li><a href="pitch_mantra.php" class="s-header-v2__dropdown-menu-link">Pitch Mantra</a></li>
+                                            <li><a href="bizquiz.php" class="s-header-v2__dropdown-menu-link">Bizquiz</a></li>
                                             <li><a href="war_of_worlds.php" class="s-header-v2__dropdown-menu-link">War Of Worlds</a></li>
                                             <li><a href="wallstreet.php" class="s-header-v2__dropdown-menu-link">Wallstreet</a></li>
                                             <li><a href="epl.php" class="s-header-v2__dropdown-menu-link">EPL Manager</a></li>

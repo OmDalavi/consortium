@@ -22,12 +22,43 @@ $customer_mobile = $_POST['CUSTOMER_MOBILE'];
 
 $actual_cust_email = $_SESSION['email'];
 
-$orderData = [
-    'receipt'         => 3456,
-    'amount'          => 100 * 100, // 2000 rupees in paise
-    'currency'        => 'INR',
-    'payment_capture' => 1 // auto capture
-];
+$v = $_GET['v'];
+$_SESSION['v'] = $v;
+
+if(in_array($v, array('ceo','swades'), true) ){
+  $orderData = [
+      'receipt'         => 3456,
+      'amount'          => 100 * 100, // rupees to paise
+      'currency'        => 'INR',
+      'payment_capture' => 1 // auto capture
+  ];
+}elseif(in_array($v, array('war_of_worlds','bizquiz','adventure'), true) ){
+  $orderData = [
+      'receipt'         => 3456,
+      'amount'          => 50 * 100, // rupees to paise
+      'currency'        => 'INR',
+      'payment_capture' => 1 // auto capture
+  ];
+}elseif($v == 'wallstreet'){
+  if(isset($_POST['paybasic'])) {
+    $_SESSION['tier'] = 'basic';
+    $orderData = [
+        'receipt'         => 3456,
+        'amount'          => 75 * 100, // rupees to paise
+        'currency'        => 'INR',
+        'payment_capture' => 1 // auto capture
+    ];
+  }elseif(isset($_POST['payadvanced'])) {
+    $_SESSION['tier'] = 'advanced';
+    $orderData = [
+        'receipt'         => 3456,
+        'amount'          => 200 * 100, // rupees to paise
+        'currency'        => 'INR',
+        'payment_capture' => 1 // auto capture
+    ];
+  }
+}
+
 
 $razorpayOrder = $api->order->create($orderData);
 
@@ -50,7 +81,7 @@ $data = [
     "key"               => $keyId,
     "amount"            => $amount,
     "name"              => "E-Cell VNIT, Nagpur",
-    "description"       => "CEO Enrollment Fee",
+    "description"       => $v." Enrollment Fee",
     "image"             => "https://i.imgur.com/byxLZHm.png",
     "prefill"           => [
     "name"              => $customer_name,
@@ -78,7 +109,7 @@ $json = json_encode($data);
 
 <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
 
-<form action="verify-pay.php" method="POST">
+<form action="verify-pay.php?e=<?php echo $v ?> method="POST">
   <script
     src="https://checkout.razorpay.com/v1/checkout.js"
     data-key="<?php echo $data['key']?>"
