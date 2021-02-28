@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Feb 22, 2021 at 07:06 AM
+-- Generation Time: Feb 28, 2021 at 05:27 PM
 -- Server version: 10.4.17-MariaDB
 -- PHP Version: 8.0.2
 
@@ -30,10 +30,14 @@ SET time_zone = "+00:00";
 CREATE TABLE `adventure` (
   `id` int(11) NOT NULL,
   `name` varchar(255) NOT NULL,
-  `contact` int(11) NOT NULL,
+  `contact` varchar(255) NOT NULL,
   `email` varchar(255) NOT NULL,
   `college` varchar(255) NOT NULL,
-  `typeof_ad` tinyint(1) NOT NULL
+  `team_conso_id` varchar(255) NOT NULL,
+  `typeof_ad` tinyint(1) NOT NULL,
+  `order_id` varchar(255) NOT NULL,
+  `razor_payment_id` varchar(255) NOT NULL,
+  `payment_status` tinyint(1) NOT NULL DEFAULT 0
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
@@ -48,7 +52,10 @@ CREATE TABLE `bizquiz` (
   `contact` int(11) NOT NULL,
   `email` varchar(255) NOT NULL,
   `college` varchar(255) NOT NULL,
-  `team_size` int(11) NOT NULL
+  `team_conso_id` int(11) NOT NULL,
+  `order_id` varchar(255) NOT NULL,
+  `razor_payment_id` varchar(255) NOT NULL,
+  `payment_status` tinyint(1) NOT NULL DEFAULT 0
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
@@ -68,6 +75,14 @@ CREATE TABLE `ceo` (
   `payment_status` tinyint(1) NOT NULL DEFAULT 0
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+--
+-- Dumping data for table `ceo`
+--
+
+INSERT INTO `ceo` (`id`, `name`, `contact`, `email`, `college`, `order_id`, `razor_payment_id`, `payment_status`) VALUES
+(17, 'Lakshya', '7738446941', 'lakshyashukla32@gmail.com', 'vnit', '', '', 0),
+(18, 'Lakshya', '7738446941', 'lakshyashukla32@gmail.com', 'vnit', '', '', 0);
+
 -- --------------------------------------------------------
 
 --
@@ -79,7 +94,8 @@ CREATE TABLE `operation_research` (
   `name` varchar(255) NOT NULL,
   `contact` int(11) NOT NULL,
   `email` varchar(255) NOT NULL,
-  `college` varchar(255) NOT NULL
+  `college` varchar(255) NOT NULL,
+  `team_conso_id` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
@@ -124,6 +140,13 @@ CREATE TABLE `registrations` (
   `epl` tinyint(1) NOT NULL DEFAULT 0
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+--
+-- Dumping data for table `registrations`
+--
+
+INSERT INTO `registrations` (`id`, `email`, `name`, `contact`, `conso_id`, `college`, `otp`, `BizQuiz`, `swades`, `ad-venture`, `operational_research`, `war_of_worlds`, `render_ico`, `pitchmantra`, `ceo`, `wallstreet`, `epl`) VALUES
+(10, 'lakshyashukla32@gmail.com', 'Lakshya', '7738446941', 'Lak1807', 'vnit', 'Confirmed', 0, 0, 0, 0, 0, 0, 0, 1, 1, 0);
+
 -- --------------------------------------------------------
 
 --
@@ -150,10 +173,13 @@ CREATE TABLE `swades` (
   `contact` int(11) NOT NULL,
   `email` varchar(255) NOT NULL,
   `college` varchar(255) NOT NULL,
-  `city` varchar(255) NOT NULL,
+  `team_conso_id` varchar(255) NOT NULL,
   `round1` tinyint(1) NOT NULL DEFAULT 0,
   `round2` tinyint(1) NOT NULL DEFAULT 0,
-  `round3` tinyint(1) NOT NULL DEFAULT 0
+  `round3` tinyint(1) NOT NULL DEFAULT 0,
+  `order_id` varchar(255) NOT NULL,
+  `razor_payment_id` varchar(255) NOT NULL,
+  `payment_status` tinyint(1) NOT NULL DEFAULT 0
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
@@ -165,10 +191,21 @@ CREATE TABLE `swades` (
 CREATE TABLE `wallstreet` (
   `id` int(11) NOT NULL,
   `name` varchar(255) NOT NULL,
-  `contact` int(11) NOT NULL,
+  `contact` varchar(255) NOT NULL,
   `email` varchar(255) NOT NULL,
-  `college` varchar(255) NOT NULL
+  `college` varchar(255) NOT NULL,
+  `tier` varchar(255) NOT NULL,
+  `order_id` varchar(255) NOT NULL,
+  `razor_payment_id` varchar(255) NOT NULL,
+  `payment_status` tinyint(1) NOT NULL DEFAULT 0
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `wallstreet`
+--
+
+INSERT INTO `wallstreet` (`id`, `name`, `contact`, `email`, `college`, `tier`, `order_id`, `razor_payment_id`, `payment_status`) VALUES
+(2, 'Lakshya', '7738446941', 'lakshyashukla32@gmail.com', '', 'basic', 'order_GgeKUa4YdKzWGY', '', 1);
 
 -- --------------------------------------------------------
 
@@ -184,7 +221,10 @@ CREATE TABLE `war_of_worlds` (
   `college` varchar(255) NOT NULL,
   `round1` tinyint(1) NOT NULL DEFAULT 0,
   `round2` tinyint(1) NOT NULL DEFAULT 0,
-  `round3` tinyint(1) NOT NULL DEFAULT 0
+  `round3` tinyint(1) NOT NULL DEFAULT 0,
+  `order_id` varchar(255) NOT NULL,
+  `razor_payment_id` varchar(255) NOT NULL,
+  `payment_status` tinyint(1) NOT NULL DEFAULT 0
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
@@ -259,7 +299,7 @@ ALTER TABLE `bizquiz`
 -- AUTO_INCREMENT for table `ceo`
 --
 ALTER TABLE `ceo`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
 
 --
 -- AUTO_INCREMENT for table `operation_research`
@@ -277,7 +317,7 @@ ALTER TABLE `pitch_mantra`
 -- AUTO_INCREMENT for table `registrations`
 --
 ALTER TABLE `registrations`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- AUTO_INCREMENT for table `render_ico`
@@ -289,7 +329,7 @@ ALTER TABLE `render_ico`
 -- AUTO_INCREMENT for table `wallstreet`
 --
 ALTER TABLE `wallstreet`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
