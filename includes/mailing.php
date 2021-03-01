@@ -660,6 +660,8 @@ function htmlMail($t, $sub, $name, $teamname, $event){
                       </div>
                   </body>
               </html>';
+
+              
     $htmlBizQuiz = '<!DOCTYPE html>
               <html>
                   <head>

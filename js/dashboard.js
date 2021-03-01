@@ -22,9 +22,9 @@ var y = $("#paylinkwallstreet").offset().top;
 });
 
 $("#adventureclick").click(function(){
-  $("#adventure").css({"display":"block"});
-  $("#adventure").animate({opacity: 1}, 1000);
-  var y = $("#adventure").offset().top;
+  $("#paylinkadventure").css({"display":"block"});
+  $("#paylinkadventure").animate({opacity: 1}, 1000);
+  var y = $("#paylinkadventure").offset().top;
     $("html ,body").animate({ scrollTop: y},200);
 });
 
@@ -69,3 +69,4 @@ $("#pitch_mantraclick").click(function(){
   var y = $("#pitch_mantra").offset().top;
     $("html ,body").animate({ scrollTop: y},200);
 });
+

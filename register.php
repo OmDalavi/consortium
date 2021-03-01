@@ -129,8 +129,8 @@
                       <option value='' selected disabled hidden>Choose an Event you wish to participate in.</option>
                       <option value='ceo'>CEO</option>
                       <option value='wallstreet'>Wallstreet</option>
-                      <!-- <option value='adventure'>AdVenture</option>
-                      <option value='swades'>Swades</option>
+                      <option value='adventure'>AdVenture</option>
+                      <!-- <option value='swades'>Swades</option>
                       <option value='bizquiz'>BizQuiz</option>
                       <option value='war_of_worlds'>War of Worlds</option>
                       <option value='renderico'>Render.ico</option>

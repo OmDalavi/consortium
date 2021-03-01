@@ -90,16 +90,26 @@
                               <br>
 
                               <div class="wow fadeInLeft g-text-center--xs" data-wow-duration=".3" data-wow-delay=".5s" style="display: flex;justify-content: center;">
-                                    <a id="reg_button" href="<?php echo $events[$var].'.php'; ?>" target="_blank">
-                                        <span class="text-uppercase s-btn s-btn--xs s-btn--white-brd g-radius--50 g-margin-r-10--xs">View Event</span>
-                                    </a>
+                              <?php 
+                                      if(in_array($events[$var], array('adventure'), true) ){
+                                        ?>
+                                      <a id="reg_button" href="#members<?php echo $events[$var]; ?>" target="_blank">
+                                      
+                                        <span class="text-uppercase s-btn s-btn--xs s-btn--white-brd g-radius--50 g-margin-r-10--xs">Add members</span>
+                                        </a>
+                                      <?php }elseif(in_array($events[$var], array('operation_research','renderico','bizquiz','swades','ceo','wallstreet','war_of_worlds'), true) ){ ?>
+                                        <a id="reg_button" href="<?php echo $events[$var].'.php'; ?>" target="_blank">
+                                        <span class="text-uppercase s-btn s-btn--xs s-btn--white-brd g-radius--50 g-margin-r-10--xs"> View event </span>
+                                        </a>
+                                      <?php }?>
+                                    
 
                                   <a href="#paylink<?php echo $events[$var]; ?>"><span class="text-uppercase s-btn s-btn--xs s-btn--white-brd g-radius--50">
                                         <?php
-                                        if(in_array($events[$var], array('ceo','wallstreet','war_of_worlds'), true) ){
+                                        if(in_array($events[$var], array('adventure','swades','ceo','wallstreet','war_of_worlds'), true) ){
                                           echo 'Pay Here';
-                                        }elseif(in_array($events[$var], array('adventure','operation_research','swades','bizquiz'), true) ){
-                                          echo 'Add Members';;
+                                        }elseif(in_array($events[$var], array('operation_research','renderico','bizquiz'), true) ){
+                                          echo 'Add Members';//demo button
                                         }?>
                                       </span>
                                   </a>
@@ -210,6 +220,52 @@
      ?>
 
      <!-- CEO Payment Section ends -->
+     <!-- adventure payment section -->
+     <?php
+        $query = "SELECT * FROM adventure WHERE email='$email'";
+        $result = mysqli_query($con,$query);
+        $num = mysqli_num_rows($result);
+        if($num>0){
+          $data = mysqli_fetch_array($result);
+          if($data['payment_status']==0){
+       ?>
+      <div class="container g-padding-x-40--sm g-padding-x-20--xs g-padding-y-20--xs g-padding-y-50--sm" id="paylinkadventure" style="display:none; background: #000">
+
+        <a class="g-color--white g-font-size-20--xs" onclick="closemodel('paylinkadventure');" style="position:absolute; left:90%; cursor:pointer" >X</a>
+        <h2 class="g-font-size-30--xs g-text-center--xs g-margin-t-70--xs g-color--white g-letter-spacing--1">Payment for Adventure Registration</h2>
+
+      <form class="center-block g-width-600--sm" method="post" action="pay.php?v=adventure">
+          <div class="permanent permanent-CEO row">
+            <p class="g-color--white g-text-center--xs g-font-size-14--xs">Fill this form to pay &#8377;100 and complete your registration.</p>
+              <div class="col-sm-6 g-margin-b-30--xs">
+                    <input type="text" class="form-control s-form-v3__input" placeholder="* Name" name="CUSTOMER_NAME" style="text-transform: none" value="<?php echo $name ?>">
+              </div>
+              <div class="col-sm-6 g-margin-b-30--xs">
+                    <input type="email" class="form-control s-form-v3__input" placeholder="* Email" name="CUSTOMER_EMAIL" style="text-transform: none" value="<?php echo $email ?>">
+              </div>
+              <div class="col-sm-6 g-margin-b-30--xs">
+                    <input type="contact" class="form-control s-form-v3__input" placeholder="* Contact" name="CUSTOMER_MOBILE" style="text-transform: none" value="<?php echo $contact ?>">
+              </div>
+
+          </div>
+          <div class="g-text-center--xs">
+              <button type="submit" name="pay" class="text-uppercase s-btn s-btn--md s-btn--white-brd g-radius--50 g-padding-x-70--xs g-margin-b-20--xs">Proceed to Pay</button>
+          </div>
+      </form>
+    </div>
+    <?php
+  }else {
+    ?>  <div class="swades container g-padding-x-40--sm g-padding-x-20--xs g-padding-y-20--xs g-padding-y-50--sm" id="paylinkadventure" style="display:none; background: #000">
+
+        <a class="g-color--white g-font-size-20--xs" onclick="closemodel('paylinkadventure');" style="position:absolute; left:90%; cursor:pointer;" >X</a>
+        <h2 class="g-font-size-30--xs g-text-center--xs g-margin-t-70--xs g-color--white g-letter-spacing--1">You have successfully registed for CEO! All further details shall be communicated to you through your registered email id.</h2>
+      </div>
+        <?php
+      }
+    }
+     ?>
+
+     <!-- adve
 
      <!-- Wallstreet Payment Section -->
 
@@ -305,8 +361,14 @@
      }
    }
    ?>
+  
 
    <!-- War of Worlds Payment ends -->
+
+   <!-- adventure add members -->
+
+
+  <!-- adventure add members section ends -->
 
         <?php include("includes/script.php");?>
         <script type="text/javascript" src="js/dashboard.js"></script>
