@@ -365,10 +365,145 @@
 
    <!-- War of Worlds Payment ends -->
 
-   <!-- adventure add members -->
+  <!-- Adventure Team Members details --->
+  <?php
+    $query = "SELECT * FROM adventure WHERE email='$email'";
+    $result = mysqli_query($con,$query);
+    $num = mysqli_num_rows($result);
+    if($num>0){
+      $data = mysqli_fetch_array($result);
+      if($data['team_conso_id']==''){
+    ?>
+    <div class="container g-padding-x-40--sm g-padding-x-20--xs g-padding-y-20--xs g-padding-y-50--sm" id="adventure" style="display:none; background: #000">
 
+      <a class="g-color--white g-font-size-20--xs" onclick="closemodel('adventure');" style="position:absolute; left:90%; cursor:pointer" >X</a>
+      <h2 class="g-font-size-30--xs g-text-center--xs g-margin-t-70--xs g-color--white g-letter-spacing--1">Add Team members for AdVenture</h2>
+      <p class="g-color--white g-text-center--xs g-font-size-14--xs">atleast fill the details of one member to complete team registration</p>
+      <form class="center-block g-width-500--sm g-text-center--xs g-width-600--md" method="post" action="" onsubmit="return validateData();">
 
-  <!-- adventure add members section ends -->
+          <div class="permanent">
+              <div class="g-margin-b-30--xs">
+                    <input type="text" class="form-control s-form-v3__input" placeholder="*Second Team Member Name" name="ad2_name" style="text-transform: none" id="name">
+              </div>
+              <div class="row g-margin-b-50--xs">
+                  <div class="col-sm-6 g-margin-b-30--xs g-margin-b-0--md">
+                      <input type="email" class="form-control s-form-v3__input" placeholder="*Second Team Member Email" name="ad2_email" style="text-transform: none" id="email">
+                  </div>
+                  <div class="col-sm-6 g-margin-b-30--xs g-margin-b-0--md">
+                      <input type="tel" class="form-control s-form-v3__input" placeholder="*Second Team Member Contact" name="ad2_contact" style="text-transform: none">
+                  </div>
+              </div>
+
+          </div>
+          <div class="permanent">
+              <div class="g-margin-b-30--xs">
+                    <input type="text" class="form-control s-form-v3__input" placeholder="*Third Team Member Name" name="ad3_name" style="text-transform: none" id="name">
+              </div>
+              <div class="row g-margin-b-50--xs">
+                  <div class="col-sm-6 g-margin-b-30--xs g-margin-b-0--md">
+                      <input type="email" class="form-control s-form-v3__input" placeholder="*Third Team Member Email" name="ad3_email" style="text-transform: none" id="email">
+                  </div>
+                  <div class="col-sm-6 g-margin-b-30--xs g-margin-b-0--md">
+                      <input type="tel" class="form-control s-form-v3__input" placeholder="*Third Team Member Contact" name="ad3_contact" style="text-transform: none">
+                  </div>
+              </div>
+
+          </div>
+          <div class="permanent">
+              <div class="g-margin-b-30--xs">
+                    <input type="text" class="form-control s-form-v3__input" placeholder="*Fourth Team Member Name" name="ad4_name" style="text-transform: none" id="name">
+              </div>
+              <div class="row g-margin-b-50--xs">
+                  <div class="col-sm-6 g-margin-b-30--xs g-margin-b-0--md">
+                      <input type="email" class="form-control s-form-v3__input" placeholder="*Fourth Team Member Email" name="ad4_email" style="text-transform: none" id="email">
+                  </div>
+                  <div class="col-sm-6 g-margin-b-30--xs g-margin-b-0--md">
+                      <input type="tel" class="form-control s-form-v3__input" placeholder="*Fourth Team Member Contact" name="ad4_contact" style="text-transform: none">
+                  </div>
+              </div>
+
+          </div>
+
+          <div class="g-text-center--xs">
+              <button type="submit" name="addteam_ad" class="text-uppercase s-btn s-btn--md s-btn--white-brd g-radius--50 g-padding-x-70--xs g-margin-b-20--xs">Submit</button>
+          </div>
+
+      </form>
+  </div>
+  <?php
+  if(isset($_POST['addteam_ad'])) {
+    $ad_email = $ad_name = $ad_contact = array();
+    $count_mem = 0;
+    $ad_email[0] = $con->real_escape_string($_POST['ad2_email']);
+    $ad_name[0] = $con->real_escape_string($_POST['ad2_name']);
+    $ad_contact[0] = $con->real_escape_string($_POST['ad2_contact']);
+    $ad_email[1] = $con->real_escape_string($_POST['ad3_email']);
+    $ad_name[1] = $con->real_escape_string($_POST['ad3_name']);
+    $ad_contact[1] = $con->real_escape_string($_POST['ad3_contact']);
+    $ad_email[2] = $con->real_escape_string($_POST['ad4_email']);
+    $ad_name[2] = $con->real_escape_string($_POST['ad4_name']);
+    $ad_contact[2] = $con->real_escape_string($_POST['ad4_contact']);
+    $_otp = '1234567890';
+    $_otp = str_shuffle($_otp);
+    // $otp = substr($otp, 0, 6);
+
+    $team_conso_id = substr($name, 0, 3);
+    $team_conso_id .= substr($_otp, 0, 4);
+    $query_main  = "UPDATE adventure SET team_conso_id='$team_conso_id' WHERE email='$email'";
+    $q = '';
+    for($i=0; $i<3; $i++){
+      if($ad_name[$i]!='' || $ad_email[$i]!='' || $ad_contact[$i]!='')
+      {
+        $q  .= "INSERT INTO adventure(email,name,contact,team_conso_id) VALUES('$ad_email[$i]','$ad_name[$i]','$ad_contact[$i]','$team_conso_id')";
+        $count_mem = $count_mem +1;
+      }
+    }
+
+  if($count_mem >= 1){
+    if ($con->query($query_main) === TRUE){
+    if ($con->multi_query($q) === TRUE) {
+      ?>
+      <div class="swades container g-padding-x-40--sm g-padding-x-20--xs g-padding-y-20--xs g-padding-y-50--sm" id="adventure" style="display:none; background: #000">
+
+          <a class="g-color--white g-font-size-20--xs" onclick="closemodel('adventure');" style="position:absolute; left:90%; cursor:pointer;" >X</a>
+          <h2 class="g-font-size-30--xs g-text-center--xs g-margin-t-70--xs g-color--white g-letter-spacing--1">You have successfully registed your team members. Kindly pay your payment if not done yet!</h2>
+        </div>
+        <?php
+      //header('location:dashboard.php');
+    } else {
+      ?>
+      <div class="swades container g-padding-x-40--sm g-padding-x-20--xs g-padding-y-20--xs g-padding-y-50--sm" id="adventure" style="display:none; background: #000">
+
+          <a class="g-color--white g-font-size-20--xs" onclick="closemodel('adventure');" style="position:absolute; left:90%; cursor:pointer;" >X</a>
+          <h2 class="g-font-size-30--xs g-text-center--xs g-margin-t-70--xs g-color--white g-letter-spacing--1">Error Connecting. Try Again!</h2>
+        </div>
+    <?php
+  }
+}
+}
+  else{
+    ?>
+    <div class="swades container g-padding-x-40--sm g-padding-x-20--xs g-padding-y-20--xs g-padding-y-50--sm" id="adventure" style="display:none; background: #000">
+
+        <a class="g-color--white g-font-size-20--xs" onclick="closemodel('adventure');" style="position:absolute; left:90%; cursor:pointer;" >X</a>
+        <h2 class="g-font-size-30--xs g-text-center--xs g-margin-t-70--xs g-color--white g-letter-spacing--1">No members added!</h2>
+      </div>
+      <?php
+  }
+  }
+}
+  else {
+  ?> <div class="swades container g-padding-x-40--sm g-padding-x-20--xs g-padding-y-20--xs g-padding-y-50--sm" id="adventure" style="display:none; background: #000">
+
+      <a class="g-color--white g-font-size-20--xs" onclick="closemodel('adventure');" style="position:absolute; left:90%; cursor:pointer;" >X</a>
+      <h2 class="g-font-size-30--xs g-text-center--xs g-margin-t-70--xs g-color--white g-letter-spacing--1">You have successfully registed your team members. Kindly pay your payment if not done yet!</h2>
+    </div>
+      <?php
+    }
+
+}
+   ?>
+   <!-- adventure members section end -->
 
         <?php include("includes/script.php");?>
         <script type="text/javascript" src="js/dashboard.js"></script>
