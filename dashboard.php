@@ -13,6 +13,7 @@
     $email = $_SESSION['email'];
     $name = $_SESSION['name'];
     $contact = $_SESSION['contact'];
+    $conso_id = $_SESSION['consoID'];
   }else{
     $_SESSION['login_error'] = "Kindly Login First";
     header('location:login.php');
@@ -74,7 +75,7 @@
                       for($var = 0;$var < 10; $var++ ){
                         if($row[$events[$var]] == 1){
                     ?>
-                    <div id="<?php echo $events[$var] ?>click" class="product-card col-xs-12 col-md-3" style="cursor:pointer;">
+                    <div class="product-card col-xs-12 col-md-3" style="cursor:pointer;">
                         <div class="product-card__item-grid" style="background:url(img/events/<?php echo $events[$var] ?>.jpg)">
                             <div class="product-card__item-text-v2">
                               <h2 class="g-color--white g-text-center--xs g-font-size-16--xs" style="text-decoration: underline;"><b><?php echo $events[$var] ?></b></h2>
@@ -90,21 +91,37 @@
                               <br>
 
                               <div class="wow fadeInLeft g-text-center--xs" data-wow-duration=".3" data-wow-delay=".5s" style="display: flex;justify-content: center;">
-                              <?php 
+                              <?php
                                       if(in_array($events[$var], array('adventure'), true) ){
                                         ?>
-                                      <a id="reg_button" href="#members<?php echo $events[$var]; ?>" target="_blank">
-                                      
+                                        <?php
+                                        $query = "SELECT * FROM adventure WHERE team_conso_id='$conso_id'";
+                                        $result = mysqli_query($con,$query);
+                                        $num = mysqli_num_rows($result);
+                                        if($num > 0){
+                                         ?>
+                                        <div id="details_click">
+                                          <a href="#details<?php echo $events[$var]; ?>">
+                                        <span class="text-uppercase s-btn s-btn--xs s-btn--white-brd g-radius--50 g-margin-r-10--xs">Your Team</span>
+                                          </a>
+                                        </div>
+                                        <?php
+                                      }else{
+                                        ?>
+                                        <div id="adteam_click">
+                                          <a href="#members<?php echo $events[$var]; ?>">
                                         <span class="text-uppercase s-btn s-btn--xs s-btn--white-brd g-radius--50 g-margin-r-10--xs">Add members</span>
-                                        </a>
+                                          </a>
+                                        </div>
+                                      <?php } ?>
                                       <?php }elseif(in_array($events[$var], array('operation_research','renderico','bizquiz','swades','ceo','wallstreet','war_of_worlds'), true) ){ ?>
                                         <a id="reg_button" href="<?php echo $events[$var].'.php'; ?>" target="_blank">
                                         <span class="text-uppercase s-btn s-btn--xs s-btn--white-brd g-radius--50 g-margin-r-10--xs"> View event </span>
                                         </a>
                                       <?php }?>
-                                    
 
-                                  <a href="#paylink<?php echo $events[$var]; ?>"><span class="text-uppercase s-btn s-btn--xs s-btn--white-brd g-radius--50">
+
+                                  <a id="<?php echo $events[$var] ?>click" href="#paylink<?php echo $events[$var]; ?>"><span class="text-uppercase s-btn s-btn--xs s-btn--white-brd g-radius--50">
                                         <?php
                                         if(in_array($events[$var], array('adventure','swades','ceo','wallstreet','war_of_worlds'), true) ){
                                           echo 'Pay Here';
@@ -220,6 +237,7 @@
      ?>
 
      <!-- CEO Payment Section ends -->
+
      <!-- adventure payment section -->
      <?php
         $query = "SELECT * FROM adventure WHERE email='$email'";
@@ -361,11 +379,34 @@
      }
    }
    ?>
-  
+
 
    <!-- War of Worlds Payment ends -->
 
   <!-- Adventure Team Members details --->
+
+  <div class="swades container g-padding-x-40--sm g-padding-x-20--xs g-padding-y-20--xs g-padding-y-50--sm" id="detailsadventure" style="display:none; background: #000">
+      <a class="g-color--white g-font-size-20--xs" onclick="closemodel('detailsadventure');" style="position:absolute; left:90%; cursor:pointer;" >X</a>
+      <h2 class="g-font-size-30--xs g-text-center--xs g-margin-t-70--xs g-color--white g-letter-spacing--1">Your Team</h2>
+      <p class='g-color--white g-font-size-16--xs'>
+      <?php
+      $query = "SELECT * FROM adventure WHERE team_conso_id='$conso_id'";
+      $result = mysqli_query($con,$query);
+      $num = mysqli_num_rows($result);
+      if ($num>0) {
+        while ($data = mysqli_fetch_assoc($result)) {
+        ?>
+        <?php echo  $data['name'], ': ', $data['email'], ', ';?><br><?php
+        }
+      }
+      ?>
+    </p>
+  </div>
+
+  <!-- Adventure Team Members details end --->
+
+  <!-- Adventure Team Members registration --->
+
   <?php
     $query = "SELECT * FROM adventure WHERE email='$email'";
     $result = mysqli_query($con,$query);
@@ -374,11 +415,11 @@
       $data = mysqli_fetch_array($result);
       if($data['team_conso_id']==''){
     ?>
-    <div class="container g-padding-x-40--sm g-padding-x-20--xs g-padding-y-20--xs g-padding-y-50--sm" id="adventure" style="display:none; background: #000">
+    <div class="container g-padding-x-40--sm g-padding-x-20--xs g-padding-y-20--xs g-padding-y-50--sm" id="membersadventure" style="display:none; background: #000">
 
-      <a class="g-color--white g-font-size-20--xs" onclick="closemodel('adventure');" style="position:absolute; left:90%; cursor:pointer" >X</a>
+      <a class="g-color--white g-font-size-20--xs" onclick="closemodel('membersadventure');" style="position:absolute; left:90%; cursor:pointer" >X</a>
       <h2 class="g-font-size-30--xs g-text-center--xs g-margin-t-70--xs g-color--white g-letter-spacing--1">Add Team members for AdVenture</h2>
-      <p class="g-color--white g-text-center--xs g-font-size-14--xs">atleast fill the details of one member to complete team registration</p>
+      <p class="g-color--white g-text-center--xs g-font-size-14--xs">At least fill the details of one member to complete team registration. <br><b> If you are an individual partcipant, you may ignore this form.</b></p>
       <form class="center-block g-width-500--sm g-text-center--xs g-width-600--md" method="post" action="" onsubmit="return validateData();">
 
           <div class="permanent">
@@ -430,7 +471,10 @@
 
       </form>
   </div>
+
   <?php
+
+  }
   if(isset($_POST['addteam_ad'])) {
     $ad_email = $ad_name = $ad_contact = array();
     $count_mem = 0;
@@ -443,38 +487,39 @@
     $ad_email[2] = $con->real_escape_string($_POST['ad4_email']);
     $ad_name[2] = $con->real_escape_string($_POST['ad4_name']);
     $ad_contact[2] = $con->real_escape_string($_POST['ad4_contact']);
-    $_otp = '1234567890';
-    $_otp = str_shuffle($_otp);
-    // $otp = substr($otp, 0, 6);
 
-    $team_conso_id = substr($name, 0, 3);
-    $team_conso_id .= substr($_otp, 0, 4);
-    $query_main  = "UPDATE adventure SET team_conso_id='$team_conso_id' WHERE email='$email'";
+    $team_conso_id = $conso_id;
+    $query  = "UPDATE adventure SET team_conso_id='$team_conso_id' WHERE email='$email'";
+    $result = mysqli_query($con,$query);
     $q = '';
+    $q2 = '';
     for($i=0; $i<3; $i++){
       if($ad_name[$i]!='' || $ad_email[$i]!='' || $ad_contact[$i]!='')
       {
-        $q  .= "INSERT INTO adventure(email,name,contact,team_conso_id) VALUES('$ad_email[$i]','$ad_name[$i]','$ad_contact[$i]','$team_conso_id')";
+        $q  = "INSERT INTO adventure(email,name,contact,team_conso_id) VALUES('$ad_email[$i]','$ad_name[$i]','$ad_contact[$i]','$team_conso_id')";
+        $r = mysqli_query($con,$q);
+        $q2 = "INSERT INTO registrations(email,name,contact,adventure) VALUES('$ad_email[$i]','$ad_name[$i]','$ad_contact[$i]',1)";
+        $r2 = mysqli_query($con,$q2);
         $count_mem = $count_mem +1;
       }
     }
 
   if($count_mem >= 1){
-    if ($con->query($query_main) === TRUE){
-    if ($con->multi_query($q) === TRUE) {
+    if ($result){
+    if ($r && $r2) {
       ?>
-      <div class="swades container g-padding-x-40--sm g-padding-x-20--xs g-padding-y-20--xs g-padding-y-50--sm" id="adventure" style="display:none; background: #000">
+      <div class="swades container g-padding-x-40--sm g-padding-x-20--xs g-padding-y-20--xs g-padding-y-50--sm" id="membersadventure" style="display:none; background: #000">
 
-          <a class="g-color--white g-font-size-20--xs" onclick="closemodel('adventure');" style="position:absolute; left:90%; cursor:pointer;" >X</a>
-          <h2 class="g-font-size-30--xs g-text-center--xs g-margin-t-70--xs g-color--white g-letter-spacing--1">You have successfully registed your team members. Kindly pay your payment if not done yet!</h2>
+          <a class="g-color--white g-font-size-20--xs" onclick="closemodel('membersadventure');" style="position:absolute; left:90%; cursor:pointer;" >X</a>
+          <h2 class="g-font-size-30--xs g-text-center--xs g-margin-t-70--xs g-color--white g-letter-spacing--1">You have successfully registed your team members. Kindly complete your payment if not done yet!</h2>
         </div>
         <?php
       //header('location:dashboard.php');
     } else {
       ?>
-      <div class="swades container g-padding-x-40--sm g-padding-x-20--xs g-padding-y-20--xs g-padding-y-50--sm" id="adventure" style="display:none; background: #000">
+      <div class="swades container g-padding-x-40--sm g-padding-x-20--xs g-padding-y-20--xs g-padding-y-50--sm" id="membersadventure" style="display:none; background: #000">
 
-          <a class="g-color--white g-font-size-20--xs" onclick="closemodel('adventure');" style="position:absolute; left:90%; cursor:pointer;" >X</a>
+          <a class="g-color--white g-font-size-20--xs" onclick="closemodel('membersadventure');" style="position:absolute; left:90%; cursor:pointer;" >X</a>
           <h2 class="g-font-size-30--xs g-text-center--xs g-margin-t-70--xs g-color--white g-letter-spacing--1">Error Connecting. Try Again!</h2>
         </div>
     <?php
@@ -483,9 +528,9 @@
 }
   else{
     ?>
-    <div class="swades container g-padding-x-40--sm g-padding-x-20--xs g-padding-y-20--xs g-padding-y-50--sm" id="adventure" style="display:none; background: #000">
+    <div class="swades container g-padding-x-40--sm g-padding-x-20--xs g-padding-y-20--xs g-padding-y-50--sm" id="membersadventure" style="display:none; background: #000">
 
-        <a class="g-color--white g-font-size-20--xs" onclick="closemodel('adventure');" style="position:absolute; left:90%; cursor:pointer;" >X</a>
+        <a class="g-color--white g-font-size-20--xs" onclick="closemodel('membersadventure');" style="position:absolute; left:90%; cursor:pointer;" >X</a>
         <h2 class="g-font-size-30--xs g-text-center--xs g-margin-t-70--xs g-color--white g-letter-spacing--1">No members added!</h2>
       </div>
       <?php
@@ -493,16 +538,15 @@
   }
 }
   else {
-  ?> <div class="swades container g-padding-x-40--sm g-padding-x-20--xs g-padding-y-20--xs g-padding-y-50--sm" id="adventure" style="display:none; background: #000">
+  ?> <div class="swades container g-padding-x-40--sm g-padding-x-20--xs g-padding-y-20--xs g-padding-y-50--sm" id="membersadventure" style="display:none; background: #000">
 
-      <a class="g-color--white g-font-size-20--xs" onclick="closemodel('adventure');" style="position:absolute; left:90%; cursor:pointer;" >X</a>
-      <h2 class="g-font-size-30--xs g-text-center--xs g-margin-t-70--xs g-color--white g-letter-spacing--1">You have successfully registed your team members. Kindly pay your payment if not done yet!</h2>
+      <a class="g-color--white g-font-size-20--xs" onclick="closemodel('membersadventure');" style="position:absolute; left:90%; cursor:pointer;" >X</a>
+      <h2 class="g-font-size-30--xs g-text-center--xs g-margin-t-70--xs g-color--white g-letter-spacing--1">You have successfully registed your team members. Kindly complete your payment if not done yet!!</h2>
     </div>
       <?php
     }
 
-}
-   ?>
+  ?>
    <!-- adventure members section end -->
 
         <?php include("includes/script.php");?>

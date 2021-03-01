@@ -629,31 +629,27 @@ function htmlMail($t, $sub, $name, $teamname, $event){
                           <h3><b>Hello</b></h3>
 
 
-                          <p> You are successfully registered for AdVenture! You are now a part of on of the India’s Biggest Entrepreneurship Summit. We are well pleased to have you on board for this event.</p>
+                          <p> You are successfully registered for AdVenture! We are well pleased to have you on board for this event.</p>
                           <div>
                               <p>
 
                                   <br>
-                                  Your time is now! This Consortium\'20, grab your camera and bring your ideas to life!
+                                  Your time is now! This Consortium\'21, grab your camera and bring your ideas to life!
 
                               </p>
-                              <br>
-
-                                <a style="display:block; text-align: center;width:150px; padding:12px 10px; background: #111; color:#FFF; text-decoration: none; border-radius:30px; position: relative;" href="https://drive.google.com/file/d/1DMwEP2RAsp0PK008c9fk2_lqq77FeJe1/view?usp=sharing">Problem Statement
-                                </a><br/>
                                 <br>
-                                <p><b>All the submission will be done to adventure2k20@gmail.com on the google drive</b></p>
+                                <p>You would be given a set of challenges to pick from in our further emails, which must be completed within a stipulated amount of time. You will have to engage your creative senses and marketing mind to design an appropriate advertisement to finish your challenge.</p>
 
 
-                              <p>
-                                  To keep you updated, all the relevant details will be emailed to you very shortly.
+                              <p>The best advertisements made by you guys, will be featured on our social media pages and will also give you a chance to earn exciting prizes worth 5000 RS. Sharpen your tools for the upcoming creative battles.
                                   <br>
                               </p>
                               <p>For queries and in case of any difficulty, feel free to contact us.</p>
                               <p>
+                              Sai Shiva -  +91 96522 62597- saishiva191@gmail.com <br>
+                              Sriya -  +91 97666 09287 - sriya.samiksha@gmail.com <br>
+                              Nidhi - +91 76207 16748 - aralkar.nidhi151@gmail.com <br><br>
                                   With warm regards,<br>
-                                  Ritika Meena
-                                  +91 96991 73231
                                   Team E-Cell VNIT
                               </p>
                           </div>
@@ -661,7 +657,7 @@ function htmlMail($t, $sub, $name, $teamname, $event){
                   </body>
               </html>';
 
-              
+
     $htmlBizQuiz = '<!DOCTYPE html>
               <html>
                   <head>

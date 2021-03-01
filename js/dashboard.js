@@ -70,3 +70,16 @@ $("#pitch_mantraclick").click(function(){
     $("html ,body").animate({ scrollTop: y},200);
 });
 
+$("#adteam_click").click(function(){
+  $("#membersadventure").css({"display":"block"});
+  $("#membersadventure").animate({opacity: 1}, 1000);
+  var y = $("#membersadventure").offset().top;
+    $("html ,body").animate({ scrollTop: y},200);
+});
+
+$("#details_click").click(function(){
+  $("#detailsadventure").css({"display":"block"});
+  $("#detailsadventure").animate({opacity: 1}, 1000);
+  var y = $("#detailsadventure").offset().top;
+    $("html ,body").animate({ scrollTop: y},200);
+});
