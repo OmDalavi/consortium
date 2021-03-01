@@ -1,4 +1,3 @@
-<?php header('location:event.php'); ?>
 <!DOCTYPE html>
 <html lang="en" class="no-js">
   <?php $pagetitle = 'AdVenture | Consortium'; ?>
@@ -41,7 +40,7 @@
 
                     <h3 class="g-color--white g-margin-t-10--xs" style=" text-shadow: 2px 0 #333;">Make Ads, Mint Money</h3>
                     <p class="g-color--white g-font-size-18--xs" style="    text-shadow: 2px 0 #333;"><b>The judge for your creativity, brevity, and orignality</b></p><br/>
-                    <h3 class="g-color--white"> PRIZES WORTH <span class="g-color--red">&#8377; 10K </span></h3>
+                    <h3 class="g-color--white"> PRIZES WORTH <span class="g-color--red">&#8377; 5K </span></h3>
                     <br>
                     <div class="wow fadeInLeft" data-wow-duration=".3" data-wow-delay=".5s">
                         <a href="/register.php" title="Register">
@@ -64,7 +63,7 @@
                         <div class="wow fadeInLeft" data-wow-duration=".3" data-wow-delay=".1s">
                             <h2 class="g-font-size-40--xs g-font-size-50--sm g-font-size-60--md g-color--white" style="font-weight:900">About</h2>
                         </div>
-                        <p class="g-font-size-14--xs g-font-size-16--sm g-color--white-opacity">Ad-Venture nurtures an aspirational community that supports photographers and filmmakers who wish to share important stories and influence the way people think through images. So, it provides an great opportunity for photographers to communicate and enrich image-making culture for professionals and amateurs alike.</p>
+                        <p class="g-font-size-14--xs g-font-size-16--sm g-color--white-opacity">Ad-Venture nurtures an aspirational community that supports photographers and filmmakers who wish to share important stories and influence the way people think through images and videos. So, it provides an great opportunity for photographers and filmmakers to communicate and enrich content creation culture for professionals and amateurs alike.</p>
 
                     </div>
                     <div class="col-md-7 col-md-offset-1">
@@ -91,35 +90,36 @@
     		    <div class="card-content code">
 
     		    	<div id="why">
-    			     	<h5><b>Prizes Worth &#8377; 10K </b></h5><br/>
-                        <p>A company's growth is nestled in the way it is marketed. Every company, be it at any stage, needs to project its vision and idea in the most unique way. Well, an advertisement that would connect with millions and let their idea breathe with them is what all a company needs. The event provides a platform for all creative minds to showcase your talent. So, this Consortium’19, grab your camera and give shape to your vision. <br>Participants will make an ad on the given theme and will be judged on their creativity, brevity and originality. Why keep an idea, lens it this Conso.</p><br>
+    			     	<h5><b>Prizes Worth &#8377; 5K </b></h5><br/>
+                        <p>A company's growth is nestled in the way it is marketed. Every company, be it at any stage, needs to project its vision and idea in the most unique way. Well, an advertisement that would connect with millions and let their idea breathe with them is what all a company needs. The event provides a platform for all creative minds to showcase your talent. So, this Consortium’21, grab your camera and give shape to your vision. <br>Participants will make an ad on the given theme and will be judged on their creativity, brevity and originality. Why just keep an idea, lens it this Conso.</p><br>
     			     	<ol>
-    			     	    <li><p>Prizes worth Rs.10k for the winners and certificate to all the participants</p></li>
+    			     	    <li><p>Prizes worth Rs 5k for the winners and certificate to all the participants</p></li>
     			     	    <li><p>Great platform to show you marketing skills.</p></li>
     			     	    <li><p>A chance to network with like minded people and gain invaluable experience.</p></li>
     			     	    <li><p>Participation increases confidence level and the hurdles faced can help recognize strengths and weaknesses.</p></li>
     			     	    <li><p>Learning to apply your unique skills to solve real-world problems and to enhance knowledge and on-the-spot thinking.</p></li>
     			     	</ol>
 
-    			     	<br/>
-
     				</div>
     				<div id="structure" style="display:none;">
+              <h5><b>Registration Fees</b></h5>
+              <ol>
+                <li>Poster advertisement : &#8377;50</li>
+                <li>Video advertisement : &#8377;50</li>
+              </ol>
+              <br>
               <h5><b>How to participate</b></h5>
-              <br/>
-              <p>To participate in AdVenture, visit our <a href="https://consortium.ecellvnit.org/">website</a> and register with your <b>consoID</b>. As soon your registration process gets complete you will get confirmation along with the problem statement for the first round on your mail-id.  This would also unlock vast repository of resources to help you throughout the competition cycle and even beyond.</p>
+              <p>To participate in AdVenture, visit our <a href="https://consortium.ecellvnit.org/">website</a> and register with your <b>consoID</b>. As soon your registration process gets complete you will get confirmation along with the problem statement for the first round on your email id.  This would also unlock vast repository of resources to help you throughout the competition cycle and even beyond.</p>
               <br/>
               <h5><b>Structure</b></h5>
-              <br/>
-    		  <p>The competition will run online as per the dates mentioned in this document. Participants have to submit their advertisements which will be focused on the given theme. <br>Registrations Start: <b>1st February, 2019</b><br>Registrations Ends: <b>27th March, 2020</b><br>Results Declaration: <b>29th March, 2020</b></p>
+              <p>A of problem statement will be sent to the participants through email after they register.</p>
+    		  <p>Participants have to submit their advertisements which will be through a google drive link on their dashboard. <br>Registrations Start: <b>03rd March, 2021</b><br>Webinar on Ad Making: <b>21st March, 2021</b><br>Last date of submission: <b>26th March, 2021</b><br>Results Declaration: <b>28th March, 2021</b></p>
                         <br/>
               <h5><b>Eligibility Criteria </b></h5>
               <ol>
-                  <li><p>Participation in teams is encouraged.<br>However, maximum members allowed per team are 5.</p></li>
+                  <li><p>Participation in teams is encouraged.<br>However, maximum members allowed per team are 4.</p></li>
                   <li><p>There is no age restriction to participate in this event.</p></li>
-                  <li><p>Anyone can participate in Ad-Venture and must not violate any terms and conditions. The participant should strictly follow the rules given in the manual.</p></li>
               </ol>
-              <br/>
 
     		    	</div>
 
@@ -135,13 +135,24 @@
         <!--<img class="s-mockup-v2" src="img/mockups/pencil-01.png" alt="Mockup Image">-->
             <!--<div class="g-container--md g-padding-y-40--xs">-->
             <div id="managers" class="row g-row-col--5 g-padding-x-40--xs g-padding-y-40--xs g-padding-x-20--md g-padding-x-100--lg">
-                <div class="col-xs-4 col-md-offset-2 g-full-width--xs g-margin-b-50--xs g-margin-b-0--sm">
+                <div class="col-xs-4 g-full-width--xs g-margin-b-50--xs g-margin-b-0--sm">
                     <div class="g-text-center--xs">
-                        <h4 class="g-font-size-18--xs g-color--white g-margin-b-5--xs">Ritika Meena</h4>
-                         <p class="g-color--white">+91 9699173231</p>
+                        <h4 class="g-font-size-18--xs g-color--white g-margin-b-5--xs">Sai Shiva</h4>
+                         <p class="g-color--white">saishiva191@gmail.com <br>+91 96522 62597</p>
                     </div>
                 </div>
-
+                <div class="col-xs-4 g-full-width--xs g-margin-b-50--xs g-margin-b-0--sm">
+                    <div class="g-text-center--xs">
+                        <h4 class="g-font-size-18--xs g-color--white g-margin-b-5--xs">Sriya</h4>
+                         <p class="g-color--white">sriya.samiksha@gmail.com<br>+91 97666 09287</p>
+                    </div>
+                </div>
+                <div class="col-xs-4 g-full-width--xs g-margin-b-50--xs g-margin-b-0--sm">
+                    <div class="g-text-center--xs">
+                        <h4 class="g-font-size-18--xs g-color--white g-margin-b-5--xs">Nidhi</h4>
+                         <p class="g-color--white">aralkar.nidhi151@gmail.com <br>+91 76207 16748</p>
+                    </div>
+                </div>
 
             </div>
             </div>

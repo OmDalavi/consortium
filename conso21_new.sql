@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Feb 28, 2021 at 05:27 PM
+-- Generation Time: Mar 01, 2021 at 05:12 PM
 -- Server version: 10.4.17-MariaDB
 -- PHP Version: 8.0.2
 
@@ -40,6 +40,16 @@ CREATE TABLE `adventure` (
   `payment_status` tinyint(1) NOT NULL DEFAULT 0
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+--
+-- Dumping data for table `adventure`
+--
+
+INSERT INTO `adventure` (`id`, `name`, `contact`, `email`, `college`, `team_conso_id`, `typeof_ad`, `order_id`, `razor_payment_id`, `payment_status`) VALUES
+(20, 'Lakshya', '7738446941', 'lakshyashukla32@gmail.com', 'VNIT ', 'Lak5718', 0, '', '', 0),
+(21, 'Anil', '7738446941', 'anil@gmail.com', '', 'Lak5718', 0, '', '', 0),
+(22, 'Sunil', '12121', 'sunil@gmail.com', '', 'Lak5718', 0, '', '', 0),
+(23, 'munil', '787878', 'munil@gmail.com', '', 'Lak5718', 0, '', '', 0);
+
 -- --------------------------------------------------------
 
 --
@@ -49,7 +59,7 @@ CREATE TABLE `adventure` (
 CREATE TABLE `bizquiz` (
   `id` int(11) NOT NULL,
   `name` varchar(255) NOT NULL,
-  `contact` int(11) NOT NULL,
+  `contact` varchar(255) NOT NULL,
   `email` varchar(255) NOT NULL,
   `college` varchar(255) NOT NULL,
   `team_conso_id` int(11) NOT NULL,
@@ -107,7 +117,7 @@ CREATE TABLE `operation_research` (
 CREATE TABLE `pitch_mantra` (
   `id` int(11) NOT NULL,
   `name` varchar(255) NOT NULL,
-  `contact` int(11) NOT NULL,
+  `contact` varchar(255) NOT NULL,
   `email` varchar(255) NOT NULL,
   `college` varchar(255) NOT NULL,
   `round1` tinyint(1) NOT NULL DEFAULT 0,
@@ -130,7 +140,7 @@ CREATE TABLE `registrations` (
   `otp` varchar(255) DEFAULT NULL,
   `BizQuiz` tinyint(1) NOT NULL DEFAULT 0,
   `swades` tinyint(1) NOT NULL DEFAULT 0,
-  `ad-venture` tinyint(1) NOT NULL DEFAULT 0,
+  `adventure` tinyint(1) NOT NULL DEFAULT 0,
   `operational_research` tinyint(1) NOT NULL DEFAULT 0,
   `war_of_worlds` tinyint(1) NOT NULL DEFAULT 0,
   `render_ico` tinyint(1) NOT NULL DEFAULT 0,
@@ -144,8 +154,11 @@ CREATE TABLE `registrations` (
 -- Dumping data for table `registrations`
 --
 
-INSERT INTO `registrations` (`id`, `email`, `name`, `contact`, `conso_id`, `college`, `otp`, `BizQuiz`, `swades`, `ad-venture`, `operational_research`, `war_of_worlds`, `render_ico`, `pitchmantra`, `ceo`, `wallstreet`, `epl`) VALUES
-(10, 'lakshyashukla32@gmail.com', 'Lakshya', '7738446941', 'Lak1807', 'vnit', 'Confirmed', 0, 0, 0, 0, 0, 0, 0, 1, 1, 0);
+INSERT INTO `registrations` (`id`, `email`, `name`, `contact`, `conso_id`, `college`, `otp`, `BizQuiz`, `swades`, `adventure`, `operational_research`, `war_of_worlds`, `render_ico`, `pitchmantra`, `ceo`, `wallstreet`, `epl`) VALUES
+(20, 'lakshyashukla32@gmail.com', 'Lakshya', '7738446941', 'Lak5718', 'VNIT ', 'Confirmed', 0, 0, 1, 0, 0, 0, 0, 0, 0, 0),
+(21, 'anil@gmail.com', 'Anil', '7738446941', '', '', NULL, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0),
+(22, 'sunil@gmail.com', 'Sunil', '12121', '', '', NULL, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0),
+(23, 'munil@gmail.com', 'munil', '787878', '', '', NULL, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0);
 
 -- --------------------------------------------------------
 
@@ -156,7 +169,7 @@ INSERT INTO `registrations` (`id`, `email`, `name`, `contact`, `conso_id`, `coll
 CREATE TABLE `render_ico` (
   `id` int(11) NOT NULL,
   `name` varchar(255) NOT NULL,
-  `contact` int(11) NOT NULL,
+  `contact` varchar(255) NOT NULL,
   `email` varchar(255) NOT NULL,
   `college` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
@@ -170,7 +183,7 @@ CREATE TABLE `render_ico` (
 CREATE TABLE `swades` (
   `id` int(11) DEFAULT NULL,
   `name` varchar(255) NOT NULL,
-  `contact` int(11) NOT NULL,
+  `contact` varchar(255) NOT NULL,
   `email` varchar(255) NOT NULL,
   `college` varchar(255) NOT NULL,
   `team_conso_id` varchar(255) NOT NULL,
@@ -216,7 +229,7 @@ INSERT INTO `wallstreet` (`id`, `name`, `contact`, `email`, `college`, `tier`, `
 CREATE TABLE `war_of_worlds` (
   `id` int(11) DEFAULT NULL,
   `Name` varchar(255) NOT NULL,
-  `contact` int(11) NOT NULL,
+  `contact` varchar(255) NOT NULL,
   `email` varchar(255) NOT NULL,
   `college` varchar(255) NOT NULL,
   `round1` tinyint(1) NOT NULL DEFAULT 0,
@@ -287,7 +300,7 @@ ALTER TABLE `wallstreet`
 -- AUTO_INCREMENT for table `adventure`
 --
 ALTER TABLE `adventure`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=24;
 
 --
 -- AUTO_INCREMENT for table `bizquiz`
@@ -317,7 +330,7 @@ ALTER TABLE `pitch_mantra`
 -- AUTO_INCREMENT for table `registrations`
 --
 ALTER TABLE `registrations`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=24;
 
 --
 -- AUTO_INCREMENT for table `render_ico`
