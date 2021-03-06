@@ -1,4 +1,4 @@
-<?php header('location:event.php'); ?>
+<?php //header('location:event.php'); ?> 
 <!DOCTYPE html>
 <html lang="en" class="no-js">
   <?php $pagetitle = 'War of Worlds | Consortium'; ?>
@@ -104,11 +104,11 @@
     		    	    <p>The Event is divided into the following three rounds:</p><br/>
     		    	    <ul>
 
-    					    <li><h6><b>Round 1: Questionnaire </b></h6><p><b>31st January 2020 -22nd February 2020</b><br>A multiple-choice questionnaire will be conducted online via a web portal.
+    					    <li><h6><b>Round 1: Questionnaire </b></h6><p><b>8th March 2021 -16th March 2021</b><br>A multiple-choice questionnaire will be conducted online via a web portal.
                           Round 1 which is a preliminary-cum-elimination round commences with filling our questionnaire. The questionnaire consists of questions based on  eeconomics, world affairs, trade, data interpretation, etc.</p></li><br/>
-    					    <li><h6><b>Round 2: Group Discussion </b></h6><p><b>22nd February 2020 | Journey from VNIT, Nagpur </b><br>On the spot group discussion based on a problem statement. Participants will be judged individually based on the following criteria:<br>1.Creativity<br>2. Communication Skills <br>3. Non-verbal communication<br>4. Critical analysis<br>5. Spontaneity<br>6. Degree of acceptance of the solution proposed </p></li><br/>
-    					    <li><h6><b>Round 3: War of Worlds</h6><p>23rd February 2020</b><br>
-                    This is a knockout game show, where each participant shall be assigned a virtual nation along with its elaborate description. The aim of the game is to fight till the end to make your nation reach the top. Teams will be periodically knocked out from the game on the basis of their performance.<br></p></li>
+    					    <li><h6><b>Round 2: Group Discussion </b></h6><p><b>19th March 2021 | Journey from VNIT, Nagpur </b><br>On the spot group discussion based on a problem statement. Participants will be judged individually based on the following criteria:<br>1.Creativity<br>2. Communication Skills <br>3. Non-verbal communication<br>4. Critical analysis<br>5. Spontaneity<br>6. Degree of acceptance of the solution proposed </p></li><br/>
+    					    <li><h6><b>Round 3: War of Worlds</h6><p>28th March 2021</b><br>
+                  This is a game show,where each participant will be allotted a virtual nation along with its elaborate description.The nations will have to develop Attacks and Defences against odds.The One with effective performance will be the winner of War of Worlds 2021..<br></p></li>
 
 
     		    	</div>
@@ -154,23 +154,23 @@
             <div id="managers" class="row g-row-col--5 g-padding-x-40--xs g-padding-y-40--xs g-padding-x-20--md g-padding-x-100--lg">
               <div class="col-xs-4 g-full-width--xs g-margin-b-50--xs g-margin-b-0--sm">
                   <div class="g-text-center--xs">
-                      <h4 class="g-font-size-18--xs g-color--white g-margin-b-5--xs">Rishabh Runwal</h4>
-                       <p class="g-color--white"> rishabhprunwal@gmail.com</p>
+                      <h4 class="g-font-size-18--xs g-color--white g-margin-b-5--xs">Shobha Jaldhari</h4>
+                       <p class="g-color--white"> jaldhari.shobha12@gmail.com</p>
                        <p class="g-color--white">+91 9326512345</p>
                   </div>
               </div><div class="col-xs-4 g-full-width--xs g-margin-b-50--xs g-margin-b-0--sm">
                     <div class="g-text-center--xs">
-                        <h4 class="g-font-size-18--xs g-color--white g-margin-b-5--xs">Harsh Mittal</h4>
-                         <p class="g-color--white">harsh.mittal1895@gmail.com</p>
-                         <p class="g-color--white">+91 8602761409</p>
+                        <h4 class="g-font-size-18--xs g-color--white g-margin-b-5--xs">Vignesh Srinivas</h4>
+                         <p class="g-color--white">vigneshmadhipatla2001@gmail.com</p>
+                         <p class="g-color--white">+91 94401 94617</p>
                     </div>
                 </div>
                 <div class="col-xs-4 g-full-width--xs g-margin-b-50--xs g-margin-b-0--sm">
 
                     <div class="g-text-center--xs">
-                        <h4 class="g-font-size-18--xs g-color--white g-margin-b-5--xs">Ritika Kumar</h4>
-                         <p class="g-color--white">ritikakumar0204@gmail.com </p>
-                         <p class="g-color--white">+91 7666691242</p>
+                        <h4 class="g-font-size-18--xs g-color--white g-margin-b-5--xs">Aman Singh</h4>
+                         <p class="g-color--white">amanpekshasingh@gmail.com </p>
+                         <p class="g-color--white">+91 94075 00437</p>
                     </div>
                 </div>
 

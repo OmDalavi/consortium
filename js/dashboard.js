@@ -6,7 +6,7 @@ $(".product-card__item-grid").css({
 function closemodel(event){
     $("#"+event).css({"display": "none"},100);
 }
-
+// payment script
 $("#ceoclick").click(function(){
  $("#paylinkceo").css({"display":"block"});
  $("#paylinkceo").animate({opacity: 1}, 1000);
@@ -50,9 +50,9 @@ $("#bizquizclick").click(function(){
 });
 
 $("#war_of_worldsclick").click(function(){
-  $("#war_of_worlds").css({"display":"block"});
-  $("#war_of_worlds").animate({opacity: 1}, 1000);
-  var y = $("#war_of_worlds").offset().top;
+  $("#paylinkwar_of_worlds").css({"display":"block"});
+  $("#paylinkwar_of_worlds").animate({opacity: 1}, 1000);
+  var y = $("#paylinkwar_of_worlds").offset().top;
     $("html ,body").animate({ scrollTop: y},200);
 });
 
