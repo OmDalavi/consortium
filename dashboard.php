@@ -348,7 +348,7 @@
     <div class="container g-padding-x-40--sm g-padding-x-20--xs g-padding-y-20--xs g-padding-y-50--sm" id="paylinkwar_of_worlds" style="display:none; background: #000">
 
       <a class="g-color--white g-font-size-20--xs" onclick="closemodel('paylinkwar_of_worlds');" style="position:absolute; left:90%" >X</a>
-      <h2 class="g-font-size-30--xs g-text-center--xs g-margin-t-70--xs g-color--white g-letter-spacing--1">Payment for Wallstreet Registration</h2>
+      <h2 class="g-font-size-30--xs g-text-center--xs g-margin-t-70--xs g-color--white g-letter-spacing--1">Payment for War of Worlds Registration</h2>
 
       <form class="center-block g-width-600--sm" method="post" action="pay.php?v=war_of_worlds">
          <div class="permanent permanent-CEO row">
