@@ -72,6 +72,9 @@ if ($success === true)
         if($v == 'wallstreet'){
           $v = "confirmwallstreet";
           htmlMail($actual_cust_email,$sub,$name,"",$v);
+        }else if ($v = 'war_of_worlds'){
+          $v = "confirmwar_of_worlds";
+          htmlMail($actual_cust_email,$sub,$name,"",$v);
         }else {
           htmlMail($actual_cust_email,$sub,$name,"","Payment Successful");
         }
