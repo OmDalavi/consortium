@@ -1383,8 +1383,9 @@ function htmlMail($t, $sub, $name, $teamname, $event){
                                                         </p>
 
                                                         <p>
-                                                            To keep you updated, all the relevant details will be emailed to you very shortly.
-                                                            <br>
+                                                            This is the Questionnaire for Round 1 of War of Worlds<br>
+                                                            https://docs.google.com/forms/d/e/1FAIpQLSeF_OYGF_1BK3qdQ5eqjkHx7XxJhB9q0jnNKULKH3eMU_Sz3g/viewform <br>
+                                                            Please Complete the Questionnaire by 18th March 2021<br>
                                                         </p>
                                                         <p>For queries and in case of any difficulty, feel free to contact us.</p>
                                                         <p>

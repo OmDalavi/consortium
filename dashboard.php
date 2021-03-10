@@ -121,15 +121,31 @@
                                       <?php }?>
 
 
-                                  <a id="<?php echo $events[$var] ?>click" href="#paylink<?php echo $events[$var]; ?>"><span class="text-uppercase s-btn s-btn--xs s-btn--white-brd g-radius--50">
+                                  <!-- <a id="<?php //echo $events[$var] ?>click" href="#paylink<?php //echo $events[$var]; ?>"><span class="text-uppercase s-btn s-btn--xs s-btn--white-brd g-radius--50">
                                         <?php
-                                        if(in_array($events[$var], array('adventure','swades','ceo','wallstreet','war_of_worlds'), true) ){
-                                          echo 'Pay Here';
-                                        }elseif(in_array($events[$var], array('operation_research','renderico','bizquiz'), true) ){
-                                          echo 'Add Members';//demo button
-                                        }?>
+                                        // if(in_array($events[$var], array('adventure','swades','ceo','wallstreet','war_of_worlds'), true) ){
+                                        //   echo 'Pay Here';
+                                        // }elseif(in_array($events[$var], array('operation_research','renderico','bizquiz'), true) ){
+                                        //   echo 'Add Members';//demo button
+                                        //}
+                                        ?>
                                       </span>
-                                  </a>
+                                  </a> -->
+                                  <?php
+                                        if(in_array($events[$var], array('adventure','swades','ceo','wallstreet','war_of_worlds'), true) ){ ?>
+                                          <a id="<?php echo $events[$var] ?>click" href="#paylink<?php echo $events[$var]; ?>">
+                                              <span class="text-uppercase s-btn s-btn--xs s-btn--white-brd g-radius--50">Pay Here</span>
+                                          </a>
+                                        <?php }elseif(in_array($events[$var], array('operation_research','renderico','bizquiz'), true) ){ ?>
+                                          <a id="<?php echo $events[$var] ?>click" href="#paylink<?php echo $events[$var]; ?>">
+                                              <span class="text-uppercase s-btn s-btn--xs s-btn--white-brd g-radius--50">Add members</span>
+                                          </a>
+                                        <?php }elseif(in_array($events[$var], array('xyz'), true)){ ?>
+                                          <a id="<?php echo $events[$var] ?>click" href="#paylink<?php echo $events[$var]; ?>">
+                                              <span class="text-uppercase s-btn s-btn--xs s-btn--white-brd g-radius--50">form link</span>
+                                          </a>
+
+                                  <?php } ?>
 
 
                               </div>
