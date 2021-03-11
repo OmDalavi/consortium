@@ -136,13 +136,13 @@
                                           <a id="<?php echo $events[$var] ?>click" href="#paylink<?php echo $events[$var]; ?>">
                                               <span class="text-uppercase s-btn s-btn--xs s-btn--white-brd g-radius--50">Pay Here</span>
                                           </a>
-                                        <?php }elseif(in_array($events[$var], array('operation_research','renderico','bizquiz'), true) ){ ?>
+                                        <?php }elseif(in_array($events[$var], array('operation_research','renderico',), true) ){ ?>
                                           <a id="<?php echo $events[$var] ?>click" href="#paylink<?php echo $events[$var]; ?>">
                                               <span class="text-uppercase s-btn s-btn--xs s-btn--white-brd g-radius--50">Add members</span>
                                           </a>
-                                        <?php }elseif(in_array($events[$var], array('xyz'), true)){ ?>
-                                          <a id="<?php echo $events[$var] ?>click" href="#paylink<?php echo $events[$var]; ?>">
-                                              <span class="text-uppercase s-btn s-btn--xs s-btn--white-brd g-radius--50">form link</span>
+                                        <?php }elseif(in_array($events[$var], array('bizquiz'), true)){ ?>
+                                          <a id="<?php echo $events[$var] ?>click" href="https://dare2compete.com/o/bizquiz-consortium21-visvesvaraya-national-institute-of-technology-vnit-nagpur-153434">
+                                              <span class="text-uppercase s-btn s-btn--xs s-btn--white-brd g-radius--50">D2c Link</span>
                                           </a>
 
                                   <?php } ?>
