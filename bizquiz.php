@@ -115,7 +115,7 @@ about Business?</b></p><br/>
 
     					    <li><h6>Round 1: Quiz</h6>
 
-                                <br>This round will be based on facts and news from the business world.br>
+                                <br>This round will be based on facts and news from the business world.<br>
                                 The first round will be a quiz conducted on Dare2Compete, which you can attempt anytime after you register.</p>
                             </li><br/>
 
