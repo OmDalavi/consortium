@@ -20,7 +20,7 @@ if (isset($_SESSION['auth']) && $_SESSION['auth'] == true) {
     <!-- Bootstrap Core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="//cdn.datatables.net/1.10.15/css/jquery.dataTables.min.css" rel="stylesheet">
-    <!--
+    <!-- 
     <style>
         table.db-table 		{ border-right:1px solid #ccc; border-bottom:1px solid #ccc; }
         table.db-table th	{ background:#eee; padding:5px; border-left:1px solid #ccc; border-top:1px solid #ccc; }
