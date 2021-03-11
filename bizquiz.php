@@ -97,7 +97,7 @@ about Business?</b></p><br/>
     			     	    <li><p>The quest for knowledge has been the part of humankind since time immemorial. So E-Cell VNIT brings to you one of the best quizzing events in the country on theme businesses.</p></li>
     			     	    <li><p>This event gives an excellent opportunity for students to showcase their knowledge and skills.</p></li>
     			     	    <li><p>Experience in performing certain mind-boggling questions in a given span of time.</p></li>
-    			     	    <li><p>Prizes for the Top 2 performing teams as stated below and goodies for other performing teams.</p></li>
+    			     	    <li><p>Prizes for the Top 3 performing teams and goodies for other performing teams.</p></li>
     			     	</ol>
 
     			     	<br/>

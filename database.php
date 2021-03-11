@@ -20,7 +20,7 @@ if (isset($_SESSION['auth']) && $_SESSION['auth'] == true) {
     <!-- Bootstrap Core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="//cdn.datatables.net/1.10.15/css/jquery.dataTables.min.css" rel="stylesheet">
-    <!--
+    <!-- 
     <style>
         table.db-table 		{ border-right:1px solid #ccc; border-bottom:1px solid #ccc; }
         table.db-table th	{ background:#eee; padding:5px; border-left:1px solid #ccc; border-top:1px solid #ccc; }
@@ -46,77 +46,142 @@ if (isset($_SESSION['auth']) && $_SESSION['auth'] == true) {
         require_once('includes/dbconnect.php');
 
 
-        if($_SESSION['event'] == 'Azure'){
+        if($_SESSION['event'] == 'adventure'){
             echo '<thead>
         <tr>
             <th>Id</th>
+            <th>Name</th>
+            <th>Contact</th>
             <th>Email</th>
             <th>College</th>
-            <th>Year</th>
-            <th>Branch</th>
-            <th>Paid</th>
+            <th>Team conso ID</th>
+            <th>Type of ad</th>
+            <th>Order id</th>
+            <th>Razor payment ID</th>
+            <th>Payment status</th>
         </tr>
         </thead>
         <tbody>';
         }
-        else if($_SESSION['event'] == 'Brainathon'){
-            echo '<thead>
-        <tr>
-            <th>ID</th>
-            <th>Name</th>
-            <th>Email</th>
-            <th>Contact</th>
-            <th>isPaid</th>
-        </tr>
-    </thead>
-        <tbody>';
-        }
-        else if($_SESSION['event'] == 'Expo'){
-            echo '<thead>
-        <tr>
-            <th>ID</th>
-            <th>Startup</th>
-            <th>Email</th>
-            <th>Website</th>
-            <th>Phone</th>
-            <th>Paid</th>
-        </tr>
-    </thead>
-        <tbody>';
-        }
-        else if($_SESSION['event'] == 'Townhall'){
+        else if($_SESSION['event'] == 'bizquiz'){
             echo '<thead>
         <tr>
             <th>Id</th>
             <th>Name</th>
-            <th>Email</th>
             <th>Contact</th>
+            <th>Email</th>
             <th>College</th>
-            <th>Year</th>
-            <th>Question</th>
+            <th>Team conso ID</th>
+            <th>Order id</th>
+            <th>Razor payment ID</th>
+            <th>Payment status</th>
         </tr>
     </thead>
         <tbody>';
         }
-        else if($_SESSION['event'] == 'trec'){
+        else if($_SESSION['event'] == 'ceo'){
             echo '<thead>
         <tr>
             <th>Id</th>
             <th>Name</th>
-            <th>Email</th>
             <th>Contact</th>
+            <th>Email</th>
+            <th>College</th>
+            <th>Order id</th>
+            <th>Razor payment ID</th>
+            <th>Payment status</th>
         </tr>
     </thead>
         <tbody>';
         }
-        else if($_SESSION['event'] == 'aimlworkshop'){
+        else if($_SESSION['event'] == 'operation_research'){
             echo '<thead>
         <tr>
-            <th>ID</th>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Contact</th>
             <th>Email</th>
             <th>College</th>
-            <th>branch</th>
-            <th>year</th>
+            <th>Team conso ID</th>
+        </tr>
+    </thead>
+        <tbody>';
+        }
+        else if($_SESSION['event'] == 'pitch_mantra'){
+            echo '<thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Contact</th>
+            <th>Email</th>
+            <th>College</th>
+            <th>Round 1</th>
+            <th>Round 2</th>
+        </tr>
+    </thead>
+        <tbody>';
+        }
+        else if($_SESSION['event'] == 'render_ico'){
+            echo '<thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Contact</th>
+            <th>Email</th>
+            <th>College</th>
+        </tr>
+    </thead>
+        <tbody>';
+        }
+        else if($_SESSION['event'] == 'swades'){
+            echo '<thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Contact</th>
+            <th>Email</th>
+            <th>College</th>
+            <th>Team conso ID</th>
+            <th>Round 1</th>
+            <th>Round 2</th>
+            <th>Round 3</th>
+            <th>Order id</th>
+            <th>Razor payment ID</th>
+            <th>Payment status</th>
+        </tr>
+    </thead>
+        <tbody>';
+        }
+        else if($_SESSION['event'] == 'wallstreet'){
+            echo '<thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Contact</th>
+            <th>Email</th>
+            <th>College</th>
+            <th>Tier</th>
+            <th>Order id</th>
+            <th>Razor payment ID</th>
+            <th>Payment status</th>
+        </tr>
+    </thead>
+        <tbody>';
+        }
+        else if($_SESSION['event'] == 'war_of_worlds'){
+            echo '<thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Contact</th>
+            <th>Email</th>
+            <th>College</th>
+            <th>Round 1</th>
+            <th>Round 2</th>
+            <th>Round 3</th>
+            <th>Order id</th>
+            <th>Razor payment ID</th>
+            <th>Payment status</th>
         </tr>
     </thead>
         <tbody>';
@@ -139,87 +204,155 @@ if (isset($_SESSION['auth']) && $_SESSION['auth'] == true) {
         $result=mysqli_query($con, "SELECT * FROM `$_SESSION[event]`");
         while ($row = mysqli_fetch_assoc($result)):
 
-            if($_SESSION['event'] == 'Azure'){
+            if($_SESSION['event'] == 'adventure'){
         ?>
 
 
         <tr>
-            <td><?php echo $row['ID'];?></td>
-            <td><?php echo $row['Email'];?></td>
-            <td><?php echo $row['college'];?></td>
-            <td><?php echo $row['year'];?></td>
-            <td><?php echo $row['branch'];?></td>
-            <td><?php echo $row['paid'];?></td>
-
-        </tr>
-        <?php
-        }
-        else if($_SESSION['event'] == 'Brainathon'){
-        ?>
-
-        <tr>
-            <td><?php echo $row['ID'];?></td>
-            <td><?php echo $row['Name'];?></td>
-            <td><?php echo $row['Email'];?></td>
-            <td><?php echo $row['Contact'];?></td>
-            <td><?php echo $row['isPaid'];?></td>
-
-        </tr>
-        <?php
-        }
-        else if($_SESSION['event'] == 'Expo'){
-        ?>
-
-        <tr>
-            <td><?php echo $row['ID'];?></td>
-            <td><?php echo $row['startup'];?></td>
-            <td><?php echo $row['email'];?></td>
-            <td><?php echo $row['website'];?></td>
-            <td><?php echo $row['phone'];?></td>
-            <td><?php echo $row['paid'];?></td>
-
-        </tr>
-        <?php
-        }
-        else if($_SESSION['event'] == 'Townhall'){
-        ?>
-
-        <tr>
-            <td><?php echo $row['ID'];?></td>
+            <td><?php echo $row['id'];?></td>
             <td><?php echo $row['name'];?></td>
-            <td><?php echo $row['Email'];?></td>
             <td><?php echo $row['contact'];?></td>
+            <td><?php echo $row['email'];?></td>
             <td><?php echo $row['college'];?></td>
-            <td><?php echo $row['year'];?></td>
-            <td><?php echo $row['question'];?></td>
+            <td><?php echo $row['team_conso_id'];?></td>
+            <td><?php echo $row['typeof_ad'];?></td>
+            <td><?php echo $row['order_id'];?></td>
+            <td><?php echo $row['razor_payment_id'];?></td>
+            <td><?php echo $row['payment_status'];?></td>
 
         </tr>
         <?php
         }
-        else if($_SESSION['event'] == 'trec'){
+        else if($_SESSION['event'] == 'bizquiz'){
         ?>
 
         <tr>
-            <td><?php echo $row['ID'];?></td>
-            <td><?php echo $row['Name'];?></td>
-            <td><?php echo $row['Email'];?></td>
-            <td><?php echo $row['Contact'];?></td>
+            <td><?php echo $row['id'];?></td>
+            <td><?php echo $row['name'];?></td>
+            <td><?php echo $row['contact'];?></td>
+            <td><?php echo $row['email'];?></td>
+            <td><?php echo $row['college'];?></td>
+            <td><?php echo $row['team_conso_id'];?></td>
+            <td><?php echo $row['order_id'];?></td>
+            <td><?php echo $row['razor_payment_id'];?></td>
+            <td><?php echo $row['payment_status'];?></td>
+
+        </tr>
+        <?php
+        }
+        else if($_SESSION['event'] == 'ceo'){
+        ?>
+
+        <tr>
+            <td><?php echo $row['id'];?></td>
+            <td><?php echo $row['name'];?></td>
+            <td><?php echo $row['contact'];?></td>
+            <td><?php echo $row['email'];?></td>
+            <td><?php echo $row['college'];?></td>
+            <td><?php echo $row['order_id'];?></td>
+            <td><?php echo $row['razor_payment_id'];?></td>
+            <td><?php echo $row['payment_status'];?></td>
+
+        </tr>
+        <?php
+        }
+        else if($_SESSION['event'] == 'operation_research'){
+        ?>
+
+        <tr>
+            <td><?php echo $row['id'];?></td>
+            <td><?php echo $row['name'];?></td>
+            <td><?php echo $row['contact'];?></td>
+            <td><?php echo $row['email'];?></td>
+            <td><?php echo $row['college'];?></td>
+            <td><?php echo $row['team_conso_id'];?></td>
+
+        </tr>
+        <?php
+        }
+        else if($_SESSION['event'] == 'pitch_mantra'){
+        ?>
+
+        <tr>
+            <td><?php echo $row['id'];?></td>
+            <td><?php echo $row['name'];?></td>
+            <td><?php echo $row['contact'];?></td>
+            <td><?php echo $row['email'];?></td>
+            <td><?php echo $row['college'];?></td>
+            <td><?php echo $row['round1'];?></td>
+            <td><?php echo $row['round2'];?></td>
 
 
         </tr>
         <?php
         }
-        else if($_SESSION['event'] == 'aimlworkshop'){
+        else if($_SESSION['event'] == 'render_ico'){
         ?>
 
         <tr>
-            <td><?php echo $row['ID'];?></td>
-            <td><?php echo $row['Email'];?></td>
+            <td><?php echo $row['id'];?></td>
+            <td><?php echo $row['name'];?></td>
+            <td><?php echo $row['contact'];?></td>
+            <td><?php echo $row['email'];?></td>
             <td><?php echo $row['college'];?></td>
-            <td><?php echo $row['branch'];?></td>
-            <td><?php echo $row['year'];?></td>
 
 
+
+        </tr>
+        <?php
+        }
+        else if($_SESSION['event'] == 'swades'){
+        ?>
+
+        <tr>
+            <td><?php echo $row['id'];?></td>
+            <td><?php echo $row['name'];?></td>
+            <td><?php echo $row['contact'];?></td>
+            <td><?php echo $row['email'];?></td>
+            <td><?php echo $row['college'];?></td>
+            <td><?php echo $row['team_conso_id'];?></td>
+            <td><?php echo $row['round1'];?></td>
+            <td><?php echo $row['round2'];?></td>
+            <td><?php echo $row['round3'];?></td>
+            <td><?php echo $row['order_id'];?></td>
+            <td><?php echo $row['razor_payment_id'];?></td>
+            <td><?php echo $row['payment_status'];?></td>
+
+        </tr>
+        <?php
+        }
+        else if($_SESSION['event'] == 'wallstreet'){
+        ?>
+
+        <tr>
+            <td><?php echo $row['id'];?></td>
+            <td><?php echo $row['name'];?></td>
+            <td><?php echo $row['contact'];?></td>
+            <td><?php echo $row['email'];?></td>
+            <td><?php echo $row['college'];?></td>
+            <td><?php echo $row['tier'];?></td>
+            <td><?php echo $row['order_id'];?></td>
+            <td><?php echo $row['razor_payment_id'];?></td>
+            <td><?php echo $row['payment_status'];?></td>
+
+        </tr>
+        <?php
+        }
+        else if($_SESSION['event'] == 'war_of_worlds'){
+        ?>
+
+        <tr>
+            <td><?php echo $row['id'];?></td>
+            <td><?php echo $row['name'];?></td>
+            <td><?php echo $row['contact'];?></td>
+            <td><?php echo $row['email'];?></td>
+            <td><?php echo $row['college'];?></td>
+            <td><?php echo $row['round1'];?></td>
+            <td><?php echo $row['round2'];?></td>
+            <td><?php echo $row['round3'];?></td>
+            <td><?php echo $row['order_id'];?></td>
+            <td><?php echo $row['razor_payment_id'];?></td>
+            <td><?php echo $row['payment_status'];?></td>
 
         </tr>
         <?php
