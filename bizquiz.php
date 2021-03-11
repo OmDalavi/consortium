@@ -1,4 +1,4 @@
-<?php header('location:event.php'); ?>
+<?php //header('location:event.php'); ?>
 <!DOCTYPE html>
 <html lang="en" class="no-js">
   <?php $pagetitle = 'Bizquiz | Consortium'; ?>
@@ -36,7 +36,7 @@
                     <h3 class="g-color--white" style="    text-shadow: 2px 0 #333;">Love facts & Trivia about the business?</h3>
                     <p class="g-color--white g-font-size-18--xs" style="    text-shadow: 2px 0 #333;"><b>HAVE YOU got the insatiable hunger to IMBIBE the trivia and knowledge
 about Business?</b></p><br/>
-                    <h4 class="g-color--white"> PRIZES WORTH <span class="g-color--red">&#8377; 15K </span></h4>
+                    <h4 class="g-color--white"> PRIZES WORTH <span class="g-color--red">&#8377; 5K </span></h4>
                     <br>
                     <div class="wow fadeInLeft" data-wow-duration=".3" data-wow-delay=".5s">
                         <a href="/register.php" title="Register">
@@ -91,7 +91,7 @@ about Business?</b></p><br/>
 
     		    	<div id="why">
                         <br>
-    			     	<h5><b>Prizes Worth Rs. 15K</b><p>NOTE: Participation Certificate to all the participants selected for Round 2.</p></h5>
+    			     	<h5><b>Prizes Worth Rs. 5K</b><p>NOTE: Participation Certificate to all the participants selected for Round 2.</p></h5>
 
     			     	<ol>
     			     	    <li><p>The quest for knowledge has been the part of humankind since time immemorial. So E-Cell VNIT brings to you one of the best quizzing events in the country on theme businesses.</p></li>
@@ -106,35 +106,34 @@ about Business?</b></p><br/>
     				<div id="structure" style="display:none;">
               <h5><b>How to participate</b></h5>
               <br/>
-              <p>To participate in Bizquiz, visit our <a href="https://consortium.ecellvnit.org/register.php">website</a> and register with the name of your team . As soon your registration process gets complete you will get confirmation</p>
+              <p>To participate in Bizquiz, visit our <a href="https://dare2compete.com/o/bizquiz-consortium21-visvesvaraya-national-institute-of-technology-vnit-nagpur-153434">D2C portal</a> and register with the name of your team . As soon your registration process gets complete you will get confirmation</p>
               <br/>
               <h5><b>Structure</b></h5>
               <br/>
-    		    	    <p>The Event comprises of 2 rounds starting with the questionnaire round which would be on the 10th of March, 2019</p><br/>
+    		    	    <p>The Event comprises of 2 rounds starting with the questionnaire round.</p><br/>
     		    	    <ol>
 
-    					    <li><h6>Round 1: General quiz round (Elimination)</h6>
+    					    <li><h6>Round 1: Quiz</h6>
 
-                                <br>There will be 25 questions (20 general + 5 Audio-visual)<br>
-                                  In case of tie breaks, qualifier will be decided on basis of 5 Audio-visual questions </p>
+                                <br>This round will be based on facts and news from the business world.<br>
+                                The first round will be a quiz conducted on Dare2Compete, which you can attempt anytime after you register.</p>
                             </li><br/>
 
-    					    <li><h6>Round 2: Stage Round</h6>
-                                <p><br>The top 8 teams will be selected for this round.<br>
-                                  Every team will be asked a question. If it isn’t able to do so, the question will be passed on to the next team. The question would be passed till any team gives the correct answer. Total 16 questions would be asked. One round of question from the 1st to 8th team, and the next round of questions from 8th to 1st.<br>
-                                  After these 16 questions, a rapid fire round will be conducted, in which each team would be asked a series of questions in one minute. </p>
+    					    <li><h6>Round 2: Live Round</h6>
+                                <p><br>Live Quiz on Webex or Zoom (More Comprehensive and Audio-Visual type Questions)<br>
+                                </p>
                             </li><br/>
-                  <li><h6>Round 3: Buzzer Round (Final)</h6>
+                  <!-- <li><h6>Round 3: Buzzer Round (Final)</h6>
                                 <p><br>This will be a buzzer round. Marks will be awarded for each correct question. Negative marks will be awarded for wrong answers.<br>
                                         There will be 12 questions. After a question is asked, the one willing to give the answer will have to buzz, using the Sync Buzzer app on 4 phones.<br>
                                         The top 2 teams will be awarded first and second positions. In case of a tie between highest scores, a tie breaker buzzer round will take place till the tie is broken. </p>
-                  </li>
+                  </li> -->
     					</ol>
                         <br/>
               <h5><b>Eligibility Criteria </b></h5>
               <ol>
-                  <li><p>Students studying in courses of Undergraduate, Graduate level and Higher Secondary Students(11th,12th class) and also secondary students (9th, 10th class) can participate for the Quiz. Participants need to form a team of two to register for the event. Both the team members need to be students of the same institution. Both the team members need not be of the same year of study.</p></li>
-                  <li><p>Participants can register directly on the Consortium’s website. Entry fee is Rs 50 per team. There is no limit on the number of teams participating from the same institute.</p></li>
+                  <li><p>The quiz is open to full-time students from all disciplines of any under-graduation, degree, or post-graduation courses, across India.</p></li>
+                  <li><p>Team Size: The quiz is open for teams with a maximum of three members.</p></li>
               </ol>
 
 
@@ -154,22 +153,22 @@ about Business?</b></p><br/>
             <div id="managers" class="row g-row-col--5 g-padding-x-40--xs g-padding-y-40--xs g-padding-x-20--md g-padding-x-100--lg">
                 <div class="col-xs-4 g-full-width--xs g-margin-b-50--xs g-margin-b-0--sm">
                     <div class="g-text-center--xs">
-                        <h4 class="g-font-size-18--xs g-color--white g-margin-b-5--xs">Anshu Beherae</h4>
-                         <p class="g-color--white">+91 98198 40087</p>
+                        <h4 class="g-font-size-18--xs g-color--white g-margin-b-5--xs">Anshu Raj</h4>
+                         <p class="g-color--white">+91 8329760998 </p>
                     </div>
                 </div>
                 <div class="col-xs-4 g-full-width--xs g-margin-b-50--xs g-margin-b-0--sm">
                     <div class="g-text-center--xs">
-                        <h4 class="g-font-size-18--xs g-color--white g-margin-b-5--xs">Anurag Baral</h4>
-                         <p class="g-color--white">+91 84519 88444</p>
+                        <h4 class="g-font-size-18--xs g-color--white g-margin-b-5--xs">Saransh Mittal</h4>
+                         <p class="g-color--white">+91 9351482013</p>
                     </div>
                 </div>
-                <div class="col-xs-4 g-full-width--xs g-margin-b-50--xs g-margin-b-0--sm">
+                <!-- <div class="col-xs-4 g-full-width--xs g-margin-b-50--xs g-margin-b-0--sm">
                     <div class="g-text-center--xs">
                         <h4 class="g-font-size-18--xs g-color--white g-margin-b-5--xs">Gokul Bisen</h4>
                          <p class="g-color--white">+91 95451 43345</p>
                     </div>
-                </div>
+                </div> -->
 
 
 

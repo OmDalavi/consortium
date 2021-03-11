@@ -712,20 +712,17 @@ function htmlMail($t, $sub, $name, $teamname, $event){
                               <p>
 
                                   <br>
-                                  Your time is now! This Conso\'20, battle your wits and challenge the wise !
+                                  Your time is now! This Conso\'21, battle your wits and challenge the wise !
 
                               </p>
 
                               <p>
                                   To complete your registration for Bizquiz please make the required payment of <b>INR 50</b>.
                                   <br><br>
-                                  <b>To Pay:<br></b>
-                                  <ol>
-                                  <li>Google Pay or Paytm on +91 77384 46941</li>
-                                  <li>Registration Desk, near canteen, VNIT</li>
-                                  </ol>
+                                  <b>For further details visit <a href="https://dare2compete.com/o/bizquiz-consortium21-visvesvaraya-national-institute-of-technology-vnit-nagpur-153434">Our portal</a> <br></b>
+            
                               </p>
-                              <p>For queries and in case of any difficulty, feel free to Contact 9370923419</p>
+                              <p>For queries and in case of any difficulty, feel free to Contact Saransh Mittal: 9351482013</p>
                               <p>
                                   With warm regards,<br>
                                   Team E-Cell VNIT
@@ -1383,8 +1380,9 @@ function htmlMail($t, $sub, $name, $teamname, $event){
                                                         </p>
 
                                                         <p>
-                                                            To keep you updated, all the relevant details will be emailed to you very shortly.
-                                                            <br>
+                                                            This is the Questionnaire for Round 1 of War of Worlds<br>
+                                                            https://docs.google.com/forms/d/e/1FAIpQLSeF_OYGF_1BK3qdQ5eqjkHx7XxJhB9q0jnNKULKH3eMU_Sz3g/viewform <br>
+                                                            Please Complete the Questionnaire by 18th March 2021<br>
                                                         </p>
                                                         <p>For queries and in case of any difficulty, feel free to contact us.</p>
                                                         <p>
