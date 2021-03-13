@@ -141,7 +141,7 @@ function htmlMail($t, $sub, $name, $teamname, $event){
                     <h3><b>Hello '.$name.',</b></h3>
 
 
-                    <p>Thank You for registering team <b>'.$teamname.'</b></p>
+                    <p>Thank You for registering in Consortium 21!</p>
                     <div>
                         <p>We hope this mail finds you in the best of your health and cheerful spirits. We are well pleased to have you on board for the <b>Swades</b></p>
                         <p>
@@ -351,7 +351,7 @@ function htmlMail($t, $sub, $name, $teamname, $event){
                           <br>
                             With warm regards,<br>
                             Team Render.ico<br>
-                            Consortium 20, Ecell VNIT
+                            Consortium 21, Ecell VNIT
                         </p>
                     </div>
                 </div>
@@ -720,7 +720,7 @@ function htmlMail($t, $sub, $name, $teamname, $event){
                                   To complete your registration for Bizquiz please make the required payment of <b>INR 50</b>.
                                   <br><br>
                                   <b>For further details visit <a href="https://dare2compete.com/o/bizquiz-consortium21-visvesvaraya-national-institute-of-technology-vnit-nagpur-153434">Our portal</a> <br></b>
-            
+
                               </p>
                               <p>For queries and in case of any difficulty, feel free to Contact Saransh Mittal: 9351482013</p>
                               <p>

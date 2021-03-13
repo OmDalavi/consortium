@@ -29,9 +29,9 @@ $("#adventureclick").click(function(){
 });
 
 $("#swadesclick").click(function(){
-  $("#swades").css({"display":"block"});
-  $("#swades").animate({opacity: 1}, 1000);
-  var y = $("#swades").offset().top;
+  $("#paylinkswades").css({"display":"block"});
+  $("#paylinkswades").animate({opacity: 1}, 1000);
+  var y = $("#paylinkswades").offset().top;
     $("html ,body").animate({ scrollTop: y},200);
 });
 
@@ -70,16 +70,29 @@ $("#pitch_mantraclick").click(function(){
     $("html ,body").animate({ scrollTop: y},200);
 });
 
-$("#adteam_click").click(function(){
+$("#adteam_clickadventure").click(function(){
   $("#membersadventure").css({"display":"block"});
   $("#membersadventure").animate({opacity: 1}, 1000);
   var y = $("#membersadventure").offset().top;
     $("html ,body").animate({ scrollTop: y},200);
 });
 
-$("#details_click").click(function(){
+$("#details_clickadventure").click(function(){
   $("#detailsadventure").css({"display":"block"});
   $("#detailsadventure").animate({opacity: 1}, 1000);
   var y = $("#detailsadventure").offset().top;
+    $("html ,body").animate({ scrollTop: y},200);
+});
+
+$("#details_clickswades").click(function(){
+  $("#detailsswades").css({"display":"block"});
+  $("#detailsswades").animate({opacity: 1}, 1000);
+  var y = $("#detailsswades").offset().top;
+    $("html ,body").animate({ scrollTop: y},200);
+});
+$("#adteam_clickswades").click(function(){
+  $("#membersswades").css({"display":"block"});
+  $("#membersswades").animate({opacity: 1}, 1000);
+  var y = $("#membersswades").offset().top;
     $("html ,body").animate({ scrollTop: y},200);
 });

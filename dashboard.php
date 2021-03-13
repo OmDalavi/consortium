@@ -92,15 +92,15 @@
 
                               <div class="wow fadeInLeft g-text-center--xs" data-wow-duration=".3" data-wow-delay=".5s" style="display: flex;justify-content: center;">
                               <?php
-                                      if(in_array($events[$var], array('adventure'), true) ){
+                                      if(in_array($events[$var], array('adventure','swades'), true) ){
                                         ?>
                                         <?php
-                                        $query = "SELECT * FROM adventure WHERE team_conso_id='$conso_id'";
+                                        $query = "SELECT * FROM $events[$var] WHERE team_conso_id='$conso_id'";
                                         $result = mysqli_query($con,$query);
                                         $num = mysqli_num_rows($result);
                                         if($num > 0){
                                          ?>
-                                        <div id="details_click">
+                                        <div id="details_click<?php echo $events[$var];?>">
                                           <a href="#details<?php echo $events[$var]; ?>">
                                         <span class="text-uppercase s-btn s-btn--xs s-btn--white-brd g-radius--50 g-margin-r-10--xs">Your Team</span>
                                           </a>
@@ -108,13 +108,13 @@
                                         <?php
                                       }else{
                                         ?>
-                                        <div id="adteam_click">
+                                        <div id="adteam_click<?php echo $events[$var];?>">
                                           <a href="#members<?php echo $events[$var]; ?>">
                                         <span class="text-uppercase s-btn s-btn--xs s-btn--white-brd g-radius--50 g-margin-r-10--xs">Add members</span>
                                           </a>
                                         </div>
                                       <?php } ?>
-                                      <?php }elseif(in_array($events[$var], array('operation_research','renderico','bizquiz','swades','ceo','wallstreet','war_of_worlds'), true) ){ ?>
+                                      <?php }elseif(in_array($events[$var], array('operation_research','renderico','bizquiz','ceo','wallstreet','war_of_worlds'), true) ){ ?>
                                         <a id="reg_button" href="<?php echo $events[$var].'.php'; ?>" target="_blank">
                                         <span class="text-uppercase s-btn s-btn--xs s-btn--white-brd g-radius--50 g-margin-r-10--xs"> View event </span>
                                         </a>
@@ -270,7 +270,7 @@
 
       <form class="center-block g-width-600--sm" method="post" action="pay.php?v=adventure">
           <div class="permanent permanent-CEO row">
-            <p class="g-color--white g-text-center--xs g-font-size-14--xs">Fill this form to pay &#8377;100 and complete your registration.</p>
+            <p class="g-color--white g-text-center--xs g-font-size-14--xs">Fill this form to pay &#8377;50 and complete your registration.</p>
               <div class="col-sm-6 g-margin-b-30--xs">
                     <input type="text" class="form-control s-form-v3__input" placeholder="* Name" name="CUSTOMER_NAME" style="text-transform: none" value="<?php echo $name ?>">
               </div>
@@ -292,7 +292,7 @@
     ?>  <div class="swades container g-padding-x-40--sm g-padding-x-20--xs g-padding-y-20--xs g-padding-y-50--sm" id="paylinkadventure" style="display:none; background: #000">
 
         <a class="g-color--white g-font-size-20--xs" onclick="closemodel('paylinkadventure');" style="position:absolute; left:90%; cursor:pointer;" >X</a>
-        <h2 class="g-font-size-30--xs g-text-center--xs g-margin-t-70--xs g-color--white g-letter-spacing--1">You have successfully registed for CEO! All further details shall be communicated to you through your registered email id.</h2>
+        <h2 class="g-font-size-30--xs g-text-center--xs g-margin-t-70--xs g-color--white g-letter-spacing--1">You have successfully registed for AdVenture! All further details shall be communicated to you through your registered email id.</h2>
       </div>
         <?php
       }
@@ -398,6 +398,52 @@
 
 
    <!-- War of Worlds Payment ends -->
+   <!-- Swades payment section -->
+   <?php
+      $query = "SELECT * FROM swades WHERE email='$email'";
+      $result = mysqli_query($con,$query);
+      $num = mysqli_num_rows($result);
+      if($num>0){
+        $data = mysqli_fetch_array($result);
+        if($data['payment_status']==0){
+     ?>
+    <div class="container g-padding-x-40--sm g-padding-x-20--xs g-padding-y-20--xs g-padding-y-50--sm" id="paylinkswades" style="display:none; background: #000">
+
+      <a class="g-color--white g-font-size-20--xs" onclick="closemodel('paylinkswades');" style="position:absolute; left:90%; cursor:pointer" >X</a>
+      <h2 class="g-font-size-30--xs g-text-center--xs g-margin-t-70--xs g-color--white g-letter-spacing--1">Payment for Swades Registration</h2>
+
+    <form class="center-block g-width-600--sm" method="post" action="pay.php?v=swades">
+        <div class="permanent permanent-CEO row">
+          <p class="g-color--white g-text-center--xs g-font-size-14--xs">Fill this form to pay &#8377;100 and complete your registration.</p>
+            <div class="col-sm-6 g-margin-b-30--xs">
+                  <input type="text" class="form-control s-form-v3__input" placeholder="* Name" name="CUSTOMER_NAME" style="text-transform: none" value="<?php echo $name ?>">
+            </div>
+            <div class="col-sm-6 g-margin-b-30--xs">
+                  <input type="email" class="form-control s-form-v3__input" placeholder="* Email" name="CUSTOMER_EMAIL" style="text-transform: none" value="<?php echo $email ?>">
+            </div>
+            <div class="col-sm-6 g-margin-b-30--xs">
+                  <input type="contact" class="form-control s-form-v3__input" placeholder="* Contact" name="CUSTOMER_MOBILE" style="text-transform: none" value="<?php echo $contact ?>">
+            </div>
+
+        </div>
+        <div class="g-text-center--xs">
+            <button type="submit" name="pay" class="text-uppercase s-btn s-btn--md s-btn--white-brd g-radius--50 g-padding-x-70--xs g-margin-b-20--xs">Proceed to Pay</button>
+        </div>
+    </form>
+  </div>
+  <?php
+}else {
+  ?>  <div class="swades container g-padding-x-40--sm g-padding-x-20--xs g-padding-y-20--xs g-padding-y-50--sm" id="paylinkswades" style="display:none; background: #000">
+
+      <a class="g-color--white g-font-size-20--xs" onclick="closemodel('paylinkswades');" style="position:absolute; left:90%; cursor:pointer;" >X</a>
+      <h2 class="g-font-size-30--xs g-text-center--xs g-margin-t-70--xs g-color--white g-letter-spacing--1">You have successfully registed for Swades! All further details shall be communicated to you through your registered email id.</h2>
+    </div>
+      <?php
+    }
+  }
+   ?>
+
+   <!-- swades Payment section ends -->
 
   <!-- Adventure Team Members details --->
 
@@ -420,6 +466,27 @@
   </div>
 
   <!-- Adventure Team Members details end --->
+  <!-- swades Team Members details --->
+
+  <div class="swades container g-padding-x-40--sm g-padding-x-20--xs g-padding-y-20--xs g-padding-y-50--sm" id="detailsswades" style="display:none; background: #000">
+      <a class="g-color--white g-font-size-20--xs" onclick="closemodel('detailsswades');" style="position:absolute; left:90%; cursor:pointer;" >X</a>
+      <h2 class="g-font-size-30--xs g-text-center--xs g-margin-t-70--xs g-color--white g-letter-spacing--1">Your Team</h2>
+      <p class='g-color--white g-font-size-16--xs'>
+      <?php
+      $query = "SELECT * FROM swades WHERE team_conso_id='$conso_id'";
+      $result = mysqli_query($con,$query);
+      $num = mysqli_num_rows($result);
+      if ($num>0) {
+        while ($data = mysqli_fetch_assoc($result)) {
+        ?>
+        <?php echo  $data['name'], ': ', $data['email'], ', ';?><br><?php
+        }
+      }
+      ?>
+    </p>
+  </div>
+
+  <!-- swades Team Members details end --->
 
   <!-- Adventure Team Members registration --->
 
@@ -564,6 +631,149 @@
 
   ?>
    <!-- adventure members section end -->
+   <!-- Swades Team Members registration --->
+
+   <?php
+     $query = "SELECT * FROM swades WHERE email='$email'";
+     $result = mysqli_query($con,$query);
+     $num = mysqli_num_rows($result);
+     if($num>0){
+       $data = mysqli_fetch_array($result);
+       if($data['team_conso_id']==''){
+     ?>
+     <div class="container g-padding-x-40--sm g-padding-x-20--xs g-padding-y-20--xs g-padding-y-50--sm" id="membersswades" style="display:none; background: #000">
+
+       <a class="g-color--white g-font-size-20--xs" onclick="closemodel('membersswades');" style="position:absolute; left:90%; cursor:pointer" >X</a>
+       <h2 class="g-font-size-30--xs g-text-center--xs g-margin-t-70--xs g-color--white g-letter-spacing--1">Add Team members for Swades</h2>
+       <p class="g-color--white g-text-center--xs g-font-size-14--xs">At least fill the details of one member to complete team registration. <br><b> If you are an individual partcipant, you may ignore this form.</b></p>
+       <form class="center-block g-width-500--sm g-text-center--xs g-width-600--md" method="post" action="" onsubmit="return validateData();">
+
+           <div class="permanent">
+               <div class="g-margin-b-30--xs">
+                     <input type="text" class="form-control s-form-v3__input" placeholder="*Second Team Member Name" name="swades2_name" style="text-transform: none" id="name">
+               </div>
+               <div class="row g-margin-b-50--xs">
+                   <div class="col-sm-6 g-margin-b-30--xs g-margin-b-0--md">
+                       <input type="email" class="form-control s-form-v3__input" placeholder="*Second Team Member Email" name="swades2_email" style="text-transform: none" id="email">
+                   </div>
+                   <div class="col-sm-6 g-margin-b-30--xs g-margin-b-0--md">
+                       <input type="tel" class="form-control s-form-v3__input" placeholder="*Second Team Member Contact" name="swades2_contact" style="text-transform: none">
+                   </div>
+               </div>
+
+           </div>
+           <div class="permanent">
+               <div class="g-margin-b-30--xs">
+                     <input type="text" class="form-control s-form-v3__input" placeholder="*Third Team Member Name" name="swades3_name" style="text-transform: none" id="name">
+               </div>
+               <div class="row g-margin-b-50--xs">
+                   <div class="col-sm-6 g-margin-b-30--xs g-margin-b-0--md">
+                       <input type="email" class="form-control s-form-v3__input" placeholder="*Third Team Member Email" name="swades3_email" style="text-transform: none" id="email">
+                   </div>
+                   <div class="col-sm-6 g-margin-b-30--xs g-margin-b-0--md">
+                       <input type="tel" class="form-control s-form-v3__input" placeholder="*Third Team Member Contact" name="swades3_contact" style="text-transform: none">
+                   </div>
+               </div>
+
+           </div>
+           <div class="permanent">
+               <div class="g-margin-b-30--xs">
+                     <input type="text" class="form-control s-form-v3__input" placeholder="*Fourth Team Member Name" name="swades4_name" style="text-transform: none" id="name">
+               </div>
+               <div class="row g-margin-b-50--xs">
+                   <div class="col-sm-6 g-margin-b-30--xs g-margin-b-0--md">
+                       <input type="email" class="form-control s-form-v3__input" placeholder="*Fourth Team Member Email" name="swades4_email" style="text-transform: none" id="email">
+                   </div>
+                   <div class="col-sm-6 g-margin-b-30--xs g-margin-b-0--md">
+                       <input type="tel" class="form-control s-form-v3__input" placeholder="*Fourth Team Member Contact" name="swades4_contact" style="text-transform: none">
+                   </div>
+               </div>
+
+           </div>
+
+           <div class="g-text-center--xs">
+               <button type="submit" name="addteam_swades" class="text-uppercase s-btn s-btn--md s-btn--white-brd g-radius--50 g-padding-x-70--xs g-margin-b-20--xs">Submit</button>
+           </div>
+
+       </form>
+   </div>
+
+   <?php
+
+   }
+   if(isset($_POST['addteam_swades'])) {
+     $swades_email = $swades_name = $swades_contact = array();
+     $count_mem = 0;
+     $swades_email[0] = $con->real_escape_string($_POST['swades2_email']);
+     $swades_name[0] = $con->real_escape_string($_POST['swades2_name']);
+     $swades_contact[0] = $con->real_escape_string($_POST['swades2_contact']);
+     $swades_email[1] = $con->real_escape_string($_POST['swades3_email']);
+     $swades_name[1] = $con->real_escape_string($_POST['swades3_name']);
+     $swades_contact[1] = $con->real_escape_string($_POST['swades3_contact']);
+     $swades_email[2] = $con->real_escape_string($_POST['swades4_email']);
+     $swades_name[2] = $con->real_escape_string($_POST['swades4_name']);
+     $swades_contact[2] = $con->real_escape_string($_POST['swades4_contact']);
+
+     $team_conso_id = $conso_id;
+     $query  = "UPDATE swades SET team_conso_id='$team_conso_id' WHERE email='$email'";
+     $result = mysqli_query($con,$query);
+     $q = '';
+     $q2 = '';
+     for($i=0; $i<3; $i++){
+       if($swades_name[$i]!='' || $swades_email[$i]!='' || $swades_contact[$i]!='')
+       {
+         $q  = "INSERT INTO swades(email,name,contact,team_conso_id) VALUES('$swades_email[$i]','$swades_name[$i]','$swades_contact[$i]','$team_conso_id')";
+         $r = mysqli_query($con,$q);
+         $q2 = "INSERT INTO swades(email,name,contact,swades) VALUES('$swades_email[$i]','$swades_name[$i]','$swades_contact[$i]',1)";
+         $r2 = mysqli_query($con,$q2);
+         $count_mem = $count_mem +1;
+       }
+     }
+
+   if($count_mem >= 1){
+     if ($result){
+     if ($r && $r2) {
+       ?>
+       <div class="swades container g-padding-x-40--sm g-padding-x-20--xs g-padding-y-20--xs g-padding-y-50--sm" id="membersswades" style="display:none; background: #000">
+
+           <a class="g-color--white g-font-size-20--xs" onclick="closemodel('membersswades');" style="position:absolute; left:90%; cursor:pointer;" >X</a>
+           <h2 class="g-font-size-30--xs g-text-center--xs g-margin-t-70--xs g-color--white g-letter-spacing--1">You have successfully registed your team members. Kindly complete your payment if not done yet!</h2>
+         </div>
+         <?php
+       //header('location:dashboard.php');
+     } else {
+       ?>
+       <div class="swades container g-padding-x-40--sm g-padding-x-20--xs g-padding-y-20--xs g-padding-y-50--sm" id="membersswades" style="display:none; background: #000">
+
+           <a class="g-color--white g-font-size-20--xs" onclick="closemodel('membersswades');" style="position:absolute; left:90%; cursor:pointer;" >X</a>
+           <h2 class="g-font-size-30--xs g-text-center--xs g-margin-t-70--xs g-color--white g-letter-spacing--1">Error Connecting. Try Again!</h2>
+         </div>
+     <?php
+   }
+ }
+ }
+   else{
+     ?>
+     <div class="swades container g-padding-x-40--sm g-padding-x-20--xs g-padding-y-20--xs g-padding-y-50--sm" id="membersswades" style="display:none; background: #000">
+
+         <a class="g-color--white g-font-size-20--xs" onclick="closemodel('membersswades');" style="position:absolute; left:90%; cursor:pointer;" >X</a>
+         <h2 class="g-font-size-30--xs g-text-center--xs g-margin-t-70--xs g-color--white g-letter-spacing--1">No members added!</h2>
+       </div>
+       <?php
+   }
+   }
+ }
+   else {
+   ?> <div class="swades container g-padding-x-40--sm g-padding-x-20--xs g-padding-y-20--xs g-padding-y-50--sm" id="membersswades" style="display:none; background: #000">
+
+       <a class="g-color--white g-font-size-20--xs" onclick="closemodel('membersswades');" style="position:absolute; left:90%; cursor:pointer;" >X</a>
+       <h2 class="g-font-size-30--xs g-text-center--xs g-margin-t-70--xs g-color--white g-letter-spacing--1">You have successfully registed your team members. Kindly complete your payment if not done yet!!</h2>
+     </div>
+       <?php
+     }
+
+   ?>
+    <!-- swades members section end -->
 
         <?php include("includes/script.php");?>
         <script type="text/javascript" src="js/dashboard.js"></script>
