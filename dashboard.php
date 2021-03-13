@@ -136,7 +136,7 @@
                                           <a id="<?php echo $events[$var] ?>click" href="#paylink<?php echo $events[$var]; ?>">
                                               <span class="text-uppercase s-btn s-btn--xs s-btn--white-brd g-radius--50">Pay Here</span>
                                           </a>
-                                        <?php }elseif(in_array($events[$var], array('operation_research','renderico',), true) ){ ?>
+                                        <?php }elseif(in_array($events[$var], array('operation_research',), true) ){ ?>
                                           <a id="<?php echo $events[$var] ?>click" href="#paylink<?php echo $events[$var]; ?>">
                                               <span class="text-uppercase s-btn s-btn--xs s-btn--white-brd g-radius--50">Add members</span>
                                           </a>
@@ -299,7 +299,7 @@
     }
      ?>
 
-     <!-- adve
+     <!-- adventure payment section ends -->
 
      <!-- Wallstreet Payment Section -->
 

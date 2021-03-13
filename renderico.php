@@ -52,7 +52,7 @@
                         <div class="wow fadeInLeft" data-wow-duration=".3" data-wow-delay=".1s">
                             <h2 class="g-font-size-40--xs g-font-size-50--sm g-font-size-60--md g-color--white" style="font-weight:900">About</h2>
                         </div>
-                        <p class="g-font-size-14--xs g-font-size-16--sm g-color--white-opacity">A logo is a combination of text and visual imagery. It gives a company a recognized symbol and have powerful symbolic association connected to people’s memory. It enhances brand exposure, builds corporate identity and trust, helps in relating with the customers, makes the advertising plan much easier. <b>Render.Ico </b>is an event to test your creative skills as a logo designer.</p>
+                        <p class="g-font-size-14--xs g-font-size-16--sm g-color--white-opacity">A logo is a combination of text and visual imagery. It gives a company a recognized symbol and has powerful symbols associated with people's memory. It enhances brand exposure, builds corporate identity and trust, helps in relating with the customers, makes the advertising plan much easier.  <b>Render.Ico </b>is an event to test your creative skills as a logo designer.</p>
 
                     </div>
                     <div class="col-md-7 col-md-offset-1">
@@ -108,17 +108,20 @@
     		    	    <ol>
 
     					    <li><h6>The Logo(s) to be submitted should be in the .jpeg or .png or .psd or .ai formats only.</h6></li><br/>
-    					    <li><h6>Along with the logo, participants should also prepare a document that explains in very brief</h6>
-                    <ol>
-                      <li>The logo design.</li>
-                      <li>The stationary techniques possible to incorporate the logo.</li>
-                      <li>The basic concept and ideology behind the logo.</li>
-                    </ol></li><br/>
-                    <li>The Logo should be designed as per the brief provided.</li>
-    					</ol>
+    					    <li><h6>Along with the logo, participants should also prepare a document that explains in very brief</h6></li><br/>
+                            <li><h6>The logo must be designed based on the problem statement given and before 20th March ,2021.</h6></li><br/>
+                            <li><h6>You are supposed to make logos individually.</h6></li><br/>
+                         <li><h6>The technique used can be free: drawing, painting, computer design,etc.</h6></li><br/>
+                  <li><h6>The proposal will be accompanied by a brief explanation in English of the design and also with the main ideas  behind it represented (to be sent separately and compulsorily ) and should be attached on the same website.</h6></li><br/>
+                          <li><h6>Logos should be simple to be recognized and remembered.</h6></li><br/>
+                    <li><h6>Logo should be impactful,memorable,versatile and relevant to the problem statement provided.</h6></li><br/>
+                         <li><h6> The logo should not be offensive to any caste, creed, religion, party, person, or anything in particular.</h6></li><br/>
+                          <li><h6>Participants must not violate any terms and conditions . The decision of judges is final and binding.</h6></li><br/>
 
 
-              <h5><b>Deadline: </b> 18th February’20</h5>
+
+              <h5><b>Deadline: </b> 20th March’21</h5></br>
+              <h5><b>Results: </b> 26th March’21</h5>
 
     		    	</div>
 
@@ -136,14 +139,14 @@
             <div id="managers" class="row g-row-col--5 g-padding-x-40--xs g-padding-y-40--xs g-padding-x-20--md g-padding-x-100--lg">
                 <div class="col-xs-4 col-md-offset-2 g-full-width--xs g-margin-b-50--xs g-margin-b-0--sm">
                     <div class="g-text-center--xs">
-                        <h4 class="g-font-size-18--xs g-color--white g-margin-b-5--xs">Tanmay Ganvir</h4>
-                         <p class="g-color--white">+91 9359205282</p>
+                        <h4 class="g-font-size-18--xs g-color--white g-margin-b-5--xs">Sarupya</h4>
+                         <p class="g-color--white">+91 9390496460</p>
                     </div>
                 </div>
                 <div class="col-xs-4 g-full-width--xs g-margin-b-50--xs g-margin-b-0--sm">
                     <div class="g-text-center--xs">
-                        <h4 class="g-font-size-18--xs g-color--white g-margin-b-5--xs">Drashya Shrivastava</h4>
-                         <p class="g-color--white">+91 9179364886</p>
+                        <h4 class="g-font-size-18--xs g-color--white g-margin-b-5--xs">Saloni</h4>
+                         <p class="g-color--white">+91 9588642776</p>
                     </div>
                 </div>
             </div>
