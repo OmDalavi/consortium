@@ -1,4 +1,4 @@
-<?php header('location:event.php'); ?>
+<?php /*header('location:event.php');*/ ?>
 <!DOCTYPE html>
 <html lang="en" class="no-js">
   <?php $pagetitle = 'Swades | Consortium'; ?>
@@ -18,14 +18,14 @@
             <div class="container g-ver-center--sm g-padding-y-125--xs g-padding-y-0--lg event-landing-inner">
 
                 <div class="g-margin-t-20--xs g-margin-t-0--sm g-margin-b-20--xs g-margin-b-50--md g-margin-l-20--xs g-margin-l-60--sm">
-                    <img src="img/pnaf_logo.png" alt="" width="200"><span class="g-font-size-20--xs g-font-size-30--sm g-font-size-30--lg g-color--white" style="font-weight:600; text-shadow: 2px 0 #333;letter-spacing:2px;">presents</span>
+                    <!--<img src="img/pnaf_logo.png" alt="" width="200">--><!--<span class="g-font-size-20--xs g-font-size-30--sm g-font-size-30--lg g-color--white" style="font-weight:600; text-shadow: 2px 0 #333;letter-spacing:2px;">presents</span>-->
 
                     <h1 class="g-font-size-60--xs g-font-size-80--sm g-font-size-80--lg g-color--white" style="font-weight:900; text-shadow: 2px 0 #333;letter-spacing:2px;"><b>Swades</b></h1>
                     <h1 class="g-font-size-20--xs g-font-size-30--sm g-font-size-30--lg g-color--white" style="font-weight:900; text-shadow: 2px 0 #333;letter-spacing:2px;"><b>Inter NIT Social Entrepreneurship Challenge</b></h1>
 
                     <!-- <h3 class="g-color--red" style="    text-shadow: 2px 0 #333;">Grass Root Innovation</h3>
                     <p class="g-color--red g-font-size-18--xs" style="    text-shadow: 2px 0 #333;"><b>Beyond Imagination</b></p><br/> -->
-                    <h3 class="g-color--white"> PRIZES WORTH <br><span class="g-color--red" style="font-weight:600; ">&#8377; 1 Lac </span></h3>
+                    <h3 class="g-color--white"> PRIZES WORTH <!-- <br>--><span class="g-color--red" style="font-weight:600; ">&#8377; 5K </span></h3>
                     <br>
                     <div class="wow fadeInLeft" data-wow-duration=".3" data-wow-delay=".5s">
                         <a href="/register.php" title="Register">
@@ -75,7 +75,7 @@
     		    <div class="card-content code">
 
     		    	<div id="why">
-    			     	<h5><b>Prizes Worth &#8377; 1 Lac </b></h5><br/>
+    			     	<h5><b>Prizes Worth &#8377; 5K </b></h5><br/>
     			     	<ol>
     			     	    <li><p>Opportunity to interact with some of the renowned personalities in the field of Social Entrepreneurship. </p></li>
     			     	    <li><p>Opportunity of a first-hand experience to interact with the village environment face to face. </p></li>
@@ -96,35 +96,38 @@
     				<div id="structure" style="display:none;">
               <h5><b>How to participate</b></h5>
               <br/>
-              <p>To participate in Swades, visit our <a href="https://consortium.ecellvnit.org/">website</a> and register with your <b>email id</b>. As soon your registration process gets complete you will get confirmation along with the questionnaire for the first round on your mail-id.  This would also unlock vast repository of resources to help you throughout the competition cycle and even beyond.</p>
+              <p>To participate in Swades, visit our <a href="https://consortium.ecellvnit.org/">website</a> and register with your <b>consoID</b>. As soon your registration process gets complete you will get confirmation along with the questionnaire for the first round on your mail-id.  This would also unlock vast repository of resources to help you throughout the competition cycle and even beyond.</p>
               <br/>
               <h5><b>Structure</b></h5>
               <br/>
+                  <p>The participants need to register for the event and charges for the same are INR 100 per team. A team can have maximum of 4 members and anyone above 16 years of age can participate.</p><br/>
     		    	    <p>Competition is divided into three rounds as follows:</p><br/>
     		    	    <ol>
 
 
 
-    					    <li><h6>Round 1: Pitch Deck Preparation
-                  </h6><p><b>11<sup>th</sup> March, 2020 – 17<sup>th</sup> March, 2020 | Result - 19<sup>th</sup> March, 2020 </b><br>People from NITs other than VNIT can participate. Registration and submission are open from 1st March 2020 to 17th March 2020. The participants can download the case study from the link given below. The participants will have to recognize a problem from the case study and hence find a solution for the same. Each team will submit a pitch deck based upon their solution to the identified problem on <b>108pbsuraj@gmail.com</b>. The results for the further round will be based on the evaluation of the pitch deck submitted.<br>
+    					    <li><h6><b>Round 1: Questionnaire</b></h6>
+                    <p><!--<b>11<sup>th</sup> March, 2020 – 17<sup>th</sup> March, 2020 | Result - 19<sup>th</sup> March, 2020 </b>-->This round marks the beginning of participants journey in <b>SWADES</b>. A basic situation reaction paper that participants need to answer and submit. After submission, participants will move to the next round. This round will have a share in deciding the winners of the event at the end.<br>
                     </p></li><br/>
 
-                    <div class="wow fadeInLeft" data-wow-duration=".3" data-wow-delay=".5s">
-                        <a href="https://drive.google.com/file/d/1uniUs-7wFuvEbd4gvrb41s6eYmASJ94K/view?usp=sharing" title="Download">
+                    <!--<div class="wow fadeInLeft" data-wow-duration=".3" data-wow-delay=".5s">
+                        <a href="https://drive.google.com/file/d/1uniUs-7wFuvEbd4gvrb41s6eYmASJ94K/view?usp=sharing" title="Download">-->
                             <!--<i class="s-icon s-icon--lg s-icon--white-bg g-radius--circle ti-arrow-down"></i>-->
-                            <span class="text-uppercase s-btn--primary-bg g-radius--50 g-padding-x-30--xs g-padding-y-15--xs g-font-size-13--xs g-color--white g-padding-x-15--xs">Download Case Study</span>
+                            <!--<span class="text-uppercase s-btn--primary-bg g-radius--50 g-padding-x-30--xs g-padding-y-15--xs g-font-size-13--xs g-color--white g-padding-x-15--xs">Download Case Study</span>
                         </a>
-                    </div><br>
-    					    <li><h6>Round 2: Prototype and Pitching</h6><p><b> 27<sup>th</sup> March, 2020 – 29<sup>th</sup> March, 2020 | Result - 29<sup>th</sup> March, 2020
-                  </b><br>The selected participants will come to VNIT, Nagpur for the final round.  Each team is required to make a prototype based on the solution they have provided of the problem mentioned in the pitch deck within an amount of <b>INR 1000/-</b>.</p></li><br/>
+                    </div><br>-->
+    					    <li><h6><b>Round 2: Problem findings and report submission</b></h6><!--<p><b> 27<sup>th</sup> March, 2020 – 29<sup>th</sup> March, 2020 | Result - 29<sup>th</sup> March, 2020
+                  </b><br>--><p>The participants will have to recognize a problem from the local area and hence find a solution for the same. Each team will submit a pitch deck based upon their solution to the identified problem on <b>conso.swades21@gmail.com</b>. Each team will be assigned mentor for guidance and improvement on their work. The results for the further round will be based on the evaluation of the pitch deck submitted.</p></li><br/>
+                  <li><h6><b>Round 3: Prototype and Interview</b></h6>
+                    <p>The selected participants will have an interview online with our mentors via Zoom call. The winner will be selected on the basis of their performance in all the three rounds.</p>
 
     					</ol>
                         <br/>
-              <h5><b>Eligibility Criteria </b></h5>
+              <!--<h5><b>Eligibility Criteria </b></h5>
               <ol>
                   <li><h6>Participation in teams is encouraged.<br>However, maximum members allowed per team are 4.</h6></li>
                   <li><h6>There is no restriction as such. Anyone above 16 years of age can participate</h6></li>
-              </ol>
+              </ol>-->
               <br/>
 
     		    	</div>
@@ -141,30 +144,33 @@
         <!--<img class="s-mockup-v2" src="img/mockups/pencil-01.png" alt="Mockup Image">-->
             <!--<div class="g-container--md g-padding-y-40--xs">-->
             <div id="managers" class="row g-row-col--5 g-padding-x-40--xs g-padding-y-40--xs g-padding-x-20--md g-padding-x-100--lg">
-                <div class="col-xs-3 g-full-width--xs g-margin-b-50--xs g-margin-b-0--sm">
+                <div class="col-xs-6 g-full-width--xs g-margin-b-50--xs g-margin-b-0--sm">
                     <div class="g-text-center--xs">
-                        <h4 class="g-font-size-18--xs g-color--white g-margin-b-5--xs">B. Saketh</h4>
-                         <p class="g-color--white">+91 8501899949</p>
+                        <h4 class="g-font-size-18--xs g-color--white g-margin-b-5--xs">Ambika Thakur</h4>
+                        <p class="g-color--white">+91 7020803383<br/>ambika.tha@gmail.com</p>
+
                     </div>
                 </div>
-                <div class="col-xs-3 g-full-width--xs g-margin-b-50--xs g-margin-b-0--sm">
+                <div class="col-xs-6 g-full-width--xs g-margin-b-50--xs g-margin-b-0--sm">
                     <div class="g-text-center--xs">
-                        <h4 class="g-font-size-18--xs g-color--white g-margin-b-5--xs">Sakshi Anorkar</h4>
-                         <p class="g-color--white">+91 9637962363</p>
+                        <h4 class="g-font-size-18--xs g-color--white g-margin-b-5--xs">Anjali Rengade</h4>
+                         <p class="g-color--white">+91 8669563962<br/>anjalirengade23@gmail.com</p>
                     </div>
                 </div>
-                <div class="col-xs-3 g-full-width--xs g-margin-b-50--xs g-margin-b-0--sm">
+                <div class="col-xs-6 g-full-width--xs g-margin-b-50--xs g-margin-b-0--sm">
 
                     <div class="g-text-center--xs">
-                        <h4 class="g-font-size-18--xs g-color--white g-margin-b-5--xs">Suraj Kumar</h4>
-                         <p class="g-color--white">+91 8860548206</p>
+                        <h4 class="g-font-size-18--xs g-color--white g-margin-b-5--xs">Anshuman Singh</h4>
+                         <p class="g-color--white">+91 9415049666<br/>anshumansingh2711@gmail.com</p>
+
                     </div>
                 </div>
-                <div class="col-xs-3 g-full-width--xs g-margin-b-50--xs g-margin-b-0--sm">
+                <div class="col-xs-6 g-full-width--xs g-margin-b-50--xs g-margin-b-0--sm">
 
                     <div class="g-text-center--xs">
-                        <h4 class="g-font-size-18--xs g-color--white g-margin-b-5--xs">Kanishka Meena</h4>
-                         <p class="g-color--white">+91 9325714868</p>
+                        <h4 class="g-font-size-18--xs g-color--white g-margin-b-5--xs">Shubham Kulkarni</h4>
+                         <p class="g-color--white">+91 7058580138<br/>shubhamkulkarni1629@gmail.com</p>
+
                     </div>
                 </div>
 
