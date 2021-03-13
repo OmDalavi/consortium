@@ -343,7 +343,7 @@ if (isset($_SESSION['auth']) && $_SESSION['auth'] == true) {
 
         <tr>
             <td><?php echo $row['id'];?></td>
-            <td><?php echo $row['name'];?></td>
+            <td><?php echo $row['Name'];?></td>
             <td><?php echo $row['contact'];?></td>
             <td><?php echo $row['email'];?></td>
             <td><?php echo $row['college'];?></td>
