@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" class="no-js">
-  <?php $pagetitle = 'Render.ico | Consortium'; ?>
+  <?php $pagetitle = 'Render.ico | Consortium\'21'; ?>
 
   <!-- Begin Head -->
   <?php include("includes/head.php")?>
@@ -24,7 +24,7 @@
                     <h3 class="g-color--white">The Logo Design Competition</h3>
                     <p class="g-color--white">Creative Professionals</p><br/>
 
-                    <h3 class="g-color--white"> PRIZES WORTH <span class="g-color--red">&#8377; 10K </span></h3>
+                    <h3 class="g-color--white"> Assured Internship <br/><span class="g-color--red"><!--&#8377;--> College Time </span></h3>
 
                     <br>
 
@@ -78,7 +78,7 @@
 
     		    	<div id="why">
                 <br>
-    			     	<h5><b>Prizes Worth &#8377; 10K </b></h5><br/>
+    			     	<h5><b>Assured Internship:<span class="g-color--red"><!--&#8377;--> College Time </span>(Intern Partner)</b></h5><br/>
     			     	<ol>
     			     	    <li><p>Attractive prizes for top three positions and certificates for all participants.</p></li>
     			     	    <li><p>Design logos of renowned companies and experience the hidden potential within you.</p></li>
@@ -98,28 +98,28 @@
               <p>Register on our <a href="/register.php">website</a> with the name of your <b>consoID</b>. As soon as your registration process gets complete you will get confirmation along with the problem statements on your mail id..</p>
               <br/>
 
-              <h5><a href="https://drive.google.com/file/d/1VJOiV3m7ByKfcS3pEs4Pf7hJFgyAlzDC/view?usp=sharing" target="_blank" class="g-color--primary">View Problem Statement</a></h5>
+              <!--<h5><a href="https://drive.google.com/file/d/1VJOiV3m7ByKfcS3pEs4Pf7hJFgyAlzDC/view?usp=sharing" target="_blank" class="g-color--primary">View Problem Statement</a></h5>-->
               <br>
               <h5><b>Rules to follow</b></h5>
               <br/>
     		    	    <!-- <p>Competition is divided into three rounds as follows:</p><br/> -->
     		    	    <ol>
 
-    					    <li><h6>The Logo(s) to be submitted should be in the .jpeg or .png or .psd or .ai formats only.</h6></li><br/>
-    					    <li><h6>Along with the logo, participants should also prepare a document that explains in very brief</h6></li><br/>
-                            <li><h6>The logo must be designed based on the problem statement given and before 20th March ,2021.</h6></li><br/>
-                            <li><h6>You are supposed to make logos individually.</h6></li><br/>
-                         <li><h6>The technique used can be free: drawing, painting, computer design,etc.</h6></li><br/>
-                  <li><h6>The proposal will be accompanied by a brief explanation in English of the design and also with the main ideas  behind it represented (to be sent separately and compulsorily ) and should be attached on the same website.</h6></li><br/>
-                          <li><h6>Logos should be simple to be recognized and remembered.</h6></li><br/>
-                    <li><h6>Logo should be impactful,memorable,versatile and relevant to the problem statement provided.</h6></li><br/>
-                         <li><h6> The logo should not be offensive to any caste, creed, religion, party, person, or anything in particular.</h6></li><br/>
-                          <li><h6>Participants must not violate any terms and conditions . The decision of judges is final and binding.</h6></li><br/>
+    					    <li><p>The Logo(s) to be submitted should be in the .jpeg or .png or .psd or .ai formats only.</p></li>
+    					    <li><p>Along with the logo, participants should also prepare a document that explains in very brief</p></li>
+                            <li><p>The logo must be designed based on the problem statement given and before 20th March ,2021.</p></li>
+                            <li><p>You are supposed to make logos individually.</p></li>
+                         <li><p>The technique used can be free: drawing, painting, computer design,etc.</p></li>
+                  <li><p>The proposal will be accompanied by a brief explanation in English of the design and also with the main ideas  behind it represented (to be sent separately and compulsorily ) and should be attached on the same website.</p></li>
+                          <li><p>Logos should be simple to be recognized and remembered.</p></li>
+                    <li><p>Logo should be impactful,memorable,versatile and relevant to the problem statement provided.</p></li>
+                         <li><p> The logo should not be offensive to any caste, creed, religion, party, person, or anything in particular.</p></li>
+                          <li><p>Participants must not violate any terms and conditions . The decision of judges is final and binding.</p></li><br/>
 
 
 
-              <h5><b>Deadline: </b> 20th March’21</h5></br>
-              <h5><b>Results: </b> 26th March’21</h5>
+              <h6><b>Deadline: </b> 20th March’21</h6>
+              <h6><b>Results: </b> 26th March’21</h6>
 
     		    	</div>
 
