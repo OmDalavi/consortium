@@ -1,4 +1,4 @@
-<?php header('location:event.php'); ?>
+<?php //header('location:event.php'); ?>
 <!DOCTYPE html>
 <html lang="en" class="no-js">
   <?php $pagetitle = 'Operation Research| Consortium'; ?>
