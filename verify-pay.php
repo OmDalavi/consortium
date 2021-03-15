@@ -53,6 +53,8 @@ if ($success === true)
 
     if($v == 'wallstreet'){
       $sql3 = "UPDATE $v SET tier = '$tier', order_id = '$razorpay_order_id', razor_payment_id= '$razorpay_payment_id',payment_status = '1' WHERE email = '$actual_cust_email'";
+
+
     }else{
       $sql3 = "UPDATE $v SET order_id = '$razorpay_order_id', razor_payment_id= '$razorpay_payment_id',payment_status = '1' WHERE email = '$actual_cust_email'";
     }

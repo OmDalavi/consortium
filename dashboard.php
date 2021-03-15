@@ -65,7 +65,7 @@
                 <div class="row product-grid">
 
                   <?php
-                    $events = array('swades','adventure','operation_research','renderico','ceo','war_of_worlds','pitch_mantra','bizquiz','wallstreet');
+                    $events = array('swades','adventure','operation_research','render_ico','ceo','war_of_worlds','pitch_mantra','bizquiz','wallstreet');
                     $query = "SELECT * FROM registrations WHERE email='$email'";
                     $result = mysqli_query($con,$query);
                     $num = mysqli_num_rows($result);
@@ -92,7 +92,7 @@
 
                               <div class="wow fadeInLeft g-text-center--xs" data-wow-duration=".3" data-wow-delay=".5s" style="display: flex;justify-content: center;">
                               <?php
-                                      if(in_array($events[$var], array('adventure','swades'), true) ){
+                                      if(in_array($events[$var], array('adventure','swades','operation_research'), true) ){
                                         ?>
                                         <?php
                                         $query = "SELECT * FROM $events[$var] WHERE team_conso_id='$conso_id'";
@@ -114,7 +114,7 @@
                                           </a>
                                         </div>
                                       <?php } ?>
-                                      <?php }elseif(in_array($events[$var], array('operation_research','renderico','bizquiz','ceo','wallstreet','war_of_worlds'), true) ){ ?>
+                                      <?php }elseif(in_array($events[$var], array('render_ico','bizquiz','ceo','wallstreet','war_of_worlds'), true) ){ ?>
                                         <a id="reg_button" href="<?php echo $events[$var].'.php'; ?>" target="_blank">
                                         <span class="text-uppercase s-btn s-btn--xs s-btn--white-brd g-radius--50 g-margin-r-10--xs"> View event </span>
                                         </a>
@@ -445,6 +445,62 @@
 
    <!-- swades Payment section ends -->
 
+
+   <!-- operation research payment section-->
+   <?php
+      $query = "SELECT * FROM operation_research WHERE email='$email'";
+      $result = mysqli_query($con,$query);
+      $num = mysqli_num_rows($result);
+      if($num>0){
+        $data = mysqli_fetch_array($result);
+        if($data['payment_status']==0){
+     ?>
+    <div class="container g-padding-x-40--sm g-padding-x-20--xs g-padding-y-20--xs g-padding-y-50--sm" id="paylinkoperation_research" style="display:none; background: #000">
+
+      <a class="g-color--white g-font-size-20--xs" onclick="closemodel('paylinkoperation_research');" style="position:absolute; left:90%; cursor:pointer" >X</a>
+      <h2 class="g-font-size-30--xs g-text-center--xs g-margin-t-70--xs g-color--white g-letter-spacing--1">Payment for Operation Research Registration</h2>
+
+    <form class="center-block g-width-600--sm" method="post" action="pay.php?v=operation_reseach">
+        <div class="permanent permanent-CEO row">
+          <p class="g-color--white g-text-center--xs g-font-size-14--xs">Fill this form to pay &#8377;50 and complete your registration.</p>
+            <div class="col-sm-6 g-margin-b-30--xs">
+                  <input type="text" class="form-control s-form-v3__input" placeholder="* Name" name="CUSTOMER_NAME" style="text-transform: none" value="<?php echo $name ?>">
+            </div>
+            <div class="col-sm-6 g-margin-b-30--xs">
+                  <input type="email" class="form-control s-form-v3__input" placeholder="* Email" name="CUSTOMER_EMAIL" style="text-transform: none" value="<?php echo $email ?>">
+            </div>
+            <div class="col-sm-6 g-margin-b-30--xs">
+                  <input type="contact" class="form-control s-form-v3__input" placeholder="* Contact" name="CUSTOMER_MOBILE" style="text-transform: none" value="<?php echo $contact ?>">
+            </div>
+
+        </div>
+        <div class="g-text-center--xs">
+            <button type="submit" name="pay" class="text-uppercase s-btn s-btn--md s-btn--white-brd g-radius--50 g-padding-x-70--xs g-margin-b-20--xs">Proceed to Pay</button>
+        </div>
+    </form>
+  </div>
+  <?php
+}else {
+  ?>  <div class="swades container g-padding-x-40--sm g-padding-x-20--xs g-padding-y-20--xs g-padding-y-50--sm" id="paylinkoperation_research" style="display:none; background: #000">
+
+      <a class="g-color--white g-font-size-20--xs" onclick="closemodel('paylinkoperation_research');" style="position:absolute; left:90%; cursor:pointer;" >X</a>
+      <h2 class="g-font-size-30--xs g-text-center--xs g-margin-t-70--xs g-color--white g-letter-spacing--1">You have successfully registed for Operation Research! All further details shall be communicated to you through your registered email id.</h2>
+    </div>
+      <?php
+    }
+  }
+   ?>
+
+
+
+
+
+
+
+
+
+   <!-- operation resources payment section ends -->
+
   <!-- Adventure Team Members details --->
 
   <div class="swades container g-padding-x-40--sm g-padding-x-20--xs g-padding-y-20--xs g-padding-y-50--sm" id="detailsadventure" style="display:none; background: #000">
@@ -487,6 +543,27 @@
   </div>
 
   <!-- swades Team Members details end --->
+
+  <!-- operation research Team members details--->
+  <div class="swades container g-padding-x-40--sm g-padding-x-20--xs g-padding-y-20--xs g-padding-y-50--sm" id="detailsoperation_research" style="display:none; background: #000">
+      <a class="g-color--white g-font-size-20--xs" onclick="closemodel('detailsoperation_research');" style="position:absolute; left:90%; cursor:pointer;" >X</a>
+      <h2 class="g-font-size-30--xs g-text-center--xs g-margin-t-70--xs g-color--white g-letter-spacing--1">Your Team</h2>
+      <p class='g-color--white g-font-size-16--xs'>
+      <?php
+      $query = "SELECT * FROM operation_research WHERE team_conso_id='$conso_id'";
+      $result = mysqli_query($con,$query);
+      $num = mysqli_num_rows($result);
+      if ($num>0) {
+        while ($data = mysqli_fetch_assoc($result)) {
+        ?>
+        <?php echo  $data['name'], ': ', $data['email'], ', ';?><br><?php
+        }
+      }
+      ?>
+    </p>
+  </div>
+
+ <!-- operation research Team members details end --->
 
   <!-- Adventure Team Members registration --->
 
@@ -774,6 +851,136 @@
 
    ?>
     <!-- swades members section end -->
+
+
+    <!-- operation research members section-->
+    <?php
+    $query = "SELECT * FROM operation_research WHERE email='$email'";
+    $result = mysqli_query($con,$query);
+    $num = mysqli_num_rows($result);
+    if($num>0){
+      $data = mysqli_fetch_array($result);
+      if($data['team_conso_id']==''){
+    ?>
+    <div class="container g-padding-x-40--sm g-padding-x-20--xs g-padding-y-20--xs g-padding-y-50--sm" id="membersadventure" style="display:none; background: #000">
+
+      <a class="g-color--white g-font-size-20--xs" onclick="closemodel('membersoperation_research');" style="position:absolute; left:90%; cursor:pointer" >X</a>
+      <h2 class="g-font-size-30--xs g-text-center--xs g-margin-t-70--xs g-color--white g-letter-spacing--1">Add Team members for Operation Research</h2>
+      <p class="g-color--white g-text-center--xs g-font-size-14--xs">At least fill the details of one member to complete team registration. <br><b> If you are an individual partcipant, you may ignore this form.</b></p>
+      <form class="center-block g-width-500--sm g-text-center--xs g-width-600--md" method="post" action="" onsubmit="return validateData();">
+
+          <div class="permanent">
+              <div class="g-margin-b-30--xs">
+                    <input type="text" class="form-control s-form-v3__input" placeholder="*Second Team Member Name" name="op2_name" style="text-transform: none" id="name">
+              </div>
+              <div class="row g-margin-b-50--xs">
+                  <div class="col-sm-6 g-margin-b-30--xs g-margin-b-0--md">
+                      <input type="email" class="form-control s-form-v3__input" placeholder="*Second Team Member Email" name="op2_email" style="text-transform: none" id="email">
+                  </div>
+                  <div class="col-sm-6 g-margin-b-30--xs g-margin-b-0--md">
+                      <input type="tel" class="form-control s-form-v3__input" placeholder="*Second Team Member Contact" name="op2_contact" style="text-transform: none">
+                  </div>
+              </div>
+
+          </div>
+          <div class="permanent">
+              <div class="g-margin-b-30--xs">
+                    <input type="text" class="form-control s-form-v3__input" placeholder="*Third Team Member Name" name="op3_name" style="text-transform: none" id="name">
+              </div>
+              <div class="row g-margin-b-50--xs">
+                  <div class="col-sm-6 g-margin-b-30--xs g-margin-b-0--md">
+                      <input type="email" class="form-control s-form-v3__input" placeholder="*Third Team Member Email" name="op3_email" style="text-transform: none" id="email">
+                  </div>
+                  <div class="col-sm-6 g-margin-b-30--xs g-margin-b-0--md">
+                      <input type="tel" class="form-control s-form-v3__input" placeholder="*Third Team Member Contact" name="op3_contact" style="text-transform: none">
+                  </div>
+              </div>
+
+          </div>
+          
+          <div class="g-text-center--xs">
+              <button type="submit" name="addteam_op" class="text-uppercase s-btn s-btn--md s-btn--white-brd g-radius--50 g-padding-x-70--xs g-margin-b-20--xs">Submit</button>
+          </div>
+
+      </form>
+  </div>
+
+  <?php
+
+  }
+  if(isset($_POST['addteam_op'])) {
+    $op_email = $op_name = $op_contact = array();
+    $count_mem = 0;
+    $op_email[0] = $con->real_escape_string($_POST['op2_email']);
+    $op_name[0] = $con->real_escape_string($_POST['op2_name']);
+    $op_contact[0] = $con->real_escape_string($_POST['op2_contact']);
+    $op_email[1] = $con->real_escape_string($_POST['op3_email']);
+    $op_name[1] = $con->real_escape_string($_POST['op3_name']);
+    $op_contact[1] = $con->real_escape_string($_POST['op3_contact']);
+    // $op_email[2] = $con->real_escape_string($_POST['ad4_email']);
+    // $op_name[2] = $con->real_escape_string($_POST['ad4_name']);
+    // $op_contact[2] = $con->real_escape_string($_POST['ad4_contact']);
+
+    $team_conso_id = $conso_id;
+    $query  = "UPDATE operation_research SET team_conso_id='$team_conso_id' WHERE email='$email'";
+    $result = mysqli_query($con,$query);
+    $q = '';
+    $q2 = '';
+    for($i=0; $i<2; $i++){
+      if($ad_name[$i]!='' || $ad_email[$i]!='' || $ad_contact[$i]!='')
+      {
+        $q  = "INSERT INTO operation_research(email,name,contact,team_conso_id) VALUES('$ad_email[$i]','$ad_name[$i]','$ad_contact[$i]','$team_conso_id')";
+        $r = mysqli_query($con,$q);
+        $q2 = "INSERT INTO registrations(email,name,contact,operation_research) VALUES('$ad_email[$i]','$ad_name[$i]','$ad_contact[$i]',1)";
+        $r2 = mysqli_query($con,$q2);
+        $count_mem = $count_mem +1;
+      }
+    }
+
+  if($count_mem >= 1){
+    if ($result){
+    if ($r && $r2) {
+      ?>
+      <div class="swades container g-padding-x-40--sm g-padding-x-20--xs g-padding-y-20--xs g-padding-y-50--sm" id="membersadventure" style="display:none; background: #000">
+
+          <a class="g-color--white g-font-size-20--xs" onclick="closemodel('membersoperation_research');" style="position:absolute; left:90%; cursor:pointer;" >X</a>
+          <h2 class="g-font-size-30--xs g-text-center--xs g-margin-t-70--xs g-color--white g-letter-spacing--1">You have successfully registed your team members. Kindly complete your payment if not done yet!</h2>
+        </div>
+        <?php
+      //header('location:dashboard.php');
+    } else {
+      ?>
+      <div class="swades container g-padding-x-40--sm g-padding-x-20--xs g-padding-y-20--xs g-padding-y-50--sm" id="membersadventure" style="display:none; background: #000">
+
+          <a class="g-color--white g-font-size-20--xs" onclick="closemodel('membersoperation_research');" style="position:absolute; left:90%; cursor:pointer;" >X</a>
+          <h2 class="g-font-size-30--xs g-text-center--xs g-margin-t-70--xs g-color--white g-letter-spacing--1">Error Connecting. Try Again!</h2>
+        </div>
+    <?php
+  }
+}
+}
+  else{
+    ?>
+    <div class="swades container g-padding-x-40--sm g-padding-x-20--xs g-padding-y-20--xs g-padding-y-50--sm" id="membersadventure" style="display:none; background: #000">
+
+        <a class="g-color--white g-font-size-20--xs" onclick="closemodel('membersoperation_research');" style="position:absolute; left:90%; cursor:pointer;" >X</a>
+        <h2 class="g-font-size-30--xs g-text-center--xs g-margin-t-70--xs g-color--white g-letter-spacing--1">No members added!</h2>
+      </div>
+      <?php
+  }
+  }
+}
+  else {
+  ?> <div class="swades container g-padding-x-40--sm g-padding-x-20--xs g-padding-y-20--xs g-padding-y-50--sm" id="membersadventure" style="display:none; background: #000">
+
+      <a class="g-color--white g-font-size-20--xs" onclick="closemodel('membersoperation_research');" style="position:absolute; left:90%; cursor:pointer;" >X</a>
+      <h2 class="g-font-size-30--xs g-text-center--xs g-margin-t-70--xs g-color--white g-letter-spacing--1">You have successfully registed your team members. Kindly complete your payment if not done yet!!</h2>
+    </div>
+      <?php
+    }
+
+  ?>
+   <!-- operation research members section end -->
 
         <?php include("includes/script.php");?>
         <script type="text/javascript" src="js/dashboard.js"></script>
