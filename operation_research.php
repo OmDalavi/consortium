@@ -87,17 +87,6 @@
     			     	<br/>
 
     				</div>
-
-                    <div id="timeline">
-    			     	<ol>
-    			     	    <li><p>Launch – 15th March  </p></li>
-    			     	    <li><p>Registration closes on 23rd March</p></li>
-                             <li><p>Questionnaire will be released on 20th March</p></li>
-                             <li><p>Last date to submit the solution 25th March</p></li>
-                             <li><p>Result – 28th March </p></li>   			
-    			     	</ol>
-    			     	<br/>
-    				</div>
     				<div id="structure" style="display:none;">
               <h5><b>How to participate</b></h5>
               <br/>
