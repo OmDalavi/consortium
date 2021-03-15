@@ -69,8 +69,6 @@
     		    <div class="card-tabs">
     		      <ul class="tabs tabs-fixed-width">
     		        <li class="tab"><a class="active" href="#why" id="but_why">WHY PARTICIPATE?</a></li>
-                    <li class="tab"><a  href="#info" id="but_info_from_parti">INFO FROM PARTICIPANTS</a></li>
-    		        <li class="tab"><a  href="#timeline" id="but_timeline">TIMELINE OF THE EVENT</a></li>
                     <li class="tab"><a  href="#structure" id="but_structure">STRUCTURE</a></li>
     		      </ul>
     		    </div>
@@ -89,21 +87,6 @@
     			     	<br/>
 
     				</div>
-                    <div id="info">
-    			     	<ol>
-    			     	    <li><p>Team Name (or name of the leader) </p></li>
-    			     	    <li><p>Each participant’s- </p></li>
-                             <ul>
-                             <li><p>Name </p></li>
-                             <li><p>Institute name</p></li>
-                             <li><p>Year of studying </p></li>
-                             <li><p>Institute roll number </p></li>
-                             <li><p>Email id </p></li> 
-                             <li><p>Phone number</p></li> 
-                             </ul>     			
-    			     	</ol>
-    			     	<br/>
-    				</div>
 
                     <div id="timeline">
     			     	<ol>
@@ -120,10 +103,16 @@
               <br/>
               <p>To participate in Operation Research, visit our <a href="https://consortium.ecellvnit.org/">website</a> and register with your <b>conso ID</b>. You can also directly register on D2C. </br>You will get a confirmation mail as soon as you complete the registration process.</br>The questionnaire will be released on 19th March on D2C.</br>The solution is to be submitted by 25th March on D2C platform only.</p>
               <br/>
-              <h5><b>Structure</b></h5>
+              <h5><b>TimeLine</b></h5>
               <br/>
-    		    	    <p>Consists one single Questionnaire round on D2C.</p><br/>
-                        <br/>
+                        <ol>
+    			     	    <li><p>Launch – 15th March  </p></li>
+    			     	    <li><p>Registration closes on 23rd March</p></li>
+                             <li><p>Questionnaire will be released on 20th March</p></li>
+                             <li><p>Last date to submit the solution 25th March</p></li>
+                             <li><p>Result – 28th March </p></li>   			
+    			     	</ol>
+    			     	<br/>
               <h5><b>Eligibility Criteria </b></h5>
               <p> o	The event is open to full-time students from all disciplines of any under-graduation, degree, or post-graduation courses, across India.<br/>
               <br/>
@@ -152,7 +141,7 @@
                 <div class="col-xs-3 g-full-width--xs g-margin-b-50--xs g-margin-b-0--sm">
                     <div class="g-text-center--xs">
                         <h4 class="g-font-size-18--xs g-color--white g-margin-b-5--xs">Vipashvi Agnihotri </h4>
-                         <p class="g-color--white">: +91 8459981785</p>
+                         <p class="g-color--white">+91 8459981785</p>
                     </div>
                 </div>
 
