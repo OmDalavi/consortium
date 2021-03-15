@@ -65,7 +65,7 @@
                 <div class="row product-grid">
 
                   <?php
-                    $events = array('swades','adventure','operation_research','renderico','ceo','war_of_worlds','pitch_mantra','bizquiz','wallstreet');
+                    $events = array('swades','adventure','operation_research','render_ico','ceo','war_of_worlds','pitch_mantra','bizquiz','wallstreet');
                     $query = "SELECT * FROM registrations WHERE email='$email'";
                     $result = mysqli_query($con,$query);
                     $num = mysqli_num_rows($result);
@@ -114,7 +114,7 @@
                                           </a>
                                         </div>
                                       <?php } ?>
-                                      <?php }elseif(in_array($events[$var], array('operation_research','renderico','bizquiz','ceo','wallstreet','war_of_worlds'), true) ){ ?>
+                                      <?php }elseif(in_array($events[$var], array('operation_research','render_ico','bizquiz','ceo','wallstreet','war_of_worlds'), true) ){ ?>
                                         <a id="reg_button" href="<?php echo $events[$var].'.php'; ?>" target="_blank">
                                         <span class="text-uppercase s-btn s-btn--xs s-btn--white-brd g-radius--50 g-margin-r-10--xs"> View event </span>
                                         </a>
