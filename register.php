@@ -134,11 +134,8 @@
                       <option value='bizquiz'>BizQuiz</option>
                       <option value='renderico'>Render.ico</option>
                       <option value='swades'>Swades</option>
-
-                      <!--
-
                       <option value='operation_research'>Operation Research</option>
-                      <option value='pitch_mantra'>Pitchmantra</option> -->
+                      <!---<option value='pitch_mantra'>Pitchmantra</option> -->
                       <!-- <option value='BizMantra'>BizMantra</option> -->
 
 
