@@ -55,8 +55,6 @@ if ($success === true)
       $sql3 = "UPDATE $v SET tier = '$tier', order_id = '$razorpay_order_id', razor_payment_id= '$razorpay_payment_id',payment_status = '1' WHERE email = '$actual_cust_email'";
 
 
-    }else if($v == 'operation_table'){
-      $sql3 = "UPDATE 'operation_table' SET order_id = '$razorpay_order_id', razor_payment_id= '$razorpay_payment_id',payment_status = '1' WHERE email = '$actual_cust_email'";
     }else{
       $sql3 = "UPDATE $v SET order_id = '$razorpay_order_id', razor_payment_id= '$razorpay_payment_id',payment_status = '1' WHERE email = '$actual_cust_email'";
     }

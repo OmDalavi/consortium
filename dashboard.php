@@ -65,7 +65,7 @@
                 <div class="row product-grid">
 
                   <?php
-                    $events = array('swades','adventure','operational_research','render_ico','ceo','war_of_worlds','pitch_mantra','bizquiz','wallstreet');
+                    $events = array('swades','adventure','operation_research','render_ico','ceo','war_of_worlds','pitch_mantra','bizquiz','wallstreet');
                     $query = "SELECT * FROM registrations WHERE email='$email'";
                     $result = mysqli_query($con,$query);
                     $num = mysqli_num_rows($result);
@@ -92,7 +92,7 @@
 
                               <div class="wow fadeInLeft g-text-center--xs" data-wow-duration=".3" data-wow-delay=".5s" style="display: flex;justify-content: center;">
                               <?php
-                                      if(in_array($events[$var], array('adventure','swades','operational_research'), true) ){
+                                      if(in_array($events[$var], array('adventure','swades','operation_research'), true) ){
                                         ?>
                                         <?php
                                         $query = "SELECT * FROM $events[$var] WHERE team_conso_id='$conso_id'";
@@ -136,7 +136,7 @@
                                           <a id="<?php echo $events[$var] ?>click" href="#paylink<?php echo $events[$var]; ?>">
                                               <span class="text-uppercase s-btn s-btn--xs s-btn--white-brd g-radius--50">Pay Here</span>
                                           </a>
-                                        <?php }elseif(in_array($events[$var], array('operational_research',), true) ){ ?>
+                                        <?php }elseif(in_array($events[$var], array('operation_research',), true) ){ ?>
                                           <a id="<?php echo $events[$var] ?>click" href="#paylink<?php echo $events[$var]; ?>">
                                               <span class="text-uppercase s-btn s-btn--xs s-btn--white-brd g-radius--50">Rules</span>
                                           </a>
@@ -448,7 +448,7 @@
 
    <!-- operation research payment section-->
    <?php
-      $query = "SELECT * FROM operation_table WHERE email='$email'";
+      $query = "SELECT * FROM operation_research WHERE email='$email'";
       $result = mysqli_query($con,$query);
       $num = mysqli_num_rows($result);
       if($num>0){
@@ -460,7 +460,7 @@
       <a class="g-color--white g-font-size-20--xs" onclick="closemodel('paylinkoperation_research');" style="position:absolute; left:90%; cursor:pointer" >X</a>
       <h2 class="g-font-size-30--xs g-text-center--xs g-margin-t-70--xs g-color--white g-letter-spacing--1">Payment for Operation Research Registration</h2>
 
-    <form class="center-block g-width-600--sm" method="post" action="pay.php?v=operation_table">
+    <form class="center-block g-width-600--sm" method="post" action="pay.php?v=operation_reseach">
         <div class="permanent permanent-CEO row">
           <p class="g-color--white g-text-center--xs g-font-size-14--xs">Fill this form to pay &#8377;50 and complete your registration.</p>
             <div class="col-sm-6 g-margin-b-30--xs">
@@ -855,7 +855,7 @@
 
     <!-- operation research members section-->
     <?php
-    $query = "SELECT * FROM operation_table WHERE email='$email'";
+    $query = "SELECT * FROM operation_research WHERE email='$email'";
     $result = mysqli_query($con,$query);
     $num = mysqli_num_rows($result);
     if($num>0){
@@ -922,7 +922,7 @@
     // $op_contact[2] = $con->real_escape_string($_POST['ad4_contact']);
 
     $team_conso_id = $conso_id;
-    $query  = "UPDATE operation_table SET team_conso_id='$team_conso_id' WHERE email='$email'";
+    $query  = "UPDATE operation_research SET team_conso_id='$team_conso_id' WHERE email='$email'";
     $result = mysqli_query($con,$query);
     $q = '';
     $q2 = '';
