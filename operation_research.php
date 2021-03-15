@@ -114,7 +114,7 @@
     			     	</ol>
     			     	<br/>
               <h5><b>Eligibility Criteria </b></h5>
-              <p> o	The event is open to full-time students from all disciplines of any under-graduation, degree, or post-graduation courses, across India.<br/>
+              <p> The event is open to full-time students from all disciplines of any under-graduation, degree, or post-graduation courses, across India.<br/>
               <br/>
               <h5><b>Participation fee : INR 50 </b></h5><br/><br/>
 
