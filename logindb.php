@@ -99,10 +99,11 @@ else if(isset($_POST['login'])){
                                         <option value='adventure'>AdVenture</option>
                                         <option value='war_of_worlds'>War of Worlds</option>
                                         <option value='bizquiz'>BizQuiz</option>
-                                        <option value="pitch_perfect">Pitch Perfect</option>
-                                        <!-- <option value="Pitch_Perfect">Pitch Perfect</option>
-                                        <option value="renderico_team">Render Ico</option>
-                                        <option value="BizQuiz_team">Bizquiz</option>
+                                        <option value='render_ico'>Render.ico</option>
+                                        <option value='swades'>Swades</option>
+                                        <option value='operation_research'>Operation Research</option>
+                                        <option value='pitch_mantra'>Pitchmantra</option>
+                                        <!---<option value="BizQuiz_team">Bizquiz</option>
                                         <option value="Azure">Azure</option>
                                         <option value="Brainathon">Brainathon</option>
                                         <option value="Townhall">Townhall</option>
