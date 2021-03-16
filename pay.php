@@ -32,7 +32,7 @@ if(in_array($v, array('ceo','swades'), true) ){
       'currency'        => 'INR',
       'payment_capture' => 1 // auto capture
   ];
-}elseif(in_array($v, array('war_of_worlds','bizquiz','adventure','operation_research'), true) ){
+}elseif(in_array($v, array('war_of_worlds','bizquiz','adventure','operation_research','pitch_mantra'), true) ){
   $orderData = [
       'receipt'         => 3456,
       'amount'          => 50 * 100, // rupees to paise

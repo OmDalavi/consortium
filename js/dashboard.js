@@ -112,7 +112,7 @@ $("#bizquizclick").click(function(){
 
 
 
-// war of worlds 
+// war of worlds
 
 $("#war_of_worldsclick").click(function(){
   $("#paylinkwar_of_worlds").css({"display":"block"});
@@ -125,12 +125,12 @@ $("#war_of_worldsclick").click(function(){
 
 // Operation research
 
-$("#operation_researchclick").click(function(){
-  $("#operation_research").css({"display":"block"});
-  $("#operation_research").animate({opacity: 1}, 1000);
-  var y = $("#operation_research").offset().top;
-    $("html ,body").animate({ scrollTop: y},200);
-});
+      $("#operation_researchclick").click(function(){
+        $("#operation_research").css({"display":"block"});
+        $("#operation_research").animate({opacity: 1}, 1000);
+        var y = $("#operation_research").offset().top;
+          $("html ,body").animate({ scrollTop: y},200);
+      });
 
 $("#operation_researchclick").click(function(){
   $("#paylinkoperation_research").css({"display":"block"});
@@ -157,12 +157,8 @@ $("#adteam_clickoperation_research").click(function(){
 
 // pitch mantra
 $("#pitch_mantraclick").click(function(){
-  $("#pitch_mantra").css({"display":"block"});
-  $("#pitch_mantra").animate({opacity: 1}, 1000);
-  var y = $("#pitch_mantra").offset().top;
+  $("#paylinkpitch_mantra").css({"display":"block"});
+  $("#paylinkpitch_mantra").animate({opacity: 1}, 1000);
+  var y = $("#paylinkpitch_mantra").offset().top;
     $("html ,body").animate({ scrollTop: y},200);
 });
-
-
-
-
