@@ -130,6 +130,11 @@
                       <li><p>Traders with the highest percentage gain win.</p></li>
     					    </ol>
                         <br/>
+                  <div class="wow fadeInLeft" data-wow-duration=".3" data-wow-delay=".5s">
+                      <a href="https://drive.google.com/file/d/1ADVA5h8Nnw8rNODFWJTbNRsHVtutMF_b/view?usp=sharing" target="_blank">
+                          <span class="text-uppercase s-btn--primary-bg g-radius--50 g-padding-x-30--xs g-padding-y-15--xs g-font-size-13--xs g-color--white g-padding-x-15--xs">Download Event Brochure<span class="ti-angle-down"></span></span>
+                      </a>
+                  </div>
 
     		    	</div>
 
