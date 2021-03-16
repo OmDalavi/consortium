@@ -25,7 +25,7 @@
 
                     <!-- <h3 class="g-color--red" style="    text-shadow: 2px 0 #333;">Grass Root Innovation</h3>
                     <p class="g-color--red g-font-size-18--xs" style="    text-shadow: 2px 0 #333;"><b>Beyond Imagination</b></p><br/> -->
-                    <h3 class="g-color--white"> PRIZES WORTH <br><span class="g-color--red" style="font-weight:600; ">&#8377; 3 K </span></h3>
+                    <h3 class="g-color--white"> PRIZES WORTH <span class="g-color--red" style="font-weight:600; ">&#8377; 3K </span></h3>
                     <br>
                     <div class="wow fadeInLeft" data-wow-duration=".3" data-wow-delay=".5s">
                         <a href="/register.php" title="Register">
@@ -48,7 +48,7 @@
                         <div class="wow fadeInLeft" data-wow-duration=".3" data-wow-delay=".1s">
                             <h2 class="g-font-size-40--xs g-font-size-50--sm g-font-size-60--md g-color--white" style="font-weight:900">About</h2>
                         </div>
-                        <p class="g-font-size-14--xs g-font-size-16--sm g-color--white-opacity">– Operations research is a problem solving event to test your ability to operate a business related complex problem in order to come up with an optimum solution (with the help of linear programming methods). It will directly provide insights on how a COO (Chief Operative Officer) handles the working of any business. In order to win , the teams are supposed to come up with the best suited and most optimum solution for the given problem statement.</p>
+                        <p class="g-font-size-14--xs g-font-size-16--sm g-color--white-opacity">Operations research is a problem solving event to test your ability to operate a business related complex problem in order to come up with an optimum solution (with the help of linear programming methods). It will directly provide insights on how a COO (Chief Operative Officer) handles the working of any business. In order to win , the teams are supposed to come up with the best suited and most optimum solution for the given problem statement.</p>
 
                     </div>
                     <div class="col-md-7 col-md-offset-1">
@@ -75,13 +75,13 @@
     		    <div class="card-content code">
 
     		    	<div id="why">
-    		
+
     			     	<ol>
-    			     	    <li><p>Prizes and Resources worth more than INR 3k are on stake. </p></li>
+    			     	    <li><p>Prizes and Resources worth more than INR 3K are on stake. </p></li>
     			     	    <li><p>This will allow you to experience an “executive” role in decision making. </p></li>
     			     	    <li><p>An opportunity to showcase your professionalism through your problem-solving skills, organization and presentation.</p></li>
     			     	    <li><p>Provides you the exposure and realistic outlook towards the competitive nature of real life. </p></li>
-    			     	    
+
     			     	</ol>
 
     			     	<br/>
@@ -99,7 +99,7 @@
     			     	    <li><p>Registration closes on 23rd March</p></li>
                              <li><p>Questionnaire will be released on 20th March</p></li>
                              <li><p>Last date to submit the solution 25th March</p></li>
-                             <li><p>Result – 28th March </p></li>   			
+                             <li><p>Result – 28th March </p></li>
     			     	</ol>
     			     	<br/>
               <h5><b>Eligibility Criteria </b></h5>
@@ -121,13 +121,13 @@
         <!--<img class="s-mockup-v2" src="img/mockups/pencil-01.png" alt="Mockup Image">-->
             <!--<div class="g-container--md g-padding-y-40--xs">-->
             <div id="managers" class="row g-row-col--5 g-padding-x-40--xs g-padding-y-40--xs g-padding-x-20--md g-padding-x-100--lg">
-                <div class="col-xs-3 g-full-width--xs g-margin-b-50--xs g-margin-b-0--sm">
+                <div class="col-xs-6 g-full-width--xs g-margin-b-50--xs g-margin-b-0--sm">
                     <div class="g-text-center--xs">
                         <h4 class="g-font-size-18--xs g-color--white g-margin-b-5--xs">Rutuja Satpute</h4>
                          <p class="g-color--white">+91 7798972054</p>
                     </div>
                 </div>
-                <div class="col-xs-3 g-full-width--xs g-margin-b-50--xs g-margin-b-0--sm">
+                <div class="col-xs-6 g-full-width--xs g-margin-b-50--xs g-margin-b-0--sm">
                     <div class="g-text-center--xs">
                         <h4 class="g-font-size-18--xs g-color--white g-margin-b-5--xs">Vipashvi Agnihotri </h4>
                          <p class="g-color--white">+91 8459981785</p>

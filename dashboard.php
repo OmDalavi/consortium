@@ -136,10 +136,6 @@
                                           <a id="<?php echo $events[$var] ?>click" href="#paylink<?php echo $events[$var]; ?>">
                                               <span class="text-uppercase s-btn s-btn--xs s-btn--white-brd g-radius--50">Pay Here</span>
                                           </a>
-                                        <!-- <?php }elseif(in_array($events[$var], array('operation_research',), true) ){ ?>
-                                          <a id="<?php echo $events[$var] ?>click" href="<?php echo $events[$var].'.php'; ?>">
-                                              <span class="text-uppercase s-btn s-btn--xs s-btn--white-brd g-radius--50">Rules</span>
-                                          </a> -->
                                         <?php }elseif(in_array($events[$var], array('bizquiz'), true)){ ?>
                                           <a id="<?php echo $events[$var] ?>click" href="https://dare2compete.com/o/bizquiz-consortium21-visvesvaraya-national-institute-of-technology-vnit-nagpur-153434">
                                               <span class="text-uppercase s-btn s-btn--xs s-btn--white-brd g-radius--50">D2c Link</span>
@@ -148,7 +144,6 @@
                                           <a id="<?php echo $events[$var] ?>click" href="https://dare2compete.com/o/operation-research-consortium21-visvesvaraya-national-institute-of-technology-vnit-nagpur-154432">
                                               <span class="text-uppercase s-btn s-btn--xs s-btn--white-brd g-radius--50">D2C Link</span>
                                           </a>
-  
 
                                   <?php } ?>
 

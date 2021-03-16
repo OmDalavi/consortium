@@ -40,7 +40,7 @@
                                             <li><a href="swades.php" class="s-header-v2__dropdown-menu-link">Swades</a></li>
                                             <li><a href="ceo.php" class="s-header-v2__dropdown-menu-link">CEO</a></li>
                                             <li><a href="adventure.php" class="s-header-v2__dropdown-menu-link">AdVenture</a></li>
-                                            <li><a href="renderico.php" class="s-header-v2__dropdown-menu-link">Render.ico</a></li>
+                                            <li><a href="render_ico.php" class="s-header-v2__dropdown-menu-link">Render.ico</a></li>
                                             <li><a href="operation_research.php" class="s-header-v2__dropdown-menu-link">Operation Research</a></li>
                                             <li><a href="pitch_mantra.php" class="s-header-v2__dropdown-menu-link">Pitch Mantra</a></li>
                                             <li><a href="bizquiz.php" class="s-header-v2__dropdown-menu-link">Bizquiz</a></li>
