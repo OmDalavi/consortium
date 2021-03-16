@@ -997,7 +997,7 @@ function htmlMail($t, $sub, $name, $teamname, $event){
               </html>';
 
 
-              $htmlCEO; = '<!DOCTYPE html>
+              $htmlCEO = '<!DOCTYPE html>
               <html>
                   <head>
                       <style>
