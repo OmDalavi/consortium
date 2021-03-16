@@ -924,7 +924,80 @@ function htmlMail($t, $sub, $name, $teamname, $event){
                       </div>
                   </body>
               </html>';
-    $htmlCEO = '<!DOCTYPE html>
+    $htmloperation_research = '<!DOCTYPE html>
+              <html>
+                  <head>
+                      <style>
+                          li{
+                              padding:10px;
+                          }
+                          p{
+                              font-size:16px;
+                          }
+
+                          *{
+                              font-family:Helvetica,Arial,sans-serif;
+                          }
+
+                          h2{
+                              text-align: center;
+                              margin-top: 150px;
+
+                          }
+                          html, body{
+                              background-color:#f7f9fb;
+                              margin: 0;
+                          }
+                          .context {
+                              font-size: 12px;
+                              padding: 40px 60px;
+                              margin-left:10%;
+                              margin-right: 10%;
+                          }
+
+                          .context p{
+                              font-size: 12px;
+                          }
+                          p{
+                              margin: 15px 0px;
+                          }
+
+                      </style>
+                  </head>
+                  <body>
+
+                      <div style="background: #0b0b0b; padding:10px 30px;"><img src="https://www.ecellvnit.org/img/logo-ecell.png"></div>
+                      <h2 style="font-size:22px;">Welcome to Operation Research!</h2><br>
+
+                      <div class="context">
+                          <h3><b>Hello Operation Research Participant!</b></h3>
+                          <p>Congratulations! You are successfully registered for Operation Research by consortium 2021, VNIT</p>
+                          <div>
+                              <p>
+                              The problem statement would be sent to you on 20th march and will also be available on D2C. You have to submit the solution by 25th March on D2C itself.
+                                  <br>
+                                  Results will be declared on 28th of March.
+                                  <br>
+                                  Further details will be mailed to you.<br>
+                                  For any query you can contact to:<br>
+                                  Rutuja: 7798972054; rutuja.vnit@gmail.com<br>
+                                  Vipashvi: 8459981785; vipashvia@gmail.com<br>
+
+
+                              </p>
+
+                              
+                              <p>
+                                  With warm regards,<br>
+                                  Team E-Cell VNIT
+                              </p>
+                          </div>
+                      </div>
+                  </body>
+              </html>';
+
+
+              $htmlCEO; = '<!DOCTYPE html>
               <html>
                   <head>
                       <style>
@@ -988,6 +1061,7 @@ function htmlMail($t, $sub, $name, $teamname, $event){
                       </div>
                   </body>
               </html>';
+
 
               $htmlnirmaan = '<!DOCTYPE html>
                         <html>
