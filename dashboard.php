@@ -114,7 +114,7 @@
                                           </a>
                                         </div>
                                       <?php } ?>
-                                      <?php }elseif(in_array($events[$var], array('render_ico','bizquiz','ceo','wallstreet','war_of_worlds'), true) ){ ?>
+                                    <?php }elseif(in_array($events[$var], array('render_ico','bizquiz','ceo','wallstreet','war_of_worlds','pitch_mantra'), true) ){ ?>
                                         <a id="reg_button" href="<?php echo $events[$var].'.php'; ?>" target="_blank">
                                         <span class="text-uppercase s-btn s-btn--xs s-btn--white-brd g-radius--50 g-margin-r-10--xs"> View event </span>
                                         </a>
@@ -132,7 +132,7 @@
                                       </span>
                                   </a> -->
                                   <?php
-                                        if(in_array($events[$var], array('adventure','swades','ceo','wallstreet','war_of_worlds'), true) ){ ?>
+                                        if(in_array($events[$var], array('adventure','swades','ceo','wallstreet','war_of_worlds','pitch_mantra'), true) ){ ?>
                                           <a id="<?php echo $events[$var] ?>click" href="#paylink<?php echo $events[$var]; ?>">
                                               <span class="text-uppercase s-btn s-btn--xs s-btn--white-brd g-radius--50">Pay Here</span>
                                           </a>
@@ -496,15 +496,54 @@
   }
    ?>
 
+<!-- operation resources payment section ends -->
+<!-- Pitch Mantra Payment Section -->
 
+<?php
+  $query = "SELECT * FROM pitch_mantra WHERE email='$email'";
+  $result = mysqli_query($con,$query);
+  $num = mysqli_num_rows($result);
+  if($num>0){
+    $data = mysqli_fetch_array($result);
+    if($data['payment_status']==0){
+ ?>
+<div class="container g-padding-x-40--sm g-padding-x-20--xs g-padding-y-20--xs g-padding-y-50--sm" id="paylinkpitch_mantra" style="display:none; background: #000">
 
+  <a class="g-color--white g-font-size-20--xs" onclick="closemodel('paylinkpitch_mantra');" style="position:absolute; left:90%; cursor:pointer" >X</a>
+  <h2 class="g-font-size-30--xs g-text-center--xs g-margin-t-70--xs g-color--white g-letter-spacing--1">Payment for Pitch Mantra Registration</h2>
 
+<form class="center-block g-width-600--sm" method="post" action="pay.php?v=pitch_mantra">
+    <div class="permanent permanent-CEO row">
+      <p class="g-color--white g-text-center--xs g-font-size-14--xs">Fill this form to pay &#8377;50 and complete your registration.</p>
+        <div class="col-sm-6 g-margin-b-30--xs">
+              <input type="text" class="form-control s-form-v3__input" placeholder="* Name" name="CUSTOMER_NAME" style="text-transform: none" value="<?php echo $name ?>">
+        </div>
+        <div class="col-sm-6 g-margin-b-30--xs">
+              <input type="email" class="form-control s-form-v3__input" placeholder="* Email" name="CUSTOMER_EMAIL" style="text-transform: none" value="<?php echo $email ?>">
+        </div>
+        <div class="col-sm-6 g-margin-b-30--xs">
+              <input type="contact" class="form-control s-form-v3__input" placeholder="* Contact" name="CUSTOMER_MOBILE" style="text-transform: none" value="<?php echo $contact ?>">
+        </div>
 
+    </div>
+    <div class="g-text-center--xs">
+        <button type="submit" name="pay" class="text-uppercase s-btn s-btn--md s-btn--white-brd g-radius--50 g-padding-x-70--xs g-margin-b-20--xs">Proceed to Pay</button>
+    </div>
+</form>
+</div>
+<?php
+}else {
+?>  <div class="swades container g-padding-x-40--sm g-padding-x-20--xs g-padding-y-20--xs g-padding-y-50--sm" id="paylinkpitch_mantra" style="display:none; background: #000">
 
+  <a class="g-color--white g-font-size-20--xs" onclick="closemodel('paylinkpitch_mantra');" style="position:absolute; left:90%; cursor:pointer;" >X</a>
+  <h2 class="g-font-size-30--xs g-text-center--xs g-margin-t-70--xs g-color--white g-letter-spacing--1">You have successfully registed for Pitch Mantra! All further details shall be communicated to you through your registered email id.</h2>
+</div>
+  <?php
+}
+}
+?>
 
-
-
-   <!-- operation resources payment section ends -->
+<!-- Pitch Mantra Payment Section ends -->
 
   <!-- Adventure Team Members details --->
 
@@ -902,7 +941,7 @@
               </div>
 
           </div>
-          
+
           <div class="g-text-center--xs">
               <button type="submit" name="addteam_op" class="text-uppercase s-btn s-btn--md s-btn--white-brd g-radius--50 g-padding-x-70--xs g-margin-b-20--xs">Submit</button>
           </div>
