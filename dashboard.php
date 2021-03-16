@@ -137,7 +137,7 @@
                                               <span class="text-uppercase s-btn s-btn--xs s-btn--white-brd g-radius--50">Pay Here</span>
                                           </a>
                                         <?php }elseif(in_array($events[$var], array('operation_research',), true) ){ ?>
-                                          <a id="<?php echo $events[$var] ?>click" href="#paylink<?php echo $events[$var]; ?>">
+                                          <a id="<?php echo $events[$var] ?>click" href="<?php echo $events[$var].'.php'; ?>">
                                               <span class="text-uppercase s-btn s-btn--xs s-btn--white-brd g-radius--50">Rules</span>
                                           </a>
                                         <?php }elseif(in_array($events[$var], array('bizquiz'), true)){ ?>
@@ -862,7 +862,7 @@
       $data = mysqli_fetch_array($result);
       if($data['team_conso_id']==''){
     ?>
-    <div class="container g-padding-x-40--sm g-padding-x-20--xs g-padding-y-20--xs g-padding-y-50--sm" id="membersadventure" style="display:none; background: #000">
+    <div class="container g-padding-x-40--sm g-padding-x-20--xs g-padding-y-20--xs g-padding-y-50--sm" id="membersoperation_research" style="display:none; background: #000">
 
       <a class="g-color--white g-font-size-20--xs" onclick="closemodel('membersoperation_research');" style="position:absolute; left:90%; cursor:pointer" >X</a>
       <h2 class="g-font-size-30--xs g-text-center--xs g-margin-t-70--xs g-color--white g-letter-spacing--1">Add Team members for Operation Research</h2>
@@ -941,7 +941,7 @@
     if ($result){
     if ($r && $r2) {
       ?>
-      <div class="swades container g-padding-x-40--sm g-padding-x-20--xs g-padding-y-20--xs g-padding-y-50--sm" id="membersadventure" style="display:none; background: #000">
+      <div class="swades container g-padding-x-40--sm g-padding-x-20--xs g-padding-y-20--xs g-padding-y-50--sm" id="membersoperation_research" style="display:none; background: #000">
 
           <a class="g-color--white g-font-size-20--xs" onclick="closemodel('membersoperation_research');" style="position:absolute; left:90%; cursor:pointer;" >X</a>
           <h2 class="g-font-size-30--xs g-text-center--xs g-margin-t-70--xs g-color--white g-letter-spacing--1">You have successfully registed your team members. Kindly complete your payment if not done yet!</h2>
@@ -950,7 +950,7 @@
       //header('location:dashboard.php');
     } else {
       ?>
-      <div class="swades container g-padding-x-40--sm g-padding-x-20--xs g-padding-y-20--xs g-padding-y-50--sm" id="membersadventure" style="display:none; background: #000">
+      <div class="swades container g-padding-x-40--sm g-padding-x-20--xs g-padding-y-20--xs g-padding-y-50--sm" id="membersoperation_research" style="display:none; background: #000">
 
           <a class="g-color--white g-font-size-20--xs" onclick="closemodel('membersoperation_research');" style="position:absolute; left:90%; cursor:pointer;" >X</a>
           <h2 class="g-font-size-30--xs g-text-center--xs g-margin-t-70--xs g-color--white g-letter-spacing--1">Error Connecting. Try Again!</h2>
@@ -961,7 +961,7 @@
 }
   else{
     ?>
-    <div class="swades container g-padding-x-40--sm g-padding-x-20--xs g-padding-y-20--xs g-padding-y-50--sm" id="membersadventure" style="display:none; background: #000">
+    <div class="swades container g-padding-x-40--sm g-padding-x-20--xs g-padding-y-20--xs g-padding-y-50--sm" id="membersoperation_research" style="display:none; background: #000">
 
         <a class="g-color--white g-font-size-20--xs" onclick="closemodel('membersoperation_research');" style="position:absolute; left:90%; cursor:pointer;" >X</a>
         <h2 class="g-font-size-30--xs g-text-center--xs g-margin-t-70--xs g-color--white g-letter-spacing--1">No members added!</h2>
@@ -971,7 +971,7 @@
   }
 }
   else {
-  ?> <div class="swades container g-padding-x-40--sm g-padding-x-20--xs g-padding-y-20--xs g-padding-y-50--sm" id="membersadventure" style="display:none; background: #000">
+  ?> <div class="swades container g-padding-x-40--sm g-padding-x-20--xs g-padding-y-20--xs g-padding-y-50--sm" id="membersoperation_research" style="display:none; background: #000">
 
       <a class="g-color--white g-font-size-20--xs" onclick="closemodel('membersoperation_research');" style="position:absolute; left:90%; cursor:pointer;" >X</a>
       <h2 class="g-font-size-30--xs g-text-center--xs g-margin-t-70--xs g-color--white g-letter-spacing--1">You have successfully registed your team members. Kindly complete your payment if not done yet!!</h2>

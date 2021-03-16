@@ -125,12 +125,12 @@ $("#war_of_worldsclick").click(function(){
 
 // Operation research
 
-$("#operation_researchclick").click(function(){
-  $("#operation_research").css({"display":"block"});
-  $("#operation_research").animate({opacity: 1}, 1000);
-  var y = $("#operation_research").offset().top;
-    $("html ,body").animate({ scrollTop: y},200);
-});
+      $("#operation_researchclick").click(function(){
+        $("#operation_research").css({"display":"block"});
+        $("#operation_research").animate({opacity: 1}, 1000);
+        var y = $("#operation_research").offset().top;
+          $("html ,body").animate({ scrollTop: y},200);
+      });
 
 $("#operation_researchclick").click(function(){
   $("#paylinkoperation_research").css({"display":"block"});
