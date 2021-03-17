@@ -129,6 +129,9 @@ if (isset($_SESSION['auth']) && $_SESSION['auth'] == true) {
             <th>Contact</th>
             <th>Email</th>
             <th>College</th>
+            <th>Round 1</th>
+            <th>Round 2</th>
+            <th>Round 3</th>
         </tr>
     </thead>
         <tbody>';
@@ -295,6 +298,10 @@ if (isset($_SESSION['auth']) && $_SESSION['auth'] == true) {
             <td><?php echo $row['contact'];?></td>
             <td><?php echo $row['email'];?></td>
             <td><?php echo $row['college'];?></td>
+            <td><?php echo $row['round1'];?></td>
+            <td><?php echo $row['round2'];?></td>
+            <td><?php echo $row['round3'];?></td>
+            
 
 
 
