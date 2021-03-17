@@ -909,7 +909,7 @@ function htmlMail($t, $sub, $name, $teamname, $event){
 
                       <div class="context">
                           <h3><b>Hey!</b></h3>
-                          <p>Congratulations! You are successfully registered for Pitch Perfect</p>
+                          <p>Congratulations! You are successfully registered for Pitch Mantra</p>
                           <div>
                               <p>
                                   It\'s time to to bring out the creative mindset of young people where they battle down to pitch an innovative product or service in the best possible way.
@@ -986,7 +986,7 @@ function htmlMail($t, $sub, $name, $teamname, $event){
 
                               </p>
 
-                              
+
                               <p>
                                   With warm regards,<br>
                                   Team E-Cell VNIT

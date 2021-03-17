@@ -35,7 +35,7 @@
 
                     <h4 class="g-color--white" style="    text-shadow: 2px 0 #333;">Driving the communication revolution!</h4>
                     <!-- <p class="g-color--white g-font-size-18--xs" style="text-shadow: 2px 0 #333;"><b>Make your marketing so useful that people would pay for it.</b></p><br/> -->
-                    <h4 class="g-color--white"> PRIZES WORTH <span class="g-color--red">&#8377; 5K </span></h4>
+                    <h4 class="g-color--white"> PRIZES WORTH <span class="g-color--red">&#8377; 1.5K </span></h4>
 
                     <div class="wow fadeInLeft" data-wow-duration=".3" data-wow-delay=".5s">
                         <a href="/register.php" title="Register">
@@ -90,7 +90,7 @@ Our event will introduce the participants to the different factors required to m
 
     		    	<div id="why">
                         <br>
-    			     	<h5><b>Prizes Worth: &#8377;5K</b></h5>
+    			     	<h5><b>Prizes Worth: &#8377;1.5K</b></h5>
 
     			     	<ol>
     			     	    <li><p>Keeping in mind the time-tested dictum “The art of communication is the language of leadership”, ECELL VNIT presents to you one of the best pitching events in the country.</p></li>
@@ -108,7 +108,7 @@ Our event will introduce the participants to the different factors required to m
               <br/>
               <h5><b>How to participate</b></h5>
               <p>To participate in Pitchmantra, visit our <a href="https://consortium.ecellvnit.org/">website</a> and register with your <b>consoID</b>. As soon your registration process gets complete you will get confirmation.</p>
-              <p><b>Registration Fees: Rs. 50</b>
+              <!--<p><b>Registration Fees: Rs. 50</b>-->
               <br/><br/>
               <h5><b>Structure</b></h5>
                 <p>Participants who register for Pitchmantra will be able to attend the webinar and later participate in the pitching competition.</p><br/>
