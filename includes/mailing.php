@@ -862,7 +862,7 @@ function htmlMail($t, $sub, $name, $teamname, $event){
                       </div>
                   </body>
               </html>';
-    $htmlPitch = '<!DOCTYPE html>
+    $htmlpitch_mantra = '<!DOCTYPE html>
               <html>
                   <head>
                       <style>
@@ -905,20 +905,25 @@ function htmlMail($t, $sub, $name, $teamname, $event){
                   <body>
 
                       <div style="background: #0b0b0b; padding:10px 30px;"><img src="https://www.ecellvnit.org/img/logo-ecell.png"></div>
-                      <h2 style="font-size:22px;">Welcome to Pitch Perfect</h2><br>
+                      <h2 style="font-size:22px;">Welcome to Pitch Mantra</h2><br>
 
                       <div class="context">
-                          <h3><b>Hey!</b></h3>
-                          <p>Congratulations! You are successfully registered for Pitch Mantra</p>
+                          <h3><b>Dear Pitchmantra’s Participant,</b></h3>
+                          <p>Congratulations! You have been successfully registered for <b>Pitch Mantra</b> by Consortium’21, E-CELL VNIT.</p>
                           <div>
                               <p>
-                                  It\'s time to to bring out the creative mindset of young people where they battle down to pitch an innovative product or service in the best possible way.
+                                The first step into this event is to attend the webinar on Pitching Skills which is scheduled on 21st March, 2021 at 12 Noon. The link for the webinar will be sent to you on 20th March, 2021.</p>
+                                <p>The next step shall be Video Pitching round. Details about it shall be mailed to you.
                               </p>
 
-                              <p>For queries and in case of any difficulty, feel free to contact us.</p>
+                              <p>For queries and in case of any difficulty, feel free to contact<br>
+                              Siddhesh: 7057997990, sdumbre07@gmail.com<br>
+                              Nandini: 9404431671, nandu.todsam01@gmail.com<br>
+                              Onkar: 7972075798, onkarbartakke27136@gmail.com
+                              </p>
                               <p>
                                   With warm regards,<br>
-                                  Team E-Cell VNIT
+                                  Team Pitch Mantra, E-CELL VNIT
                               </p>
                           </div>
                       </div>
@@ -1503,9 +1508,6 @@ function htmlMail($t, $sub, $name, $teamname, $event){
 
     else if($event == 'BizMantra'){
       $html = $htmlBizMantra;
-    }
-    else if($event == 'Pitch_Perfect'){
-      $html = $htmlPitch;
     }
     else if($event == 'ceo'){
       $html = $htmlCEO;
