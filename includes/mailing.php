@@ -905,7 +905,7 @@ function htmlMail($t, $sub, $name, $teamname, $event){
                   <body>
 
                       <div style="background: #0b0b0b; padding:10px 30px;"><img src="https://www.ecellvnit.org/img/logo-ecell.png"></div>
-                      <h2 style="font-size:22px;">Welcome to Pitch Perfect</h2><br>
+                      <h2 style="font-size:22px;">Welcome to Pitch Mantra</h2><br>
 
                       <div class="context">
                           <h3><b>Hey!</b></h3>
