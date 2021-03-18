@@ -862,7 +862,7 @@ function htmlMail($t, $sub, $name, $teamname, $event){
                       </div>
                   </body>
               </html>';
-    $htmlPitch = '<!DOCTYPE html>
+    $htmlpitch_mantra = '<!DOCTYPE html>
               <html>
                   <head>
                       <style>
@@ -1503,9 +1503,6 @@ function htmlMail($t, $sub, $name, $teamname, $event){
 
     else if($event == 'BizMantra'){
       $html = $htmlBizMantra;
-    }
-    else if($event == 'Pitch_Perfect'){
-      $html = $htmlPitch;
     }
     else if($event == 'ceo'){
       $html = $htmlCEO;
