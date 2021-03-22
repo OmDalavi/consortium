@@ -420,17 +420,37 @@ video::-webkit-media-controls-overlay-play-button {
     padding-top: 0 !important;
     margin-top: 0 !important;
   }
+  #consox h1
+  {
+    display: none;
+  }
   #consox-logo
   {
-    height: 10vh;
-    width: auto;
+    height: auto;
+    width: 72vw;
     margin-bottom: 4vh;
+    margin-top: 2vh;
   }
   #creatorSummit-logo{
-    height: 20vh;
-    width: auto;
+    height: auto;
+    width: 80vw;
     margin-bottom: 4vh;
     padding-top: 0;
+  }
+
+  #consox .container, #creatorSummit .container, #townhall .container, #zerotoone .container{
+    text-align: center;
+  }
+  #zerotoone
+  {
+    text-align: center;
+  }
+  #zerotoone-inner{
+    margin-top: 10%;
+    height: 100px;
+  }
+  #zerotoone .g-margin-t-150--xs{
+    margin-top: 60px !important;
   }
 }
 
