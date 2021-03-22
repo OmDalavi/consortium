@@ -199,6 +199,38 @@
     position: absolute;
 }
 
+#consox-inner
+{
+  /* background: url(../img/events/ConsoX-logo.png); */
+  width:100%;
+  height:40vh;
+  background-size: contain !important;
+  background-repeat: no-repeat !important;
+  background-position: center center !important;
+  position: absolute;
+}
+#creatorSummit-inner
+{
+  /* background: url(../img/events/ConsoX-logo.png); */
+  width:100%;
+  height:40vh;
+  background-size: contain !important;
+  background-repeat: no-repeat !important;
+  background-position: center center !important;
+  position: absolute;
+}
+#creatorSummit-logo
+{
+  padding-top: 60px;
+}
+
+#consox-logo
+{
+  width: 25vw;
+  height: auto;
+  margin-top: 80px;
+  /* object-position: center center !important; */
+}
 
 .manager-card{
     max-width:230px;
@@ -383,9 +415,23 @@ video::-webkit-media-controls-overlay-play-button {
         background-position: 65% !important;
     }
 
-
-
-
+  #consox .g-margin-t-150--xs, #creatorSummit .g-margin-t-150--xs
+  {
+    padding-top: 0 !important;
+    margin-top: 0 !important;
+  }
+  #consox-logo
+  {
+    height: 10vh;
+    width: auto;
+    margin-bottom: 4vh;
+  }
+  #creatorSummit-logo{
+    height: 20vh;
+    width: auto;
+    margin-bottom: 4vh;
+    padding-top: 0;
+  }
 }
 
 /*.expo-back{*/
