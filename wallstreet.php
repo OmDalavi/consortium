@@ -33,8 +33,17 @@
                     <h1 class="g-font-size-40--xs g-font-size-60--sm g-font-size-80--lg g-color--white g-margin-t-50--xs" style="font-weight:900; text-shadow: 2px 0 #333;letter-spacing:2px;"><b>Wallstreet</b></h1>
 
                     <h3 class="g-color--white" style="    text-shadow: 2px 0 #333;">Earn, spend, party!</h3>
-                    <p class="g-color--white g-font-size-18--xs" style="    text-shadow: 2px 0 #333;"><b>Buy or sell shares in this competitive business world <br>and become the Wolf of Wall Street!</b></p><br/>
+                    <p class="g-color--white g-font-size-18--xs" style="    text-shadow: 2px 0 #333;"><b>Buy/ sell shares in this competitive business world <br>and become the Wolf of Wall Street!</b></p><br/>
                     <h4 class="g-color--white"> PRIZES WORTH <span class="g-color--red">&#8377; 15K </span></h4>
+
+                    <br>
+
+                    <div class="wow fadeInLeft" data-wow-duration=".3" data-wow-delay=".5s">
+                      <a href="regnew.php" title="Register">
+                          <!--<i class="s-icon s-icon--lg s-icon--white-bg g-radius--circle ti-arrow-down"></i>-->
+                          <span class="text-uppercase s-btn--primary-bg g-radius--50 g-padding-x-30--xs g-padding-y-15--xs g-font-size-13--xs g-color--white g-padding-x-15--xs">Register</span>
+                      </a>
+                    </div>
 
                   <!--div class="wow fadeInLeft" data-wow-duration=".3" data-wow-delay=".5s">
                         <a href="https://goo.gl/forms/pYVinCErTub0btVw2" title="Register">
@@ -61,7 +70,7 @@
                         <div class="wow fadeInLeft" data-wow-duration=".3" data-wow-delay=".1s">
                             <h2 class="g-font-size-40--xs g-font-size-50--sm g-font-size-60--md g-color--white" style="font-weight:900">About</h2>
                         </div>
-                        <p class="g-font-size-14--xs g-font-size-16--sm g-color--white-opacity">Do you have the shrewdness to become the Wolf of Wall Street? Then this is the event for you. Buy shares, sell stock and interact with brokers looking to provide an exchange. Come and bet your wits to win cash prize along with exciting goodies.<br> And the interesting thing here is you win even if you lose as the loser gets a cash prize as well. Just remember never underestimate the other guy’s greed.</p>
+                        <p class="g-font-size-14--xs g-font-size-16--sm g-color--white-opacity">Consortium’21 presents Wallstreet, a real time stock market event played with virtual money. The players face real time share price fluctuations and trade accordingly. Participants get firsthand experience of real stock market trading without the risk of losing real money. Lastly, an important note. Never underestimate your opponent’s greed. :)</p>
 
                     </div>
                     <div class="col-md-6 col-md-offset-1">
@@ -92,56 +101,41 @@
     			     	<h5><b>Prizes Worth Rs. 15K</b></h5>
 
     			     	<ol>
-    			     	    <li><p>This event aims to test managing skills of the students and will help you discover the businessman/stock trader in you.</p></li>
-    			     	    <li><p>And the interesting thing here is you win even if you lose as there are cash prizes for the top 2
-winners as well as for the best loser (last place).</p></li>
-    			     	    <li><p>So don’t get disheartened even if you start losing and be there till the very end.</p></li>
-    			     	</ol>
-
-    			     	<br/>
-
+                    <li><p>Course on <b>Stock Markets made easy<b> worth <b>&#8377;1k</b> to every participant.</p></li>
+                    <li><p>Outstanding Performance certificates will be provided to top 10 finalists.</p></li>
+                    <li><p>Participation Certificates will be provided to all.</p></li>
+                </ol>
+                <br/>
+    			     	<p>This event aims to test managing skills of the students and will help you discover the businessman/stock trader in you.</p>
     				</div>
     				<div id="structure" style="display:none;">
-              <h5><b>How to participate</b></h5>
+              <h6><b>Event Dates: 22 - 26 March 2021</b></h6>
+              <h5><b>Registration Process</b></h5>
               <ol>
-                  <li><p>To participate in Wallstreet, visit our <a href="/wallstreet.php">website</a> and register with your name. As soon your registration process gets complete you will get confirmation</p></li>
-                  <li><p>On spot registrations are allowed.</p></li>
+                  <li><p>There are two payment ways to participate in Wallstreet.</p></li>
+                  <ul>
+                    <li><p><b>Entry fee &#8377;75</b><br>This includes Registration for the Event & a free course on <i>Stock Markets Made Easy</i> worth &#8377;1k.</p></li>
+                    <li><p><b>Entry fee &#8377;200</b><br>This includes Registration for the Event, a free course on <i>Stock Markets Made Easy</i> worth &#8377;1k, pass for a Certified Workshop conducted by Zerodha & a Free Trading Account Opening on India Largest Discount Stock Broker “Zerodha” worth &#8377;200.</p></li>
+                  </ul>
+                  <li><p>Confirmation Email will be sent to you after registration.</p></li>
+                  <li><p>Another email will be sent to you by 20th March which will mention about the link to join the game, rules of the game and a youtube video of the platform partner on 'how to play the game'.</p></li>
               </ol>
 
               <br/>
-              <h5><b>Structure</b></h5>
-              <br/>
-    		    	    <p>The event comprises of a single round taking place on 10th March 2019.</p><br/>
+              <h5><b>Event Structure</b></h5>
     		    	    <ol>
-    					    <li>
-                                <p>Each participant will be provided with a specified amount of Liquid Money on the spot which they can invest according to their choice.</p>
-                            </li>
-
-    					    <li>
-                                <p>Participants have to buy/sell shares from the brokers (organizers) depending upon the newsfeed displayed on the venue of the event.</p>
-                            </li>
-                            <li>
-                                <p>The challenge is to use your given money and invest it wisely so as to get the maximum profits or to maximize your losses from your investments.</p>
-                            </li>
-                            <li>
-                                <p>A participant with the maximum profit and the maximum losses gets the prize.</p>
-                            </li>
-
-    					</ol>
+    					        <li><p>It is an individual event.</p></li>
+    					        <li><p>This is a 5 day event where all participants will be given a fixed amount of virtual money and they have to trade during the market hours from 9:00 am to 4:00 pm.</p></li>
+                      <li><p>Participants have to build their virtual portfolio and keep trading until the game ends.</p></li>
+                      <li><p>Traders with the highest percentage gain win.</p></li>
+    					    </ol>
                         <br/>
-              <h5><b>Eligibility Criteria </b></h5>
-              <ol>
-                  <li><p>Students studying in courses of Undergraduate, Graduate level and Higher Secondary Students (11th, 12th class) and also secondary students (9th, 10th class) can participate for the event individually.</p></li>
-                  <li><p>Participants can register directly on the Consortium’s website. Entry fee is Rs 50 per person.</p></li>
-              </ol>
+                  <div class="wow fadeInLeft" data-wow-duration=".3" data-wow-delay=".5s">
+                      <a href="https://drive.google.com/file/d/1ADVA5h8Nnw8rNODFWJTbNRsHVtutMF_b/view?usp=sharing" target="_blank">
+                          <span class="text-uppercase s-btn--primary-bg g-radius--50 g-padding-x-30--xs g-padding-y-15--xs g-font-size-13--xs g-color--white g-padding-x-15--xs">Download Event Brochure<span class="ti-angle-down"></span></span>
+                      </a>
+                  </div>
 
-
-              <br><h5><b>How to pay</b></h5>
-              <ol>
-              <li>Google Pay or PHONEPE on 8007481127</li>
-              <li>Registration Desk, near Auditorium VNIT Nagpur</li>
-              </ol>
-              <br/>
     		    	</div>
 
 
@@ -156,16 +150,22 @@ winners as well as for the best loser (last place).</p></li>
         <!--<img class="s-mockup-v2" src="img/mockups/pencil-01.png" alt="Mockup Image">-->
             <!--<div class="g-container--md g-padding-y-40--xs">-->
             <div id="managers" class="row g-row-col--5 g-padding-x-40--xs g-padding-y-40--xs g-padding-x-20--md g-padding-x-100--lg">
-                <div class="col-xs-6 g-full-width--xs g-margin-b-50--xs g-margin-b-0--sm">
+                <div class="col-xs-4 g-full-width--xs g-margin-b-50--xs g-margin-b-0--sm">
                     <div class="g-text-center--xs">
-                        <h4 class="g-font-size-18--xs g-color--white g-margin-b-5--xs">Sanket Manna</h4>
-                         <p class="g-color--white">mannasanket123@gmail.com <br>+91 8007481127</p>
+                        <h4 class="g-font-size-18--xs g-color--white g-margin-b-5--xs">Rushabh Chordiya</h4>
+                         <p class="g-color--white">chordiyarushabh1@gmail.com <br>+91 91685 80235</p>
                     </div>
                 </div>
-                <div class="col-xs-6 g-full-width--xs g-margin-b-50--xs g-margin-b-0--sm">
+                <div class="col-xs-4 g-full-width--xs g-margin-b-50--xs g-margin-b-0--sm">
                     <div class="g-text-center--xs">
-                        <h4 class="g-font-size-18--xs g-color--white g-margin-b-5--xs">Shivam Misra</h4>
-                         <p class="g-color--white">shivam.whiz@gmail.com <br>+91 7447588019</p>
+                        <h4 class="g-font-size-18--xs g-color--white g-margin-b-5--xs">Aditya Gupta</h4>
+                         <p class="g-color--white">aditya.gupta21122001@gmail.com<br>+91 73545 77186</p>
+                    </div>
+                </div>
+                <div class="col-xs-4 g-full-width--xs g-margin-b-50--xs g-margin-b-0--sm">
+                    <div class="g-text-center--xs">
+                        <h4 class="g-font-size-18--xs g-color--white g-margin-b-5--xs">Mitali Sharma</h4>
+                         <p class="g-color--white">mi.sharma1504@gmail.com <br>+91 93901 70830</p>
                     </div>
                 </div>
 

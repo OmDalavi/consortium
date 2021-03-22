@@ -94,18 +94,16 @@ else if(isset($_POST['login'])){
                                 <div class="g-margin-b-30--xs">
                                     <select name="event" style="text-transform: none;" class="form-control s-form-v3__input" placeholder="* Type">
                                         <option disabled selected>Select Event</option>
-                                        <option value="Swadesh">Swades</option>
-                                        <option value="Swadesh_team">Swadesh Team</option>
-                                        <option value="trec">TREC</option>
-                                        <option value="nirmaan">Nirmaan</option>
-                                        <option value="nirmaan_team">Nirmaan Team</option>
-                                        <option value="CEO">CEO</option>
-                                        <option value="war_of_worlds">War of Worlds</option>
-                                        <option value="BizQuiz">Bizquiz</option>
-                                        <option value="iplauction">IPL Auction</option>
-                                        <!-- <option value="Pitch_Perfect">Pitch Perfect</option>
-                                        <option value="renderico_team">Render Ico</option>
-                                        <option value="BizQuiz_team">Bizquiz</option>
+                                        <option value='ceo'>CEO</option>
+                                        <option value='wallstreet'>Wallstreet</option>
+                                        <option value='adventure'>AdVenture</option>
+                                        <option value='war_of_worlds'>War of Worlds</option>
+                                        <option value='bizquiz'>BizQuiz</option>
+                                        <option value='render_ico'>Render.ico</option>
+                                        <option value='swades'>Swades</option>
+                                        <option value='operation_research'>Operation Research</option>
+                                        <option value='pitch_mantra'>Pitchmantra</option>
+                                        <!---<option value="BizQuiz_team">Bizquiz</option>
                                         <option value="Azure">Azure</option>
                                         <option value="Brainathon">Brainathon</option>
                                         <option value="Townhall">Townhall</option>

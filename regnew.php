@@ -6,107 +6,104 @@
   // ini_set('display_errors', '1');
 
   if($_SESSION['email']){
-    header('location:dashboard.php');
+    header('location:register.php');
   }
 
-    $db_host = "localhost:3306";
-    $db_username = "conso20";
-    $db_pass = "Conso@123";
-    $db_name = "conso20";
+    require_once('includes/dbconnect.php');
 
-    $con = mysqli_connect("$db_host","$db_username","$db_pass") or die ("could not connect to mysql");
-    mysqli_select_db($con,$db_name) or die ("no database");
-
-    $regquery = "CREATE TABLE IF NOT EXISTS Registrations(
-                ID INT(11) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
-                Name VARCHAR(255) NOT NULL,
-                Email VARCHAR(255) NOT NULL,
-                Contact VARCHAR(255) NOT NULL,
-                Password VARCHAR(255) NOT NULL,
-                College VARCHAR(255) NOT NULL,
-                Swadesh TINYINT(1) DEFAULT '0',
-                AdVenture TINYINT(1) DEFAULT '0',
-                trec TINYINT(1) DEFAULT '0',
-                renderico TINYINT(1) DEFAULT '0',
-                CEO TINYINT(1) DEFAULT '0',
-                war_of_worlds TINYINT(1) DEFAULT '0',
-                BizQuiz TINYINT(1) DEFAULT '0',
-                iplauction TINYINT(1) DEFAULT '0',
-                otp VARCHAR(255) NOT NULL
-                )";
-
-    mysqli_query($con,$regquery);
-
-    $eve = array('Swadesh','AdVenture','trec','renderico','CEO','war_of_worlds','BizMantra','BizQuiz','iplauction');
-    for($var = 0; $var < 8; $var++){
-      $evequery = "CREATE TABLE IF NOT EXISTS '$eve[$var]'(
-                ID INT(11) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
-                Name VARCHAR(255) NOT NULL,
-                Main_Email VARCHAR(255) NOT NULL,
-                Email VARCHAR(255) NOT NULL,
-                Contact VARCHAR(255) NOT NULL
-                )";
-    mysqli_query($con,$evequery);
-    }
-
-    $eve = array('Swadesh_team','AdVenture_team','trec_team','renderico_team','BizMantra_team','BizQuiz_team','war_of_worlds_team','iplauction_team');
-    for($var = 0; $var < 9; $var++){
-      $evequery = "CREATE TABLE IF NOT EXISTS $eve[$var](
-                ID INT(11) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
-                Name VARCHAR(255) NOT NULL,
-                Email VARCHAR(255) NOT NULL,
-                Contact VARCHAR(255) NOT NULL
-                )";
-    mysqli_query($con,$evequery);
-    }
-
-    $brainquery = "CREATE TABLE IF NOT EXISTS Brainathon(
-                ID INT(11) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
-                Name VARCHAR(255) NOT NULL,
-                Email VARCHAR(255) NOT NULL,
-                Contact VARCHAR(255) NOT NULL,
-                isPaid TINYINT(1) DEFAULT '0'
-                )";
-    mysqli_query($con,$brainquery);
-
-    $nirmaanquery = "ALTER TABLE Registrations ADD COLUMN nirmaan TINYINT(1) DEFAULT '0' AFTER BizQuiz;";
-    mysqli_query($con,$nirmaanquery);
-
-    $aimlquery = "ALTER TABLE Registrations ADD COLUMN aimlworkshop TINYINT(1) DEFAULT '0' AFTER nirmaan;";
-    mysqli_query($con,$aimlquery);
-
-    $nirmaan = "CREATE TABLE IF NOT EXISTS nirmaan(
-      ID INT(11) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
-      Name VARCHAR(255) NOT NULL,
-      Email VARCHAR(255) NOT NULL,
-      Contact VARCHAR(255) NOT NULL,
-    )";
-
-    $iplauction = "CREATE TABLE IF NOT EXISTS iplauction(
-      ID INT(11) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
-      Name VARCHAR(255) NOT NULL,
-      Email VARCHAR(255) NOT NULL,
-      Contact VARCHAR(255) NOT NULL,
-    )";
-
-    mysqli_query($con,$nirmaan);
+    // $regquery = "CREATE TABLE IF NOT EXISTS Registrations(
+    //             ID INT(11) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    //             Name VARCHAR(255) NOT NULL,
+    //             Email VARCHAR(255) NOT NULL,
+    //             Contact VARCHAR(255) NOT NULL,
+    //             Password VARCHAR(255) NOT NULL,
+    //             College VARCHAR(255) NOT NULL,
+    //             Swadesh TINYINT(1) DEFAULT '0',
+    //             AdVenture TINYINT(1) DEFAULT '0',
+    //             trec TINYINT(1) DEFAULT '0',
+    //             renderico TINYINT(1) DEFAULT '0',
+    //             CEO TINYINT(1) DEFAULT '0',
+    //             war_of_worlds TINYINT(1) DEFAULT '0',
+    //             BizQuiz TINYINT(1) DEFAULT '0',
+    //             iplauction TINYINT(1) DEFAULT '0',
+    //             otp VARCHAR(255) NOT NULL
+    //             )";
+    //
+    // mysqli_query($con,$regquery);
+    //
+    // $eve = array('Swadesh','AdVenture','trec','renderico','CEO','war_of_worlds','BizMantra','BizQuiz','iplauction');
+    // for($var = 0; $var < 8; $var++){
+    //   $evequery = "CREATE TABLE IF NOT EXISTS '$eve[$var]'(
+    //             ID INT(11) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    //             Name VARCHAR(255) NOT NULL,
+    //             Main_Email VARCHAR(255) NOT NULL,
+    //             Email VARCHAR(255) NOT NULL,
+    //             Contact VARCHAR(255) NOT NULL
+    //             )";
+    // mysqli_query($con,$evequery);
+    // }
+    //
+    // $eve = array('Swadesh_team','AdVenture_team','trec_team','renderico_team','BizMantra_team','BizQuiz_team','war_of_worlds_team','iplauction_team');
+    // for($var = 0; $var < 9; $var++){
+    //   $evequery = "CREATE TABLE IF NOT EXISTS $eve[$var](
+    //             ID INT(11) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    //             Name VARCHAR(255) NOT NULL,
+    //             Email VARCHAR(255) NOT NULL,
+    //             Contact VARCHAR(255) NOT NULL
+    //             )";
+    // mysqli_query($con,$evequery);
+    // }
+    //
+    // $brainquery = "CREATE TABLE IF NOT EXISTS Brainathon(
+    //             ID INT(11) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    //             Name VARCHAR(255) NOT NULL,
+    //             Email VARCHAR(255) NOT NULL,
+    //             Contact VARCHAR(255) NOT NULL,
+    //             isPaid TINYINT(1) DEFAULT '0'
+    //             )";
+    // mysqli_query($con,$brainquery);
+    //
+    // $nirmaanquery = "ALTER TABLE Registrations ADD COLUMN nirmaan TINYINT(1) DEFAULT '0' AFTER BizQuiz;";
+    // mysqli_query($con,$nirmaanquery);
+    //
+    // $aimlquery = "ALTER TABLE Registrations ADD COLUMN aimlworkshop TINYINT(1) DEFAULT '0' AFTER nirmaan;";
+    // mysqli_query($con,$aimlquery);
+    //
+    // $nirmaan = "CREATE TABLE IF NOT EXISTS nirmaan(
+    //   ID INT(11) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    //   Name VARCHAR(255) NOT NULL,
+    //   Email VARCHAR(255) NOT NULL,
+    //   Contact VARCHAR(255) NOT NULL,
+    // )";
+    //
+    // $iplauction = "CREATE TABLE IF NOT EXISTS iplauction(
+    //   ID INT(11) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    //   Name VARCHAR(255) NOT NULL,
+    //   Email VARCHAR(255) NOT NULL,
+    //   Contact VARCHAR(255) NOT NULL,
+    // )";
+    //
+    // mysqli_query($con,$nirmaan);
 
     if(isset($_POST['regnew'])) {
-    $name = $con->real_escape_string($_POST['name']);
     $email = $con->real_escape_string($_POST['email']);
+    $name = $con->real_escape_string($_POST['name']);
     $contact = $con->real_escape_string($_POST['contact']);
     $college = $con->real_escape_string($_POST['college']);
-    $password = $con->real_escape_string($_POST['password']);
-    $cpassword = $con->real_escape_string($_POST['cpassword']);
+    // $consoid = $con->real_escape_string($_POST['conso_id']);
+    // $password = $con->real_escape_string($_POST['password']);
+    // $cpassword = $con->real_escape_string($_POST['cpassword']);
 
-    if( $name == "" || $email == "" || $contact == "" || $password == "" || $cpassword == "" || $college == ""){
+    // if( $name == "" || $email == "" || $contact == "" || $password == "" || $cpassword == "" || $college == ""){
+    if( $name == "" || $email == "" || $contact == "" || $college == ""){
       $msg = "Please enter all the details";
-      header('location:/regnew.php');
+      header('location:regnew.php');
     }
-    elseif($password == $cpassword){
-      $hashed_password = $con->real_escape_string(password_hash($cpassword, PASSWORD_DEFAULT));
+    // elseif($password == $cpassword){
+    else{
+      // $hashed_password = $con->real_escape_string(password_hash($cpassword, PASSWORD_DEFAULT));
 
-      $query = "SELECT * FROM Registrations WHERE Email='$email'";
+      $query = "SELECT * FROM registrations WHERE Email='$email'";
       $result = mysqli_query($con,$query);
       $num = mysqli_num_rows($result);
 
@@ -120,7 +117,7 @@
       }
 
       elseif($num != 0 && $row['otp'] != 'Confirmed'){
-        $_SESSION['verify'] = "Please verify your email id in order to login";
+        $_SESSION['verify'] = "Please verify your email id in order to login. Enter your ConsoID";
         header('location:verify.php?email='.$email.'');
       }
 
@@ -128,15 +125,34 @@
 
         $otp = '1234567890';
         $otp = str_shuffle($otp);
-        $otp = substr($otp, 0, 6);
+        // $otp = substr($otp, 0, 6);
 
-        $q = "INSERT INTO Registrations(Name,Email,Contact,College,Password,otp) VALUES('$name','$email','$contact','$college','$hashed_password','$otp')";
+        $conso_id = substr($name, 0, 3);
+        $conso_id .= substr($otp, 0, 4);
+
+
+        $query = "SELECT * FROM registrations WHERE Email='$email'";
+        $result = mysqli_query($con,$query);
+        $num = mysqli_num_rows($result);
+        if($num != 0){
+          $conso_id = "";
+          $pass = str_shuffle($otp);
+          $conso_id = substr($name, 0, 3);
+          $conso_id .= substr($pass, 0, 4);
+        }
+
+
+        // $hashed_ci = $con->real_escape_string(password_hash($conso_id, PASSWORD_DEFAULT));
+
+
+        $q = "INSERT INTO registrations(email,name,contact,college,conso_id,otp) VALUES('$email','$name','$contact','$college','$conso_id','$conso_id')";
+        // $q = "INSERT INTO Registrations(Name,Email,Contact,College,Password,otp) VALUES('$name','$email','$contact','$college','$hashed_password','$otp')";
         if(mysqli_query($con,$q)){
 
           $msg = "Please verify your email id to login.";
-          $s = "Verify Your Emaid ID";
-          $_SESSION['verify'] = "Welcome. An OTP is sent to your registered email id. Please enter the OTP below to confirm your email address.";
-          htmlMail($email,$s,'',$otp, 'otp');
+          $s = "Verify Your Emaid ID | Your ConsoID | Consortium'21";
+          $_SESSION['verify'] = "Your ConsoID has been sent to your registered email id. Please enter your ConsoID below to confirm your email address.";
+          htmlMail($email,$s,$name,$conso_id, 'conso_id');
           header('location:verify.php?email='.$email.'');
 
         }else {
@@ -146,9 +162,9 @@
       }
 
     }
-    else{
-      $msg = "Passwords didn't matched";
-    }
+    // else{
+    //   $msg = "Passwords didn't matched";
+    // }
   }
 ?>
 
@@ -163,7 +179,6 @@
                 <p class="text-uppercase g-font-size-14--xs g-font-weight--700 g-color--white-opacity g-letter-spacing--2 g-margin-b-25--xs">Sign Up</p>
                 <h2 class="g-font-size-32--xs g-font-size-36--md g-color--white">Register Now</h2>
                 <p class="text-uppercase g-font-size-14--xs g-font-weight--700 g-color--red g-letter-spacing--2 g-margin-b-25--xs"><?php echo $msg; ?></p>
-                <p class="text-uppercase g-font-size-14--xs g-font-weight--700 g-color--red g-letter-spacing--2 g-margin-b-25--xs"><?php echo $msg1; ?></p>
                 <p class="text-uppercase g-font-size-14--xs g-font-weight--700 g-color--red g-letter-spacing--2 g-margin-b-25--xs" id="message"></p>
             </div>
             <form class="center-block g-width-500--sm g-text-center--xs g-width-600--md" method="post" action="regnew.php" onsubmit="return validateData();">
@@ -195,12 +210,12 @@
                         <option value='BizQuiz'>BizQuiz</option>
                         <option value='ConsoWorld'>ConsoWorld</option>
                     </select> -->
-                    <div class="g-margin-b-30--xs">
+                    <!-- <div class="g-margin-b-30--xs">
                             <input type="password" class="form-control s-form-v3__input" placeholder="* Password" name="password" id="password">
                     </div>
                     <div class="g-margin-b-30--xs">
                             <input type="password" class="form-control s-form-v3__input" placeholder="* Confirm Password" name="cpassword">
-                    </div>
+                    </div> -->
 
                 </div>
 
@@ -213,7 +228,7 @@
 
         </div>
     </div>
-    <?php include("includes/footer.php");?>
+    <?php include("includes/footer_landing.php");?>
     <?php include("includes/script.php");?>
   </body>
 </html>

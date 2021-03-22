@@ -7,7 +7,7 @@ function htmlMail($t, $sub, $name, $teamname, $event){
 
     $subject = $sub;
 
-    $htmlOTP = "<!DOCTYPE html>
+    $html_conso_id = "<!DOCTYPE html>
               <html>
                   <head>
                       <style>
@@ -50,7 +50,7 @@ function htmlMail($t, $sub, $name, $teamname, $event){
                   <body>
 
                       <div style='background: #0b0b0b; padding:10px 30px;'><img src='https://www.ecellvnit.org/img/logo-ecell.png'></div>
-                      <h2 style='font-size:22px;'>Welcome to Consortium'20</h2><br>
+                      <h2 style='font-size:22px;'>Welcome to Consortium'21</h2><br>
 
                       <div class='context'>
 
@@ -61,7 +61,11 @@ function htmlMail($t, $sub, $name, $teamname, $event){
                           <p>Thank You for registering! You are now a part of one of the India's Biggest Entrepreneurship Summit.</p>
                           <div>
                               <p>We are well pleased to have you on board.<br/><br/>
-                              To verify your email: $email use this OTP <br/> <span style='font-size:24px'>".$teamname."</span></p>
+                              We are assigning you a ConsoID: ".$teamname."<br/>
+                              You need to remember this ConsoID to login into your dashboard on our website, https://consortium.ecellvnit.org/<br/>
+                              <b>Kindly do not share your ConsoID with anyone. It's your key to your dashboard of Consortium'21.</b><br/>
+                              Your ConsoID is<br/> <span style='font-size:24px'>".$teamname."</span></p>
+                              Use it to verify your email id.<br/>
                               For queries and in case of any difficulty, feel free to contact us.<br>
                                   <p>
                                   With warm regards,<br>
@@ -76,7 +80,7 @@ function htmlMail($t, $sub, $name, $teamname, $event){
 
 
 
-    $htmlSwadesh = '
+    $htmlswades = '
     <!DOCTYPE html>
         <html>
             <head>
@@ -137,7 +141,7 @@ function htmlMail($t, $sub, $name, $teamname, $event){
                     <h3><b>Hello '.$name.',</b></h3>
 
 
-                    <p>Thank You for registering team <b>'.$teamname.'</b></p>
+                    <p>Thank You for registering in Consortium 21!</p>
                     <div>
                         <p>We hope this mail finds you in the best of your health and cheerful spirits. We are well pleased to have you on board for the <b>Swades</b></p>
                         <p>
@@ -347,7 +351,7 @@ function htmlMail($t, $sub, $name, $teamname, $event){
                           <br>
                             With warm regards,<br>
                             Team Render.ico<br>
-                            Consortium 20, Ecell VNIT
+                            Consortium 21, Ecell VNIT
                         </p>
                     </div>
                 </div>
@@ -625,37 +629,35 @@ function htmlMail($t, $sub, $name, $teamname, $event){
                           <h3><b>Hello</b></h3>
 
 
-                          <p> You are successfully registered for AdVenture! You are now a part of on of the India’s Biggest Entrepreneurship Summit. We are well pleased to have you on board for this event.</p>
+                          <p> You are successfully registered for AdVenture! We are well pleased to have you on board for this event.</p>
                           <div>
                               <p>
 
                                   <br>
-                                  Your time is now! This Consortium\'20, grab your camera and bring your ideas to life!
+                                  Your time is now! This Consortium\'21, grab your camera and bring your ideas to life!
 
                               </p>
-                              <br>
-
-                                <a style="display:block; text-align: center;width:150px; padding:12px 10px; background: #111; color:#FFF; text-decoration: none; border-radius:30px; position: relative;" href="https://drive.google.com/file/d/1DMwEP2RAsp0PK008c9fk2_lqq77FeJe1/view?usp=sharing">Problem Statement
-                                </a><br/>
                                 <br>
-                                <p><b>All the submission will be done to adventure2k20@gmail.com on the google drive</b></p>
+                                <p>You would be given a set of challenges to pick from in our further emails, which must be completed within a stipulated amount of time. You will have to engage your creative senses and marketing mind to design an appropriate advertisement to finish your challenge.</p>
 
 
-                              <p>
-                                  To keep you updated, all the relevant details will be emailed to you very shortly.
+                              <p>The best advertisements made by you guys, will be featured on our social media pages and will also give you a chance to earn exciting prizes worth 5000 RS. Sharpen your tools for the upcoming creative battles.
                                   <br>
                               </p>
                               <p>For queries and in case of any difficulty, feel free to contact us.</p>
                               <p>
+                              Sai Shiva -  +91 96522 62597- saishiva191@gmail.com <br>
+                              Sriya -  +91 97666 09287 - sriya.samiksha@gmail.com <br>
+                              Nidhi - +91 76207 16748 - aralkar.nidhi151@gmail.com <br><br>
                                   With warm regards,<br>
-                                  Ritika Meena
-                                  +91 96991 73231
                                   Team E-Cell VNIT
                               </p>
                           </div>
                       </div>
                   </body>
               </html>';
+
+
     $htmlBizQuiz = '<!DOCTYPE html>
               <html>
                   <head>
@@ -710,20 +712,17 @@ function htmlMail($t, $sub, $name, $teamname, $event){
                               <p>
 
                                   <br>
-                                  Your time is now! This Conso\'20, battle your wits and challenge the wise !
+                                  Your time is now! This Conso\'21, battle your wits and challenge the wise !
 
                               </p>
 
                               <p>
                                   To complete your registration for Bizquiz please make the required payment of <b>INR 50</b>.
                                   <br><br>
-                                  <b>To Pay:<br></b>
-                                  <ol>
-                                  <li>Google Pay or Paytm on +91 77384 46941</li>
-                                  <li>Registration Desk, near canteen, VNIT</li>
-                                  </ol>
+                                  <b>For further details visit <a href="https://dare2compete.com/o/bizquiz-consortium21-visvesvaraya-national-institute-of-technology-vnit-nagpur-153434">Our portal</a> <br></b>
+
                               </p>
-                              <p>For queries and in case of any difficulty, feel free to Contact 9370923419</p>
+                              <p>For queries and in case of any difficulty, feel free to Contact Saransh Mittal: 9351482013</p>
                               <p>
                                   With warm regards,<br>
                                   Team E-Cell VNIT
@@ -863,7 +862,7 @@ function htmlMail($t, $sub, $name, $teamname, $event){
                       </div>
                   </body>
               </html>';
-    $htmlPitch = '<!DOCTYPE html>
+    $htmlpitch_mantra = '<!DOCTYPE html>
               <html>
                   <head>
                       <style>
@@ -906,17 +905,93 @@ function htmlMail($t, $sub, $name, $teamname, $event){
                   <body>
 
                       <div style="background: #0b0b0b; padding:10px 30px;"><img src="https://www.ecellvnit.org/img/logo-ecell.png"></div>
-                      <h2 style="font-size:22px;">Welcome to Pitch Perfect</h2><br>
+                      <h2 style="font-size:22px;">Welcome to Pitch Mantra</h2><br>
 
                       <div class="context">
-                          <h3><b>Hey!</b></h3>
-                          <p>Congratulations! You are successfully registered for Pitch Perfect</p>
+                          <h3><b>Dear Pitchmantra’s Participant,</b></h3>
+                          <p>Congratulations! You have been successfully registered for <b>Pitch Mantra</b> by Consortium’21, E-CELL VNIT.</p>
                           <div>
                               <p>
-                                  It\'s time to to bring out the creative mindset of young people where they battle down to pitch an innovative product or service in the best possible way.
+                                The first step into this event is to attend the webinar on Pitching Skills which is scheduled on 21st March, 2021 at 12 Noon. The link for the webinar will be sent to you on 20th March, 2021.</p>
+                                <p>The next step shall be Video Pitching round. Details about it shall be mailed to you.
                               </p>
 
-                              <p>For queries and in case of any difficulty, feel free to contact us.</p>
+                              <p>For queries and in case of any difficulty, feel free to contact<br>
+                              Siddhesh: 7057997990, sdumbre07@gmail.com<br>
+                              Nandini: 9404431671, nandu.todsam01@gmail.com<br>
+                              Onkar: 7972075798, onkarbartakke27136@gmail.com
+                              </p>
+                              <p>
+                                  With warm regards,<br>
+                                  Team Pitch Mantra, E-CELL VNIT
+                              </p>
+                          </div>
+                      </div>
+                  </body>
+              </html>';
+    $htmloperation_research = '<!DOCTYPE html>
+              <html>
+                  <head>
+                      <style>
+                          li{
+                              padding:10px;
+                          }
+                          p{
+                              font-size:16px;
+                          }
+
+                          *{
+                              font-family:Helvetica,Arial,sans-serif;
+                          }
+
+                          h2{
+                              text-align: center;
+                              margin-top: 150px;
+
+                          }
+                          html, body{
+                              background-color:#f7f9fb;
+                              margin: 0;
+                          }
+                          .context {
+                              font-size: 12px;
+                              padding: 40px 60px;
+                              margin-left:10%;
+                              margin-right: 10%;
+                          }
+
+                          .context p{
+                              font-size: 12px;
+                          }
+                          p{
+                              margin: 15px 0px;
+                          }
+
+                      </style>
+                  </head>
+                  <body>
+
+                      <div style="background: #0b0b0b; padding:10px 30px;"><img src="https://www.ecellvnit.org/img/logo-ecell.png"></div>
+                      <h2 style="font-size:22px;">Welcome to Operation Research!</h2><br>
+
+                      <div class="context">
+                          <h3><b>Hello Operation Research Participant!</b></h3>
+                          <p>Congratulations! You are successfully registered for Operation Research by consortium 2021, VNIT</p>
+                          <div>
+                              <p>
+                              The problem statement would be sent to you on 20th march and will also be available on D2C. You have to submit the solution by 25th March on D2C itself.
+                                  <br>
+                                  Results will be declared on 28th of March.
+                                  <br>
+                                  Further details will be mailed to you.<br>
+                                  For any query you can contact to:<br>
+                                  Rutuja: 7798972054; rutuja.vnit@gmail.com<br>
+                                  Vipashvi: 8459981785; vipashvia@gmail.com<br>
+
+
+                              </p>
+
+
                               <p>
                                   With warm regards,<br>
                                   Team E-Cell VNIT
@@ -925,7 +1000,9 @@ function htmlMail($t, $sub, $name, $teamname, $event){
                       </div>
                   </body>
               </html>';
-    $htmlCEO = '<!DOCTYPE html>
+
+
+              $htmlCEO = '<!DOCTYPE html>
               <html>
                   <head>
                       <style>
@@ -968,7 +1045,7 @@ function htmlMail($t, $sub, $name, $teamname, $event){
                   <body>
 
                       <div style="background: #0b0b0b; padding:10px 30px;"><img src="https://www.ecellvnit.org/img/logo-ecell.png"></div>
-                      <h2 style="font-size:22px;">Welcome to Pitch Perfect</h2><br>
+                      <h2 style="font-size:22px;">Welcome to CEO!</h2><br>
 
                       <div class="context">
                           <h3><b>Hey!</b></h3>
@@ -976,6 +1053,8 @@ function htmlMail($t, $sub, $name, $teamname, $event){
                           <div>
                               <p>
                                   It\'s time to to bring out the creative mindset of young people where they battle down to pitch an innovative product or service in the best possible way.
+                                  <br>
+                                  You will be notified about the further rounds and events on your registered mail id and your contact number. Wishing you best of luck for this enthralling journey.
                               </p>
 
                               <p>For queries and in case of any difficulty, feel free to contact us.</p>
@@ -987,6 +1066,7 @@ function htmlMail($t, $sub, $name, $teamname, $event){
                       </div>
                   </body>
               </html>';
+
 
               $htmlnirmaan = '<!DOCTYPE html>
                         <html>
@@ -1117,9 +1197,286 @@ function htmlMail($t, $sub, $name, $teamname, $event){
                                       </body>
                                   </html>';
 
+                                  $htmlwallstreet = '<!DOCTYPE html>
+                                            <html>
+                                                <head>
+                                                    <style>
+                                                        li{
+                                                            padding:10px;
+                                                        }
+                                                        p{
+                                                            font-size:16px;
+                                                        }
+
+                                                        *{
+                                                            font-family:Helvetica,Arial,sans-serif;
+                                                        }
+
+                                                        h2{
+                                                            text-align: center;
+                                                            margin-top: 150px;
+
+                                                        }
+                                                        html, body{
+                                                            background-color:#f7f9fb;
+                                                            margin: 0;
+                                                        }
+                                                        .context {
+                                                            font-size: 12px;
+                                                            padding: 40px 60px;
+                                                            margin-left:10%;
+                                                            margin-right: 10%;
+                                                        }
+
+                                                        .context p{
+                                                            font-size: 12px;
+                                                        }
+                                                        p{
+                                                            margin: 15px 0px;
+                                                        }
+
+                                                    </style>
+                                                </head>
+                                                <body>
+
+                                                    <div style="background: #0b0b0b; padding:10px 30px;"><img src="https://www.ecellvnit.org/img/logo-ecell.png"></div>
+                                                    <h2 style="font-size:22px;">Welcome to Wallstreet!</h2><br>
+
+                                                    <div class="context">
+                                                        <h3><b>Hey!</b></h3>
+                                                        <p>Congratulations! You are successfully registered for Wallstreet</p>
+                                                        <div>
+                                                            <p>
+                                                              Visit your dashboard for the payment to complete your registration.
+                                                            </p>
+
+                                                            <p>For queries and in case of any difficulty, feel free to contact us.</p>
+                                                            <p>
+                                                                With warm regards,<br>
+                                                                Team E-Cell VNIT
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </body>
+                                            </html>';
+
+                                  $htmlForgot = "<!DOCTYPE html>
+                                            <html>
+                                                <head>
+                                                    <style>
+                                                        li{
+                                                            padding:10px;
+                                                        }
+                                                        p{
+                                                            font-size:16px;
+                                                        }
+
+                                                        *{
+                                                            font-family:Helvetica,Arial,sans-serif;
+                                                        }
+
+                                                        h2{
+                                                            text-align: center;
+                                                            margin-top: 150px;
+
+                                                        }
+                                                        html, body{
+                                                            background-color:#f7f9fb;
+                                                            margin: 0;
+                                                        }
+                                                        .context {
+                                                            font-size: 12px;
+                                                            padding: 40px 60px;
+                                                            margin-left:10%;
+                                                            margin-right: 10%;
+                                                        }
+
+                                                        .context p{
+                                                            font-size: 12px;
+                                                        }
+                                                        p{
+                                                            margin: 15px 0px;
+                                                        }
+
+                                                    </style>
+                                                </head>
+                                                <body>
+
+                                                    <div style='background: #0b0b0b; padding:10px 30px;'><img src='https://www.ecellvnit.org/img/logo-ecell.png'></div>
+                                                    <h2 style='font-size:22px;'>Your new ConsoID for Consortium'21</h2><br>
+
+                                                    <div class='context'>
+
+
+                                                    <h3><b>Hello".$name."!</b></h3>
+                                                    <div>
+                                                        <p>We hope this mail finds you in the best of your health and cheerful spirits. We are well pleased to have you on board.<br/><br/>
+                                                        Your updated ConsoID is: <br/> <span style='font-size:24px'>".$teamname."</span><br/>
+                                                        Use this ConsoID to login to your dashboard: https://consortium.ecellvnit.org/login.php
+                                                        </p>
+                                                        For queries and in case of any difficulty, feel free to contact us.<br>
+                                                            <p>
+                                                            With warm regards,<br>
+                                                            E-Cell VNIT
+                                                        </p>
+
+
+                                                    </div>
+
+
+                                                        </div>
+                                                    </div>
+                                                </body>
+                                            </html>";
+
+                              $htmlconfirmwallstreet = "<!DOCTYPE html>
+                                        <html>
+                                            <head>
+                                                <style>
+                                                    li{
+                                                        padding:10px;
+                                                    }
+                                                    p{
+                                                        font-size:16px;
+                                                    }
+
+                                                    *{
+                                                        font-family:Helvetica,Arial,sans-serif;
+                                                    }
+
+                                                    h2{
+                                                        text-align: center;
+                                                        margin-top: 150px;
+
+                                                    }
+                                                    html, body{
+                                                        background-color:#f7f9fb;
+                                                        margin: 0;
+                                                    }
+                                                    .context {
+                                                        font-size: 12px;
+                                                        padding: 40px 60px;
+                                                        margin-left:10%;
+                                                        margin-right: 10%;
+                                                    }
+
+                                                    .context p{
+                                                        font-size: 12px;
+                                                    }
+                                                    p{
+                                                        margin: 15px 0px;
+                                                    }
+
+                                                </style>
+                                            </head>
+                                            <body>
+
+                                                <div style='background: #0b0b0b; padding:10px 30px;'><img src='https://www.ecellvnit.org/img/logo-ecell.png'></div>
+                                                <h2 style='font-size:22px;'>Registration Complete | Wallstreet</h2><br>
+
+                                                <div class='context'>
+
+
+                                                <h3><b>Hello".$name."!</b></h3>
+                                                <div>
+                                                    <p>You have successfully registered for the Wallstreet Event by VNIT Nagpur.<br>
+                                                    <b>Wallstreet</b> will be live from 22nd March to 26th March 2021.<br>
+                                                    You will receive the link and procedure to join virtual trading competition before the event on this email ID.<br><br>
+                                                    If you have paid &#8377;200, you have successfully registered for the <b>Workshop by Zerodha</b> too.<br>
+                                                    Having a <b>PAN CARD</b> is must to open a trading account according to guidelines set by Govt. of India. If you don’t have a PAN card with you then please apply for it so that your trading account could be opened.<br><br>
+                                                    For more updates follow our Instagram handle @ecellvnit.<br><br>
+                                                    Stay Tuned !<br>
+
+                                                    </p>
+                                                    For queries and in case of any difficulty, feel free to contact us.<br>
+                                                        <p>
+                                                        With warm regards,<br>
+                                                        E-Cell VNIT
+                                                    </p>
+
+
+                                                </div>
+
+
+                                                    </div>
+                                                </div>
+                                            </body>
+                                        </html>";
+                                        $htmlconfirmwar_of_worlds = "<!DOCTYPE html>
+                                        <html>
+                                            <head>
+                                                <style>
+                                                    li{
+                                                        padding:10px;
+                                                    }
+                                                    p{
+                                                        font-size:16px;
+                                                    }
+
+                                                    *{
+                                                        font-family:Helvetica,Arial,sans-serif;
+                                                    }
+
+                                                    h2{
+                                                        text-align: center;
+                                                        margin-top: 150px;
+
+                                                    }
+                                                    html, body{
+                                                        background-color:#f7f9fb;
+                                                        margin: 0;
+                                                    }
+                                                    .context {
+                                                        font-size: 12px;
+                                                        padding: 40px 60px;
+                                                        margin-left:10%;
+                                                        margin-right: 10%;
+                                                    }
+
+                                                    .context p{
+                                                        font-size: 12px;
+                                                    }
+                                                    p{
+                                                        margin: 15px 0px;
+                                                    }
+
+                                                </style>
+                                            </head>
+                                            <body>
+                                                <div style= 'background: #0b0b0b; padding:10px 30px;'><img src='https://www.ecellvnit.org/img/logo-ecell.png'></div>
+                                                <h2 style='font-size:22px;'>Welcome to War of Worlds</h2><br>
+
+                                                <div class='context'>
+                                                    <h3><b>Hello </b></h3>
+
+
+                                                    <p>Congratulations!You payment is successful. You are now a part of Central India’s Biggest Entrepreneurship Summit.</p>
+                                                    <div>
+                                                        <p>
+                                                            We are well pleased to have you on board for this event.You are successfully registered for War of Worlds.
+                                                            <br>
+
+                                                        </p>
+
+                                                        <p>
+                                                            This is the Questionnaire for Round 1 of War of Worlds<br>
+                                                            https://docs.google.com/forms/d/e/1FAIpQLSeF_OYGF_1BK3qdQ5eqjkHx7XxJhB9q0jnNKULKH3eMU_Sz3g/viewform <br>
+                                                            Please Complete the Questionnaire by 18th March 2021<br>
+                                                        </p>
+                                                        <p>For queries and in case of any difficulty, feel free to contact us.</p>
+                                                        <p>
+                                                            With warm regards,<br>
+                                                            Team E-Cell VNIT
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </body>
+                                        </html>";
+
+
     $html = "";
-    if($event == 'Swadesh'){
-      $html = $htmlSwadesh;
+    if($event == 'swades'){
+      $html = $htmlswades;
     }
     else if($event == 'TREC'){
       $html = $htmlTREC;
@@ -1136,26 +1493,23 @@ function htmlMail($t, $sub, $name, $teamname, $event){
     else if($event == 'war_of_worlds'){
       $html = $htmlwar_of_worlds;
     }
-    else if($event == 'AdVenture'){
+    else if($event == 'adventure'){
       $html = $htmlAdVenture;
     }
     else if($event == 'townhall'){
       $html = $htmlTownhall;
     }
-    else if($event == 'otp'){
-      $html = $htmlOTP;
+    else if($event == 'conso_id'){
+      $html = $html_conso_id;
     }
-    else if($event == 'BizQuiz'){
+    else if($event == 'bizquiz'){
       $html = $htmlBizQuiz;
     }
 
     else if($event == 'BizMantra'){
       $html = $htmlBizMantra;
     }
-    else if($event == 'Pitch_Perfect'){
-      $html = $htmlPitch;
-    }
-    else if($event == 'CEO'){
+    else if($event == 'ceo'){
       $html = $htmlCEO;
     }
     else if($event == 'nirmaan'){
@@ -1163,6 +1517,23 @@ function htmlMail($t, $sub, $name, $teamname, $event){
     }
     else if($event == 'iplauction'){
       $html = $htmliplauction;
+    }
+    else if($event == 'wallstreet'){
+      $html = $htmlwallstreet;
+    }
+    else if($event == 'pitch_mantra'){
+      $html = $htmlpitch_mantra;
+    }
+    else if($event == 'operation_research'){
+      $html = $htmloperation_research;
+    }
+    else if($event == 'forgot'){
+      $html = $htmlForgot;
+    }
+    else if($event == 'confirmwallstreet'){
+      $html = $htmlconfirmwallstreet;
+    }else if($event == 'confirmwar_of_words'){
+        $html = $htmlconfirmwar_of_worlds;
     }
 
     $url = 'https://startupconclave.ecellvnit.org/send';

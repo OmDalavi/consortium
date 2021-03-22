@@ -9,35 +9,35 @@
       header('location:dashboard.php');
    }
   else if(isset($_POST['login1'])) {
-    $db_host = "localhost:3306";
-    $db_username = "conso20";
-    $db_pass = "Conso@123";
-    $db_name = "conso20";
+    require_once('includes/dbconnect.php');
 
-    $con = mysqli_connect("$db_host","$db_username","$db_pass") or die ("could not connect to mysql");
-    mysqli_select_db($con,$db_name) or die ("no database");
+    $conso_id = $con->real_escape_string($_POST['conso_id']);
+    // $email = $con->real_escape_string($_POST['email']);
+    // $password = $con->real_escape_string($_POST['password']);
 
-    $email = $con->real_escape_string($_POST['email']);
-    $password = $con->real_escape_string($_POST['password']);
-
-    if($email=="" || $password==""){
-        $msg =  "Please fill all the details";
+    // if($email=="" || $password==""){
+    if($conso_id == ""){
+        $msg =  "Please enter your Conso ID login :)";
     }
 
     else{
 
-      $events = array('Swadesh','AdVenture','Pitch_Perfect','renderico','CEO','Teen_Titans','BizMantra','BizQuiz');
+      // $events = array('Swadesh','AdVenture','Pitch_Perfect','renderico','CEO','Teen_Titans','BizMantra','BizQuiz');
 
-      $query = "SELECT * from Registrations WHERE Email='$email'";
+      // $hashed_ci = $con->real_escape_string(password_hash($conso_id, PASSWORD_DEFAULT));
+
+      $query = "SELECT * from registrations WHERE conso_id='$conso_id'";
       $result = mysqli_query($con,$query);
       $num = mysqli_num_rows($result);
+
+      // $conso_id = password_verify($conso_id,$data['hashed_ci']);
 
       if($num > 0){
 
         $data = mysqli_fetch_array($result);
 
         if($data['otp'] == 'Confirmed'){
-          if(password_verify($password,$data['Password'])){
+          // if(password_verify($conso_id,$data['hashed_ci'])){
 
 
             function split_name($name) {
@@ -47,53 +47,58 @@
               return array($first_name, $last_name);
             }
 
-            $_SESSION['email'] = $email;
-            $_SESSION['name'] = split_name($data['Name'])[0];
-            $_SESSION['contact'] = $data['Contact'];
-            $_SESSION['fullname'] = $data['Name'];
+            $_SESSION['email'] = $data['email'];
+            $_SESSION['name'] = split_name($data['name'])[0];
+            $_SESSION['contact'] = $data['contact'];
+            $_SESSION['college'] = $data['college'];
+            $_SESSION['fullname'] = $data['name'];
+            $_SESSION['consoID'] = $data['conso_id'];
 
-            if($_GET['v'] == 'ai-ml'){
-              header('location:aimlworkshop.php');
-            }
-
-            else{
+            // if($_GET['v'] == 'ai-ml'){
+            //   header('location:aimlworkshop.php');
+            // }
+            //
+            // else{
               header('location:register.php');
-            }
+            // }
 
           }
           else {
-            $msg = "Incorrect Password. Please try again.";
+            $msg = "Incorrect ID. You sure you remember it?.";
           }
         }
         else{
-
-          $otp = '1234567890';
-          $otp = str_shuffle($otp);
-          $otp = substr($otp, 0, 6);
-
-          $q = "UPDATE Registrations SET otp='$otp' WHERE Email = '$email'";
-
-
-          if(mysqli_query($con,$q)){
-
-
-
-            $msg = "Please verify your email id to login.";
-            $s = "Verify Your ConsoID";
-            $_SESSION['verify'] = "Welcome. An OTP is sent to your registered email id. Please enter the OTP below to confirm your email address.";
-            htmlMail($email,$s,'',$otp, 'otp');
-            header('location:verify.php?email='.$email.'');
-          }
-          else{
-            $msg = "Something Went Wrong";
-          }
-
+          $msg = "This ID isn't registered with us. Register <a href='regnew.php'>here</a>.";
         }
+        // else{
+        //
+        //   $otp = '1234567890';
+        //   $otp = str_shuffle($otp);
+        //   $otp = substr($otp, 0, 6);
+        //
+        //   $q = "UPDATE Registrations SET otp='$otp' WHERE Email = '$email'";
+        //
+        //
+        //   if(mysqli_query($con,$q)){
+        //
+        //
+        //
+        //     $msg = "Please verify your email id to login.";
+        //     $s = "Verify Your ConsoID";
+        //     $_SESSION['verify'] = "Welcome. An OTP is sent to your registered email id. Please enter the OTP below to confirm your email address.";
+        //     htmlMail($email,$s,'',$otp, 'otp');
+        //     header('location:verify.php?email='.$email.'');
+        //   }
+        //   else{
+        //     $msg = "Something Went Wrong";
+        //   }
+        //
+        // }
       }
-      else{
-        $msg = "This email id isn't registered with us. Register <a href='regnew.php'>here</a>.";
-      }
-    }
+      // else{
+      //   $msg = "This ID isn't registered with us. Register <a href='regnew.php'>here</a>.";
+      // }
+    // }
   }
   else if(isset($_POST['login2'])){
     header('location:index.php');
@@ -127,14 +132,17 @@
                                 <p class="text-uppercase g-font-size-14--xs g-text-center--xs g-font-weight--700 g-color--red g-letter-spacing--2 g-margin-b-25--xs"><?php  if(isset($_SESSION['login_error'])){ echo $_SESSION['login_error'];session_destroy(); }?></p>
                             </div>
                             <div class="g-margin-b-30--xs">
+                                  <input type="password" class="form-control s-form-v3__input" placeholder="* Your ConsoID" name="conso_id" style="text-transform: none" id="conso_id">
+                            </div>
+                            <!-- <div class="g-margin-b-30--xs">
                                 <input type="email" name="email" style="text-transform: none;" class="form-control s-form-v3__input" placeholder="* Email">
                             </div>
                             <div class="g-margin-b-30--xs">
                                 <input type="password" name="password" style="text-transform: none;" class="form-control s-form-v3__input" placeholder="* Password">
                             </div>
-                            <div class="g-text-center--xs">
+                            <div class="g-text-center--xs"> -->
                                 <button type="submit" name="login1" class="text-uppercase btn-block s-btn s-btn--md s-btn--white-bg g-radius--50 g-padding-x-50--xs g-margin-b-20--xs">Login</button>
-                                <a href="forgot.php" class="g-color--white g-font-size-13--xs regclass">Forgot Password</a><br>
+                                <a href="forgot.php" class="g-color--white g-font-size-13--xs regclass">Forgot ConsoID</a><br>
                                 <a href="regnew.php" class="g-color--white g-font-size-13--xs regclass">Not Registered?</a><br>
                             </div>
                         </form>

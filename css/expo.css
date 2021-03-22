@@ -446,7 +446,7 @@ video::-webkit-media-controls-overlay-play-button {
 /*sxsxs*/
 .tee{
 
-    background:url(../img/2.jpg) 10%;
+    background:url(../img/conso-tshirt.jpg) 10%;
     height:180vh;
     background-size: cover !important;
     background-position: 35% !important;
@@ -482,7 +482,7 @@ video::-webkit-media-controls-overlay-play-button {
 
     .tee{
 
-        background:url(../img/2.jpg) 10%;
+        background:url(../img/conso-tshirt.jpg) 10%;
         height:70vh;
         background-size: cover !important;
         background-position: 3% !important;
@@ -590,4 +590,8 @@ video::-webkit-media-controls-overlay-play-button {
     margin-top: 25px !important;
     padding-bottom: 400px !important;
     padding-top: 1px !important;
+}
+
+option{
+  background-color: #000;
 }
