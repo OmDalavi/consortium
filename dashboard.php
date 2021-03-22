@@ -223,7 +223,7 @@
 
       <form class="center-block g-width-600--sm" method="post" action="pay.php?v=ceo">
           <div class="permanent permanent-CEO row">
-            <p class="g-color--white g-text-center--xs g-font-size-14--xs">Fill this form to pay &#8377;100 and complete your registration.</p>
+            <p class="g-color--white g-text-center--xs g-font-size-14--xs">Fill this form to pay and complete your registration.</p>
               <div class="col-sm-6 g-margin-b-30--xs">
                     <input type="text" class="form-control s-form-v3__input" placeholder="* Name" name="CUSTOMER_NAME" style="text-transform: none" value="<?php echo $name ?>">
               </div>
@@ -235,9 +235,11 @@
               </div>
 
           </div>
+          <!--
           <div class="g-text-center--xs">
               <button type="submit" name="pay" class="text-uppercase s-btn s-btn--md s-btn--white-brd g-radius--50 g-padding-x-70--xs g-margin-b-20--xs">Proceed to Pay</button>
           </div>
+          -->
       </form>
     </div>
     <?php
