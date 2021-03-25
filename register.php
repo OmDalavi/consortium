@@ -127,7 +127,7 @@
                 <div class="permanent">
                   <select pattern="[0-9]{11}" class="form-control s-form-v3__input g-margin-b-30--xs" name="event" placeholder="* No. of members" id="members" >
                       <option value='' selected disabled hidden>Choose an Event you wish to participate in.</option>
-                      <option value='ceo'>CEO</option>
+                      <!--<option value='ceo'>CEO</option>-->
                       <option value='wallstreet'>Wallstreet</option>
                       <option value='adventure'>AdVenture</option>
                       <option value='war_of_worlds'>War of Worlds</option>

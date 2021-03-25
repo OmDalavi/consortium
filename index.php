@@ -303,6 +303,63 @@
         </div> -->
 
 
+        <!-- ConsoX -->
+        <div class="s-promo-block-v3 townhall" style="background: #000" id="consox">
+
+            <div class="container g-padding-y-40--xs g-padding-y-50--md g-padding-y-0--lg">
+                <!--<img src="img/logo/logo-teentitans.png" alt="" width="280" style="margin-top:-180px">-->
+                <div class="g-margin-t-150--xs g-margin-t-60--sm g-margin-t-100--md g-margin-b-30--xs g-margin-b-70--md g-margin-l-20--xs g-margin-l-80--sm">
+                  <div class="row">
+
+                      <div class="col-sm-6 col-md-push-6 text-center">
+                        <img id="consox-logo" src="img/events/ConsoX-logo-cropped.png">
+                      </div>
+
+                      <div class="col-sm-6 col-md-pull-6">
+                        <h1 class="g-font-size-60--xs g-font-size-80--sm g-font-size-80--lg g-color--white d-sm-none" style="font-weight:900; text-shadow: 2px 0 #333;letter-spacing:2px;position: relative;">ConsoX</h1>
+                          <p class="g-color--white-opacity g-font-size-16--sm">Our guests from different entrepreneurial backgrounds will share their intriguing stories about how they made it to the Zenith of success starting with just a dream. What is it that makes them stand apart from the crowd?
+Is it their passion, their confidence or just their mere luck? Stay tuned to know.</p>
+                      </div>
+
+                    </div>
+                    <!-- <div class="wow fadeInLeft" data-wow-duration=".3" data-wow-delay=".5s">
+
+                                <a id="reg_button" href="/townhall.php" title="Register">
+                                    <span class="text-uppercase s-btn--white-bg g-radius--50 g-padding-x-30--xs g-padding-y-15--xs g-font-size-13--xs g-color--primary g-padding-x-15--xs">Know More</span>
+                                </a>
+                    </div> -->
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Content Creators Summit -->
+        <div class="s-promo-block-v3 zerotoone" style="background: #111" id="creatorSummit">
+
+            <div class="container g-padding-y-40--xs g-padding-y-50--md g-padding-y-0--lg">
+                <div class="g-margin-t-150--xs g-margin-t-60--sm g-margin-t-100--md g-margin-b-30--xs g-margin-b-70--md g-margin-l-20--xs g-margin-l-80--sm" style="padding-top: 50px;">
+
+
+                    <div class="row">
+                      <div class="col-sm-6 col-md-push-6 text-center">
+                        <img src="img\events\content creator logo-white-cropped.png" id="creatorSummit-logo" width=70%>
+                      </div>
+
+                      <div class="col-sm-6 col-md-pull-6">
+                        <h2 class="g-font-size-50--xs g-font-size-50--sm g-font-size-60--lg g-color--white" style="font-size: 3rem !important; font-weight:900; text-shadow: 2px 0 #333;letter-spacing:2px;position: relative; text-transform: uppercase; ">Content Creators Summit</h2>
+                          <p class="g-color--white-opacity g-font-size-16--sm">Content Creators summit is a riveting panel discussion event of Consortium where the top content creators of  India conjure up their profound thoughts on achieving some very trendy and interesting skills like Community building, Personal Branding, and many more. So what's in the box for you? Stay tuned to know </b></p>
+                      </div>
+                    </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
         <!--TownHall-->
 
         <div class="s-promo-block-v3 townhall" style="background: #000" id="townhall">
@@ -313,10 +370,10 @@
 
 
 
-                    <h1 class="g-font-size-60--xs g-font-size-80--sm g-font-size-80--lg g-color--white" style="font-weight:900; text-shadow: 2px 0 #333;letter-spacing:2px;position: relative;"><b>TOWN<br>HALL</b></h1>
+                    <h1 class="g-font-size-60--xs g-font-size-80--sm g-font-size-80--lg g-color--white" style="font-size: 3rem; font-weight:900; text-shadow: 2px 0 #333;letter-spacing:2px; position: relative;"><b>TOWN HALL</b></h1>
 
                     <div class="row">
-                        <div class="col-sm-6 col-md-4">
+                        <div class="col-sm-6 col-md-6">
                             <p class="g-color--white-opacity g-font-size-16--sm">Townhall was one of the star attractions of Consortium’19 where attendees got a chance to get their question answered by our celebrity guest, live.<br>What's in store for Consortium'21, you ask? <b>Expect the Unexpected!</b></p>
 
 
@@ -332,8 +389,6 @@
 
             </div>
 
-
-
         </div>
 
 
@@ -343,11 +398,9 @@
         <div class="s-promo-block-v3 zerotoone" style="background: #111" id="zerotoone">
             <div class="g-bg-position--center" id="zerotoone-inner" style=""></div>
             <div class="container g-padding-y-40--xs g-padding-y-50--md g-padding-y-0--lg">
-                <div class="g-margin-t-150--xs g-margin-t-60--sm g-margin-t-100--md g-margin-b-30--xs g-margin-b-70--md g-margin-l-20--xs g-margin-l-80--sm" style="padding-top: 50px;">
+                <div class="g-margin-t-150--xs g-margin-t-60--sm g-margin-t-100--md g-margin-b-30--xs g-margin-b-70--md g-margin-l-20--xs g-margin-l-80--sm" style="padding-top: 50px; margin-top: 20px;">
 
-
-
-                    <div style="display: flex;flex-direction: inherit;text-align: center;align-items: center;">
+                    <div style="display: flex;flex-direction: inherit;text-align: center;align-items: center; margin-left: 14px;">
                         <h2 class="g-font-size-50--xs g-font-size-50--sm g-font-size-60--lg g-color--white" style="font-weight:900; text-shadow: 2px 0 #333;letter-spacing:2px;position: relative;">Zero</h2>
                         <p class="g-font-size-20--xs g-color--white" style="z-index:1"><b>TO</b></p>
                         <h2 class="g-font-size-50--xs g-font-size-50--sm g-font-size-60--lg g-color--white" style="font-weight:900; text-shadow: 2px 0 #333;letter-spacing:2px;position: relative;">One</h2>
@@ -355,7 +408,7 @@
                     </div>
 
                     <div class="row">
-                        <div class="col-sm-6 col-md-5">
+                        <div class="col-sm-6 col-md-6">
                             <p class="g-color--white-opacity g-font-size-16--sm">Zero to One is a panel discussion event of Consortium where founders and directors exchange ideas on stage, highlighting the key points of their own journey and experience in the industry. It aims to inculcate knowledge about corporate sector and spread awareness via discussion between our esteemed guests from various sectors having different experiences who guide the attendees in the field of entrepreneurship and innovation. </b></p>
                         </div>
                     </div>
