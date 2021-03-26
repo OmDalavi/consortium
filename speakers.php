@@ -54,9 +54,9 @@
 
             <div class="col-md-4 my-3 col-sm-12">
                 <div class="card" >
-                    <img src="img/speakers/farahad acidwale 2.jpg" class="card-img-top" alt="...">
+                    <img src="img/speakers/Kapil.jpg" class="card-img-top" alt="...">
                     <div class="card-body text-center">
-                      <h5 class="card-title text-white text-uppercase"> Kapil Kapoor</h5>
+                      <h5 class="card-title text-white text-uppercase">Kapil Kapoor</h5>
                       <hr class="card-rule">
                       <ul class="list-group">
                         <p class="list-group-item text-white-50 my-0 py-0 px-0">CTO, Loylogic</p>
@@ -71,7 +71,7 @@
                 <div class="card" >
                     <img src="img/speakers/Deepak.jpg" class="card-img-top" alt="...">
                     <div class="card-body text-center">
-                      <h5 class="card-title text-white text-uppercase">Deepak Kar</h5>
+                      <h5 class="card-title text-white text-uppercase">Deepak Pareek</h5>
                       <hr class="card-rule">
                       <ul class="list-group">
                         <p class="list-group-item text-white-50 my-0 py-0 px-0">Co-Founder, Career Keeda</p>
@@ -83,9 +83,9 @@
 
             <div class="col-md-4 my-3 col-sm-12">
                 <div class="card" >
-                    <img src="img/speakers/farahad acidwale 2.jpg" class="card-img-top" alt="...">
+                    <img src="img/speakers/Alok.jpg" class="card-img-top" alt="...">
                     <div class="card-body text-center">
-                      <h5 class="card-title text-white text-uppercase">Alok Sarogi</h5>
+                      <h5 class="card-title text-white text-uppercase">Alok Saraogi</h5>
                       <hr class="card-rule">
                       <ul class="list-group">
                         <p class="list-group-item text-white-50 my-0 py-0 px-0">Former Country Manager, Amazon Inc</p>
@@ -97,7 +97,7 @@
 
             <div class="col-md-4 my-3 col-sm-12">
                 <div class="card" >
-                    <img src="img/speakers/farahad acidwale 2.jpg" class="card-img-top" alt="...">
+                    <img src="img/speakers/Satish.jpg" class="card-img-top" alt="...">
                     <div class="card-body text-center">
                       <h5 class="card-title text-white text-uppercase">Satish Krishnan</h5>
                       <hr class="card-rule">
@@ -135,32 +135,49 @@
                 </div>
             </div>
 
+
             <div class="col-md-4 my-3 col-sm-12">
                 <div class="card" >
-                    <img src="img/speakers/farahad acidwale 2.jpg" class="card-img-top" alt="...">
+                    <img src="img/speakers/Ashwani.jpg" class="card-img-top" alt="...">
                     <div class="card-body text-center">
-                      <h5 class="card-title text-white text-uppercase">Shantanu Deshpande</h5>
+                      <h5 class="card-title text-white text-uppercase">Ashwani Lohani</h5>
                       <hr class="card-rule">
                       <ul class="list-group">
-                        <p class="list-group-item text-white-50 my-0 py-0 px-0">Founder CEO at Bombay Shaving Company</p>
+                        <p class="list-group-item text-white-50 my-0 py-0 px-0">Former CRB, CMD/AI, CMD/ITDC</p>
                       </ul>
                     </div>
                 </div>
             </div>
 
-            <div class="col-md-4 my-3 col-sm-12 offset-md-4">
+            <div class="col-md-4 my-3 col-sm-12">
                 <div class="card" >
-                    <img src="img/speakers/farahad acidwale 2.jpg" class="card-img-top" alt="...">
+                    <img src="img/speakers/Shashank.jpg" class="card-img-top" alt="...">
                     <div class="card-body text-center">
-                      <h5 class="card-title text-white text-uppercase">Upendra Mardikar</h5>
+                      <h5 class="card-title text-white text-uppercase">Shashank Randeva</h5>
                       <hr class="card-rule">
                       <ul class="list-group">
-                        <p class="list-group-item text-white-50 my-0 py-0 px-0">Chief Security Officer at Snap Finance (American Express, Visa, PayPal)</li>
-                        <p class="list-group-item text-white-50 my-0 py-0 px-0">Startup advisor</p>
+                        <p class="list-group-item text-white-50 my-0 py-0 px-0">Founder VC at 100X.VC | Seed Investments via iSAFE Notes</p>
                       </ul>
                     </div>
                 </div>
             </div>
+
+            <div class="col-md-4 my-3 col-sm-12">
+                <div class="card" >
+                    <img src="img/speakers/Arun.jpg" class="card-img-top" alt="...">
+                    <div class="card-body text-center">
+                      <h5 class="card-title text-white text-uppercase">Arun Malhotra</h5>
+                      <hr class="card-rule">
+                      <ul class="list-group">
+                        <p class="list-group-item text-white-50 my-0 py-0 px-0">Former MD, Nissan India</p>
+                        <p class="list-group-item text-white-50 my-0 py-0 px-0">Auto Industry Expert</p>
+                        <p class="list-group-item text-white-50 my-0 py-0 px-0">Corporate Speaker</p>
+                        <p class="list-group-item text-white-50 my-0 py-0 px-0">Visiting Faculty</p>
+                      </ul>
+                    </div>
+                </div>
+            </div>
+
 
 
         </div>
