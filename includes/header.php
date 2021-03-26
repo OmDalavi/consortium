@@ -1,5 +1,6 @@
 <?php @session_start(); ?>
 <html>
+
 <header class="navbar-fixed-top s-header js__header-sticky js__header-overlay">
             <!-- Navbar -->
             <nav class="s-header-v2__navbar">
@@ -52,35 +53,13 @@
 
                                         </ul>
                                     </li>
-                                    <!-- <li class="s-header-v2__nav-item">
-                                        <a href="#events" class="s-header-v2__nav-link">Events</a>
-                                        <a href="index.html" class="dropdown-toggle s-header-v2__nav-link -is-active" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Attractions <span class="g-font-size-10--xs g-margin-l-5--xs ti-angle-down"></span></a>
-                                        <ul class="dropdown-menu s-header-v2__dropdown-menu">
-                                            <li><a href="aimlworkshop.php" class="s-header-v2__dropdown-menu-link">AI/ML workshop</a></li>
 
 
-                                        </ul>
-                                    </li> -->
-
-                                    <!-- <li class="s-header-v2__nav-item">
-                                        <a href="#events" class="s-header-v2__nav-link">Events</a>
-                                        <a href="/attractions.php" class="dropdown-toggle s-header-v2__nav-link -is-active" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Attractions <span class="g-font-size-10--xs g-margin-l-5--xs ti-angle-down"></span></a>
-                                        <ul class="dropdown-menu s-header-v2__dropdown-menu">
-                                            <li><a href="/townhall.php" class="s-header-v2__dropdown-menu-link">TownHall</a></li>
-                                            <li><a href="/consox.php" class="s-header-v2__dropdown-menu-link">CONSOx</a></li>
-                                            <li><a href="/zerotoone.php" class="s-header-v2__dropdown-menu-link">Zero To One</a></li>
-                                            <li><a href="/intern.php" class="s-header-v2__dropdown-menu-link">Internship Fair</a></li>
-                                            <li><a href="/expo.php" class="s-header-v2__dropdown-menu-link">Startup Expo</a></li>
-                                            <li><a href="/azure.php" class="s-header-v2__dropdown-menu-link">Azure Space</a></li>
-                                            <li><a href="/attractions.php" class="s-header-v2__dropdown-menu-link">Workshops & Webinars</a></li>
-
-
-                                        </ul>
-                                    </li> -->
-                                    <li class="s-header-v2__nav-item"><a href="https://pages.razorpay.com/E-Cell-T-Shirt-21" class="s-header-v2__nav-link">Merchandise</a></li>
+                                    <li class="s-header-v2__nav-item"><a href="speakers.php" class="s-header-v2__nav-link">Speakers</a></li>
 
                                     <li class="s-header-v2__nav-item"><a href="https://www.ecellvnit.org/spons.php" class="s-header-v2__nav-link">Previous Sponsors</a></li>
                                     <li class="s-header-v2__nav-item"><a href="team.php" class="s-header-v2__nav-link">Team</a></li>
+                                    <li class="s-header-v2__nav-item"><a href="https://linktr.ee/ecellvnit" class="s-header-v2__nav-link -is-active">Acess all Events</a></li>
                                     <?php if($_SESSION['email']){ ?>
                                       <li class="s-header-v2__nav-item">
                                         <a href="" class="dropdown-toggle s-header-v2__nav-link -is-active" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><?php echo $_SESSION['name'] ?> <span class="g-font-size-10--xs g-margin-l-5--xs ti-angle-down"></span></a>

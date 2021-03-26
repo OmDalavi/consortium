@@ -5,8 +5,6 @@ body{
 }
 .card-text{
     font-size: 0.7rem;
-    color: red;
-    font-weight: 600;
 }
 .card-body{
     background-color: #333;
@@ -15,8 +13,13 @@ body{
     border: #333;
     border-radius: 0.5rem;
 }
-.heading{
-    font-weight: 800;
+
+.list-group, .list-group-item
+{
+  background-color: transparent;
+  border: none;
+  font-size: 0.8rem;
+  
 }
 .card{
       transition: 0.3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
@@ -25,5 +28,10 @@ body{
 }
 .card:hover{
     transform: scale(1.05);
-    
+}
+.card-rule
+{
+  width: 50%;
+  margin: auto;
+  margin-bottom: 0.5rem;
 }
