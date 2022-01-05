@@ -194,6 +194,8 @@
         <div class="info-card"><b><span style="color:red;font-size:40px">15+<br></span> <span style="color:white;font-size:38px">Speakers</span></b></div>
 
     </div>
+    
+    <!-- ABHIUDAY -->
 
     <!-- <div class="row product-grid" id="events">
         <a href="https://startupconclave.ecellvnit.org" class="product-card col-xs-12 col-md-4" target="_blank">
